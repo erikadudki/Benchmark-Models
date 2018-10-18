@@ -58,7 +58,7 @@ Expected to have the following named columns in any (but preferably this) order:
   Time point of the measurement in seconds, float or `Inf` for steady-state 
   measurements. `Inf` will be replaced by a large $t$ during import.
   
--	`scaling` [STRING]
+- `scaling` [STRING]
 
   List of scaling parameters to be used for 
   hierarchical optimization as well as any other condition-specific parameters.
@@ -73,15 +73,15 @@ Expected to have the following named columns in any (but preferably this) order:
   mapping of parameters to simulation parameters is written to the file, and 
   will be performed before each individual simulation.
   
-  Offset parameters are expected to start with `scaling_`.
+  Scaling parameters are expected to start with `scaling_`.
   
   *NOTE*: Currently only a single scaling parameter can be 
   used for hierarchical optimization. The one occurring first will be selected.
   A sigma parameter may be provided in addition.
 
--	`offset` [STRING]
-  
-    List of offset parameters to be used for 
+- `offset` [STRING]
+
+  List of offset parameters to be used for 
   hierarchical optimization as well as any other condition-specific parameters.
   
   This field allows introducing condition-specific versions of the parameters
@@ -100,7 +100,7 @@ Expected to have the following named columns in any (but preferably this) order:
   used for hierarchical optimization. The one occurring first will be selected.
   A sigma parameter may be provided in addition.
   
--	`sigma` [STRING]
-  
+- `sigma` [STRING]
+
   The measurement variance or `NaN` if the corresponding sigma is a model 
   parameter.
