@@ -1,49 +1,49 @@
-observable	conditionRef	condition	measurement	time	scaling	offset	sigma	observableTransformation
-pSTAT5A_rel		model1_data1	7.9010729987	0	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	66.3634939683	2.5	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	81.1713239165	5	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	94.7303080628	10	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	95.1164830493	15	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	91.4417165539	20	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	91.2570992264	30	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	93.672297841	40	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	88.754232823	50	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	85.2697032178	60	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	81.132395337	80	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	76.1359284758	100	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	65.248059125	120	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	42.5996587097	160	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	25.1577975446	200	1	0	sd_pSTAT5A_rel	lin
-pSTAT5A_rel		model1_data1	15.4301823995	240	1	0	sd_pSTAT5A_rel	lin
-pSTAT5B_rel		model1_data1	4.5965333429	0	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	29.6345459874	2.5	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	46.0438064696	5	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	81.9747336192	10	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	80.5716092952	15	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	79.0357196371	20	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	75.6723803658	30	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	71.6247198618	40	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	69.0628632756	50	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	67.1473843169	60	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	60.8994762939	80	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	54.8092577721	100	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	43.9812899778	120	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	29.7714581637	160	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	20.0890165628	200	1	0	sd_pSTAT5B_rel	lin
-pSTAT5B_rel		model1_data1	10.9618451667	240	1	0	sd_pSTAT5B_rel	lin
-rSTAT5A_rel		model1_data1	14.7231682181	0	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	33.7623422931	2.5	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	36.7998512942	5	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	49.717602286	10	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	46.9281200953	15	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	47.836574555	20	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	46.9287272497	30	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	40.5977529351	40	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	43.7836638851	50	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	44.4573876524	60	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	41.3271592618	80	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	41.0627332148	100	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	39.2358300289	120	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	36.6194605442	160	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	34.8937144011	200	1	0	sd_rSTAT5A_rel	lin
-rSTAT5A_rel		model1_data1	32.2110771609	240	1	0	sd_rSTAT5A_rel	lin
+observableName	conditionRef	condition	measurement	time	observableParameters	sigma	observableTransformation
+pSTAT5A_rel		model1_data1	7.9010729987	0		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	66.3634939683	2.5		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	81.1713239165	5		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	94.7303080628	10		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	95.1164830493	15		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	91.4417165539	20		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	91.2570992264	30		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	93.672297841	40		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	88.754232823	50		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	85.2697032178	60		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	81.132395337	80		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	76.1359284758	100		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	65.248059125	120		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	42.5996587097	160		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	25.1577975446	200		sd_pSTAT5A_rel	lin
+pSTAT5A_rel		model1_data1	15.4301823995	240		sd_pSTAT5A_rel	lin
+pSTAT5B_rel		model1_data1	4.5965333429	0		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	29.6345459874	2.5		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	46.0438064696	5		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	81.9747336192	10		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	80.5716092952	15		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	79.0357196371	20		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	75.6723803658	30		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	71.6247198618	40		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	69.0628632756	50		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	67.1473843169	60		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	60.8994762939	80		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	54.8092577721	100		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	43.9812899778	120		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	29.7714581637	160		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	20.0890165628	200		sd_pSTAT5B_rel	lin
+pSTAT5B_rel		model1_data1	10.9618451667	240		sd_pSTAT5B_rel	lin
+rSTAT5A_rel		model1_data1	14.7231682181	0		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	33.7623422931	2.5		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	36.7998512942	5		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	49.717602286	10		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	46.9281200953	15		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	47.836574555	20		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	46.9287272497	30		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	40.5977529351	40		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	43.7836638851	50		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	44.4573876524	60		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	41.3271592618	80		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	41.0627332148	100		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	39.2358300289	120		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	36.6194605442	160		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	34.8937144011	200		sd_rSTAT5A_rel	lin
+rSTAT5A_rel		model1_data1	32.2110771609	240		sd_rSTAT5A_rel	lin
