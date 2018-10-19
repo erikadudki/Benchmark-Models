@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-  <model metaid="arFramework3" id="model_A">
+  <model id="model_A">
     <listOfUnitDefinitions>
       <unitDefinition id="time" name="time">
         <listOfUnits>
@@ -48,27 +48,35 @@
       <parameter id="s12" value="88884.6918603076" constant="true"/>
       <parameter id="s21" value="2954405.07105195" constant="true"/>
       <parameter id="s31" value="4345660.94708907" constant="true"/>
-      <parameter id="scale_yCERTpRN24" value="124.219169990847" constant="true"/>
-      <parameter id="scale_yPI4K3BpRN24" value="3.42048004960236" constant="true"/>
-      <parameter id="scale_yPKDpN0" value="0.00701313556952912" constant="true"/>
-      <parameter id="scale_yPKDpN24" value="0.00325609710784127" constant="true"/>
-      <parameter id="scale_yPKDpN25" value="0.000229659117321894" constant="true"/>
-      <parameter id="std_yCERTpRN24" value="0.0754229799351658" constant="true"/>
-      <parameter id="std_yCERTt" value="244727220.419" constant="true"/>
-      <parameter id="std_yPI4K3BpRN24" value="0.472017957940254" constant="true"/>
-      <parameter id="std_yPI4K3Bt" value="887676.131" constant="true"/>
-      <parameter id="std_yPKDpN0" value="1.10973873492671" constant="true"/>
-      <parameter id="std_yPKDpN24" value="1.23093145002735" constant="true"/>
-      <parameter id="std_yPKDpN25" value="0.133924990882991" constant="true"/>
-      <parameter id="std_yPKDt" value="1910527.835" constant="true"/>
-      <parameter id="yPKDt" value="1" constant="false"/>
-      <parameter id="yPI4K3Bt" value="1" constant="false"/>
-      <parameter id="yCERTt" value="1" constant="false"/>
-      <parameter id="yPKDpN0" value="1" constant="false"/>
-      <parameter id="yPKDpN24" value="1" constant="false"/>
-      <parameter id="yPKDpN25" value="1" constant="false"/>
-      <parameter id="yPI4K3BpRN24" value="1" constant="false"/>
-      <parameter id="yCERTpRN24" value="1" constant="false"/>
+      <parameter id="observableParameter1_yCERTpRN24" value="124.219169990847" constant="true"/>
+      <parameter id="observableParameter1_yPI4K3BpRN24" value="3.42048004960236" constant="true"/>
+      <parameter id="observableParameter1_yPKDpN0" value="0.00701313556952912" constant="true"/>
+      <parameter id="observableParameter1_yPKDpN24" value="0.00325609710784127" constant="true"/>
+      <parameter id="observableParameter1_yPKDpN25" value="0.000229659117321894" constant="true"/>
+      <parameter id="noiseParameter1_yCERTpRN24" value="0.0754229799351658" constant="true"/>
+      <parameter id="noiseParameter1_yCERTt" value="244727220.419" constant="true"/>
+      <parameter id="noiseParameter1_yPI4K3BpRN24" value="0.472017957940254" constant="true"/>
+      <parameter id="noiseParameter1_yPI4K3Bt" value="887676.131" constant="true"/>
+      <parameter id="noiseParameter1_yPKDpN0" value="1.10973873492671" constant="true"/>
+      <parameter id="noiseParameter1_yPKDpN24" value="1.23093145002735" constant="true"/>
+      <parameter id="noiseParameter1_yPKDpN25" value="0.133924990882991" constant="true"/>
+      <parameter id="noiseParameter1_yPKDt" value="1910527.835" constant="true"/>
+      <parameter id="observable_yPKDt" value="1" constant="false"/>
+      <parameter id="observable_yPI4K3Bt" value="1" constant="false"/>
+      <parameter id="observable_yCERTt" value="1" constant="false"/>
+      <parameter id="observable_yPKDpN0" value="1" constant="false"/>
+      <parameter id="observable_yPKDpN24" value="1" constant="false"/>
+      <parameter id="observable_yPKDpN25" value="1" constant="false"/>
+      <parameter id="observable_yPI4K3BpRN24" value="1" constant="false"/>
+      <parameter id="observable_yCERTpRN24" value="1" constant="false"/>
+      <parameter id="sigma_yPKDt" value="1" constant="false"/>
+      <parameter id="sigma_yPI4K3Bt" value="1" constant="false"/>
+      <parameter id="sigma_yCERTt" value="1" constant="false"/>
+      <parameter id="sigma_yPKDpN0" value="1" constant="false"/>
+      <parameter id="sigma_yPKDpN24" value="1" constant="false"/>
+      <parameter id="sigma_yPKDpN25" value="1" constant="false"/>
+      <parameter id="sigma_yPI4K3BpRN24" value="1" constant="false"/>
+      <parameter id="sigma_yCERTpRN24" value="1" constant="false"/>
       <parameter id="u2" value="0" constant="false"/>
       <parameter id="u3" value="0" constant="false"/>
       <parameter id="u4" value="0" constant="false"/>
@@ -101,7 +109,7 @@
           <cn type="integer"> 0 </cn>
         </math>
       </assignmentRule>
-      <assignmentRule variable="yPKDt">
+      <assignmentRule variable="observable_yPKDt">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <plus/>
@@ -110,7 +118,7 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="yPI4K3Bt">
+      <assignmentRule variable="observable_yPI4K3Bt">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <plus/>
@@ -119,7 +127,7 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="yCERTt">
+      <assignmentRule variable="observable_yCERTt">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <plus/>
@@ -129,41 +137,41 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="yPKDpN0">
+      <assignmentRule variable="observable_yPKDpN0">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
             <ci> PKDDAGa </ci>
-            <ci> scale_yPKDpN0 </ci>
+            <ci> observableParameter1_yPKDpN0 </ci>
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="yPKDpN24">
+      <assignmentRule variable="observable_yPKDpN24">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
             <ci> PKDDAGa </ci>
-            <ci> scale_yPKDpN24 </ci>
+            <ci> observableParameter1_yPKDpN24 </ci>
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="yPKDpN25">
+      <assignmentRule variable="observable_yPKDpN25">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
             <ci> PKDDAGa </ci>
-            <ci> scale_yPKDpN25 </ci>
+            <ci> observableParameter1_yPKDpN25 </ci>
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="yPI4K3BpRN24">
+      <assignmentRule variable="observable_yPI4K3BpRN24">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <divide/>
             <apply>
               <times/>
               <ci> PI4K3Ba </ci>
-              <ci> scale_yPI4K3BpRN24 </ci>
+              <ci> observableParameter1_yPI4K3BpRN24 </ci>
             </apply>
             <apply>
               <plus/>
@@ -173,14 +181,14 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="yCERTpRN24">
+      <assignmentRule variable="observable_yCERTpRN24">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <divide/>
             <apply>
               <times/>
               <ci> CERT </ci>
-              <ci> scale_yCERTpRN24 </ci>
+              <ci> observableParameter1_yCERTpRN24 </ci>
             </apply>
             <apply>
               <plus/>
@@ -190,6 +198,46 @@
             </apply>
           </apply>
         </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_yPKDt">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_yPKDt </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_yPI4K3Bt">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_yPI4K3Bt </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_yCERTt">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_yCERTt </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_yPKDpN0">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_yPKDpN0 </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_yPKDpN24">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_yPKDpN24 </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_yPKDpN25">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_yPKDpN25 </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_yPI4K3BpRN24">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_yPI4K3BpRN24 </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_yCERTpRN24">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_yCERTpRN24 </ci>
+          </math>
       </assignmentRule>
     </listOfRules>
     <listOfReactions>
