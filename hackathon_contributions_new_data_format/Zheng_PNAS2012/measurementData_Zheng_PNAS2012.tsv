@@ -1,4 +1,4 @@
-observableName	conditionRef	condition	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableID	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
 K27me0K36me0	preequilibration	simulation	0.00431	0		noise	lin
 K27me0K36me0	preequilibration	simulation	0.00093	5		noise	lin
 K27me0K36me0	preequilibration	simulation	0.00051	10		noise	lin
