@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.23 (Build 184) on 2018-10-19 12:22 with libSBML version 5.16.1. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-  <model metaid="arFramework3" id="ModelHistoneZheng" name="HistoneMethylation">
-    <annotation>
-      <COPASI xmlns="http://www.copasi.org/static/sbml">
-        <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
-          <rdf:Description rdf:about="#arFramework3">
-            <dcterms:created>
-              <rdf:Description>
-                <dcterms:W3CDTF>2018-10-18T16:34:31Z</dcterms:W3CDTF>
-              </rdf:Description>
-            </dcterms:created>
-            <dcterms:creator>
-              <rdf:Bag>
-                <rdf:li>
-                  <rdf:Description>
-                    <vCard:N>
-                      <rdf:Description>
-                        <vCard:Family>.</vCard:Family>
-                        <vCard:Given>.</vCard:Given>
-                      </rdf:Description>
-                    </vCard:N>
-                  </rdf:Description>
-                </rdf:li>
-              </rdf:Bag>
-            </dcterms:creator>
-            <dcterms:modified>
-              <rdf:Description>
-                <dcterms:W3CDTF>2018-10-18T16:34:31Z</dcterms:W3CDTF>
-              </rdf:Description>
-            </dcterms:modified>
-          </rdf:Description>
-        </rdf:RDF>
-      </COPASI>
-      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-        <rdf:Description rdf:about="#arFramework3">
-          <dc:creator>
-            <rdf:Bag>
-              <rdf:li rdf:parseType="Resource">
-                <vCard:N rdf:parseType="Resource">
-                  <vCard:Family>.</vCard:Family>
-                  <vCard:Given>.</vCard:Given>
-                </vCard:N>
-              </rdf:li>
-            </rdf:Bag>
-          </dc:creator>
-          <dcterms:created rdf:parseType="Resource">
-            <dcterms:W3CDTF>2018-10-18T16:34:31Z</dcterms:W3CDTF>
-          </dcterms:created>
-          <dcterms:modified rdf:parseType="Resource">
-            <dcterms:W3CDTF>2018-10-18T16:34:31Z</dcterms:W3CDTF>
-          </dcterms:modified>
-        </rdf:Description>
-      </rdf:RDF>
-    </annotation>
+  <model id="ModelHistoneZheng" name="HistoneMethylation">
     <listOfFunctionDefinitions>
       <functionDefinition id="Function_for_v_53" name="Function for v_53">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1517,7 +1464,7 @@
       <species id="K27me3K36me2" name="K27me3K36me2" compartment="default" initialConcentration="0.00136041631795562" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter metaid="COPASI0" id="inflowp" name="inflowp" value="0.0309160767779193" constant="true">
+      <parameter id="inflowp" name="inflowp" value="0.0309160767779193" constant="true">
       </parameter>
       <parameter id="k00_01" name="k00_01" value="3.07977512445142" constant="true"/>
       <parameter id="k00_10" name="k00_10" value="4.29039735572565" constant="true"/>
