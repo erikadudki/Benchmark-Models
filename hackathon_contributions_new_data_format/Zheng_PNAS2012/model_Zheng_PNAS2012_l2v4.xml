@@ -1633,6 +1633,11 @@
               <ci> noiseParameter1_K27me2K36me1 </ci>
           </math>
       </assignmentRule>
+      <assignmentRule variable="sigma_K27me2K36me2">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_K27me2K36me2 </ci>
+          </math>
+      </assignmentRule>
       <assignmentRule variable="sigma_K27me2K36me3">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <ci> noiseParameter1_K27me2K36me3 </ci>
