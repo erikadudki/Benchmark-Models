@@ -1,0 +1,20 @@
+DESCRIPTION
+
+PREDICTOR
+t	 T	 "n/a"	 time	 0	 100	
+
+INPUTS
+
+OBSERVABLES
+observable_pEGFR_tot 	 C	 "n/a"	 "conc."	 0 0 "scaleFactor_pEGFR*(pEGFR+pEGFR_Akt)" "observable_pEGFR_tot"
+observable_pAkt_tot 	 C	 "n/a"	 "conc."	 0 0 "scaleFactor_pAkt*(pAkt+pAkt_S6)" "observable_pAkt_tot"
+observable_pS6_tot 	 C	 "n/a"	 "conc."	 0 0 "pS6*scaleFactor_pS6" "observable_pS6_tot"
+
+ERRORS
+observable_pEGFR_tot	 "sigma_observable_pEGFR_tot"
+observable_pAkt_tot	 "sigma_observable_pAkt_tot"
+observable_pS6_tot	 "sigma_observable_pS6_tot"
+
+CONDITIONS
+
+PARAMETERS

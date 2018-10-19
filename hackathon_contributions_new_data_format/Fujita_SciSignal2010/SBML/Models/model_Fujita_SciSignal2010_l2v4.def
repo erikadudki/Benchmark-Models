@@ -1,0 +1,73 @@
+DESCRIPTION
+"model_AktPathwayFujita"
+"SBML level 2 version 4"
+
+PREDICTOR
+t	 T	 "n/a"	 time	 0	 100	
+
+COMPARTMENTS
+Cell	 V	 "n/a"	 vol.	 1
+
+STATES
+EGFR	 C	 "n/a"	 conc.	 Cell	 1	 "EGFR"
+pEGFR	 C	 "n/a"	 conc.	 Cell	 1	 "pEGFR"
+pEGFR_Akt	 C	 "n/a"	 conc.	 Cell	 1	 "pEGFR_Akt"
+Akt	 C	 "n/a"	 conc.	 Cell	 1	 "Akt"
+pAkt	 C	 "n/a"	 conc.	 Cell	 1	 "pAkt"
+S6	 C	 "n/a"	 conc.	 Cell	 1	 "S6"
+pAkt_S6	 C	 "n/a"	 conc.	 Cell	 1	 "pAkt_S6"
+pS6	 C	 "n/a"	 conc.	 Cell	 1	 "pS6"
+EGF_EGFR	 C	 "n/a"	 conc.	 Cell	 1	 "EGF_EGFR"
+
+INPUTS
+
+REACTIONS
+EGFR 	<-> EGF_EGFR 	 CUSTOM "EGF*EGFR*reaction_1_k1 - EGF_EGFR*reaction_1_k2" 	"v1_reaction_1"
+pEGFR + Akt 	<-> pEGFR_Akt 	 CUSTOM "Akt*pEGFR*reaction_2_k1 - pEGFR_Akt*reaction_2_k2" 	"v2_reaction_2"
+pEGFR_Akt 	-> pEGFR + pAkt 	 CUSTOM "pEGFR_Akt*reaction_3_k1" 	"v3_reaction_3"
+pEGFR 	->  	 CUSTOM "pEGFR*reaction_4_k1" 	"v4_reaction_4"
+pAkt + S6 	<-> pAkt_S6 	 CUSTOM "S6*pAkt*reaction_5_k1 - pAkt_S6*reaction_5_k2" 	"v5_reaction_5"
+pAkt_S6 	-> pAkt + pS6 	 CUSTOM "pAkt_S6*reaction_6_k1" 	"v6_reaction_6"
+pAkt 	-> Akt 	 CUSTOM "pAkt*reaction_7_k1" 	"v7_reaction_7"
+pS6 	-> S6 	 CUSTOM "pS6*reaction_8_k1" 	"v8_reaction_8"
+EGF_EGFR 	-> pEGFR 	 CUSTOM "EGF_EGFR*reaction_9_k1" 	"v9_reaction_9"
+EGFR 	->  	 CUSTOM "EGFR*EGFR_turnover" 	"v10_reaction_10"
+ 	-> EGFR 	 CUSTOM "68190*EGFR_turnover" 	"v11_reaction_11"
+
+DERIVED
+
+CONDITIONS
+
+PARAMETERS
+init_EGFR	 1	 1	 0	 0	 1000
+init_pEGFR	 0	 1	 0	 0	 1000
+init_pEGFR_Akt	 0	 1	 0	 0	 1000
+init_Akt	 1	 1	 0	 0	 1000
+init_pAkt	 0	 1	 0	 0	 1000
+init_S6	 1	 1	 0	 0	 1000
+init_pAkt_S6	 0	 1	 0	 0	 1000
+init_pS6	 0	 1	 0	 0	 1000
+init_EGF_EGFR	 0	 1	 0	 0	 1000
+EGFR_turnover	 0.0014498	 0	 0	 0	 1000
+init_AKT	 0.00332683	 0	 0	 0	 1000
+init_EGFR	 2.26508e+07	 0	 0	 0	 2.26508e+08
+init_S6	 205.863	 0	 0	 0	 1000
+reaction_1_k1	 0.00372346	 0	 0	 0	 1000
+reaction_1_k2	 0.0026271	 0	 0	 0	 1000
+reaction_2_k1	 0.00103236	 0	 0	 0	 1000
+reaction_2_k2	 41469.7	 0	 0	 0	 414697
+reaction_3_k1	 0.454841	 0	 0	 0	 1000
+reaction_4_k1	 0.0308147	 0	 0	 0	 1000
+reaction_5_k1	 2.96437e-06	 0	 0	 0	 1000
+reaction_5_k2	 0.000404056	 0	 0	 0	 1000
+reaction_6_k1	 9.20585e-06	 0	 0	 0	 1000
+reaction_7_k1	 0.011933	 0	 0	 0	 1000
+reaction_8_k1	 0.000941162	 0	 0	 0	 1000
+reaction_9_k1	 0.0273282	 0	 0	 0	 1000
+scaleFactor_pAkt	 334.979	 0	 0	 0	 1000
+scaleFactor_pEGFR	 9.60908e-08	 0	 0	 0	 1000
+scaleFactor_pS6	 380223	 0	 0	 0	 3.80223e+06
+sd_pAkt_tot	 0.1	 0	 0	 0	 1000
+sd_pEGFR_tot	 0.1	 0	 0	 0	 1000
+sd_pS6_tot	 0.1	 0	 0	 0	 1000
+EGF	 0.1	 1	 0	 0	 1000
