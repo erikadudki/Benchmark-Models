@@ -39,12 +39,12 @@
       <parameter id="reaction_7_k1" value="0.0119329694583145" constant="true"/>
       <parameter id="reaction_8_k1" value="0.000941161525754959" constant="true"/>
       <parameter id="reaction_9_k1" value="0.0273281571867514" constant="true"/>
-      <parameter id="scaleFactor_pAkt" value="334.979345701912" constant="true"/>
-      <parameter id="scaleFactor_pEGFR" value="9.60908283106834e-08" constant="true"/>
-      <parameter id="scaleFactor_pS6" value="380222.792056961" constant="true"/>
-      <parameter id="sd_pAkt_tot" value="0.1" constant="true"/>
-      <parameter id="sd_pEGFR_tot" value="0.1" constant="true"/>
-      <parameter id="sd_pS6_tot" value="0.1" constant="true"/>
+      <parameter id="scaling_pAkt_tot" value="334.979345701912" constant="true"/>
+      <parameter id="scaling_pEGFR_tot" value="9.60908283106834e-08" constant="true"/>
+      <parameter id="scaling_pS6_tot" value="380222.792056961" constant="true"/>
+      <parameter id="sigma_pAkt_tot" value="0.1" constant="true"/>
+      <parameter id="sigma_pEGFR_tot" value="0.1" constant="true"/>
+      <parameter id="sigma_pS6_tot" value="0.1" constant="true"/>
       <parameter id="observable_pEGFR_tot" value="0" constant="false"/>
       <parameter id="observable_pAkt_tot" value="0" constant="false"/>
       <parameter id="observable_pS6_tot" value="0" constant="false"/>
@@ -72,7 +72,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> scaleFactor_pEGFR </ci>
+            <ci> scaling_pEGFR_tot </ci>
             <apply>
               <plus/>
               <ci> pEGFR </ci>
@@ -85,7 +85,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> scaleFactor_pAkt </ci>
+            <ci> scaling_pAkt_tot </ci>
             <apply>
               <plus/>
               <ci> pAkt </ci>
@@ -99,7 +99,7 @@
           <apply>
             <times/>
             <ci> pS6 </ci>
-            <ci> scaleFactor_pS6 </ci>
+            <ci> scaling_pS6_tot </ci>
           </apply>
         </math>
       </assignmentRule>
