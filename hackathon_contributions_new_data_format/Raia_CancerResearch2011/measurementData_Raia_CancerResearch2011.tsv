@@ -1,206 +1,206 @@
 observable	conditionRef	condition	measurement	time	scaling	offset	sigma	observableTransformation 
-RecSurf_obs		model1_data1	1.289752779	0				
-RecSurf_obs		model1_data1	1.5785443795	10				
-RecSurf_obs		model1_data1	1.5150912724	20				
-RecSurf_obs		model1_data1	1.5049641595	30				
-RecSurf_obs		model1_data1	1.6178028742	60				
-RecSurf_obs		model1_data1	1.5723717011	90				
-RecSurf_obs		model1_data1	1.4306194772	120				
-IL13_cell_obs		model1_data1	0.6157402573	0	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data1	0.2958685051	15	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data1	0.3222852028	30	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data1	0.1695277772	60	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data1	0.2579662868	90	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data1	0.2315495891	120	scale_IL13_cell_obs			
-SOCS3mRNA_obs		model1_data1	1.5623570187	0	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data1	0.9928681631	20	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data1	14.8344947735	30	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data1	11.6751769977	40	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data1	11.6268144751	60	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data1	5.7102824634	80	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data1	1.2434304595	90	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data1	0.6592447658	100	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data1	14.5473388612	120	scale_SOCS3mRNA_obs			
-CD274mRNA_obs		model1_data1	0.01	30				
-CD274mRNA_obs		model1_data1	0.042114502	60				
-CD274mRNA_obs		model1_data1	0.01	90				
-CD274mRNA_obs		model1_data1	0.0098336193	120				
-SOCS3_obs		model1_data1	8.3340776741	0				
-SOCS3_obs		model1_data1	6.4426557906	20				
-SOCS3_obs		model1_data1	7.6247944678	40				
-SOCS3_obs		model1_data1	8.6887192773	60				
-SOCS3_obs		model1_data1	13.2990601182	90				
-SOCS3_obs		model1_data1	16.4317276128	120				
-IL13_cell_obs		model1_data2	3.974680793	5	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	4.1297353228	10	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	5.0164175226	15	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	4.9325732214	20	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	6.0248462422	30	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	6.3521835828	40	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	5.878980129	50	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	5.0761422304	60	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	6.2109116779	80	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	5.9467447013	100	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data2	5.0945190636	120	scale_IL13_cell_obs			
-pIL4Ra_obs		model1_data2	0.1854189782	0	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	0.4422395464	4	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	1.6308295303	5	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	1.9262934089	7	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	1.4001375899	10	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	2.2239546421	15	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	2.2587377231	20	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	1.5417437226	30	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	1.6599514862	40	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	2.2834868887	45	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data2	1.3649893692	60	scale_pIL4Ra_obs			
-pJAK2_obs		model1_data2	0.2213913831	0	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	0.6895728747	4	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.2782521029	5	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.6887498971	7	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.388817503	10	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	2.0208537201	15	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	2.1026102697	20	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.6429389625	25	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	2.0556300981	30	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.7644267017	40	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.8168225604	45	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.0996563574	50	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.480674485	60	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.5840288005	80	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	0.9229258714	100	scale_pJAK2_obs			
-pJAK2_obs		model1_data2	1.2043855343	120	scale_pJAK2_obs			
-SOCS3mRNA_obs		model1_data2	1.3998639208	0	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data2	15.5937683111	20	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data2	29.6611098925	30	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data2	250.7513583698	40	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data2	208.0216844863	60	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data2	719.6189148943	80	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data2	1154.9424005946	90	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data2	504.6313426271	100	scale_SOCS3mRNA_obs			
-SOCS3mRNA_obs		model1_data2	1017.019575786	120	scale_SOCS3mRNA_obs			
-CD274mRNA_obs		model1_data2	0.01	30	scale_CD274mRNA_obs			
-CD274mRNA_obs		model1_data2	0.6747753098	60	scale_CD274mRNA_obs			
-CD274mRNA_obs		model1_data2	2.3049766032	90	scale_CD274mRNA_obs			
-CD274mRNA_obs		model1_data2	1.7749927709	120	scale_CD274mRNA_obs			
-SOCS3_obs		model1_data2	35.1020148237	0				
-SOCS3_obs		model1_data2	23.8815866747	20				
-SOCS3_obs		model1_data2	79.7198595783	40				
-SOCS3_obs		model1_data2	148.678	60				
-SOCS3_obs		model1_data2	259.112900889	80				
-SOCS3_obs		model1_data2	271.9076532614	90				
-SOCS3_obs		model1_data2	255.3756955878	100				
-SOCS3_obs		model1_data2	204.461216176	120				
-pSTAT5_obs		model1_data2	1.7167330953	0				
-pSTAT5_obs		model1_data2	9.7720251807	5				
-pSTAT5_obs		model1_data2	32.8115943739	10				
-pSTAT5_obs		model1_data2	50.8032264775	15				
-pSTAT5_obs		model1_data2	68.9925612446	20				
-pSTAT5_obs		model1_data2	107.9066904317	25				
-pSTAT5_obs		model1_data2	111.5714137074	30				
-pSTAT5_obs		model1_data2	106.7423055028	35				
-pSTAT5_obs		model1_data2	104.28	40				
-pSTAT5_obs		model1_data2	125.274008818	45				
-pSTAT5_obs		model1_data2	115.702645514	50				
-pSTAT5_obs		model1_data2	128.2373073294	60				
-pSTAT5_obs		model1_data2	123.2374928103	70				
-pSTAT5_obs		model1_data2	89.6541108259	80				
-pSTAT5_obs		model1_data2	65.8305683073	90				
-pSTAT5_obs		model1_data2	108.2978695837	100				
-pSTAT5_obs		model1_data2	80.7501117525	120				
-RecSurf_obs		model1_data3	1.4046935103	0				
-RecSurf_obs		model1_data3	1.36298049	10				
-RecSurf_obs		model1_data3	1.3335862373	20				
-RecSurf_obs		model1_data3	1.2105360561	30				
-RecSurf_obs		model1_data3	1.2569087666	60				
-RecSurf_obs		model1_data3	1.2555955708	90				
-RecSurf_obs		model1_data3	1.2306532262	120				
-IL13_cell_obs		model1_data3	1.1859963612	5	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	1.4582032024	10	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	1.7970260637	15	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	1.7832434389	20	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	2.2954976632	30	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	2.4700775782	40	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	2.514871109	50	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	2.6561430139	60	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	2.9559151048	80	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	3.1994081441	100	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data3	2.6205378996	120	scale_IL13_cell_obs			
-pIL4Ra_obs		model1_data3	0.3381079127	0	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.0843373494	4	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	0.5391115034	5	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	0.2997873848	7	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	0.8451567438	10	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.1759908558	15	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.35788895	17.5	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.442254159	20	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.1230660488	22.5	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.5518730857	25	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.1478850629	30	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	0.9954449069	35	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.2423176366	40	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.2810248297	45	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.1945338883	50	scale_pIL4Ra_obs			
-pIL4Ra_obs		model1_data3	1.1333315671	60	scale_pIL4Ra_obs			
-pJAK2_obs		model1_data3	0.1871051041	0	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	0.5335603109	2.5	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	0.6451320879	4	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	0.6394322482	5	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	0.245165007	7	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	0.1525282452	7.5	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	0.8346829882	10	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.4584168899	12.5	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.288880253	15	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.2753868383	17.5	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.4328954417	20	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	0.8428008549	25	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.3671648495	30	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.7531620536	35	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.4344409141	40	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.0369516912	45	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.1503165622	50	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.3739099902	60	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.2166795457	75	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	1.4900356974	90	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	0.3655888058	105	scale_pJAK2_obs			
-pJAK2_obs		model1_data3	0.6675315401	120	scale_pJAK2_obs			
-pSTAT5_obs		model1_data3	1.5984069656	0				
-pSTAT5_obs		model1_data3	2.0121486389	5				
-pSTAT5_obs		model1_data3	7.6446939006	10				
-pSTAT5_obs		model1_data3	30.339994999	15				
-pSTAT5_obs		model1_data3	34.4964488915	20				
-pSTAT5_obs		model1_data3	54.7395891079	25				
-pSTAT5_obs		model1_data3	48.8679442223	30				
-pSTAT5_obs		model1_data3	57.7682984706	35				
-pSTAT5_obs		model1_data3	68.4000040046	40				
-pSTAT5_obs		model1_data3	57.5319744982	45				
-pSTAT5_obs		model1_data3	84.0863518601	50				
-pSTAT5_obs		model1_data3	80.4743516425	60				
-pSTAT5_obs		model1_data3	66.6160447069	70				
-pSTAT5_obs		model1_data3	57.6581591642	80				
-pSTAT5_obs		model1_data3	52.7985724636	100				
-pSTAT5_obs		model1_data3	56.1767166229	120				
-RecSurf_obs		model1_data4	1.3213081683	0				
-RecSurf_obs		model1_data4	1.1790697793	10				
-RecSurf_obs		model1_data4	1.0421641227	20				
-RecSurf_obs		model1_data4	1.0565265639	30				
-RecSurf_obs		model1_data4	1.0560912464	60				
-RecSurf_obs		model1_data4	1.0787352948	90				
-RecSurf_obs		model1_data4	0.9292331912	120				
-IL13_cell_obs		model1_data4	9.781760071	5	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	9.9517457777	10	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	10.6741850312	15	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	11.2484610674	20	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	12.7473215218	30	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	12.3981616918	40	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	10.9693629138	50	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	8.2863452727	60	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	11.3449394415	80	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	11.1979247762	100	scale_IL13_cell_obs			
-IL13_cell_obs		model1_data4	10.5524385115	120	scale_IL13_cell_obs			
-SOCS3_obs		model1_data4	6.0482930596	0				
-SOCS3_obs		model1_data4	6.2315406929	20				
-SOCS3_obs		model1_data4	87.4506040501	40				
-SOCS3_obs		model1_data4	103.2714398255	60				
-SOCS3_obs		model1_data4	221.7408478762	80				
-SOCS3_obs		model1_data4	262.8501061903	100				
-SOCS3_obs		model1_data4	140.7680663484	120				
+RecSurf_obs		model1_data1	1.289752779	0	1	0		lin
+RecSurf_obs		model1_data1	1.5785443795	10	1	0		lin
+RecSurf_obs		model1_data1	1.5150912724	20	1	0		lin
+RecSurf_obs		model1_data1	1.5049641595	30	1	0		lin
+RecSurf_obs		model1_data1	1.6178028742	60	1	0		lin
+RecSurf_obs		model1_data1	1.5723717011	90	1	0		lin
+RecSurf_obs		model1_data1	1.4306194772	120	1	0		lin
+IL13_cell_obs		model1_data1	0.6157402573	0	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data1	0.2958685051	15	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data1	0.3222852028	30	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data1	0.1695277772	60	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data1	0.2579662868	90	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data1	0.2315495891	120	scale_IL13_cell_obs	0		lin
+SOCS3mRNA_obs		model1_data1	1.5623570187	0	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data1	0.9928681631	20	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data1	14.8344947735	30	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data1	11.6751769977	40	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data1	11.6268144751	60	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data1	5.7102824634	80	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data1	1.2434304595	90	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data1	0.6592447658	100	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data1	14.5473388612	120	scale_SOCS3mRNA_obs	0		lin
+CD274mRNA_obs		model1_data1	0.01	30	1	0		lin
+CD274mRNA_obs		model1_data1	0.042114502	60	1	0		lin
+CD274mRNA_obs		model1_data1	0.01	90	1	0		lin
+CD274mRNA_obs		model1_data1	0.0098336193	120	1	0		lin
+SOCS3_obs		model1_data1	8.3340776741	0	1	0		lin
+SOCS3_obs		model1_data1	6.4426557906	20	1	0		lin
+SOCS3_obs		model1_data1	7.6247944678	40	1	0		lin
+SOCS3_obs		model1_data1	8.6887192773	60	1	0		lin
+SOCS3_obs		model1_data1	13.2990601182	90	1	0		lin
+SOCS3_obs		model1_data1	16.4317276128	120	1	0		lin
+IL13_cell_obs		model1_data2	3.974680793	5	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	4.1297353228	10	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	5.0164175226	15	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	4.9325732214	20	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	6.0248462422	30	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	6.3521835828	40	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	5.878980129	50	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	5.0761422304	60	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	6.2109116779	80	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	5.9467447013	100	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data2	5.0945190636	120	scale_IL13_cell_obs	0		lin
+pIL4Ra_obs		model1_data2	0.1854189782	0	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	0.4422395464	4	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	1.6308295303	5	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	1.9262934089	7	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	1.4001375899	10	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	2.2239546421	15	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	2.2587377231	20	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	1.5417437226	30	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	1.6599514862	40	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	2.2834868887	45	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data2	1.3649893692	60	scale_pIL4Ra_obs	0		lin
+pJAK2_obs		model1_data2	0.2213913831	0	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	0.6895728747	4	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.2782521029	5	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.6887498971	7	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.388817503	10	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	2.0208537201	15	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	2.1026102697	20	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.6429389625	25	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	2.0556300981	30	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.7644267017	40	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.8168225604	45	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.0996563574	50	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.480674485	60	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.5840288005	80	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	0.9229258714	100	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data2	1.2043855343	120	scale_pJAK2_obs	0		lin
+SOCS3mRNA_obs		model1_data2	1.3998639208	0	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data2	15.5937683111	20	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data2	29.6611098925	30	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data2	250.7513583698	40	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data2	208.0216844863	60	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data2	719.6189148943	80	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data2	1154.9424005946	90	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data2	504.6313426271	100	scale_SOCS3mRNA_obs	0		lin
+SOCS3mRNA_obs		model1_data2	1017.019575786	120	scale_SOCS3mRNA_obs	0		lin
+CD274mRNA_obs		model1_data2	0.01	30	scale_CD274mRNA_obs	0		lin
+CD274mRNA_obs		model1_data2	0.6747753098	60	scale_CD274mRNA_obs	0		lin
+CD274mRNA_obs		model1_data2	2.3049766032	90	scale_CD274mRNA_obs	0		lin
+CD274mRNA_obs		model1_data2	1.7749927709	120	scale_CD274mRNA_obs	0		lin
+SOCS3_obs		model1_data2	35.1020148237	0	1	0		lin
+SOCS3_obs		model1_data2	23.8815866747	20	1	0		lin
+SOCS3_obs		model1_data2	79.7198595783	40	1	0		lin
+SOCS3_obs		model1_data2	148.678	60	1	0		lin
+SOCS3_obs		model1_data2	259.112900889	80	1	0		lin
+SOCS3_obs		model1_data2	271.9076532614	90	1	0		lin
+SOCS3_obs		model1_data2	255.3756955878	100	1	0		lin
+SOCS3_obs		model1_data2	204.461216176	120	1	0		lin
+pSTAT5_obs		model1_data2	1.7167330953	0	1	0		lin
+pSTAT5_obs		model1_data2	9.7720251807	5	1	0		lin
+pSTAT5_obs		model1_data2	32.8115943739	10	1	0		lin
+pSTAT5_obs		model1_data2	50.8032264775	15	1	0		lin
+pSTAT5_obs		model1_data2	68.9925612446	20	1	0		lin
+pSTAT5_obs		model1_data2	107.9066904317	25	1	0		lin
+pSTAT5_obs		model1_data2	111.5714137074	30	1	0		lin
+pSTAT5_obs		model1_data2	106.7423055028	35	1	0		lin
+pSTAT5_obs		model1_data2	104.28	40	1	0		lin
+pSTAT5_obs		model1_data2	125.274008818	45	1	0		lin
+pSTAT5_obs		model1_data2	115.702645514	50	1	0		lin
+pSTAT5_obs		model1_data2	128.2373073294	60	1	0		lin
+pSTAT5_obs		model1_data2	123.2374928103	70	1	0		lin
+pSTAT5_obs		model1_data2	89.6541108259	80	1	0		lin
+pSTAT5_obs		model1_data2	65.8305683073	90	1	0		lin
+pSTAT5_obs		model1_data2	108.2978695837	100	1	0		lin
+pSTAT5_obs		model1_data2	80.7501117525	120	1	0		lin
+RecSurf_obs		model1_data3	1.4046935103	0	1	0		lin
+RecSurf_obs		model1_data3	1.36298049	10	1	0		lin
+RecSurf_obs		model1_data3	1.3335862373	20	1	0		lin
+RecSurf_obs		model1_data3	1.2105360561	30	1	0		lin
+RecSurf_obs		model1_data3	1.2569087666	60	1	0		lin
+RecSurf_obs		model1_data3	1.2555955708	90	1	0		lin
+RecSurf_obs		model1_data3	1.2306532262	120	1	0		lin
+IL13_cell_obs		model1_data3	1.1859963612	5	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	1.4582032024	10	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	1.7970260637	15	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	1.7832434389	20	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	2.2954976632	30	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	2.4700775782	40	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	2.514871109	50	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	2.6561430139	60	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	2.9559151048	80	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	3.1994081441	100	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data3	2.6205378996	120	scale_IL13_cell_obs	0		lin
+pIL4Ra_obs		model1_data3	0.3381079127	0	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.0843373494	4	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	0.5391115034	5	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	0.2997873848	7	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	0.8451567438	10	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.1759908558	15	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.35788895	17.5	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.442254159	20	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.1230660488	22.5	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.5518730857	25	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.1478850629	30	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	0.9954449069	35	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.2423176366	40	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.2810248297	45	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.1945338883	50	scale_pIL4Ra_obs	0		lin
+pIL4Ra_obs		model1_data3	1.1333315671	60	scale_pIL4Ra_obs	0		lin
+pJAK2_obs		model1_data3	0.1871051041	0	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	0.5335603109	2.5	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	0.6451320879	4	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	0.6394322482	5	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	0.245165007	7	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	0.1525282452	7.5	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	0.8346829882	10	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.4584168899	12.5	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.288880253	15	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.2753868383	17.5	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.4328954417	20	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	0.8428008549	25	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.3671648495	30	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.7531620536	35	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.4344409141	40	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.0369516912	45	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.1503165622	50	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.3739099902	60	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.2166795457	75	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	1.4900356974	90	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	0.3655888058	105	scale_pJAK2_obs	0		lin
+pJAK2_obs		model1_data3	0.6675315401	120	scale_pJAK2_obs	0		lin
+pSTAT5_obs		model1_data3	1.5984069656	0	1	0		lin
+pSTAT5_obs		model1_data3	2.0121486389	5	1	0		lin
+pSTAT5_obs		model1_data3	7.6446939006	10	1	0		lin
+pSTAT5_obs		model1_data3	30.339994999	15	1	0		lin
+pSTAT5_obs		model1_data3	34.4964488915	20	1	0		lin
+pSTAT5_obs		model1_data3	54.7395891079	25	1	0		lin
+pSTAT5_obs		model1_data3	48.8679442223	30	1	0		lin
+pSTAT5_obs		model1_data3	57.7682984706	35	1	0		lin
+pSTAT5_obs		model1_data3	68.4000040046	40	1	0		lin
+pSTAT5_obs		model1_data3	57.5319744982	45	1	0		lin
+pSTAT5_obs		model1_data3	84.0863518601	50	1	0		lin
+pSTAT5_obs		model1_data3	80.4743516425	60	1	0		lin
+pSTAT5_obs		model1_data3	66.6160447069	70	1	0		lin
+pSTAT5_obs		model1_data3	57.6581591642	80	1	0		lin
+pSTAT5_obs		model1_data3	52.7985724636	100	1	0		lin
+pSTAT5_obs		model1_data3	56.1767166229	120	1	0		lin
+RecSurf_obs		model1_data4	1.3213081683	0	1	0		lin
+RecSurf_obs		model1_data4	1.1790697793	10	1	0		lin
+RecSurf_obs		model1_data4	1.0421641227	20	1	0		lin
+RecSurf_obs		model1_data4	1.0565265639	30	1	0		lin
+RecSurf_obs		model1_data4	1.0560912464	60	1	0		lin
+RecSurf_obs		model1_data4	1.0787352948	90	1	0		lin
+RecSurf_obs		model1_data4	0.9292331912	120	1	0		lin
+IL13_cell_obs		model1_data4	9.781760071	5	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	9.9517457777	10	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	10.6741850312	15	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	11.2484610674	20	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	12.7473215218	30	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	12.3981616918	40	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	10.9693629138	50	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	8.2863452727	60	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	11.3449394415	80	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	11.1979247762	100	scale_IL13_cell_obs	0		lin
+IL13_cell_obs		model1_data4	10.5524385115	120	scale_IL13_cell_obs	0		lin
+SOCS3_obs		model1_data4	6.0482930596	0	1	0		lin
+SOCS3_obs		model1_data4	6.2315406929	20	11	0		lin
+SOCS3_obs		model1_data4	87.4506040501	40	1	0		lin
+SOCS3_obs		model1_data4	103.2714398255	60	1	0		lin
+SOCS3_obs		model1_data4	221.7408478762	80	1	0		lin
+SOCS3_obs		model1_data4	262.8501061903	100	1	0		lin
+SOCS3_obs		model1_data4	140.7680663484	120	1	0		lin
