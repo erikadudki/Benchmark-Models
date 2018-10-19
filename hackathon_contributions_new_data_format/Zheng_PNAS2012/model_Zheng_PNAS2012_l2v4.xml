@@ -1533,7 +1533,7 @@
       </parameter>
       <parameter id="inflow" name="inflow" value="0" constant="false">
       </parameter>
-      <parameter id="switch" name="switch" value="0" constant="true">
+      <parameter id="dilution" name="dilution" value="0" constant="true">
       </parameter>
       <parameter id="sigma_K27me0K36me0" name="sigma_K27me0K36me0" value="1" constant="false">
       </parameter>
@@ -2048,7 +2048,7 @@
           <apply>
             <times/>
             <ci> inflowp </ci>
-            <ci> switch </ci>
+            <ci> dilution </ci>
           </apply>
         </math>
       </assignmentRule>
