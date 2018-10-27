@@ -1,0 +1,47 @@
+observableId	simulationCondition	preequilibrationCondition	observableParameters	time	measurement	noiseParameters
+tSTAT_au	model1_data1			0	1.0	0.084
+tSTAT_au	model1_data1			2	0.9275	0.046
+tSTAT_au	model1_data1			4	0.7923	0.038
+tSTAT_au	model1_data1			6	0.7778	0.032
+tSTAT_au	model1_data1			8	0.7053	0.033
+tSTAT_au	model1_data1			10	0.6522	0.037
+tSTAT_au	model1_data1			12	0.5894	0.039
+tSTAT_au	model1_data1			14	0.5894	0.04
+tSTAT_au	model1_data1			16	0.6377	0.03
+tSTAT_au	model1_data1			18	0.6425000000000001	0.028
+tSTAT_au	model1_data1			20	0.6908000000000001	0.03
+tSTAT_au	model1_data1			25	0.6908000000000001	0.031
+tSTAT_au	model1_data1			30	0.7585000000000001	0.032
+tSTAT_au	model1_data1			40	0.8068000000000001	0.04
+tSTAT_au	model1_data1			50	0.9275	0.046
+tSTAT_au	model1_data1			60	0.971	0.082
+pSTAT_au	model1_data1			2	0.34405812143227815	0.05189413596263622
+pSTAT_au	model1_data1			4	0.8972496107939804	0.06850025947067981
+pSTAT_au	model1_data1			6	1.0	0.07265179034769072
+pSTAT_au	model1_data1			8	0.963051375194603	0.06746237675142709
+pSTAT_au	model1_data1			10	0.8471198754540737	0.05293201868188895
+pSTAT_au	model1_data1			12	0.7839128178515828	0.05500778412039439
+pSTAT_au	model1_data1			14	0.7970939283860924	0.05293201868188895
+pSTAT_au	model1_data1			16	0.8734820965230928	0.04151530877010898
+pSTAT_au	model1_data1			18	0.7970939283860924	0.04151530877010898
+pSTAT_au	model1_data1			20	0.8313440581214323	0.049818370524130774
+pSTAT_au	model1_data1			25	0.8128697457187337	0.053969901401141676
+pSTAT_au	model1_data1			30	0.8392319667877529	0.05604566683964712
+pSTAT_au	model1_data1			40	0.5073170731707317	0.05708354955889984
+pSTAT_au	model1_data1			50	0.2887389724961079	0.04566683964711987
+pSTAT_au	model1_data1			60	0.26497145822522056	0.07368967306694345
+pEpoR_au	model1_data1			0	0.017130000000000003	
+pEpoR_au	model1_data1			2	0.145	
+pEpoR_au	model1_data1			4	0.2442	
+pEpoR_au	model1_data1			6	0.7659	
+pEpoR_au	model1_data1			8	1.0	
+pEpoR_au	model1_data1			10	0.8605	
+pEpoR_au	model1_data1			12	0.7829	
+pEpoR_au	model1_data1			14	0.5705	
+pEpoR_au	model1_data1			16	0.6217	
+pEpoR_au	model1_data1			18	0.331	
+pEpoR_au	model1_data1			20	0.3388	
+pEpoR_au	model1_data1			25	0.3116	
+pEpoR_au	model1_data1			30	0.050620000000000005	
+pEpoR_au	model1_data1			40	0.025040000000000003	
+pEpoR_au	model1_data1			50	0.011630000000000001	
