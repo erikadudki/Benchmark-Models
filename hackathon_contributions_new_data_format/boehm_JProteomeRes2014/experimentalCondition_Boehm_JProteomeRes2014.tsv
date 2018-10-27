@@ -1,4 +1,2 @@
-conditionId	model1_data1
-conditionName	condition1
-ratio	0.693
-specC17	0.107
+conditionId	conditionName	ratio	specC17
+model1_data1	condition1	0.693	0.107
