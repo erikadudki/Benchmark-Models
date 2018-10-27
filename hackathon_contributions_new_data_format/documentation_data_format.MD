@@ -10,11 +10,10 @@ parameter names as given in the SBML model. These parameters will override any
 parameter values specified in the model.
 
 ```
-conditionID       conditionID1 conditionID2 ...
-conditionName       conditionName1  conditionName2  ...
-constantName1       1             2        ...
-constantName2       3             4        ...
-...                ...           ...       ...
+conditionId conditionName constantName1 constantName2 ...
+conditionId1  conditionName1  1 2 ...
+conditionId2  conditionName2  3 4 ...
+... ... ... ... ...
 ```
 
 All parameters listed here are expected to have been turned into fixed 
@@ -28,12 +27,12 @@ model training.
 
 Expected to have the following named columns in any (but preferably this) order:
 
-- `observable` [STRING, NOT NULL, REFERENCES(sbml.observableID)]
+- `observableId` [STRING, NOT NULL, REFERENCES(sbml.observableID)]
   
   Observable name matching the ID of the respective parameter in the SBML
     model (`observable_...`) 
 
-- `conditionRef` [STRING, REFERENCES(conditionsTable.conditionID)]
+- `preequilibrationCondition` [STRING, REFERENCES(conditionsTable.conditionID)]
  
   The reference condition to be used for preequilibration. E.g. for drug 
   treatments the model would be preequilibrated with the no-drug condition.
@@ -44,7 +43,7 @@ Expected to have the following named columns in any (but preferably this) order:
   `conditionPreequilibration`. The former will provide information on data 
   normalization, the latter will be used to toggle preequilibration.
   
-- `condition` [STRING, NOT NULL, REFERENCES(conditionsTable.conditionID)]
+- `simulationCondition` [STRING, NOT NULL, REFERENCES(conditionsTable.conditionID)]
   
   Condition name as provided in the condition data table, specifying the 
     fixed parameters used for the simulation 
@@ -58,10 +57,9 @@ Expected to have the following named columns in any (but preferably this) order:
   Time point of the measurement in seconds, float or `Inf` for steady-state 
   measurements. `Inf` will be replaced by a large $t$ during import.
   
-- `scaling` [STRING]
+- `observableParameters` [STRING]
 
-  List of scaling parameters to be used for 
-  hierarchical optimization as well as any other condition-specific parameters.
+  List of observable parameters seperated by semicolon.
   
   This field allows introducing condition-specific versions of the parameters
   defined in the model. Parameters listed here must be named
@@ -78,21 +76,6 @@ Expected to have the following named columns in any (but preferably this) order:
   *NOTE*: Currently only a single scaling parameter can be 
   used for hierarchical optimization. The one occurring first will be selected.
   A sigma parameter may be provided in addition.
-
-- `offset` [STRING]
-
-  List of offset parameters to be used for 
-  hierarchical optimization as well as any other condition-specific parameters.
-  
-  This field allows introducing condition-specific versions of the parameters
-  defined in the model. Parameters listed here must be named
-  `${modelParameterName}_${suffix}`. `${modelParameterName}` must be a parameter 
-  name present in the model, `${suffix}` is any suffix not containing "_". 
-  This extends the optimization parameter vector without
-  changing the model itself. This name can occur in multiple lines to model e.g.
-  batch-specific or cell line-specific parameters. The corresponding index 
-  mapping of parameters to simulation parameters is written to the file, and 
-  will be performed before each individual simulation.
   
   Offset parameters are expected to start with `offset_`.
   
@@ -100,7 +83,11 @@ Expected to have the following named columns in any (but preferably this) order:
   used for hierarchical optimization. The one occurring first will be selected.
   A sigma parameter may be provided in addition.
   
-- `sigma` [STRING]
+- `noiseParameters` [STRING]
 
   The measurement variance or `NaN` if the corresponding sigma is a model 
   parameter.
+
+- `observableTransformation` [STRING]
+
+  Transformation of the observable. `lin`, `log` or `log10`.
