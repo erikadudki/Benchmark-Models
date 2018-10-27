@@ -1,4 +1,4 @@
-observable	conditionRef	condition	measurement	time	scaling	offset	sigma	observableTransformation 
+observableId	conditionRef	condition	measurement	time	scaling	offset	sigma	observableTransformation 
 RecSurf_obs		model1_data1	1.289752779	0	1	0		lin
 RecSurf_obs		model1_data1	1.5785443795	10	1	0		lin
 RecSurf_obs		model1_data1	1.5150912724	20	1	0		lin
