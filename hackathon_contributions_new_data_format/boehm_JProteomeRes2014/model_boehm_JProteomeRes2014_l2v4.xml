@@ -100,6 +100,28 @@
           </apply>
         </math>
       </assignmentRule>
+      <assignmentRule variable="BaF3_Epo">
+	<math xmlns="http://www.w3.org/1998/Math/MathML">
+	 <apply>
+	  <times/>
+	  <cn>0.000000125</cn>
+	  <apply>
+	   <exp/>
+	   <apply>
+	    <times/>
+	    <apply>
+	     <times/>
+	     <cn type='integer'>-1</cn>
+	     <ci>Epo_degradation_BaF3</ci>
+	    </apply>
+            <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> 
+            t 
+            </csymbol> 
+	   </apply>
+	  </apply>
+	 </apply>
+	</math>
+      </assignmentRule>
       <assignmentRule variable="observable_pSTAT5B_rel">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
