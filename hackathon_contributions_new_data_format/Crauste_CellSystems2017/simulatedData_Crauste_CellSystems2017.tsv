@@ -1,0 +1,22 @@
+observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
+Naive_obs		model1_data1	392.5227992745096	4		290.0	
+Naive_obs		model1_data1	83.77212324729015	6		64.0	
+EarlyEffector_obs		model1_data1	274.47854236041235	4		266.0	
+EarlyEffector_obs		model1_data1	1490.957519880495	6		526.0	
+EarlyEffector_obs		model1_data1	9788.850531565573	7		23855.0	
+EarlyEffector_obs		model1_data1	177098.72949960284	8		19722.0	
+EarlyEffector_obs		model1_data1	6488.5091957406785	13		3048.0	
+EarlyEffector_obs		model1_data1	1753.9038593416644	15		2924.0	
+EarlyEffector_obs		model1_data1	41.38970421645704	22		1540.0	
+LateEffector_obs		model1_data1	880.4512881766128	6		182.0	
+LateEffector_obs		model1_data1	2899.8203241728293	7		1976.0	
+LateEffector_obs		model1_data1	32233.996195157328	8		4105.0	
+LateEffector_obs		model1_data1	47758.996654736045	13		23601.0	
+LateEffector_obs		model1_data1	27940.420727124907	15		6841.0	
+LateEffector_obs		model1_data1	10127.508874495636	22		7266.0	
+LateEffector_obs		model1_data1	6074.645941716984	28		2705.0	
+Memory_obs		model1_data1	321.0462560533454	8		80.0	
+Memory_obs		model1_data1	14512.482956043394	13		4206.0	
+Memory_obs		model1_data1	16148.920866299384	15		5745.0	
+Memory_obs		model1_data1	18755.53788315842	22		15987.0	
+Memory_obs		model1_data1	19813.538518571455	28		7909.0	
