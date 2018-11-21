@@ -1507,13 +1507,10 @@
       <parameter id="k30_31" name="k30_31" value="0.567094806715041" constant="true"/>
       <parameter id="k31_21" name="k31_21" value="1.00000000000008e-05" constant="true"/>
       <parameter id="k31_30" name="k31_30" value="1.00000000152072e-05" constant="true"/>
-      <parameter id="k31_32" name="k31_32" value="0.71559252428414" constant="true">
-      </parameter>
+      <parameter id="k31_32" name="k31_32" value="0.71559252428414" constant="true"/>
       <parameter id="k32_22" name="k32_22" value="1.28866373067424" constant="true"/>
-      <parameter id="k32_31" name="k32_31" value="1.00000009388004e-05" constant="true">
-      </parameter>
-      <parameter id="observable_K27me0K36me0" name="observable_K27me0K36me0" value="0.00417724976661274" constant="false">
-      </parameter>
+      <parameter id="k32_31" name="k32_31" value="1.00000009388004e-05" constant="true"/>
+      <parameter id="observable_K27me0K36me0" name="observable_K27me0K36me0" value="0.00417724976661274" constant="false"/>
       <parameter id="observable_K27me0K36me1" name="observable_K27me0K36me1" value="0.0102104668664762" constant="false"/>
       <parameter id="observable_K27me1K36me0" name="observable_K27me1K36me0" value="0.00165412810404346" constant="false"/>
       <parameter id="observable_K27me0K36me2" name="observable_K27me0K36me2" value="0.169690316367716" constant="false"/>
@@ -1563,7 +1560,6 @@
       </parameter>
       <parameter id="sigma_K27me0K36me3" name="sigma_K27me0K36me3" value="1" constant="false">
       </parameter>
-      
       <parameter id="noiseParameter1_K27me0K36me0" name="noiseParameter1_K27me0K36me0" value="0" constant="true"/>
       <parameter id="noiseParameter1_K27me0K36me1" name="noiseParameter1_K27me0K36me1" value="0" constant="true"/>
       <parameter id="noiseParameter1_K27me0K36me2" name="noiseParameter1_K27me0K36me2" value="0" constant="true"/>
