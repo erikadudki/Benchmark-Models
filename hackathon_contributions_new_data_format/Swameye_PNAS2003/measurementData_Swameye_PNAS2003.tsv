@@ -1,4 +1,4 @@
-observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
 tSTAT_au		model1_data1	1	0	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin
 tSTAT_au		model1_data1	0.9275	2	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin
 tSTAT_au		model1_data1	0.7923	4	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin
