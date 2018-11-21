@@ -4,8 +4,8 @@
 
 ## Condition data
 
-A tab-separated value text file with condition specific parameters. Column names are 
-condition names as referenced in the measurement table below. Row names are 
+A tab-separated value text file with condition specific parameters. Row names are 
+condition names as referenced in the measurement table below. Column names are 
 parameter names as given in the SBML model. These parameters will override any
 parameter values specified in the model.
 
@@ -59,7 +59,7 @@ Expected to have the following named columns in any (but preferably this) order:
   
 - `observableParameters` [STRING]
 
-  List of observable parameters seperated by semicolon.
+  List of observable parameters separated by semicolon.
   
   This field allows introducing condition-specific versions of the parameters
   defined in the model. Parameters listed here must be named
