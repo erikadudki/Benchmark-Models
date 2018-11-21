@@ -1,7 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" xmlns:celldesigner="http://www.sbml.org/2001/ns/celldesigner" level="2" version="4">
 <model metaid="arFramework3" id="model_Sneyd_PNAS2002">
-<annotation/>
+<annotation>
+<celldesigner:extension>
+<celldesigner:modelVersion>4.0</celldesigner:modelVersion>
+<celldesigner:modelDisplay sizeX="437" sizeY="437"/>
+<celldesigner:listOfCompartmentAliases>
+<celldesigner:compartmentAlias id="ca1" compartment="membrane">
+<celldesigner:class>SQUARE</celldesigner:class>
+<celldesigner:bounds x="25.0" y="25.0" w="362.0" h="362.0"/>
+<celldesigner:namePoint x="172.0" y="350.5"/>
+<celldesigner:doubleLine thickness="12.0" outerWidth="2.0" innerWidth="1.0"/>
+<celldesigner:paint color="ffcccc00" scheme="Color"/>
+<celldesigner:info state="empty" angle="-1.5707963267948966"/>
+</celldesigner:compartmentAlias>
+</celldesigner:listOfCompartmentAliases>
+<celldesigner:listOfComplexSpeciesAliases/>
+<celldesigner:listOfSpeciesAliases>
+<celldesigner:speciesAlias id="sa0" species="IPR_O" compartmentAlias="ca1">
+<celldesigner:activity>inactive</celldesigner:activity>
+<celldesigner:bounds x="194.0" y="231.0" w="80.0" h="40.0"/>
+<celldesigner:font size="12"/>
+<celldesigner:view state="usual"/>
+<celldesigner:usualView>
+<celldesigner:innerPosition x="169.0" y="206.0"/>
+<celldesigner:boxSize width="80.0" height="40.0"/>
+<celldesigner:singleLine width="1.0"/>
+<celldesigner:paint color="ffccffcc" scheme="Color"/>
+</celldesigner:usualView>
+<celldesigner:briefView>
+<celldesigner:innerPosition x="0.0" y="0.0"/>
+<celldesigner:boxSize width="80.0" height="60.0"/>
+<celldesigner:singleLine width="0.0"/>
+<celldesigner:paint color="3fff0000" scheme="Color"/>
+</celldesigner:briefView>
+<celldesigner:info state="empty" angle="-1.5707963267948966"/>
+</celldesigner:speciesAlias>
+<celldesigner:speciesAlias id="sa1" species="IPR_R" compartmentAlias="ca1">
+<celldesigner:activity>inactive</celldesigner:activity>
+<celldesigner:bounds x="232.0" y="141.0" w="80.0" h="40.0"/>
+<celldesigner:font size="12"/>
+<celldesigner:view state="usual"/>
+<celldesigner:usualView>
+<celldesigner:innerPosition x="207.0" y="116.0"/>
+<celldesigner:boxSize width="80.0" height="40.0"/>
+<celldesigner:singleLine width="1.0"/>
+<celldesigner:paint color="ffccffcc" scheme="Color"/>
+</celldesigner:usualView>
+<celldesigner:briefView>
+<celldesigner:innerPosition x="0.0" y="0.0"/>
+<celldesigner:boxSize width="80.0" height="60.0"/>
+<celldesigner:singleLine width="0.0"/>
+<celldesigner:paint color="3fff0000" scheme="Color"/>
+</celldesigner:briefView>
+<celldesigner:info state="empty" angle="-1.5707963267948966"/>
+</celldesigner:speciesAlias>
+<celldesigner:speciesAlias id="sa2" species="IPR_I1" compartmentAlias="ca1">
+<celldesigner:activity>inactive</celldesigner:activity>
+<celldesigner:bounds x="265.0" y="67.0" w="80.0" h="40.0"/>
+<celldesigner:font size="12"/>
+<celldesigner:view state="usual"/>
+<celldesigner:usualView>
+<celldesigner:innerPosition x="240.0" y="42.0"/>
+<celldesigner:boxSize width="80.0" height="40.0"/>
+<celldesigner:singleLine width="1.0"/>
+<celldesigner:paint color="ffccffcc" scheme="Color"/>
+</celldesigner:usualView>
+<celldesigner:briefView>
+<celldesigner:innerPosition x="0.0" y="0.0"/>
+<celldesigner:boxSize width="80.0" height="60.0"/>
+<celldesigner:singleLine width="0.0"/>
+<celldesigner:paint color="3fff0000" scheme="Color"/>
+</celldesigner:briefView>
+<celldesigner:info state="empty" angle="-1.5707963267948966"/>
+</celldesigner:speciesAlias>
+<celldesigner:speciesAlias id="sa3" species="IPR_S" compartmentAlias="ca1">
+<celldesigner:activity>inactive</celldesigner:activity>
+<celldesigner:bounds x="209.0" y="305.0" w="80.0" h="40.0"/>
+<celldesigner:font size="12"/>
+<celldesigner:view state="usual"/>
+<celldesigner:usualView>
+<celldesigner:innerPosition x="184.0" y="280.0"/>
+<celldesigner:boxSize width="80.0" height="40.0"/>
+<celldesigner:singleLine width="1.0"/>
+<celldesigner:paint color="ffccffcc" scheme="Color"/>
+</celldesigner:usualView>
+<celldesigner:briefView>
+<celldesigner:innerPosition x="0.0" y="0.0"/>
+<celldesigner:boxSize width="80.0" height="60.0"/>
+<celldesigner:singleLine width="0.0"/>
+<celldesigner:paint color="3fff0000" scheme="Color"/>
+</celldesigner:briefView>
+<celldesigner:info state="empty" angle="-1.5707963267948966"/>
+</celldesigner:speciesAlias>
+<celldesigner:speciesAlias id="sa4" species="IPR_A" compartmentAlias="ca1">
+<celldesigner:activity>inactive</celldesigner:activity>
+<celldesigner:bounds x="107.0" y="170.0" w="80.0" h="40.0"/>
+<celldesigner:font size="12"/>
+<celldesigner:view state="usual"/>
+<celldesigner:usualView>
+<celldesigner:innerPosition x="82.0" y="145.0"/>
+<celldesigner:boxSize width="80.0" height="40.0"/>
+<celldesigner:singleLine width="1.0"/>
+<celldesigner:paint color="ffccffcc" scheme="Color"/>
+</celldesigner:usualView>
+<celldesigner:briefView>
+<celldesigner:innerPosition x="0.0" y="0.0"/>
+<celldesigner:boxSize width="80.0" height="60.0"/>
+<celldesigner:singleLine width="0.0"/>
+<celldesigner:paint color="3fff0000" scheme="Color"/>
+</celldesigner:briefView>
+<celldesigner:info state="empty" angle="-1.5707963267948966"/>
+</celldesigner:speciesAlias>
+<celldesigner:speciesAlias id="sa5" species="IPR_I2" compartmentAlias="ca1">
+<celldesigner:activity>inactive</celldesigner:activity>
+<celldesigner:bounds x="67.0" y="94.0" w="80.0" h="40.0"/>
+<celldesigner:font size="12"/>
+<celldesigner:view state="usual"/>
+<celldesigner:usualView>
+<celldesigner:innerPosition x="42.0" y="69.0"/>
+<celldesigner:boxSize width="80.0" height="40.0"/>
+<celldesigner:singleLine width="1.0"/>
+<celldesigner:paint color="ffccffcc" scheme="Color"/>
+</celldesigner:usualView>
+<celldesigner:briefView>
+<celldesigner:innerPosition x="0.0" y="0.0"/>
+<celldesigner:boxSize width="80.0" height="60.0"/>
+<celldesigner:singleLine width="0.0"/>
+<celldesigner:paint color="3fff0000" scheme="Color"/>
+</celldesigner:briefView>
+<celldesigner:info state="empty" angle="-1.5707963267948966"/>
+</celldesigner:speciesAlias>
+</celldesigner:listOfSpeciesAliases>
+<celldesigner:listOfGroups/>
+<celldesigner:listOfProteins>
+<celldesigner:protein id="pr1" name="O" type="GENERIC"/>
+<celldesigner:protein id="pr2" name="R" type="GENERIC"/>
+<celldesigner:protein id="pr3" name="I_1" type="GENERIC"/>
+<celldesigner:protein id="pr4" name="S" type="GENERIC"/>
+<celldesigner:protein id="pr5" name="A" type="GENERIC"/>
+<celldesigner:protein id="pr6" name="I_2" type="GENERIC"/>
+</celldesigner:listOfProteins>
+<celldesigner:listOfGenes/>
+<celldesigner:listOfRNAs/>
+<celldesigner:listOfAntisenseRNAs/>
+<celldesigner:listOfLayers/>
+<celldesigner:listOfBlockDiagrams/>
+</celldesigner:extension>
+</annotation>
 <listOfUnitDefinitions>
 <unitDefinition metaid="time" id="time" name="time">
 <listOfUnits>
@@ -32,27 +178,79 @@
 <listOfCompartments>
 <compartment metaid="default" id="default" size="1" units="volume"/>
 <compartment metaid="membrane" id="membrane" name="membrane" size="1" units="volume" outside="default">
-<annotation/>
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>membrane</celldesigner:name>
+</celldesigner:extension>
+</annotation>
 </compartment>
 </listOfCompartments>
 <listOfSpecies>
 <species metaid="IPR_O" id="IPR_O" name="O" compartment="membrane" initialConcentration="0">
-<annotation/>
+<annotation>
+<celldesigner:extension>
+<celldesigner:positionToCompartment>transmembrane</celldesigner:positionToCompartment>
+<celldesigner:speciesIdentity>
+<celldesigner:class>PROTEIN</celldesigner:class>
+<celldesigner:proteinReference>pr1</celldesigner:proteinReference>
+</celldesigner:speciesIdentity>
+</celldesigner:extension>
+</annotation>
 </species>
 <species metaid="IPR_R" id="IPR_R" name="R" compartment="membrane" initialConcentration="1">
-<annotation/>
+<annotation>
+<celldesigner:extension>
+<celldesigner:positionToCompartment>transmembrane</celldesigner:positionToCompartment>
+<celldesigner:speciesIdentity>
+<celldesigner:class>PROTEIN</celldesigner:class>
+<celldesigner:proteinReference>pr2</celldesigner:proteinReference>
+</celldesigner:speciesIdentity>
+</celldesigner:extension>
+</annotation>
 </species>
 <species metaid="IPR_I1" id="IPR_I1" name="I_1" compartment="membrane" initialConcentration="0">
-<annotation/>
+<annotation>
+<celldesigner:extension>
+<celldesigner:positionToCompartment>transmembrane</celldesigner:positionToCompartment>
+<celldesigner:speciesIdentity>
+<celldesigner:class>PROTEIN</celldesigner:class>
+<celldesigner:proteinReference>pr3</celldesigner:proteinReference>
+</celldesigner:speciesIdentity>
+</celldesigner:extension>
+</annotation>
 </species>
 <species metaid="IPR_S" id="IPR_S" name="S" compartment="membrane" initialConcentration="0">
-<annotation/>
+<annotation>
+<celldesigner:extension>
+<celldesigner:positionToCompartment>transmembrane</celldesigner:positionToCompartment>
+<celldesigner:speciesIdentity>
+<celldesigner:class>PROTEIN</celldesigner:class>
+<celldesigner:proteinReference>pr4</celldesigner:proteinReference>
+</celldesigner:speciesIdentity>
+</celldesigner:extension>
+</annotation>
 </species>
 <species metaid="IPR_A" id="IPR_A" name="A" compartment="membrane" initialConcentration="0">
-<annotation/>
+<annotation>
+<celldesigner:extension>
+<celldesigner:positionToCompartment>transmembrane</celldesigner:positionToCompartment>
+<celldesigner:speciesIdentity>
+<celldesigner:class>PROTEIN</celldesigner:class>
+<celldesigner:proteinReference>pr5</celldesigner:proteinReference>
+</celldesigner:speciesIdentity>
+</celldesigner:extension>
+</annotation>
 </species>
 <species metaid="IPR_I2" id="IPR_I2" name="I_2" compartment="membrane" initialConcentration="0">
-<annotation/>
+<annotation>
+<celldesigner:extension>
+<celldesigner:positionToCompartment>transmembrane</celldesigner:positionToCompartment>
+<celldesigner:speciesIdentity>
+<celldesigner:class>PROTEIN</celldesigner:class>
+<celldesigner:proteinReference>pr6</celldesigner:proteinReference>
+</celldesigner:speciesIdentity>
+</celldesigner:extension>
+</annotation>
 </species>
 </listOfSpecies>
 <listOfParameters>
@@ -76,6 +274,8 @@
 <parameter metaid="L3" id="L3" value="0" units="substance" constant="false"/>
 <parameter metaid="L5" id="L5" value="0" units="substance" constant="false"/>
 <parameter metaid="sigma_open_probability" id="sigma_open_probability" value="0" units="substance" constant="false"/>
+<parameter metaid="Ca" id="Ca" value="10" units="time"/>
+<parameter metaid="IP3" id="IP3" value="0" units="time"/>
 </listOfParameters>
 <listOfRules>
 <assignmentRule metaid="CDMT00036" variable="observable_open_probability">
@@ -157,305 +357,444 @@
 </assignmentRule>
 </listOfRules>
 <listOfReactions>
-<reaction metaid="v1_v_0" id="v1_v_0" name="v_0" reversible="false">
-<annotation/>
+<reaction metaid="v1_v_0" id="v_0" name="v_0" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_0</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_O" alias="sa0">
+<celldesigner:linkAnchor position="N"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_R" alias="sa1">
+<celldesigner:linkAnchor position="SW"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.6433512682551883,0.1890853189853967 0.6433512682551883,0.1890853189853967</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00001" species="IPR_O"/>
+<speciesReference metaid="CDMT00001" species="IPR_O">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa0</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00002" species="IPR_R"/>
+<speciesReference metaid="CDMT00002" species="IPR_R">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa1</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00003">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
-<apply>
-<times/>
-<ci> IPR_O </ci>
 <apply>
 <plus/>
 <ci> k_2 </ci>
 <apply>
 <times/>
-<cn type="integer"> 10 </cn>
 <ci> l_4 </ci>
-</apply>
+<ci> Ca </ci>
 </apply>
 </apply>
 <apply>
 <plus/>
+<cn type="integer"> 1 </cn>
 <apply>
 <divide/>
-<apply>
-<times/>
-<cn type="integer"> 10 </cn>
-<ci> k4 </ci>
-<ci> l_6 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k_4 </ci>
-<ci> l6 </ci>
+<ci> Ca </ci>
+<ci> L5 </ci>
 </apply>
 </apply>
-<cn type="integer"> 1 </cn>
 </apply>
-</apply>
+<ci> IPR_O </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v2_v_1" id="v2_v_1" name="v_1" reversible="false">
-<annotation/>
+<reaction metaid="v2_v_1" id="v_1" name="v_1" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_1</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_R" alias="sa1">
+<celldesigner:linkAnchor position="S"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_O" alias="sa0">
+<celldesigner:linkAnchor position="NE"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.5699461952344356,-0.06725595695618836 0.5699461952344356,-0.06725595695618836</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00004" species="IPR_R"/>
+<speciesReference metaid="CDMT00004" species="IPR_R">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa1</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00005" species="IPR_O"/>
+<speciesReference metaid="CDMT00005" species="IPR_O">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa0</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00006">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
+<plus/>
+<apply>
 <times/>
-<cn type="integer"> 10 </cn>
+<ci> k2 </ci>
+<ci> L3 </ci>
+</apply>
+<apply>
+<times/>
+<ci> l4 </ci>
+<ci> Ca </ci>
+</apply>
+</apply>
+<apply>
+<plus/>
+<ci> L3 </ci>
+<apply>
+<times/>
+<ci> Ca </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> L3 </ci>
+<ci> L1 </ci>
+</apply>
+</apply>
+</apply>
+</apply>
+</apply>
+<ci> IP3 </ci>
 <ci> IPR_R </ci>
-<apply>
-<plus/>
-<apply>
-<times/>
-<cn type="integer"> 10 </cn>
-<ci> l4 </ci>
-</apply>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_2 </ci>
-<ci> l4 </ci>
-</apply>
-<ci> l_4 </ci>
-</apply>
-</apply>
-</apply>
-<apply>
-<plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_2 </ci>
-<ci> l4 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k2 </ci>
-<ci> l_4 </ci>
-</apply>
-</apply>
-<apply>
-<divide/>
-<apply>
-<times/>
-<cn type="integer"> 10 </cn>
-<ci> k1 </ci>
-<ci> k_2 </ci>
-<ci> l4 </ci>
-<ci> l_2 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k2 </ci>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-<ci> l_4 </ci>
-</apply>
-</apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v3_v_2" id="v3_v_2" name="v_2" reversible="false">
-<annotation/>
+<reaction metaid="v3_v_2" id="v_2" name="v_2" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_2</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_R" alias="sa1">
+<celldesigner:linkAnchor position="ENE"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_I1" alias="sa2">
+<celldesigner:linkAnchor position="SSE"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.2722090261282659,0.305938242280285 0.2722090261282659,0.305938242280285</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00007" species="IPR_R"/>
+<speciesReference metaid="CDMT00007" species="IPR_R">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa1</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00008" species="IPR_I1"/>
+<speciesReference metaid="CDMT00008" species="IPR_I1">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa2</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00009">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<cn type="integer"> 10 </cn>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> k1 </ci>
+<ci> L1 </ci>
+</apply>
+<ci> l2 </ci>
+</apply>
+<ci> Ca </ci>
+</apply>
+<apply>
+<plus/>
+<ci> L1 </ci>
+<apply>
+<times/>
+<ci> Ca </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> L1 </ci>
+<ci> L3 </ci>
+</apply>
+</apply>
+</apply>
+</apply>
+</apply>
 <ci> IPR_R </ci>
-<apply>
-<plus/>
-<ci> l2 </ci>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
-<ci> l_2 </ci>
-</apply>
-</apply>
-</apply>
-<apply>
-<plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k1 </ci>
-<ci> l_2 </ci>
-</apply>
-</apply>
-<apply>
-<divide/>
-<apply>
-<times/>
-<cn type="integer"> 10 </cn>
-<ci> k2 </ci>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-<ci> l_4 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k1 </ci>
-<ci> k_2 </ci>
-<ci> l4 </ci>
-<ci> l_2 </ci>
-</apply>
-</apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v4_v_3" id="v4_v_3" name="v_3" reversible="false">
-<annotation/>
+<reaction metaid="v4_v_3" id="v_3" name="v_3" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_3</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_I1" alias="sa2">
+<celldesigner:linkAnchor position="SW"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_R" alias="sa1">
+<celldesigner:linkAnchor position="N"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.5043616177636796,0.05789056304520379 0.5043616177636796,0.05789056304520379</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00010" species="IPR_I1"/>
+<speciesReference metaid="CDMT00010" species="IPR_I1">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa2</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00011" species="IPR_R"/>
+<speciesReference metaid="CDMT00011" species="IPR_R">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa1</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00012">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
-<ci> IPR_I1 </ci>
 <apply>
 <plus/>
 <ci> k_1 </ci>
 <ci> l_2 </ci>
 </apply>
+<ci> IPR_I1 </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v5_v_4" id="v5_v_4" name="v_4" reversible="false">
-<annotation/>
+<reaction metaid="v5_v_4" id="v_4" name="v_4" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_4</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_O" alias="sa0">
+<celldesigner:linkAnchor position="NNW"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_A" alias="sa4">
+<celldesigner:linkAnchor position="E"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.7755186721991709,0.2668049792531122 0.7755186721991709,0.2668049792531122</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00013" species="IPR_O"/>
+<speciesReference metaid="CDMT00013" species="IPR_O">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa0</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00014" species="IPR_A"/>
+<speciesReference metaid="CDMT00014" species="IPR_A">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa4</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00015">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<cn type="integer"> 10 </cn>
-<ci> IPR_O </ci>
 <apply>
 <plus/>
-<ci> l6 </ci>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_4 </ci>
-<ci> l6 </ci>
-</apply>
-<ci> l_6 </ci>
-</apply>
-</apply>
-</apply>
-<apply>
-<plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_4 </ci>
-<ci> l6 </ci>
-</apply>
 <apply>
 <times/>
 <ci> k4 </ci>
-<ci> l_6 </ci>
+<ci> L5 </ci>
+</apply>
+<ci> l6 </ci>
+</apply>
+<ci> Ca </ci>
+</apply>
+<apply>
+<plus/>
+<ci> L5 </ci>
+<ci> Ca </ci>
 </apply>
 </apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
+<ci> IPR_O </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v6_v_5" id="v6_v_5" name="v_5" reversible="false">
-<annotation/>
+<reaction metaid="v6_v_5" id="v_5" name="v_5" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_5</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_A" alias="sa4">
+<celldesigner:linkAnchor position="SSE"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_O" alias="sa0">
+<celldesigner:linkAnchor position="W"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.639419087136929,0.17717842323651473 0.639419087136929,0.17717842323651473</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00016" species="IPR_A"/>
+<speciesReference metaid="CDMT00016" species="IPR_A">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa4</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00017" species="IPR_O"/>
+<speciesReference metaid="CDMT00017" species="IPR_O">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa0</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00018">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<ci> IPR_A </ci>
-<ci> k_1 </ci>
-<ci> l2 </ci>
+<ci> L1 </ci>
 <apply>
 <plus/>
 <ci> k_4 </ci>
@@ -463,174 +802,268 @@
 </apply>
 </apply>
 <apply>
-<times/>
-<ci> k1 </ci>
-<ci> l_2 </ci>
-<apply>
 <plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k1 </ci>
-<ci> l_2 </ci>
+<ci> L1 </ci>
+<ci> Ca </ci>
 </apply>
 </apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
-</apply>
+<ci> IPR_A </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v7_v_6" id="v7_v_6" name="v_6" reversible="false">
-<annotation/>
+<reaction metaid="v7_v_6" id="v_6" name="v_6" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_6</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_A" alias="sa4">
+<celldesigner:linkAnchor position="NW"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_I2" alias="sa5">
+<celldesigner:linkAnchor position="SSE"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.4618497109826589,-0.047976878612716156 0.4618497109826589,-0.047976878612716156</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00019" species="IPR_A"/>
+<speciesReference metaid="CDMT00019" species="IPR_A">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa4</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00020" species="IPR_I2"/>
+<speciesReference metaid="CDMT00020" species="IPR_I2">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa5</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00021">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<cn type="integer"> 10 </cn>
-<ci> IPR_A </ci>
 <apply>
 <plus/>
-<ci> l2 </ci>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
-<ci> l_2 </ci>
-</apply>
-</apply>
-</apply>
-<apply>
-<plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
 <apply>
 <times/>
 <ci> k1 </ci>
-<ci> l_2 </ci>
+<ci> L1 </ci>
+</apply>
+<ci> l2 </ci>
+</apply>
+<ci> Ca </ci>
+</apply>
+<apply>
+<plus/>
+<ci> L1 </ci>
+<ci> Ca </ci>
 </apply>
 </apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
+<ci> IPR_A </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v8_v_7" id="v8_v_7" name="v_7" reversible="false">
-<annotation/>
+<reaction metaid="v8_v_7" id="v_7" name="v_7" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_7</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_I2" alias="sa5">
+<celldesigner:linkAnchor position="ESE"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_A" alias="sa4">
+<celldesigner:linkAnchor position="NNE"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.35453100158982576,-0.21542130365659773 0.35453100158982576,-0.21542130365659773</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00022" species="IPR_I2"/>
+<speciesReference metaid="CDMT00022" species="IPR_I2">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa5</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00023" species="IPR_A"/>
+<speciesReference metaid="CDMT00023" species="IPR_A">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa4</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00024">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
-<ci> IPR_I2 </ci>
 <apply>
 <plus/>
 <ci> k_1 </ci>
 <ci> l_2 </ci>
 </apply>
+<ci> IPR_I2 </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v9_v_8" id="v9_v_8" name="v_8" reversible="false">
-<annotation/>
+<reaction metaid="v9_v_8" id="v_8" name="v_8" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_8</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_O" alias="sa0">
+<celldesigner:linkAnchor position="SSW"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_S" alias="sa3">
+<celldesigner:linkAnchor position="NW"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.45688960515713184,-0.2522159548751013 0.45688960515713184,-0.2522159548751013</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00025" species="IPR_O"/>
+<speciesReference metaid="CDMT00025" species="IPR_O">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa0</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00026" species="IPR_S"/>
+<speciesReference metaid="CDMT00026" species="IPR_S">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa3</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00027">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<ci> IPR_O </ci>
 <ci> k3 </ci>
-<ci> k_4 </ci>
-<ci> l6 </ci>
+<ci> L5 </ci>
 </apply>
-<apply>
-<times/>
-<ci> k4 </ci>
-<ci> l_6 </ci>
 <apply>
 <plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_4 </ci>
-<ci> l6 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k4 </ci>
-<ci> l_6 </ci>
+<ci> L5 </ci>
+<ci> Ca </ci>
 </apply>
 </apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
-</apply>
+<ci> IPR_O </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v10_v_9" id="v10_v_9" name="v_9" reversible="false">
-<annotation/>
+<reaction metaid="v10_v_9" id="v_9" name="v_9" reversible="false" fast="false">
+<annotation>
+<celldesigner:extension>
+<celldesigner:name>v_9</celldesigner:name>
+<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
+<celldesigner:baseReactants>
+<celldesigner:baseReactant species="IPR_S" alias="sa3">
+<celldesigner:linkAnchor position="NNE"/>
+</celldesigner:baseReactant>
+</celldesigner:baseReactants>
+<celldesigner:baseProducts>
+<celldesigner:baseProduct species="IPR_O" alias="sa0">
+<celldesigner:linkAnchor position="SE"/>
+</celldesigner:baseProduct>
+</celldesigner:baseProducts>
+<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="1">
+<celldesigner:listOfLineDirection>
+<celldesigner:lineDirection index="0" value="unknown"/>
+<celldesigner:lineDirection index="1" value="unknown"/>
+<celldesigner:lineDirection index="2" value="unknown"/>
+</celldesigner:listOfLineDirection>
+</celldesigner:connectScheme>
+<celldesigner:editPoints>0.46011281224818656,-0.22401289282836245 0.46011281224818656,-0.22401289282836245</celldesigner:editPoints>
+<celldesigner:line width="1.0" color="ff000000"/>
+</celldesigner:extension>
+</annotation>
 <listOfReactants>
-<speciesReference metaid="CDMT00028" species="IPR_S"/>
+<speciesReference metaid="CDMT00028" species="IPR_S">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa3</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00029" species="IPR_O"/>
+<speciesReference metaid="CDMT00029" species="IPR_O">
+<annotation>
+<celldesigner:extension>
+<celldesigner:alias>sa0</celldesigner:alias>
+</celldesigner:extension>
+</annotation>
+</speciesReference>
 </listOfProducts>
 <kineticLaw metaid="CDMT00030">
+<annotation/>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
-<ci> IPR_S </ci>
 <ci> k_3 </ci>
+<ci> IPR_S </ci>
 </apply>
 </math>
 </kineticLaw>
