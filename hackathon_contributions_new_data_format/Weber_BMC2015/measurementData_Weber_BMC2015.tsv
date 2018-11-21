@@ -1,4 +1,4 @@
-observableID	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableID	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
 yPKDpN0	model1_data1	model1_data2	1	0	scale_yPKDpN0	std_yPKDpN0	lin
 yPKDpN0	model1_data1	model1_data2	1.61952429260506	3	scale_yPKDpN0	std_yPKDpN0	lin
 yPKDpN0	model1_data1	model1_data2	1.62346610690388	6	scale_yPKDpN0	std_yPKDpN0	lin
@@ -17,7 +17,7 @@ yPKDpN24	model1_data1	model1_data2	5.26782415584798	30	scale_yPKDpN24	std_yPKDpN
 yPKDpN24	model1_data1	model1_data2	1	24	scale_yPKDpN24	std_yPKDpN24	lin
 yPKDpN24	model1_data1	model1_data2	8.61855126077106	27	scale_yPKDpN24	std_yPKDpN24	lin
 yPKDpN24	model1_data1	model1_data2	8.15542502341969	30	scale_yPKDpN24	std_yPKDpN24	lin
-yPKDpN25	model1_data1	model1_data2	0.0967193693665613	24	scale_yPKDpN25	std_yPKDpN25	lin
+yPKDpN25	model1_data1	model1_data2	0.096719369366561	24	scale_yPKDpN25	std_yPKDpN25	lin
 yPKDpN25	model1_data1	model1_data2	0.763860217509583	24.08	scale_yPKDpN25	std_yPKDpN25	lin
 yPKDpN25	model1_data1	model1_data2	0.875441879039773	24.17	scale_yPKDpN25	std_yPKDpN25	lin
 yPKDpN25	model1_data1	model1_data2	0.875945940205186	24.25	scale_yPKDpN25	std_yPKDpN25	lin
@@ -29,7 +29,7 @@ yPKDpN25	model1_data1	model1_data2	1.0745669074101	24.17	scale_yPKDpN25	std_yPKD
 yPKDpN25	model1_data1	model1_data2	1.27322266354761	24.25	scale_yPKDpN25	std_yPKDpN25	lin
 yPKDpN25	model1_data1	model1_data2	1.30926970578305	24.5	scale_yPKDpN25	std_yPKDpN25	lin
 yPKDpN25	model1_data1	model1_data2	1	25	scale_yPKDpN25	std_yPKDpN25	lin
-yPKDpN25	model1_data1	model1_data2	0.0957289051008686	24	scale_yPKDpN25	std_yPKDpN25	lin
+yPKDpN25	model1_data1	model1_data2	0.095728905100869	24	scale_yPKDpN25	std_yPKDpN25	lin
 yPKDpN25	model1_data1	model1_data2	0.784837220290145	24.08	scale_yPKDpN25	std_yPKDpN25	lin
 yPKDpN25	model1_data1	model1_data2	1.16906286705986	24.17	scale_yPKDpN25	std_yPKDpN25	lin
 yPKDpN25	model1_data1	model1_data2	1.25508347672464	24.25	scale_yPKDpN25	std_yPKDpN25	lin
