@@ -76,6 +76,8 @@
 <parameter metaid="L3" id="L3" value="0" units="substance" constant="false"/>
 <parameter metaid="L5" id="L5" value="0" units="substance" constant="false"/>
 <parameter metaid="sigma_open_probability" id="sigma_open_probability" value="0" units="substance" constant="false"/>
+<parameter metaid="Ca" id="Ca" value="10" units="time"/>
+<parameter metaid="IP3" id="IP3" value="0" units="time"/>
 </listOfParameters>
 <listOfRules>
 <assignmentRule metaid="CDMT00036" variable="observable_open_probability">
@@ -157,7 +159,7 @@
 </assignmentRule>
 </listOfRules>
 <listOfReactions>
-<reaction metaid="v1_v_0" id="v1_v_0" name="v_0" reversible="false">
+<reaction metaid="v1_v_0" id="v_0" name="v_0" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00001" species="IPR_O"/>
@@ -169,46 +171,33 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
-<apply>
-<times/>
-<ci> IPR_O </ci>
 <apply>
 <plus/>
 <ci> k_2 </ci>
 <apply>
 <times/>
-<cn type="integer"> 10 </cn>
 <ci> l_4 </ci>
-</apply>
+<ci> Ca </ci>
 </apply>
 </apply>
 <apply>
 <plus/>
+<cn type="integer"> 1 </cn>
 <apply>
 <divide/>
-<apply>
-<times/>
-<cn type="integer"> 10 </cn>
-<ci> k4 </ci>
-<ci> l_6 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k_4 </ci>
-<ci> l6 </ci>
+<ci> Ca </ci>
+<ci> L5 </ci>
 </apply>
 </apply>
-<cn type="integer"> 1 </cn>
 </apply>
-</apply>
+<ci> IPR_O </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v2_v_1" id="v2_v_1" name="v_1" reversible="false">
+<reaction metaid="v2_v_1" id="v_1" name="v_1" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00004" species="IPR_R"/>
@@ -220,72 +209,46 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
+<plus/>
+<apply>
 <times/>
-<cn type="integer"> 10 </cn>
+<ci> k2 </ci>
+<ci> L3 </ci>
+</apply>
+<apply>
+<times/>
+<ci> l4 </ci>
+<ci> Ca </ci>
+</apply>
+</apply>
+<apply>
+<plus/>
+<ci> L3 </ci>
+<apply>
+<times/>
+<ci> Ca </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> L3 </ci>
+<ci> L1 </ci>
+</apply>
+</apply>
+</apply>
+</apply>
+</apply>
+<ci> IP3 </ci>
 <ci> IPR_R </ci>
-<apply>
-<plus/>
-<apply>
-<times/>
-<cn type="integer"> 10 </cn>
-<ci> l4 </ci>
-</apply>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_2 </ci>
-<ci> l4 </ci>
-</apply>
-<ci> l_4 </ci>
-</apply>
-</apply>
-</apply>
-<apply>
-<plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_2 </ci>
-<ci> l4 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k2 </ci>
-<ci> l_4 </ci>
-</apply>
-</apply>
-<apply>
-<divide/>
-<apply>
-<times/>
-<cn type="integer"> 10 </cn>
-<ci> k1 </ci>
-<ci> k_2 </ci>
-<ci> l4 </ci>
-<ci> l_2 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k2 </ci>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-<ci> l_4 </ci>
-</apply>
-</apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v3_v_2" id="v3_v_2" name="v_2" reversible="false">
+<reaction metaid="v3_v_2" id="v_2" name="v_2" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00007" species="IPR_R"/>
@@ -297,68 +260,45 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<cn type="integer"> 10 </cn>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> k1 </ci>
+<ci> L1 </ci>
+</apply>
+<ci> l2 </ci>
+</apply>
+<ci> Ca </ci>
+</apply>
+<apply>
+<plus/>
+<ci> L1 </ci>
+<apply>
+<times/>
+<ci> Ca </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> L1 </ci>
+<ci> L3 </ci>
+</apply>
+</apply>
+</apply>
+</apply>
+</apply>
 <ci> IPR_R </ci>
-<apply>
-<plus/>
-<ci> l2 </ci>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
-<ci> l_2 </ci>
-</apply>
-</apply>
-</apply>
-<apply>
-<plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k1 </ci>
-<ci> l_2 </ci>
-</apply>
-</apply>
-<apply>
-<divide/>
-<apply>
-<times/>
-<cn type="integer"> 10 </cn>
-<ci> k2 </ci>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-<ci> l_4 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k1 </ci>
-<ci> k_2 </ci>
-<ci> l4 </ci>
-<ci> l_2 </ci>
-</apply>
-</apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v4_v_3" id="v4_v_3" name="v_3" reversible="false">
+<reaction metaid="v4_v_3" id="v_3" name="v_3" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00010" species="IPR_I1"/>
@@ -370,18 +310,17 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
-<ci> IPR_I1 </ci>
 <apply>
 <plus/>
 <ci> k_1 </ci>
 <ci> l_2 </ci>
 </apply>
+<ci> IPR_I1 </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v5_v_4" id="v5_v_4" name="v_4" reversible="false">
+<reaction metaid="v5_v_4" id="v_4" name="v_4" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00013" species="IPR_O"/>
@@ -393,50 +332,33 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<cn type="integer"> 10 </cn>
-<ci> IPR_O </ci>
 <apply>
 <plus/>
-<ci> l6 </ci>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_4 </ci>
-<ci> l6 </ci>
-</apply>
-<ci> l_6 </ci>
-</apply>
-</apply>
-</apply>
-<apply>
-<plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_4 </ci>
-<ci> l6 </ci>
-</apply>
 <apply>
 <times/>
 <ci> k4 </ci>
-<ci> l_6 </ci>
+<ci> L5 </ci>
+</apply>
+<ci> l6 </ci>
+</apply>
+<ci> Ca </ci>
+</apply>
+<apply>
+<plus/>
+<ci> L5 </ci>
+<ci> Ca </ci>
 </apply>
 </apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
+<ci> IPR_O </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v6_v_5" id="v6_v_5" name="v_5" reversible="false">
+<reaction metaid="v6_v_5" id="v_5" name="v_5" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00016" species="IPR_A"/>
@@ -448,14 +370,11 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<ci> IPR_A </ci>
-<ci> k_1 </ci>
-<ci> l2 </ci>
+<ci> L1 </ci>
 <apply>
 <plus/>
 <ci> k_4 </ci>
@@ -463,33 +382,17 @@
 </apply>
 </apply>
 <apply>
-<times/>
-<ci> k1 </ci>
-<ci> l_2 </ci>
-<apply>
 <plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k1 </ci>
-<ci> l_2 </ci>
+<ci> L1 </ci>
+<ci> Ca </ci>
 </apply>
 </apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
-</apply>
+<ci> IPR_A </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v7_v_6" id="v7_v_6" name="v_6" reversible="false">
+<reaction metaid="v7_v_6" id="v_6" name="v_6" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00019" species="IPR_A"/>
@@ -501,50 +404,33 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<cn type="integer"> 10 </cn>
-<ci> IPR_A </ci>
 <apply>
 <plus/>
-<ci> l2 </ci>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
-<ci> l_2 </ci>
-</apply>
-</apply>
-</apply>
-<apply>
-<plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_1 </ci>
-<ci> l2 </ci>
-</apply>
 <apply>
 <times/>
 <ci> k1 </ci>
-<ci> l_2 </ci>
+<ci> L1 </ci>
+</apply>
+<ci> l2 </ci>
+</apply>
+<ci> Ca </ci>
+</apply>
+<apply>
+<plus/>
+<ci> L1 </ci>
+<ci> Ca </ci>
 </apply>
 </apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
+<ci> IPR_A </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v8_v_7" id="v8_v_7" name="v_7" reversible="false">
+<reaction metaid="v8_v_7" id="v_7" name="v_7" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00022" species="IPR_I2"/>
@@ -556,18 +442,17 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
-<ci> IPR_I2 </ci>
 <apply>
 <plus/>
 <ci> k_1 </ci>
 <ci> l_2 </ci>
 </apply>
+<ci> IPR_I2 </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v9_v_8" id="v9_v_8" name="v_8" reversible="false">
+<reaction metaid="v9_v_8" id="v_8" name="v_8" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00025" species="IPR_O"/>
@@ -579,44 +464,25 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
 <apply>
 <divide/>
 <apply>
 <times/>
-<ci> IPR_O </ci>
 <ci> k3 </ci>
-<ci> k_4 </ci>
-<ci> l6 </ci>
+<ci> L5 </ci>
 </apply>
-<apply>
-<times/>
-<ci> k4 </ci>
-<ci> l_6 </ci>
 <apply>
 <plus/>
-<apply>
-<divide/>
-<apply>
-<times/>
-<ci> k_4 </ci>
-<ci> l6 </ci>
-</apply>
-<apply>
-<times/>
-<ci> k4 </ci>
-<ci> l_6 </ci>
+<ci> L5 </ci>
+<ci> Ca </ci>
 </apply>
 </apply>
-<cn type="integer"> 10 </cn>
-</apply>
-</apply>
-</apply>
+<ci> IPR_O </ci>
 </apply>
 </math>
 </kineticLaw>
 </reaction>
-<reaction metaid="v10_v_9" id="v10_v_9" name="v_9" reversible="false">
+<reaction metaid="v10_v_9" id="v_9" name="v_9" reversible="false" fast="false">
 <annotation/>
 <listOfReactants>
 <speciesReference metaid="CDMT00028" species="IPR_S"/>
@@ -628,9 +494,8 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> membrane </ci>
-<ci> IPR_S </ci>
 <ci> k_3 </ci>
+<ci> IPR_S </ci>
 </apply>
 </math>
 </kineticLaw>
