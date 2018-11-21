@@ -82,6 +82,12 @@
       <parameter id="u4" value="0" constant="false"/>
       <parameter id="u5" value="0" constant="false"/>
       <parameter id="u6" value="0" constant="false"/>
+      <parameter id="Ect_Expr_CERT_flag" value="0" constant="false"/>
+      <parameter id="Ect_Expr_PI4K3beta_flag" value="0" constant="false"/>
+      <parameter id="PdBu_dose" value="0" constant="false"/>
+      <parameter id="PdBu_time" value="0" constant="false"/>
+      <parameter id="kb_NB142_70_dose" value="0" constant="false"/>
+      <parameter id="kb_NB142_70_time" value="0" constant="false"/>
     </listOfParameters>
     <listOfRules>
       <assignmentRule variable="u2">
