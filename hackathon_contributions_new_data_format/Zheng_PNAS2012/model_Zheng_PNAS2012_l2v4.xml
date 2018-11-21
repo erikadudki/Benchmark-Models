@@ -1512,8 +1512,6 @@
       <parameter id="k32_22" name="k32_22" value="1.28866373067424" constant="true"/>
       <parameter id="k32_31" name="k32_31" value="1.00000009388004e-05" constant="true">
       </parameter>
-      <parameter id="noise" name="noise" value="0.00181046840578836" constant="true">
-      </parameter>
       <parameter id="observable_K27me0K36me0" name="observable_K27me0K36me0" value="0.00417724976661274" constant="false">
       </parameter>
       <parameter id="observable_K27me0K36me1" name="observable_K27me0K36me1" value="0.0102104668664762" constant="false"/>
