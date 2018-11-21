@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-  <model metaid="arFramework3" id="model_Borghans_BiophysChem_1997">
+  <model id="model_Borghans_BiophysChem_1997">
     <listOfUnitDefinitions>
       <unitDefinition id="time" name="time">
         <listOfUnits>
@@ -37,12 +37,13 @@
       <parameter id="init_Y_state" value="0.999348084438687" constant="true"/>
       <parameter id="init_Z_state" value="0.0879205244255038" constant="true"/>
       <parameter id="n_par" value="4.1025144127497" constant="true"/>
-      <parameter id="offset" value="0.300763662073359" constant="true"/>
-      <parameter id="scale" value="0.658073142979721" constant="true"/>
-      <parameter id="sigma" value="0.104922918935031" constant="true"/>
+      <parameter id="observableParameter1_Ca" value="0.300763662073359" constant="true"/>
+      <parameter id="observableParameter2_Ca" value="0.658073142979721" constant="true"/>
+      <parameter id="noiseParameter1_Ca" value="0.104922918935031" constant="true"/>
+      <parameter id="sigma_Ca" value="0" constant="false"/>
       <parameter id="v0" value="2.31778715779187" constant="true"/>
       <parameter id="v1" value="1.00488755696677" constant="true"/>
-      <parameter id="Ca" value="0" constant="false"/>
+      <parameter id="observable_Ca" value="0" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="Z_state">
@@ -62,7 +63,12 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
-      <assignmentRule variable="Ca">
+        <assignmentRule variable="sigma_Ca">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <ci> noiseParameter1_Ca </ci>
+            </math>
+        </assignmentRule>
+      <assignmentRule variable="observable_Ca">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <log/>
@@ -71,11 +77,11 @@
             </logbase>
             <apply>
               <plus/>
-              <ci> offset </ci>
+              <ci> observableParameter1_Ca </ci>
               <apply>
                 <times/>
                 <ci> Z_state </ci>
-                <ci> scale </ci>
+                <ci> observableParameter2_Ca </ci>
               </apply>
             </apply>
           </apply>
