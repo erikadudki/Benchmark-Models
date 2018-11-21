@@ -705,16 +705,16 @@
       <parameter id="noiseParameter1_AKT_PP" value="0.1" constant="true"/>
       <parameter id="noiseParameter1_ERB_B1_P_tot" value="0.1" constant="true"/>
       <parameter id="noiseParameter1_ERK_PP" value="0.1" constant="true"/>
-      <parameter id="sigma_AKT_PP" value="1" constant="true"/>
-      <parameter id="sigma_ERB_B1_P_tot" value="1" constant="true"/>
-      <parameter id="sigma_ERK_PP" value="1" constant="true"/>
+      <parameter id="sigma_AKT_PP" value="1" constant="false"/>
+      <parameter id="sigma_ERB_B1_P_tot" value="1" constant="false"/>
+      <parameter id="sigma_ERK_PP" value="1" constant="false"/>
       <parameter id="observable_ERB_B1_P_tot" value="0" constant="false"/>
       <parameter id="observable_ERK_PP" value="0" constant="false"/>
       <parameter id="observable_AKT_PP" value="0" constant="false"/>
-      <parameter id="c1" value="0" constant="false"/>
-      <parameter id="c515" value="0" constant="false"/>
-      <parameter id="c285" value="0" constant="false"/>
-      <parameter id="c514" value="0" constant="false"/>
+      <parameter id="c1" value="0" constant="true"/>
+      <parameter id="c515" value="0" constant="true"/>
+      <parameter id="c285" value="0" constant="true"/>
+      <parameter id="c514" value="0" constant="true"/>
       <parameter id="Step10Mio" value="0" constant="false"/>
       <parameter id="Step33" value="0" constant="false"/>
       <parameter id="Step1" value="0" constant="false"/>
