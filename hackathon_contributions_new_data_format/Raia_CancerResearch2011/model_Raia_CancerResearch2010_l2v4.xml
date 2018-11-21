@@ -52,22 +52,38 @@
       <parameter id="scale_SOCS3mRNA_obs" value="0.581761348497872" constant="true"/>
       <parameter id="scale_pIL4Ra_obs" value="2.97546594962969" constant="true"/>
       <parameter id="scale_pJAK2_obs" value="0.857047493450688" constant="true"/>
-      <parameter id="sd_CD274mRNA_abs" value="0.0244761059130156" constant="true"/>
-      <parameter id="sd_CD274mRNA_rel" value="0.608872810193151" constant="true"/>
-      <parameter id="sd_IL13_cell_abs" value="0.27515057296293" constant="true"/>
-      <parameter id="sd_IL13_cell_rel" value="0.0647051009849488" constant="true"/>
-      <parameter id="sd_RecSurf_abs" value="1.01215560921577e-05" constant="true"/>
-      <parameter id="sd_RecSurf_rel" value="0.0782183388657081" constant="true"/>
-      <parameter id="sd_SOCS3_abs" value="15.169413720827" constant="true"/>
-      <parameter id="sd_SOCS3_rel" value="0.180289604928687" constant="true"/>
-      <parameter id="sd_SOCS3mRNA_abs" value="9.18854996116373" constant="true"/>
-      <parameter id="sd_SOCS3mRNA_rel" value="0.523868033307249" constant="true"/>
-      <parameter id="sd_pIL4Ra_abs" value="0.615883167883187" constant="true"/>
-      <parameter id="sd_pIL4Ra_rel" value="1.12548299837455e-05" constant="true"/>
-      <parameter id="sd_pJAK2_abs" value="0.324394935431755" constant="true"/>
-      <parameter id="sd_pJAK2_rel" value="1.00989920281113e-05" constant="true"/>
-      <parameter id="sd_pSTAT5_abs" value="1.40183018698345" constant="true"/>
-      <parameter id="sd_pSTAT5_rel" value="0.175324913047518" constant="true"/>
+      <parameter id="sigma_CD274mRNA_abs" value="0.0244761059130156" constant="true"/>
+      <parameter id="sigma_CD274mRNA_rel" value="0.608872810193151" constant="true"/>
+      <parameter id="sigma_IL13_cell_abs" value="0.27515057296293" constant="true"/>
+      <parameter id="sigma_IL13_cell_rel" value="0.0647051009849488" constant="true"/>
+      <parameter id="sigma_RecSurf_abs" value="1.01215560921577e-05" constant="true"/>
+      <parameter id="sigma_RecSurf_rel" value="0.0782183388657081" constant="true"/>
+      <parameter id="sigma_SOCS3_abs" value="15.169413720827" constant="true"/>
+      <parameter id="sigma_SOCS3_rel" value="0.180289604928687" constant="true"/>
+      <parameter id="sigma_SOCS3mRNA_abs" value="9.18854996116373" constant="true"/>
+      <parameter id="sigma_SOCS3mRNA_rel" value="0.523868033307249" constant="true"/>
+      <parameter id="sigma_pIL4Ra_abs" value="0.615883167883187" constant="true"/>
+      <parameter id="sigma_pIL4Ra_rel" value="1.12548299837455e-05" constant="true"/>
+      <parameter id="sigma_pJAK2_abs" value="0.324394935431755" constant="true"/>
+      <parameter id="sigma_pJAK2_rel" value="1.00989920281113e-05" constant="true"/>
+      <parameter id="sigma_pSTAT5_abs" value="1.40183018698345" constant="true"/>
+      <parameter id="sigma_pSTAT5_rel" value="0.175324913047518" constant="true"/>
+      <parameter id="noiseParameter1_CD274mRNA_abs" value="0.0244761059130156" constant="true"/>
+      <parameter id="noiseParameter1_CD274mRNA_rel" value="0.608872810193151" constant="true"/>
+      <parameter id="noiseParameter1_IL13_cell_abs" value="0.27515057296293" constant="true"/>
+      <parameter id="noiseParameter1_IL13_cell_rel" value="0.0647051009849488" constant="true"/>
+      <parameter id="noiseParameter1_RecSurf_abs" value="1.01215560921577e-05" constant="true"/>
+      <parameter id="noiseParameter1_RecSurf_rel" value="0.0782183388657081" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3_abs" value="15.169413720827" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3_rel" value="0.180289604928687" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3mRNA_abs" value="9.18854996116373" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3mRNA_rel" value="0.523868033307249" constant="true"/>
+      <parameter id="noiseParameter1_pIL4Ra_abs" value="0.615883167883187" constant="true"/>
+      <parameter id="noiseParameter1_pIL4Ra_rel" value="1.12548299837455e-05" constant="true"/>
+      <parameter id="noiseParameter1_pJAK2_abs" value="0.324394935431755" constant="true"/>
+      <parameter id="noiseParameter1_pJAK2_rel" value="1.00989920281113e-05" constant="true"/>
+      <parameter id="noiseParameter1_pSTAT5_abs" value="1.40183018698345" constant="true"/>
+      <parameter id="noiseParameter1_pSTAT5_rel" value="0.175324913047518" constant="true"/>
       <parameter id="RecSurf_obs" value="1" constant="false"/>
       <parameter id="IL13_cell_obs" value="1" constant="false"/>
       <parameter id="pIL4Ra_obs" value="1" constant="false"/>
@@ -86,6 +102,86 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="sigma_CD274mRNA_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_CD274mRNA_abs </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_CD274mRNA_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_CD274mRNA_rel </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_IL13_cell_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_IL13_cell_abs </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_IL13_cell_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_IL13_cell_rel </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_RecSurf_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_RecSurf_abs </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_RecSurf_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_RecSurf_rel </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_SOCS3_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_SOCS3_abs </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_SOCS3_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_SOCS3_rel </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_SOCS3mRNA_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_SOCS3mRNA_abs </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_SOCS3mRNA_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_SOCS3mRNA_rel </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pIL4Ra_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pIL4Ra_abs </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pIL4Ra_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pIL4Ra_rel </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pJAK2_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pJAK2_abs </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pJAK2_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pJAK2_rel </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pSTAT5_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pSTAT5_abs </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pSTAT5_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pSTAT5_rel </ci>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="RecSurf_obs">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
