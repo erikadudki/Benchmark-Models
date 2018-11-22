@@ -45,6 +45,9 @@
       <parameter id="sigma_pAkt_tot" value="0.1" constant="true"/>
       <parameter id="sigma_pEGFR_tot" value="0.1" constant="true"/>
       <parameter id="sigma_pS6_tot" value="0.1" constant="true"/>
+      <parameter id="noiseParameter1_pAkt_tot" value="0.1" constant="true"/>
+      <parameter id="noiseParameter1_pEGFR_tot" value="0.1" constant="true"/>
+      <parameter id="noiseParameter1_pS6_tot" value="0.1" constant="true"/>
       <parameter id="observable_pEGFR_tot" value="0" constant="false"/>
       <parameter id="observable_pAkt_tot" value="0" constant="false"/>
       <parameter id="observable_pS6_tot" value="0" constant="false"/>
@@ -68,6 +71,21 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="sigma_pAkt_tot">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pAkt_tot </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pEGFR_tot">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pEGFR_tot </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pS6_tot">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pS6_tot </ci>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="observable_pEGFR_tot">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
