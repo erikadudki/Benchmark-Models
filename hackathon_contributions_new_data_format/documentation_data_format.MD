@@ -102,13 +102,13 @@ A tab-separated value text file containing information on the parameters. One ro
 parameterId parameterName parameterScale lowerBound  upperBound nominalValue estimated priorType priorParameters hierarchicalOptimization(optional)
 ...
 ```
-parameterId has to be identical to the parameter ids specified in the SBML model.
-parameterName will be used for plotting etc. Can be choosen freely.
-parameterScale: scale of parameter. lin/log/log10 etc.
-lowerBound: lower bound of the parameter used for optimization.
-upperBound: upper bound of the parameter used for optimization.
-nominalValue: Best values found by optimization or the value used for simulation for fixed parameters(see estimated).
-estimated: 1 or 0, depending on, if the parameter is estimated (1) or set to a fixed value(0).
-priorType: Type of prior. Leave empty, if no priors. Normal/ Laplace etc.
-priorParameters: parameters for prior.
-hierarchicalOptimization: 1 if parameter is optimized using hierarchical optimization approach. 0 otherwise.
+- parameterId has to be identical to the parameter ids specified in the SBML model.
+- parameterName will be used for plotting etc. Can be choosen freely.
+- parameterScale: scale of parameter. lin/log/log10 etc.
+- lowerBound: lower bound of the parameter used for optimization.
+- upperBound: upper bound of the parameter used for optimization.
+- nominalValue: Best values found by optimization or the value used for simulation for fixed parameters(see estimated).
+- estimated: 1 or 0, depending on, if the parameter is estimated (1) or set to a fixed value(0).
+- priorType: Type of prior. Leave empty, if no priors. Normal/ Laplace etc.
+- priorParameters: parameters for prior.
+- hierarchicalOptimization: 1 if parameter is optimized using hierarchical optimization approach. 0 otherwise.
