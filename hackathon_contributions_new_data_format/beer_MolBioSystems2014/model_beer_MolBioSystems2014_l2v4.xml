@@ -88,8 +88,10 @@
       <parameter id="tau_typeIDT5_ExpID6" value="1" constant="true"/>
       <parameter id="tau_typeIDwt_ExpID4" value="1" constant="true"/>
       <parameter id="init_Bac" value="0.0147007946993721" constant="true"/>
-      <parameter id="sd_Bacnorm" value="0.0370578932854204" constant="true"/>
-      <parameter id="sd_IndconcNormRange" value="0.020393702596959" constant="true"/>
+      <parameter id="sigma_Bacnorm" value="0.0370578932854204" constant="true"/>
+      <parameter id="sigma_IndconcNormRange" value="0.020393702596959" constant="true"/>
+      <parameter id="noiseParameter1_Bacnorm" value="0.0370578932854204" constant="true"/>
+      <parameter id="noiseParameter1_IndconcNormRange" value="0.020393702596959" constant="true"/>
       <parameter id="observable_Bacnorm" value="0" constant="false"/>
       <parameter id="observable_IndconcNormRange" value="0" constant="false"/>
       <parameter id="lag" value="0" constant="false"/>
@@ -171,6 +173,16 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="sigma_Bacnorm">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_Bacnorm </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_IndconcNormRange">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_IndconcNormRange </ci>
+          </math>
+      </assignmentRule>
       <assignmentRule variable="lag">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <piecewise>
