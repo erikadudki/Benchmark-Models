@@ -1,4 +1,4 @@
-observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters 	observableTransformation
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters 	observableTransformation
 pSTAT5A_rel		model1_data1	7.901072999	0		sd_pSTAT5A_rel	lin
 pSTAT5A_rel		model1_data1	66.36349397	2.5		sd_pSTAT5A_rel	lin
 pSTAT5A_rel		model1_data1	81.17132392	5		sd_pSTAT5A_rel	lin
