@@ -1,4 +1,4 @@
-observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableId	preequilibrationConditionId	simulationConditionId	simulatedData	time	observableParameters	noiseParameters	observableTransformation
 Naive_obs		model1_data1	392.5227992745	4		290	lin
 Naive_obs		model1_data1	83.7721232473	6		64	lin
 EarlyEffector_obs		model1_data1	274.4785423604	4		266	lin

@@ -1,4 +1,4 @@
-observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableId	preequilibrationConditionId	simulationConditionId	simulatedData	time	observableParameters	noiseParameters	observableTransformation
 S2IP_tS2		model1_data1	100	60		5	lin
 S2IP_tS2		model1_data1	100	60		5	lin
 S2IP_tS3		model1_data1	0	60		5	lin

@@ -1,4 +1,4 @@
-observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation 
+observableId	preequilibrationConditionId	simulationConditionId	simulatedData	time	observableParameters	noiseParameters	observableTransformation 
 K27me0K36me0	preequilibration	simCondition	0.00431	0	1	0.002339466852399	lin
 K27me0K36me0	preequilibration	simCondition	0.00093	5	1	0.002339466852399	lin
 K27me0K36me0	preequilibration	simCondition	0.00051	10	1	0.002339466852399	lin
