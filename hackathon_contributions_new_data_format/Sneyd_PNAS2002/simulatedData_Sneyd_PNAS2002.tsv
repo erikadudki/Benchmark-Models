@@ -1,136 +1,136 @@
-observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
-open_probability		model1_data1	0.0	0.0			
-open_probability		model1_data1	0.12189454652347739	0.07			
-open_probability		model1_data1	0.06059555380895721	0.14			
-open_probability		model1_data1	0.02992774362754406	0.21			
-open_probability		model1_data1	0.016966738060837094	0.28			
-open_probability		model1_data1	0.010950865102332799	0.35			
-open_probability		model1_data1	0.007889935956001579	0.42			
-open_probability		model1_data1	0.006208795803398234	0.49			
-open_probability		model1_data1	0.0052279957908099	0.56			
-open_probability		model1_data1	0.0046287676363144575	0.63			
-open_probability		model1_data1	0.0042497739446532845	0.7			
-open_probability		model1_data1	0.004003778690145746	0.77			
-open_probability		model1_data1	0.0038409137846341476	0.84			
-open_probability		model1_data1	0.003731366618312819	0.91			
-open_probability		model1_data1	0.003656677446066262	0.98			
-open_probability		model1_data2	0.0	0.0			
-open_probability		model1_data2	0.21567814241510583	0.07			
-open_probability		model1_data2	0.163761426885113	0.14			
-open_probability		model1_data2	0.10221743027733746	0.21			
-open_probability		model1_data2	0.06758662790505315	0.28			
-open_probability		model1_data2	0.047941600085110385	0.35			
-open_probability		model1_data2	0.03624681177927684	0.42			
-open_probability		model1_data2	0.028958334975966137	0.49			
-open_probability		model1_data2	0.02423225912485607	0.56			
-open_probability		model1_data2	0.021063632687335524	0.63			
-open_probability		model1_data2	0.018879468210961037	0.7			
-open_probability		model1_data2	0.017339073625140703	0.77			
-open_probability		model1_data2	0.01623199642303407	0.84			
-open_probability		model1_data2	0.015423728256308994	0.91			
-open_probability		model1_data2	0.014825697161150534	0.98			
-open_probability		model1_data3	0.0	0.0			
-open_probability		model1_data3	0.2618222244907059	0.07			
-open_probability		model1_data3	0.24321427347502353	0.14			
-open_probability		model1_data3	0.1654528681593813	0.21			
-open_probability		model1_data3	0.1147198989541686	0.28			
-open_probability		model1_data3	0.08353903227421684	0.35			
-open_probability		model1_data3	0.06383482874785783	0.42			
-open_probability		model1_data3	0.050947686922729635	0.49			
-open_probability		model1_data3	0.04224738736181357	0.56			
-open_probability		model1_data3	0.03620708726971903	0.63			
-open_probability		model1_data3	0.031910713745901945	0.7			
-open_probability		model1_data3	0.028790694098720634	0.77			
-open_probability		model1_data3	0.026484557063220237	0.84			
-open_probability		model1_data3	0.024754225647049866	0.91			
-open_probability		model1_data3	0.023439256475872562	0.98			
-open_probability		model1_data4	0.0	0.0			
-open_probability		model1_data4	0.25642163821128566	0.07			
-open_probability		model1_data4	0.24404960296331088	0.14			
-open_probability		model1_data4	0.15756704365891333	0.21			
-open_probability		model1_data4	0.10226280920366583	0.28			
-open_probability		model1_data4	0.0699222777042946	0.35			
-open_probability		model1_data4	0.05052218182637596	0.42			
-open_probability		model1_data4	0.03842995252392274	0.49			
-open_probability		model1_data4	0.030609970408550714	0.56			
-open_probability		model1_data4	0.025383465215539757	0.63			
-open_probability		model1_data4	0.021788797300514105	0.7			
-open_probability		model1_data4	0.019255261437111763	0.77			
-open_probability		model1_data4	0.017432484512351923	0.84			
-open_probability		model1_data4	0.016098394582074453	0.91			
-open_probability		model1_data4	0.015108032006752694	0.98			
-open_probability		model1_data5	0.0	0.0			
-open_probability		model1_data5	0.20995678277830723	0.07			
-open_probability		model1_data5	0.17191280230938064	0.14			
-open_probability		model1_data5	0.09122059890961792	0.21			
-open_probability		model1_data5	0.04935619833721874	0.28			
-open_probability		model1_data5	0.029091174010564217	0.35			
-open_probability		model1_data5	0.018788457182827213	0.42			
-open_probability		model1_data5	0.013206212177868621	0.49			
-open_probability		model1_data5	0.009995567528940003	0.56			
-open_probability		model1_data5	0.008051163083108683	0.63			
-open_probability		model1_data5	0.006822135884552869	0.7			
-open_probability		model1_data5	0.006018101069232624	0.77			
-open_probability		model1_data5	0.0054776842563770255	0.84			
-open_probability		model1_data5	0.00510679643968022	0.91			
-open_probability		model1_data5	0.0048481888117934075	0.98			
-open_probability		model1_data6	0.0	0.0			
-open_probability		model1_data6	0.22749998185917236	0.07			
-open_probability		model1_data6	0.19877733670833359	0.14			
-open_probability		model1_data6	0.1138217054771493	0.21			
-open_probability		model1_data6	0.06592407083460244	0.28			
-open_probability		model1_data6	0.04099368612818642	0.35			
-open_probability		model1_data6	0.02750984261892396	0.42			
-open_probability		model1_data6	0.019820431596413134	0.49			
-open_probability		model1_data6	0.015208847230140344	0.56			
-open_probability		model1_data6	0.012317850790703407	0.63			
-open_probability		model1_data6	0.010436146985770074	0.7			
-open_probability		model1_data6	0.009172808913423359	0.77			
-open_probability		model1_data6	0.00830310389222377	0.84			
-open_probability		model1_data6	0.007692317288332029	0.91			
-open_probability		model1_data6	0.007256603205075126	0.98			
-open_probability		model1_data7	0.0	0.0			
-open_probability		model1_data7	0.2618222244907059	0.07			
-open_probability		model1_data7	0.24321427347502353	0.14			
-open_probability		model1_data7	0.1654528681593813	0.21			
-open_probability		model1_data7	0.1147198989541686	0.28			
-open_probability		model1_data7	0.08353903227421684	0.35			
-open_probability		model1_data7	0.06383482874785783	0.42			
-open_probability		model1_data7	0.050947686922729635	0.49			
-open_probability		model1_data7	0.04224738736181357	0.56			
-open_probability		model1_data7	0.03620708726971903	0.63			
-open_probability		model1_data7	0.031910713745901945	0.7			
-open_probability		model1_data7	0.028790694098720634	0.77			
-open_probability		model1_data7	0.026484557063220237	0.84			
-open_probability		model1_data7	0.024754225647049866	0.91			
-open_probability		model1_data7	0.023439256475872562	0.98			
-open_probability		model1_data8	0.0	0.0			
-open_probability		model1_data8	0.02751371670419307	0.07			
-open_probability		model1_data8	0.09930723194320155	0.14			
-open_probability		model1_data8	0.13020234170280914	0.21			
-open_probability		model1_data8	0.12228502070786293	0.28			
-open_probability		model1_data8	0.10130325856746565	0.35			
-open_probability		model1_data8	0.08071079603965838	0.42			
-open_probability		model1_data8	0.06435234784696145	0.49			
-open_probability		model1_data8	0.05228148856135941	0.56			
-open_probability		model1_data8	0.04358286072146925	0.63			
-open_probability		model1_data8	0.03732674457110341	0.7			
-open_probability		model1_data8	0.032792900371486536	0.77			
-open_probability		model1_data8	0.02946936459380731	0.84			
-open_probability		model1_data8	0.02700252239732085	0.91			
-open_probability		model1_data8	0.025149254710066595	0.98			
-open_probability		model1_data9	0.0	0.0			
-open_probability		model1_data9	0.09372263936185317	0.07			
-open_probability		model1_data9	0.1901231645115761	0.14			
-open_probability		model1_data9	0.17175740987611	0.21			
-open_probability		model1_data9	0.1294683842662913	0.28			
-open_probability		model1_data9	0.0954411731335219	0.35			
-open_probability		model1_data9	0.07214222637565101	0.42			
-open_probability		model1_data9	0.056613104713730066	0.49			
-open_probability		model1_data9	0.04614953350342904	0.56			
-open_probability		model1_data9	0.03894626277870185	0.63			
-open_probability		model1_data9	0.03387257979543602	0.7			
-open_probability		model1_data9	0.03022216500319036	0.77			
-open_probability		model1_data9	0.02754618701761671	0.84			
-open_probability		model1_data9	0.02555268461373487	0.91			
-open_probability		model1_data9	0.02404702273906096	0.98			
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation	experimentName	replicateId	useData
+open_probability		Ca_dose_response__1	0	0		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.121894546523477	0.07		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.060595553808957	0.14		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.029927743627544	0.21		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.016966738060837	0.28		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.010950865102333	0.35		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.007889935956002	0.42		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.006208795803398	0.49		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.00522799579081	0.56		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.004628767636314	0.63		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.004249773944653	0.7		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.004003778690146	0.77		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.003840913784634	0.84		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.003731366618313	0.91		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__1	0.003656677446066	0.98		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0	0		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.215678142415106	0.07		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.163761426885113	0.14		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.102217430277337	0.21		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.067586627905053	0.28		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.04794160008511	0.35		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.036246811779277	0.42		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.028958334975966	0.49		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.024232259124856	0.56		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.021063632687336	0.63		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.018879468210961	0.7		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.017339073625141	0.77		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.016231996423034	0.84		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.015423728256309	0.91		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__2	0.014825697161151	0.98		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0	0		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.261822224490706	0.07		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.243214273475024	0.14		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.165452868159381	0.21		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.114719898954169	0.28		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.083539032274217	0.35		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.063834828747858	0.42		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.05094768692273	0.49		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.042247387361814	0.56		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.036207087269719	0.63		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.031910713745902	0.7		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.028790694098721	0.77		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.02648455706322	0.84		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.02475422564705	0.91		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__3	0.023439256475873	0.98		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0	0		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.256421638211286	0.07		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.244049602963311	0.14		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.157567043658913	0.21		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.102262809203666	0.28		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.069922277704295	0.35		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.050522181826376	0.42		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.038429952523923	0.49		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.030609970408551	0.56		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.02538346521554	0.63		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.021788797300514	0.7		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.019255261437112	0.77		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.017432484512352	0.84		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.016098394582075	0.91		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__4	0.015108032006753	0.98		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0	0		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.209956782778307	0.07		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.171912802309381	0.14		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.091220598909618	0.21		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.049356198337219	0.28		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.029091174010564	0.35		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.018788457182827	0.42		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.013206212177869	0.49		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.00999556752894	0.56		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.008051163083109	0.63		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.006822135884553	0.7		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.006018101069233	0.77		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.005477684256377	0.84		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.00510679643968	0.91		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__5	0.004848188811793	0.98		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0	0		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.227499981859172	0.07		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.198777336708334	0.14		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.113821705477149	0.21		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.065924070834603	0.28		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.040993686128187	0.35		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.027509842618924	0.42		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.019820431596413	0.49		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.01520884723014	0.56		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.012317850790703	0.63		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.01043614698577	0.7		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.009172808913423	0.77		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.008303103892224	0.84		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.007692317288332	0.91		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		Ca_dose_response__6	0.007256603205075	0.98		sigma	lin	Ca^{2+} response	1	TRUE
+open_probability		IP3_dose_response__1	0	0		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.261822224490706	0.07		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.243214273475024	0.14		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.165452868159381	0.21		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.114719898954169	0.28		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.083539032274217	0.35		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.063834828747858	0.42		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.05094768692273	0.49		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.042247387361814	0.56		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.036207087269719	0.63		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.031910713745902	0.7		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.028790694098721	0.77		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.02648455706322	0.84		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.02475422564705	0.91		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__1	0.023439256475873	0.98		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0	0		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.027513716704193	0.07		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.099307231943202	0.14		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.130202341702809	0.21		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.122285020707863	0.28		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.101303258567466	0.35		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.080710796039658	0.42		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.064352347846962	0.49		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.052281488561359	0.56		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.043582860721469	0.63		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.037326744571104	0.7		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.032792900371487	0.77		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.029469364593807	0.84		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.027002522397321	0.91		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__2	0.025149254710067	0.98		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0	0		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.093722639361853	0.07		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.190123164511576	0.14		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.17175740987611	0.21		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.129468384266291	0.28		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.095441173133522	0.35		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.072142226375651	0.42		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.05661310471373	0.49		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.046149533503429	0.56		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.038946262778702	0.63		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.033872579795436	0.7		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.03022216500319	0.77		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.027546187017617	0.84		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.025552684613735	0.91		sigma	lin	IP_3 response	1	TRUE
+open_probability		IP3_dose_response__3	0.024047022739061	0.98		sigma	lin	IP_3 response	1	TRUE
