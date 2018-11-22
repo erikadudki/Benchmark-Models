@@ -30,9 +30,12 @@
       <parameter id="k_imp_homo" value="96945.5391768823" constant="true"/>
       <parameter id="k_phos" value="15766.8336642826" constant="true"/>
       <parameter id="ratio" value="0.693" constant="true"/>
-      <parameter id="sd_pSTAT5A_rel" value="4.11880966408792" constant="true"/>
-      <parameter id="sd_pSTAT5B_rel" value="7.04378709564081" constant="true"/>
-      <parameter id="sd_rSTAT5A_rel" value="3.3691824511569" constant="true"/>
+      <parameter id="sigma_pSTAT5A_rel" value="4.11880966408792" constant="false"/>
+      <parameter id="sigma_pSTAT5B_rel" value="7.04378709564081" constant="false"/>
+      <parameter id="sigma_rSTAT5A_rel" value="3.3691824511569" constant="false"/>
+      <parameter id="noiseParameter1_pSTAT5A_rel" value="4.11880966408792" constant="true"/>
+      <parameter id="noiseParameter1_pSTAT5B_rel" value="7.04378709564081" constant="true"/>
+      <parameter id="noiseParameter1_rSTAT5A_rel" value="3.3691824511569" constant="true"/>
       <parameter id="specC17" value="0.107" constant="true"/>
       <parameter id="observable_pSTAT5A_rel" value="1" constant="false"/>
       <parameter id="observable_pSTAT5B_rel" value="1" constant="false"/>
@@ -64,6 +67,21 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="sigma_pSTAT5A_rel">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_pSTAT5A_rel </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pSTAT5B_rel">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_pSTAT5B_rel </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_rSTAT5A_rel">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_rSTAT5A_rel </ci>
+          </math>
+      </assignmentRule>
       <assignmentRule variable="observable_pSTAT5A_rel">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
