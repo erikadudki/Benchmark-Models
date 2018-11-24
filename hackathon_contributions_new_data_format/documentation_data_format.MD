@@ -103,8 +103,8 @@ parameterId parameterName parameterScale lowerBound  upperBound nominalValue est
 ...
 ```
 - parameterId has to be identical to the parameter ids specified in the SBML model.
-- parameterName will be used for plotting etc. Can be choosen freely.
-- parameterScale: scale of parameter. lin/log/log10 etc.
+- parameterName will be used for plotting etc. Can be chosen freely.
+- parameterScale: scale of parameter. lin/log/log10 etc. The parameters and boundaries in the following fields are expected to be given in this scale.
 - lowerBound: lower bound of the parameter used for optimization.
 - upperBound: upper bound of the parameter used for optimization.
 - nominalValue: Best values found by optimization or the value used for simulation for fixed parameters(see estimated).
