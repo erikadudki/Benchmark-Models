@@ -99,7 +99,7 @@ Expected to have the following named columns in any (but preferably this) order:
 A tab-separated value text file containing information on the parameters. One row per parameter
 
 ```
-parameterId parameterName parameterScale lowerBound  upperBound nominalValue estimated priorType priorParameters hierarchicalOptimization(optional)
+parameterId parameterName parameterScale lowerBound  upperBound nominalValue estimate priorType priorParameters hierarchicalOptimization(optional)
 ...
 ```
 - parameterId has to be identical to the parameter ids specified in the SBML model.
@@ -108,7 +108,7 @@ parameterId parameterName parameterScale lowerBound  upperBound nominalValue est
 - lowerBound: lower bound of the parameter used for optimization.
 - upperBound: upper bound of the parameter used for optimization.
 - nominalValue: Best values found by optimization or the value used for simulation for fixed parameters(see estimated).
-- estimated: 1 or 0, depending on, if the parameter is estimated (1) or set to a fixed value(0).
+- estimate: 1 or 0, depending on, if the parameter is estimated (1) or set to a fixed value(0).
 - priorType: Type of prior. Leave empty, if no priors. Normal/ Laplace etc.
 - priorParameters: parameters for prior.
 - hierarchicalOptimization: 1 if parameter is optimized using hierarchical optimization approach. 0 otherwise.
