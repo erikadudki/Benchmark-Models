@@ -112,3 +112,16 @@ parameterId parameterName parameterScale lowerBound  upperBound nominalValue est
 - priorType: Type of prior. Leave empty, if no priors. Normal/ Laplace etc.
 - priorParameters: parameters for prior.
 - hierarchicalOptimization: 1 if parameter is optimized using hierarchical optimization approach. 0 otherwise.
+
+## SBML files
+
+In the SBML file for the model the observables are indicated by prefix `observable_` followed by the observableId as in the corresponding column of the measurement sheet. In the definition (=assignment rule) of the observable, `observableParameters` (see measurements) can be included, e.g., 
+```
+observable_pErk = observableParameter1 + observableParameter2*pErk 
+```
+where `observableParameter1` would be an offset, and `observableParameter2` a scaling parameters. 
+For each observable, the noise model needs to be defined in `sigma_observableId`. In the assignment rule for this, the `noiseParameters` (see measurements) are used in the same way as the `observableParameters`. A noise model which accounts for relative and absolute contributions could, e.g., be defined as
+```
+sigma_pErk = noiseParameter1 + noiseParameter2*pErk 
+```
+with `noiseParameter1` denoting the absolute and `noiseParameter2` the relative contribution.
