@@ -1,0 +1,24 @@
+parameterId	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate	priorType	priorParameters	hierarchicalOptimization (optional)
+CD274mRNA_production	CD274mRNA_{production}	log10	-5	3	-1.673482804000000	1			
+DecoyR_binding	DecoyR_{binding}	log10	-5	3	-2.414422067700000	1			
+JAK2_p_inhibition	JAK2_{p,inhibition}	log10	-5	3	-1.107126590300000	1			
+JAK2_phosphorylation	JAK2_{phosphorylation}	log10	-5	3	0.007411354600000	1			
+Kon_IL13Rec	Kon_{IL13Rec}	log10	-5	3	-2.642419383200000	1			
+Rec_intern	Rec_{intern}	log10	-5	3	-0.463278372700000	1			
+Rec_phosphorylation	Rec_{phosphorylation}	log10	-5	3	2.999999920300000	1			
+Rec_recycle	Rec_{recycle}	log10	-5	3	-2.678246463200000	1			
+SOCS3_accumulation	SOCS3_{accumulation}	log10	-5	3	2.654924984000000	1			
+SOCS3_degradation	SOCS3_{degradation}	log10	-5	3	-1.362708216300000	1			
+SOCS3_translation	SOCS3_{translation}	log10	-5	3	1.196416316900000	1			
+SOCS3mRNA_production	SOCS3mRNA_{production}	log10	-5	3	-0.843537117200000	1			
+STAT5_phosphorylation	STAT5_{phosphorylation}	log10	-5	3	-1.710364793700000	1			
+init_Rec_i	init_{Rec,i}	log10	-5	3	2.371175948600000	1			
+pJAK2_dephosphorylation	pJAK2_{dephosphorylation}	log10	-5	3	-3.754748951400000	1			
+pRec_degradation	pRec_{degradation}	log10	-5	3	-0.678662641900000	1			
+pRec_intern	pRec_{intern}	log10	-5	3	-0.232642597300000	1			
+pSTAT5_dephosphorylation	pSTAT5_{dephosphorylation}	log10	-5	3	-3.560932197100000	1			
+scale_CD274mRNA_obs	scale_{CD274mRNA,obs}	log10	-5	3	-2.088691261300000	1			
+scale_IL13_cell_obs	scale_{IL13,cell,obs}	log10	-5	3	0.740440550600000	1			
+scale_SOCS3mRNA_obs	scale_{SOCS3mRNA,obs}	log10	-5	3	-0.235608706800000	1			
+scale_pIL4Ra_obs	scale_{pIL4Ra,obs}	log10	-5	3	0.473599789100000	1			
+scale_pJAK2_obs	scale_{pJAK2,obs}	log10	-5	3	-0.066894084000000	1			
