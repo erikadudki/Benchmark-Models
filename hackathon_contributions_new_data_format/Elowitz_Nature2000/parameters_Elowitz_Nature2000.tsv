@@ -1,0 +1,22 @@
+parameterId	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate	priorType	priorParameters	hierarchicalOptimization (optional
+KM	KM	log10	-5	3	-4.999942743071170	1			
+background	background	log10	-5	3	-4.981074382184080	1			
+eff	eff	log10	-5	3	-1.520579025481860	1			
+eff_GFP	eff_{GFP}	log10	-5	3	-2.709493050571760	1			
+init_GFP	init_{GFP}	log10	-5	3	-4.470163008094260	1			
+init_GFP_mRNA	init_{GFP,mRNA}	log10	-5	3	2.118713467313130	1			
+init_X_mRNA	init_{X,mRNA}	log10	-5	3	0.407672565928168	1			
+init_X_protein	init_{X,protein}	log10	-5	3	1.488674410246800	1			
+init_Y_mRNA	init_{Y,mRNA}	log10	-5	3	2.999999976544130	1			
+init_Y_protein	init_{Y,protein}	log10	-5	3	-3.087104399058180	1			
+init_Z_mRNA	init_{Z,mRNA}	log10	-5	3	1.287063012948070	1			
+init_Z_protein	init_{Z,protein}	log10	-5	3	2.997553236470660	1			
+n_Hill	n_{Hill}	log10	-5	3	0.182570330097928	1			
+scale	scale	log10	-5	3	-0.279017032524776	1			
+sigma	\sigma	log10	-5	3	-1.143625129386040	1			
+tau_mRNA	tau_{mRNA}	log10	-5	3	1.101225352060010	1			
+tau_mRNA_GFP	tau_{mRNA,GFP}	log10	-5	3	-3.393549435508820	1			
+tau_prot	tau_{prot}	log10	-5	3	0.729105254428821	1			
+tau_prot_GFP	tau_{prot,GFP}	log10	-5	3	1.856917692498850	1			
+tps_active	tps_{active}	log10	-5	3	-0.213050641989880	1			
+tps_repr	tps_{repr}	log10	-5	3	-4.999999999996170	1			
