@@ -1,44 +1,44 @@
-observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
-IR1_P		model1_data1	2.2276322688128936	0.0			
-IR1_P		model1_data1	99.33312544491453	0.9			
-IR1_P		model1_data1	83.11082376925573	1.15			
-IR1_P		model1_data1	76.91370499727878	1.3			
-IR1_P		model1_data1	59.65391589085468	2.3			
-IR1_P		model1_data1	55.09610093956986	3.3			
-IR1_P		model1_data1	52.02843747788938	5.3			
-IR1_P		model1_data1	50.215026136579525	7.0			
-IR1_P		model1_data1	47.27970895432425	10.0			
-IR1_P		model1_data1	43.41896544464209	15.0			
-IR1_P		model1_data1	40.660340965694346	20.0			
-IR1_P		model1_data1	37.349008952778455	30.0			
-IRS1_P		model1_data1	5.998702549445425	0.0			
-IRS1_P		model1_data1	220.68908346792418	0.9			
-IRS1_P		model1_data1	198.29851769326532	1.15			
-IRS1_P		model1_data1	186.5557405079018	1.3			
-IRS1_P		model1_data1	137.83767215642686	2.3			
-IRS1_P		model1_data1	119.48269105297248	3.3			
-IRS1_P		model1_data1	109.3574853876436	5.3			
-IRS1_P		model1_data1	106.05808309921281	7.0			
-IRS1_P		model1_data1	101.18021263336846	10.0			
-IRS1_P		model1_data1	94.476981200747	15.0			
-IRS1_P		model1_data1	89.5032574659874	20.0			
-IRS1_P		model1_data1	83.32279833632818	30.0			
-IRS1_P		model1_data2	3.588553113505414	0.0			
-IRS1_P		model1_data2	23.533857113816932	0.34			
-IRS1_P		model1_data2	43.65041946120965	0.6			
-IRS1_P		model1_data2	55.30999637661589	0.9			
-IRS1_P		model1_data2	59.4210435260655	1.2			
-IRS1_P		model1_data2	60.16628248146123	1.5			
-IRS1_P		model1_data2	53.99900338865928	4.0			
-IRS1_P		model1_data2	58.81596089979957	4.34			
-IRS1_P		model1_data2	64.91143556567937	4.6			
-IRS1_P		model1_data2	70.7034173503167	4.9			
-IRS1_P		model1_data2	74.22387214906597	5.2			
-IRS1_P		model1_data2	75.71940787335883	5.5			
-IRS1_P		model1_data3	5.040309940350961	10.0			
-IRS1_P		model1_data4	11.354143723213896	10.0			
-IRS1_P		model1_data5	30.756956031470132	10.0			
-IRS1_P		model1_data6	48.06715663652571	10.0			
-IRS1_P		model1_data7	68.80547778349283	10.0			
-IRS1_P		model1_data8	83.56748134180498	10.0			
-IRS1_P		model1_data9	85.01498904389055	10.0			
+observableId	preequilibrationCondition	simulationCondition	simulation	time	observableParameters	noiseParameters	observableTransformation
+IRS1_P	Dose_0	Dose_0	5.04030994035096	10	k_IRSiP_DosR	sigmaYDosR	lin
+IRS1_P	Dose_0	Dose_001	11.3541437232139	10	k_IRSiP_DosR	sigmaYDosR	lin
+IRS1_P	Dose_0	Dose_01	30.7569560314701	10	k_IRSiP_DosR	sigmaYDosR	lin
+IRS1_P	Dose_0	Dose_1	48.0671566365257	10	k_IRSiP_DosR	sigmaYDosR	lin
+IRS1_P	Dose_0	Dose_3	68.8054777834928	10	k_IRSiP_DosR	sigmaYDosR	lin
+IRS1_P	Dose_0	Dose_10	83.567481341805	10	k_IRSiP_DosR	sigmaYDosR	lin
+IRS1_P	Dose_0	Dose_100	85.0149890438906	10	k_IRSiP_DosR	sigmaYDosR	lin
+IR1_P 	Dose_0	Dose_100	2.22763226881289	0	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	99.3331254449145	0.9	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	83.1108237692557	1.15	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	76.9137049972788	1.3	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	59.6539158908547	2.3	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	55.0961009395699	3.3	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	52.0284374778894	5.3	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	50.2150261365795	7	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	47.2797089543243	10	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	43.4189654446421	15	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	40.6603409656943	20	k_IRP_1Step	sigmaY1TimR	lin
+IR1_P 	Dose_0	Dose_100	37.3490089527785	30	k_IRP_1Step	sigmaY1TimR	lin
+IRS1_P	Dose_0	Dose_100	5.99870254944543	0	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	220.689083467924	0.9	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	198.298517693265	1.15	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	186.555740507902	1.3	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	137.837672156427	2.3	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	119.482691052972	3.3	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	109.357485387644	5.3	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	106.058083099213	7	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	101.180212633368	10	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	94.476981200747	15	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	89.5032574659874	20	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	Dose_100	83.3227983363282	30	k_IRSiP_1Step	sigmaY2TimR	lin
+IRS1_P	Dose_0	TwoSteps	3.58855311350541	0	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	23.5338571138169	0.34	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	43.6504194612097	0.6	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	55.3099963766159	0.9	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	59.4210435260655	1.2	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	60.1662824814612	1.5	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	53.9990033886593	4	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	58.8159608997996	4.34	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	64.9114355656794	4.6	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	70.7034173503167	4.9	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	74.223872149066	5.2	k_IRSiP_2Step	sigmaY2Step	lin
+IRS1_P	Dose_0	TwoSteps	75.7194078733588	5.5	k_IRSiP_2Step	sigmaY2Step	lin
