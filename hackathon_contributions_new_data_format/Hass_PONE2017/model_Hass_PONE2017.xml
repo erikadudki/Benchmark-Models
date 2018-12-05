@@ -38,7 +38,7 @@
       <parameter id="observableParameter2_pAkt" value="1.0765276217424" constant="true"/>
       <parameter id="observableParameter2_pDab1" value="0.139887002952305" constant="true"/>
       <parameter id="observableParameter2_pSFK" value="1.67969987743754" constant="true"/>
-      <parameter id="observableParameter2_tApo" value="2.14289703948776" constant="true"/>
+      <parameter id="observableParameter2_tApoER2" value="2.14289703948776" constant="true"/>
       <parameter id="observableParameter2_tSFK" value="0.285702110374197" constant="true"/>
       <parameter id="perc_mes" value="0.0519099251370762" constant="true"/>
       <parameter id="observableParameter1_Dab1" value="3.75639316079464" constant="true"/>
@@ -323,7 +323,7 @@
             </logbase>
             <apply>
               <plus/>
-              <ci> observableParameter2_tApo </ci>
+              <ci> observableParameter2_tApoER2 </ci>
               <apply>
                 <times/>
                 <ci> observableParameter1_tApoER2 </ci>
