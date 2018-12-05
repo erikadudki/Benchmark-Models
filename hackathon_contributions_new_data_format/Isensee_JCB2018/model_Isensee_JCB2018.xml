@@ -114,30 +114,6 @@
 <species metaid="pPDE" id="pPDE" name="pPDE" compartment="cyt" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="s1" id="s1" name="s1" compartment="default" initialAmount="0">
-<annotation/>
-</species>
-<species metaid="s2" id="s2" name="s2" compartment="default" initialAmount="0">
-<annotation/>
-</species>
-<species metaid="s3" id="s3" name="s3" compartment="default" initialAmount="0">
-<annotation/>
-</species>
-<species metaid="s4" id="s4" name="s4" compartment="default" initialAmount="0">
-<annotation/>
-</species>
-<species metaid="s5" id="s5" name="s5" compartment="default" initialAmount="0">
-<annotation/>
-</species>
-<species metaid="s6" id="s6" name="s6" compartment="default" initialAmount="0">
-<annotation/>
-</species>
-<species metaid="s7" id="s7" name="s7" compartment="default" initialAmount="0">
-<annotation/>
-</species>
-<species metaid="s8" id="s8" name="s8" compartment="default" initialAmount="0">
-<annotation/>
-</species>
 </listOfSpecies>
 <listOfParameters>
 <parameter metaid="AC_total" id="AC_total" value="1"/>
@@ -677,9 +653,6 @@
 <listOfReactions>
 <reaction metaid="v1_v_0" id="v1_v_0" name="v_0" reversible="false">
 <annotation/>
-<listOfReactants>
-<speciesReference metaid="CDMT00001" species="s1"/>
-</listOfReactants>
 <listOfProducts>
 <speciesReference metaid="CDMT00002" species="Sp8_Br_cAMPS"/>
 </listOfProducts>
@@ -710,9 +683,6 @@
 </reaction>
 <reaction metaid="v2_v_1" id="v2_v_1" name="v_1" reversible="false">
 <annotation/>
-<listOfReactants>
-<speciesReference metaid="CDMT00005" species="s2"/>
-</listOfReactants>
 <listOfProducts>
 <speciesReference metaid="CDMT00006" species="Rp8_Br_cAMPS"/>
 </listOfProducts>
@@ -743,9 +713,6 @@
 </reaction>
 <reaction metaid="v3_v_2" id="v3_v_2" name="v_2" reversible="false">
 <annotation/>
-<listOfReactants>
-<speciesReference metaid="CDMT00009" species="s3"/>
-</listOfReactants>
 <listOfProducts>
 <speciesReference metaid="CDMT00010" species="Rp8_pCPT_cAMPS"/>
 </listOfProducts>
@@ -776,9 +743,6 @@
 </reaction>
 <reaction metaid="v4_v_3" id="v4_v_3" name="v_3" reversible="false">
 <annotation/>
-<listOfReactants>
-<speciesReference metaid="CDMT00013" species="s4"/>
-</listOfReactants>
 <listOfProducts>
 <speciesReference metaid="CDMT00014" species="Rp_cAMPS"/>
 </listOfProducts>
@@ -809,9 +773,6 @@
 </reaction>
 <reaction metaid="v5_v_4" id="v5_v_4" name="v_4" reversible="false">
 <annotation/>
-<listOfReactants>
-<speciesReference metaid="CDMT00017" species="s5"/>
-</listOfReactants>
 <listOfProducts>
 <speciesReference metaid="CDMT00018" species="IBMX"/>
 </listOfProducts>
@@ -1002,9 +963,6 @@
 </reaction>
 <reaction metaid="v14_v_13" id="v14_v_13" name="v_13" reversible="false">
 <annotation/>
-<listOfReactants>
-<speciesReference metaid="CDMT00047" species="s6"/>
-</listOfReactants>
 <listOfProducts>
 <speciesReference metaid="CDMT00048" species="cAMP"/>
 </listOfProducts>
@@ -1033,9 +991,6 @@
 </reaction>
 <reaction metaid="v15_v_14" id="v15_v_14" name="v_14" reversible="false">
 <annotation/>
-<listOfReactants>
-<speciesReference metaid="CDMT00052" species="s7"/>
-</listOfReactants>
 <listOfProducts>
 <speciesReference metaid="CDMT00053" species="cAMP"/>
 </listOfProducts>
@@ -1068,9 +1023,6 @@
 <listOfReactants>
 <speciesReference metaid="CDMT00057" species="cAMP"/>
 </listOfReactants>
-<listOfProducts>
-<speciesReference metaid="CDMT00058" species="s8"/>
-</listOfProducts>
 <listOfModifiers>
 <modifierSpeciesReference metaid="CDMT00059" species="IBMX"/>
 <modifierSpeciesReference metaid="CDMT00060" species="PDE"/>
