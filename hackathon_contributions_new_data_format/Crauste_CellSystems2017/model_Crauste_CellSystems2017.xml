@@ -31,28 +31,28 @@
       <parameter id="mu_PL" value="3.6340308186265e-05" constant="true"/>
       <parameter id="rho_E" value="0.507415703707752" constant="true"/>
       <parameter id="rho_P" value="0.126382288121756" constant="true"/>
-      <parameter id="Naive_obs" value="0" constant="false"/>
-      <parameter id="EarlyEffector_obs" value="0" constant="false"/>
-      <parameter id="LateEffector_obs" value="0" constant="false"/>
-      <parameter id="Memory_obs" value="0" constant="false"/>
+      <parameter id="observable_Naive" value="0" constant="false"/>
+      <parameter id="observable_EarlyEffector" value="0" constant="false"/>
+      <parameter id="observable_LateEffector" value="0" constant="false"/>
+      <parameter id="observable_Memory" value="0" constant="false"/>
     </listOfParameters>
     <listOfRules>
-      <assignmentRule variable="Naive_obs">
+      <assignmentRule variable="observable_Naive">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> Naive </ci>
         </math>
       </assignmentRule>
-      <assignmentRule variable="EarlyEffector_obs">
+      <assignmentRule variable="observable_EarlyEffector">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> EarlyEffector </ci>
         </math>
       </assignmentRule>
-      <assignmentRule variable="LateEffector_obs">
+      <assignmentRule variable="observable_LateEffector">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> LateEffector </ci>
         </math>
       </assignmentRule>
-      <assignmentRule variable="Memory_obs">
+      <assignmentRule variable="observable_Memory">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> Memory </ci>
         </math>

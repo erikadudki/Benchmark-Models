@@ -85,7 +85,7 @@
 <parameter metaid="observable_IR1_P" id="observable_IR1_P" name="IR1_P" value="1" units="dimensionless" constant="false"/>
 <parameter metaid="sigma_IRS1_P" id="noiseParameter1_IRS1_P" value="1" units="dimensionless"/>
 <parameter metaid="sigma_IR1_P" id="noiseParameter1_IR1_P" value="1" units="dimensionless"/>
-<parameter metaid="scale_IRS1" id="observableParameter1_IR1" value="0" units="dimensionless"/>
+<parameter metaid="scale_IRS1" id="observableParameter1_IR1_P" value="0" units="dimensionless"/>
 <parameter metaid="scale_IRS1_P" id="observableParameter1_IRS1_P" value="0" units="dimensionless"/>
 <parameter metaid="CDMT00046" id="sigma_IRS1_P" value="0" units="dimensionless" constant="false"/>
 <parameter metaid="CDMT00047" id="sigma_IR1_P" value="0" units="dimensionless" constant="false"/>
@@ -125,7 +125,7 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> observableParameter1_IR1 </ci>
+<ci> observableParameter1_IR1_P </ci>
 <apply>
 <plus/>
 <ci> IRp </ci>
