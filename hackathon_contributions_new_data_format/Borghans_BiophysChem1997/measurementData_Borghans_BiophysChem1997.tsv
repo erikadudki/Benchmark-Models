@@ -1,4 +1,4 @@
-observableId	preequilibrationConditionID	simulationConditionID	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
 Ca		model1_data1	-0,457057499	0,029484867	offset;scale	sigma	log10
 Ca		model1_data1	-0,427784593	0,147620899	offset;scale	sigma	log10
 Ca		model1_data1	-0,463256361	0,312814778	offset;scale	sigma	log10
