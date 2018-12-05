@@ -169,7 +169,6 @@
 <parameter metaid="xi_rel_open" id="observableParameter5_pRII" value="0.749660486959971" units="time"/>
 <parameter metaid="Fsk" id="Fsk" value="10" units="time" constant="false"/>
 <parameter metaid="IBMXex" id="IBMXex" value="0" constant="false"/>
-<parameter metaid="DMSO" id="DMSO" value="0" constant="false"/>
 <parameter metaid="H89" id="H89" value="0" constant="false"/>
 <parameter metaid="Sp8_Br_cAMPS_AM" id="Sp8_Br_cAMPS_AM" value="0" constant="false"/>
 <parameter metaid="Rp8_Br_cAMPS_pAB" id="Rp8_Br_cAMPS_pAB" value="0" constant="false"/>
@@ -192,8 +191,6 @@
 <parameter metaid="Sp8_Br_cAMPS_AM_time" id="Sp8_Br_cAMPS_AM_time" value="0" units="time"/>
 <parameter metaid="fourABnOH_level" id="fourABnOH_level" value="0" units="substance"/>
 <parameter metaid="fourABnOH_time" id="fourABnOH_time" value="0" units="time"/>
-<parameter metaid="DMSO_level" id="DMSO_level" value="0" units="substance"/>
-<parameter metaid="DMSO_time" id="DMSO_time" value="0" units="time"/>
 <parameter metaid="observable_pRII" id="observable_pRII" value="0" units="substance" constant="false"/>
 <parameter metaid="noiseParameter1_pRII" id="noiseParameter1_pRII" value="1.10313696623937" units="substance"/>
 <parameter metaid="noiseParameter2_pRII" id="noiseParameter2_pRII" value="2205.15492853024" units="substance"/>
@@ -252,31 +249,6 @@
 <minus/>
 <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
 <ci> IBMX_time </ci>
-</apply>
-<cn type="integer"> 0 </cn>
-</apply>
-</piece>
-<otherwise>
-<cn type="integer"> 1 </cn>
-</otherwise>
-</piecewise>
-</apply>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00169" variable="DMSO">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<apply>
-<times/>
-<ci> DMSO_level </ci>
-<piecewise>
-<piece>
-<cn type="integer"> 0 </cn>
-<apply>
-<lt/>
-<apply>
-<minus/>
-<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
-<ci> DMSO_time </ci>
 </apply>
 <cn type="integer"> 0 </cn>
 </apply>
