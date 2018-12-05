@@ -88,8 +88,8 @@
       <parameter id="tau_typeIDT5_ExpID6" value="1" constant="true"/>
       <parameter id="tau_typeIDwt_ExpID4" value="1" constant="true"/>
       <parameter id="init_Bac" value="0.0147007946993721" constant="true"/>
-      <parameter id="sigma_Bacnorm" value="0.0370578932854204" constant="true"/>
-      <parameter id="sigma_IndconcNormRange" value="0.020393702596959" constant="true"/>
+      <parameter id="sigma_Bacnorm" value="0.0370578932854204" constant="false"/>
+      <parameter id="sigma_IndconcNormRange" value="0.020393702596959" constant="false"/>
       <parameter id="noiseParameter1_Bacnorm" value="0.0370578932854204" constant="true"/>
       <parameter id="noiseParameter1_IndconcNormRange" value="0.020393702596959" constant="true"/>
       <parameter id="observable_Bacnorm" value="0" constant="false"/>
