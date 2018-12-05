@@ -1,4 +1,4 @@
-conditionID	conditionName	insulin_time_1	insulin_dose_1	insulin_time_2	insulin_dose_2
+conditionId	conditionName	insulin_time_1	insulin_dose_1	insulin_time_2	insulin_dose_2
 Dose_0	insulin, 0 nM	0.000	0.000	0.000	0.000
 Dose_001	insulin, 0.01 nM	0.000	0.010	0.000	0.000
 Dose_01	insulin, 0.1 nM	0.000	0.100	0.000	0.000
