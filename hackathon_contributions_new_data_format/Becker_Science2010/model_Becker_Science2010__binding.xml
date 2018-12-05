@@ -1,64 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sbml xmlns="http://www.sbml.org/sbml/level2/version4" xmlns:celldesigner="http://www.sbml.org/2001/ns/celldesigner" level="2" version="4">
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
 <model metaid="arFramework3" id="epo_int_rep">
-<annotation>
-<celldesigner:extension>
-<celldesigner:modelVersion>4.0</celldesigner:modelVersion>
-<celldesigner:modelDisplay sizeX="527" sizeY="512"/>
-<celldesigner:listOfCompartmentAliases/>
-<celldesigner:listOfComplexSpeciesAliases/>
-<celldesigner:listOfSpeciesAliases>
-<celldesigner:speciesAlias id="sa1" species="EpoR">
-<celldesigner:activity>inactive</celldesigner:activity>
-<celldesigner:bounds x="157.0" y="159.0" w="80.0" h="40.0"/>
-<celldesigner:font size="12"/>
-<celldesigner:view state="usual"/>
-<celldesigner:usualView>
-<celldesigner:innerPosition x="0.0" y="0.0"/>
-<celldesigner:boxSize width="80.0" height="40.0"/>
-<celldesigner:singleLine width="1.0"/>
-<celldesigner:paint color="ffccffcc" scheme="Color"/>
-</celldesigner:usualView>
-<celldesigner:briefView>
-<celldesigner:innerPosition x="0.0" y="0.0"/>
-<celldesigner:boxSize width="80.0" height="60.0"/>
-<celldesigner:singleLine width="0.0"/>
-<celldesigner:paint color="3fff0000" scheme="Color"/>
-</celldesigner:briefView>
-<celldesigner:info state="empty" angle="-1.5707963267948966"/>
-</celldesigner:speciesAlias>
-<celldesigner:speciesAlias id="sa2" species="Epo_EpoR">
-<celldesigner:activity>inactive</celldesigner:activity>
-<celldesigner:bounds x="155.0" y="304.0" w="80.0" h="40.0"/>
-<celldesigner:font size="12"/>
-<celldesigner:view state="usual"/>
-<celldesigner:usualView>
-<celldesigner:innerPosition x="0.0" y="0.0"/>
-<celldesigner:boxSize width="80.0" height="40.0"/>
-<celldesigner:singleLine width="1.0"/>
-<celldesigner:paint color="ffccffcc" scheme="Color"/>
-</celldesigner:usualView>
-<celldesigner:briefView>
-<celldesigner:innerPosition x="0.0" y="0.0"/>
-<celldesigner:boxSize width="80.0" height="60.0"/>
-<celldesigner:singleLine width="0.0"/>
-<celldesigner:paint color="3fff0000" scheme="Color"/>
-</celldesigner:briefView>
-<celldesigner:info state="empty" angle="-1.5707963267948966"/>
-</celldesigner:speciesAlias>
-</celldesigner:listOfSpeciesAliases>
-<celldesigner:listOfGroups/>
-<celldesigner:listOfProteins>
-<celldesigner:protein id="pr2" name="EpoR" type="GENERIC"/>
-<celldesigner:protein id="pr3" name="Epo_EpoR" type="GENERIC"/>
-</celldesigner:listOfProteins>
-<celldesigner:listOfGenes/>
-<celldesigner:listOfRNAs/>
-<celldesigner:listOfAntisenseRNAs/>
-<celldesigner:listOfLayers/>
-<celldesigner:listOfBlockDiagrams/>
-</celldesigner:extension>
-</annotation>
+<annotation/>
 <listOfUnitDefinitions>
 <unitDefinition metaid="time" id="time" name="time">
 <listOfUnits>
@@ -91,26 +34,10 @@
 </listOfCompartments>
 <listOfSpecies>
 <species metaid="EpoR" id="EpoR" name="EpoR" compartment="default" initialConcentration="1">
-<annotation>
-<celldesigner:extension>
-<celldesigner:positionToCompartment>inside</celldesigner:positionToCompartment>
-<celldesigner:speciesIdentity>
-<celldesigner:class>PROTEIN</celldesigner:class>
-<celldesigner:proteinReference>pr2</celldesigner:proteinReference>
-</celldesigner:speciesIdentity>
-</celldesigner:extension>
-</annotation>
+<annotation/>
 </species>
 <species metaid="Epo_EpoR" id="Epo_EpoR" name="Epo_EpoR" compartment="default" initialConcentration="0">
-<annotation>
-<celldesigner:extension>
-<celldesigner:positionToCompartment>inside</celldesigner:positionToCompartment>
-<celldesigner:speciesIdentity>
-<celldesigner:class>PROTEIN</celldesigner:class>
-<celldesigner:proteinReference>pr3</celldesigner:proteinReference>
-</celldesigner:speciesIdentity>
-</celldesigner:extension>
-</annotation>
+<annotation/>
 </species>
 </listOfSpecies>
 <listOfParameters>
@@ -147,45 +74,12 @@
 </listOfRules>
 <listOfReactions>
 <reaction metaid="v_0" id="v_0" name="v_0" reversible="false" fast="false">
-<annotation>
-<celldesigner:extension>
-<celldesigner:name>v_0</celldesigner:name>
-<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
-<celldesigner:baseReactants>
-<celldesigner:baseReactant species="EpoR" alias="sa1">
-<celldesigner:linkAnchor position="SSE"/>
-</celldesigner:baseReactant>
-</celldesigner:baseReactants>
-<celldesigner:baseProducts>
-<celldesigner:baseProduct species="Epo_EpoR" alias="sa2">
-<celldesigner:linkAnchor position="NNE"/>
-</celldesigner:baseProduct>
-</celldesigner:baseProducts>
-<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="0">
-<celldesigner:listOfLineDirection>
-<celldesigner:lineDirection index="0" value="unknown"/>
-</celldesigner:listOfLineDirection>
-</celldesigner:connectScheme>
-<celldesigner:line width="1.0" color="ff000000"/>
-</celldesigner:extension>
-</annotation>
+<annotation/>
 <listOfReactants>
-<speciesReference metaid="CDMT00041" species="EpoR">
-<annotation>
-<celldesigner:extension>
-<celldesigner:alias>sa1</celldesigner:alias>
-</celldesigner:extension>
-</annotation>
-</speciesReference>
+<speciesReference metaid="CDMT00041" species="EpoR"/>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00042" species="Epo_EpoR">
-<annotation>
-<celldesigner:extension>
-<celldesigner:alias>sa2</celldesigner:alias>
-</celldesigner:extension>
-</annotation>
-</speciesReference>
+<speciesReference metaid="CDMT00042" species="Epo_EpoR"/>
 </listOfProducts>
 <kineticLaw metaid="CDMT00043">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -199,45 +93,12 @@
 </kineticLaw>
 </reaction>
 <reaction metaid="v_1" id="v_1" name="v_1" reversible="false" fast="false">
-<annotation>
-<celldesigner:extension>
-<celldesigner:name>v_1</celldesigner:name>
-<celldesigner:reactionType>STATE_TRANSITION</celldesigner:reactionType>
-<celldesigner:baseReactants>
-<celldesigner:baseReactant species="Epo_EpoR" alias="sa2">
-<celldesigner:linkAnchor position="NNW"/>
-</celldesigner:baseReactant>
-</celldesigner:baseReactants>
-<celldesigner:baseProducts>
-<celldesigner:baseProduct species="EpoR" alias="sa1">
-<celldesigner:linkAnchor position="SSW"/>
-</celldesigner:baseProduct>
-</celldesigner:baseProducts>
-<celldesigner:connectScheme connectPolicy="direct" rectangleIndex="0">
-<celldesigner:listOfLineDirection>
-<celldesigner:lineDirection index="0" value="unknown"/>
-</celldesigner:listOfLineDirection>
-</celldesigner:connectScheme>
-<celldesigner:line width="1.0" color="ff000000"/>
-</celldesigner:extension>
-</annotation>
+<annotation/>
 <listOfReactants>
-<speciesReference metaid="CDMT00044" species="Epo_EpoR">
-<annotation>
-<celldesigner:extension>
-<celldesigner:alias>sa2</celldesigner:alias>
-</celldesigner:extension>
-</annotation>
-</speciesReference>
+<speciesReference metaid="CDMT00044" species="Epo_EpoR"/>
 </listOfReactants>
 <listOfProducts>
-<speciesReference metaid="CDMT00045" species="EpoR">
-<annotation>
-<celldesigner:extension>
-<celldesigner:alias>sa1</celldesigner:alias>
-</celldesigner:extension>
-</annotation>
-</speciesReference>
+<speciesReference metaid="CDMT00045" species="EpoR"/>
 </listOfProducts>
 <kineticLaw metaid="CDMT00046">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
