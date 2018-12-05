@@ -1,4 +1,4 @@
-observableId	preequilibrationCondition	simulationCondition	simulatedData	time	observableParameters	noiseParameters	observableTransformation
+observableId	preequilibrationConditionId	simulationConditionId	simulatedData	time	observableParameters	noiseParameters	observableTransformation
 ob10		model1_data1	4.1007031178	5		0.406451	lin
 ob10		model1_data1	3.8679329271	15		0.406728	lin
 ob10		model1_data1	3.5433149898	30		0.320749	lin
