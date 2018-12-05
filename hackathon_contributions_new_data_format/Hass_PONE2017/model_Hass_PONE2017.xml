@@ -47,12 +47,6 @@
       <parameter id="observableParameter1_pSFK" value="935.434627604922" constant="true"/>
       <parameter id="observableParameter1_tApoER2" value="0.943343362014992" constant="true"/>
       <parameter id="observableParameter1_tSFK" value="399.010787302916" constant="true"/>
-      <parameter id="sd_Dab1" value="0.1" constant="true"/>
-      <parameter id="sd_pAkt" value="0.1" constant="true"/>
-      <parameter id="sd_pDab1" value="0.1" constant="true"/>
-      <parameter id="sd_pSFK" value="0.1" constant="true"/>
-      <parameter id="sd_tApoER2" value="0.1" constant="true"/>
-      <parameter id="sd_tSFK" value="0.1" constant="true"/>
       <parameter id="observable_Dab1" value="0" constant="false"/>
       <parameter id="observable_pDab1" value="0" constant="false"/>
       <parameter id="observable_pAkt" value="0" constant="false"/>
