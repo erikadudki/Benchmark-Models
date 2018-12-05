@@ -54,6 +54,20 @@
       <parameter id="observable_tSFK" value="0" constant="false"/>
       <parameter id="observable_tApoER2" value="0" constant="false"/>
       <parameter id="observable_Reelin_step" value="0" constant="false"/>
+      <parameter id="noiseParameter1_Dab1" value="0" constant="false"/>
+      <parameter id="noiseParameter1_pDab1" value="0" constant="false"/>
+      <parameter id="noiseParameter1_pAkt" value="0" constant="false"/>
+      <parameter id="noiseParameter1_pSFK" value="0" constant="false"/>
+      <parameter id="noiseParameter1_tSFK" value="0" constant="false"/>
+      <parameter id="noiseParameter1_tApoER2" value="0" constant="false"/>
+      <parameter id="noiseParameter1_Reelin_step" value="0" constant="false"/>
+      <parameter id="sigma_Dab1" value="0" constant="false"/>
+      <parameter id="sigma_pDab1" value="0" constant="false"/>
+      <parameter id="sigma_pAkt" value="0" constant="false"/>
+      <parameter id="sigma_pSFK" value="0" constant="false"/>
+      <parameter id="sigma_tSFK" value="0" constant="false"/>
+      <parameter id="sigma_tApoER2" value="0" constant="false"/>
+      <parameter id="sigma_Reelin_step" value="0" constant="false"/>
       <parameter id="Reelin_step" value="0" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
@@ -103,6 +117,41 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="sigma_Dab1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_Dab1 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pDab1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pDab1 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pAkt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pAkt </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pSFK">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pSFK </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_tSFK">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_tSFK </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_tApoER2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_tApoER2 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_Reelin_step">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_Reelin_step </ci>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="observable_Reelin_step">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
