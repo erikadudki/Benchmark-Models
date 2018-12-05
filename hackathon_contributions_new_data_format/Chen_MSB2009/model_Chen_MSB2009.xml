@@ -712,8 +712,8 @@
       <parameter id="observable_ERK_PP" value="0" constant="false"/>
       <parameter id="observable_AKT_PP" value="0" constant="false"/>
       <parameter id="c1" value="0" constant="true"/>
-      <parameter id="c515" value="0" constant="true"/>
-      <parameter id="c285" value="0" constant="true"/>
+      <parameter id="c515" value="0" constant="false"/>
+      <parameter id="c285" value="0" constant="false"/>
       <parameter id="c514" value="0" constant="true"/>
       <parameter id="Step10Mio" value="0" constant="false"/>
       <parameter id="Step33" value="0" constant="false"/>
