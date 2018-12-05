@@ -36,17 +36,6 @@
       <parameter id="jak1_act_il6" value="0.00907582801796422" constant="true"/>
       <parameter id="jak1_gp130_dea" value="0.0781666758479958" constant="true"/>
       <parameter id="jak1_inh_ruxolitinib" value="0.00602318018420804" constant="true"/>
-      <parameter id="offset_pgp130_wb_bohl_hep_2005_02_03_Cont40ng_T90min" value="0.156998648296032" constant="true"/>
-      <parameter id="offset_pjak1_wb_bohl_hep_2005_02_03_Cont40ng_T90min" value="0.244949952245882" constant="true"/>
-      <parameter id="offset_pstat3_wb_bohl_hep_2005_02_03_Cont40ng_T90min" value="0.175114380467646" constant="true"/>
-      <parameter id="scale_pgp130_wb_bohl_hep_2005_02_03_Cont40ng_T90min" value="3.93312333471007" constant="true"/>
-      <parameter id="scale_pgp130_wb_bohl_hep_2005_07_26_Pulse5min" value="7.91981957104836" constant="true"/>
-      <parameter id="scale_pjak1_wb_bohl_hep_2005_02_03_Cont40ng_T90min" value="2.22203918736081" constant="true"/>
-      <parameter id="scale_pstat3_wb_bohl_hep_2005_02_03_Cont40ng_T90min" value="31.4608068818735" constant="true"/>
-      <parameter id="scale_socs3_qpcr_braun_hep_2013_07_08_qPCR_Socs3_Stat3" value="62.0532495981734" constant="true"/>
-      <parameter id="sd_pgp130_wb_bohl_hep_2005_02_03_Cont40ng_T90min" value="0.0975021844819044" constant="true"/>
-      <parameter id="sd_pjak1_wb_bohl_hep_2005_02_03_Cont40ng_T90min" value="0.117272672564541" constant="true"/>
-      <parameter id="sd_pstat3_wb_bohl_hep_2005_02_03_Cont40ng_T90min" value="0.108774187696738" constant="true"/>
       <parameter id="socs3_assoc" value="0.0193433317308793" constant="true"/>
       <parameter id="socs3_des" value="0.448681194394997" constant="true"/>
       <parameter id="socs3_pro" value="1.69793199784262" constant="true"/>
@@ -59,6 +48,7 @@
       <parameter id="stat3_imp" value="0.0593625880454426" constant="true"/>
       <parameter id="stat3_inh_socs3" value="0.618830300019148" constant="true"/>
       <parameter id="stat3_inh_stattic" value="0.10034735722288" constant="true"/>
+      <parameter id="rux_degrade" value="0.000970648051213138" constant="true"/>
       <parameter id="total_STAT3" value="779.940698016358" constant="true"/>
       <parameter id="IL6" value="0" constant="false"/>
       <parameter id="input_il6" value="0" constant="true"/>
@@ -68,6 +58,8 @@
       <parameter id="input_stattic" value="0" constant="true"/>
       <parameter id="Ruxolitinib" value="0" constant="false"/>
       <parameter id="input_ruxolitinib" value="0" constant="true"/>
+      <parameter id="scale_pgp130_wb_bohl_hep_2005_07_26_Pulse5min" value="7.91981957104836" constant="true"/>
+      <parameter id="scale_socs3_qpcr_braun_hep_2013_07_08_qPCR_Socs3_Stat3" value="62.0532495981734" constant="true"/>
       <parameter id="observable_pJAK1_wb" value="1" constant="false"/>
       <parameter id="observable_pgp130_wb" value="1" constant="false"/>
       <parameter id="observable_pSTAT3_wb" value="1" constant="false"/>
@@ -92,13 +84,32 @@
       <parameter id="sigma_pSTAT3_ms" value="1" constant="false"/>
       <parameter id="sigma_pSTAT3_lumi" value="1" constant="false"/>
       <parameter id="sigma_ntSTAT3_ratio" value="1" constant="false"/>
-      <parameter id="noiseParameter1_ctSTAT3_abs" value="1" constant="true"/>
-      <parameter id="noiseParameter1_JAK1_gp130_abs" value="1" constant="true"/>
+      <parameter id="observableParameter1_pSTAT3_lumi" value="1" constant="true"/>
+      <parameter id="observableParameter2_pSTAT3_lumi" value="1" constant="true"/>
+      <parameter id="observableParameter1_npSTAT3_wb" value="1" constant="true"/>
+      <parameter id="observableParameter2_npSTAT3_wb" value="1" constant="true"/>
+      <parameter id="observableParameter1_pSTAT3_wb" value="1" constant="true"/>
+      <parameter id="observableParameter2_pSTAT3_wb" value="1" constant="true"/>
+      <parameter id="observableParameter1_pJAK1_wb" value="1" constant="true"/>
+      <parameter id="observableParameter2_pJAK1_wb" value="1" constant="true"/>
+      <parameter id="observableParameter1_pgp130_wb" value="1" constant="true"/>
+      <parameter id="observableParameter2_pgp130_wb" value="1" constant="true"/>
+      <parameter id="observableParameter1_SOCS3_qpcr" value="1" constant="true"/>
+      <parameter id="observableParameter2_SOCS3_qpcr" value="1" constant="true"/>
+      <parameter id="observableParameter1_SOCS3_wb" value="1" constant="true"/>
+      <parameter id="observableParameter2_SOCS3_wb" value="1" constant="true"/>
+      <parameter id="noiseParameter1_pJAK1_wb" value="1" constant="true"/>
+      <parameter id="noiseParameter1_pSTAT3_ms" value="1" constant="true"/>
+      <parameter id="noiseParameter1_ntSTAT3_ratio" value="1" constant="true"/>
+      <parameter id="noiseParameter1_pSTAT3_lumi" value="1" constant="true"/>
+      <parameter id="noiseParameter1_pgp130_wb" value="1" constant="true"/>
+      <parameter id="noiseParameter1_pSTAT3_wb" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3_wb" value="1" constant="true"/>
+      <parameter id="noiseParameter1_npSTAT3_wb" value="1" constant="true"/>
       <parameter id="noiseParameter1_SOCS3_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_SOCS3_qpcr" value="1" constant="true"/>
       <parameter id="noiseParameter1_JAK1_gp130_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_ctSTAT3_abs" value="1" constant="true"/>
-
     </listOfParameters>
     <listOfRules>
       <assignmentRule variable="IL6">
@@ -208,6 +219,41 @@
              </apply>
          </math>
      </assignmentRule>
+     <assignmentRule variable="observable_npSTAT3_wb">
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+                 <log/>
+                 <logbase>
+                     <cn type="integer"> 10 </cn>
+                 </logbase>
+                 <apply>
+                     <plus/>
+                     <ci> observableParameter1_npSTAT3_wb </ci>
+                     <apply>
+                         <divide/>
+                         <apply>
+                             <times/>
+                             <cn> 25.34 </cn>
+                             <ci> stat3_imp </ci>
+                             <ci> tpSTAT3 </ci>
+                             <ci> observableParameter2_npSTAT3_wb </ci>
+                             <apply>
+                                 <plus/>
+                                 <ci> f_pstat3_imp </ci>
+                                 <cn type="integer"> 1 </cn>
+                             </apply>
+                         </apply>
+                         <ci> total_STAT3 </ci>
+                     </apply>
+                 </apply>
+             </apply>
+         </math>
+     </assignmentRule>
+     <assignmentRule variable="sigma_npSTAT3_wb">
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> noiseParameter1_npSTAT3_wb </ci>
+         </math>
+     </assignmentRule>
      <assignmentRule variable="observable_JAK1_gp130_abs">
          <math xmlns="http://www.w3.org/1998/Math/MathML">
              <apply>
@@ -244,12 +290,12 @@
              </apply>
          </math>
      </assignmentRule>
-     <assignmentRule variable="sigma_ctSTAT3_abs">
-         <math xmlns="http://www.w3.org/1998/Math/MathML">
-             <ci> noiseParameter1_ctSTAT3_abs </ci>
-         </math>
-     </assignmentRule>
-      <assignmentRule variable="observable_ctSTAT3_abs">
+      <assignmentRule variable="sigma_ctSTAT3_abs">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_ctSTAT3_abs </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_SOCS3_wb">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
                   <log/>
@@ -258,15 +304,14 @@
                   </logbase>
                   <apply>
                       <plus/>
-                      <ci> STAT3 </ci>
-                      <ci> tpSTAT3 </ci>
+                      <ci> observableParameter1_SOCS3_wb </ci>
+                      <apply>
+                          <times/>
+                          <ci> SOCS3 </ci>
+                          <ci> observableParameter2_SOCS3_wb </ci>
+                      </apply>
                   </apply>
               </apply>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_ctSTAT3_abs">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_ctSTAT3_abs </ci>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_pJAK1_wb">
@@ -295,6 +340,28 @@
       <assignmentRule variable="sigma_pJAK1_wb">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <ci> noiseParameter1_pJAK1_wb </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_pSTAT3_ms">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                  <divide/>
+                  <apply>
+                      <times/>
+                      <cn type="integer"> 100 </cn>
+                      <ci> tpSTAT3 </ci>
+                  </apply>
+                  <apply>
+                      <plus/>
+                      <ci> STAT3 </ci>
+                      <ci> tpSTAT3 </ci>
+                  </apply>
+              </apply>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pSTAT3_ms">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_pSTAT3_ms </ci>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_ntSTAT3_ratio">
@@ -335,6 +402,34 @@
       <assignmentRule variable="sigma_SOCS3_abs">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <ci> noiseParameter1_SOCS3_abs </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_pSTAT3_lumi">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                  <log/>
+                  <logbase>
+                      <cn type="integer"> 10 </cn>
+                  </logbase>
+                  <apply>
+                      <plus/>
+                      <ci> observableParameter1_pSTAT3_lumi </ci>
+                      <apply>
+                          <divide/>
+                          <apply>
+                              <times/>
+                              <ci> tpSTAT3 </ci>
+                              <ci> observableParameter2_pSTAT3_lumi </ci>
+                          </apply>
+                          <ci> total_STAT3 </ci>
+                      </apply>
+                  </apply>
+              </apply>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pSTAT3_lumi">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_pSTAT3_lumi </ci>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_pgp130_wb">
