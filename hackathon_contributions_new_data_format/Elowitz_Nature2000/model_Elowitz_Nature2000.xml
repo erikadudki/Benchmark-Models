@@ -98,18 +98,12 @@
       <assignmentRule variable="observable_fluorescence">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
+            <plus/>
+            <ci> observableParameter1_fluorescence </ci>
             <apply>
-              <plus/>
-              <ci> observableParameter1_fluorescence </ci>
-              <apply>
-                <times/>
-                <ci> GFP </ci>
-                <ci> observableParameter2_fluorescence </ci>
-              </apply>
+              <times/>
+              <ci> GFP </ci>
+              <ci> observableParameter2_fluorescence </ci>
             </apply>
           </apply>
         </math>
