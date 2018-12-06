@@ -1808,180 +1808,108 @@
       <assignmentRule variable="observable_Ski">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneA </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneA </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Skil">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneB </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneB </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Dnmt3a">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneC </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneC </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Sox4">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneD </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneD </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Jun">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneE </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneE </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Smad7">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneF </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneF </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Klf10">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneG </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneG </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Bmp4">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneH </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneH </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Cxcl15">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneI </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneI </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Dusp5">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneJ </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneJ </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Tgfa">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneK </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneK </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
       <assignmentRule variable="observable_Pdk4">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
-                  <log/>
-                  <logbase>
-                      <cn type="integer"> 10 </cn>
-                  </logbase>
-                  <apply>
-                      <plus/>
-                      <ci> geneL </ci>
-                      <cn type="e-notation"> 1 <sep/> -6 </cn>
-                  </apply>
+                  <plus/>
+                  <ci> geneL </ci>
+                  <cn type="e-notation"> 1 <sep/> -6 </cn>
               </apply>
           </math>
       </assignmentRule>
