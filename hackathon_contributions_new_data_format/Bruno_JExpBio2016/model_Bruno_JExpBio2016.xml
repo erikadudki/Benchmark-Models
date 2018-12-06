@@ -44,6 +44,18 @@
       <parameter id="observable_ob10" value="1" constant="false"/>
       <parameter id="observable_oohb10" value="1" constant="false"/>
       <parameter id="observable_ozea" value="1" constant="false"/>
+      <parameter id="noiseParameter1_obcar" value="1" constant="false"/>
+      <parameter id="noiseParameter1_obcry" value="1" constant="false"/>
+      <parameter id="noiseParameter1_obio" value="1" constant="false"/>
+      <parameter id="noiseParameter1_ob10" value="1" constant="false"/>
+      <parameter id="noiseParameter1_oohb10" value="1" constant="false"/>
+      <parameter id="noiseParameter1_ozea" value="1" constant="false"/>
+      <parameter id="sigma_obcar" value="1" constant="false"/>
+      <parameter id="sigma_obcry" value="1" constant="false"/>
+      <parameter id="sigma_obio" value="1" constant="false"/>
+      <parameter id="sigma_ob10" value="1" constant="false"/>
+      <parameter id="sigma_oohb10" value="1" constant="false"/>
+      <parameter id="sigma_ozea" value="1" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="bcar">
@@ -73,6 +85,36 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="sigma_obcar">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_obcar </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_obcry">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_obcry </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_obio">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_obio </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_ob10">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_ob10 </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_oohb10">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_oohb10 </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_ozea">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_ozea </ci>
+          </math>
+      </assignmentRule>
       <assignmentRule variable="observable_obcar">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> bcar </ci>

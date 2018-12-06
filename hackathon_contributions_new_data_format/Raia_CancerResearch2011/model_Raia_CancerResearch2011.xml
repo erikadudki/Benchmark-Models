@@ -52,14 +52,14 @@
       <parameter id="scaling_observable_SOCS3mRNA" value="0.581761348497872" constant="true"/>
       <parameter id="scaling_observable_pIL4Ra" value="2.97546594962969" constant="true"/>
       <parameter id="scaling_observable_pJAK2" value="0.857047493450688" constant="true"/>
-      <parameter id="sigma_CD274mRNA" value="0.0244761059130156" constant="true"/>
-      <parameter id="sigma_IL13_cell" value="0.27515057296293" constant="true"/>
-      <parameter id="sigma_RecSurf" value="1.01215560921577e-05" constant="true"/>
-      <parameter id="sigma_SOCS3" value="15.169413720827" constant="true"/>
-      <parameter id="sigma_SOCS3mRNA" value="9.18854996116373" constant="true"/>
-      <parameter id="sigma_pIL4Ra" value="0.615883167883187" constant="true"/>
-      <parameter id="sigma_pJAK2" value="0.324394935431755" constant="true"/>
-      <parameter id="sigma_pSTAT5" value="1.40183018698345" constant="true"/>
+      <parameter id="sigma_CD274mRNA" value="0.0244761059130156" constant="false"/>
+      <parameter id="sigma_IL13_cell" value="0.27515057296293" constant="false"/>
+      <parameter id="sigma_RecSurf" value="1.01215560921577e-05" constant="false"/>
+      <parameter id="sigma_SOCS3" value="15.169413720827" constant="false"/>
+      <parameter id="sigma_SOCS3mRNA" value="9.18854996116373" constant="false"/>
+      <parameter id="sigma_pIL4Ra" value="0.615883167883187" constant="false"/>
+      <parameter id="sigma_pJAK2" value="0.324394935431755" constant="false"/>
+      <parameter id="sigma_pSTAT5" value="1.40183018698345" constant="false"/>
       <parameter id="noiseParameter1_CD274mRNA" value="0.0244761059130156" constant="true"/>
       <parameter id="noiseParameter1_IL13_cell" value="0.27515057296293" constant="true"/>
       <parameter id="noiseParameter1_RecSurf" value="1.01215560921577e-05" constant="true"/>

@@ -39,9 +39,9 @@
       <parameter id="reaction_7_k1" value="0.0119329694583145" constant="true"/>
       <parameter id="reaction_8_k1" value="0.000941161525754959" constant="true"/>
       <parameter id="reaction_9_k1" value="0.0273281571867514" constant="true"/>
-      <parameter id="scaling_pAkt_tot" value="334.979345701912" constant="true"/>
-      <parameter id="scaling_pEGFR_tot" value="9.60908283106834e-08" constant="true"/>
-      <parameter id="scaling_pS6_tot" value="380222.792056961" constant="true"/>
+      <parameter id="observableParameter1_pAkt_tot" value="334.979345701912" constant="true"/>
+      <parameter id="observableParameter1_pEGFR_tot" value="9.60908283106834e-08" constant="true"/>
+      <parameter id="observableParameter1_pS6_tot" value="380222.792056961" constant="true"/>
       <parameter id="sigma_pAkt_tot" value="0.1" constant="true"/>
       <parameter id="sigma_pEGFR_tot" value="0.1" constant="true"/>
       <parameter id="sigma_pS6_tot" value="0.1" constant="true"/>
@@ -90,7 +90,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> scaling_pEGFR_tot </ci>
+            <ci> observableParameter1_pEGFR_tot </ci>
             <apply>
               <plus/>
               <ci> pEGFR </ci>
@@ -103,7 +103,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> scaling_pAkt_tot </ci>
+            <ci> observableParameter1_pAkt_tot </ci>
             <apply>
               <plus/>
               <ci> pAkt </ci>
@@ -117,7 +117,7 @@
           <apply>
             <times/>
             <ci> pS6 </ci>
-            <ci> scaling_pS6_tot </ci>
+            <ci> observableParameter1_pS6_tot </ci>
           </apply>
         </math>
       </assignmentRule>

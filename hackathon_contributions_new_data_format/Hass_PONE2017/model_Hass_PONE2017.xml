@@ -38,7 +38,7 @@
       <parameter id="observableParameter2_pAkt" value="1.0765276217424" constant="true"/>
       <parameter id="observableParameter2_pDab1" value="0.139887002952305" constant="true"/>
       <parameter id="observableParameter2_pSFK" value="1.67969987743754" constant="true"/>
-      <parameter id="observableParameter2_tApo" value="2.14289703948776" constant="true"/>
+      <parameter id="observableParameter2_tApoER2" value="2.14289703948776" constant="true"/>
       <parameter id="observableParameter2_tSFK" value="0.285702110374197" constant="true"/>
       <parameter id="perc_mes" value="0.0519099251370762" constant="true"/>
       <parameter id="observableParameter1_Dab1" value="3.75639316079464" constant="true"/>
@@ -47,12 +47,6 @@
       <parameter id="observableParameter1_pSFK" value="935.434627604922" constant="true"/>
       <parameter id="observableParameter1_tApoER2" value="0.943343362014992" constant="true"/>
       <parameter id="observableParameter1_tSFK" value="399.010787302916" constant="true"/>
-      <parameter id="sd_Dab1" value="0.1" constant="true"/>
-      <parameter id="sd_pAkt" value="0.1" constant="true"/>
-      <parameter id="sd_pDab1" value="0.1" constant="true"/>
-      <parameter id="sd_pSFK" value="0.1" constant="true"/>
-      <parameter id="sd_tApoER2" value="0.1" constant="true"/>
-      <parameter id="sd_tSFK" value="0.1" constant="true"/>
       <parameter id="observable_Dab1" value="0" constant="false"/>
       <parameter id="observable_pDab1" value="0" constant="false"/>
       <parameter id="observable_pAkt" value="0" constant="false"/>
@@ -60,6 +54,20 @@
       <parameter id="observable_tSFK" value="0" constant="false"/>
       <parameter id="observable_tApoER2" value="0" constant="false"/>
       <parameter id="observable_Reelin_step" value="0" constant="false"/>
+      <parameter id="noiseParameter1_Dab1" value="0" constant="false"/>
+      <parameter id="noiseParameter1_pDab1" value="0" constant="false"/>
+      <parameter id="noiseParameter1_pAkt" value="0" constant="false"/>
+      <parameter id="noiseParameter1_pSFK" value="0" constant="false"/>
+      <parameter id="noiseParameter1_tSFK" value="0" constant="false"/>
+      <parameter id="noiseParameter1_tApoER2" value="0" constant="false"/>
+      <parameter id="noiseParameter1_Reelin_step" value="0" constant="false"/>
+      <parameter id="sigma_Dab1" value="0" constant="false"/>
+      <parameter id="sigma_pDab1" value="0" constant="false"/>
+      <parameter id="sigma_pAkt" value="0" constant="false"/>
+      <parameter id="sigma_pSFK" value="0" constant="false"/>
+      <parameter id="sigma_tSFK" value="0" constant="false"/>
+      <parameter id="sigma_tApoER2" value="0" constant="false"/>
+      <parameter id="sigma_Reelin_step" value="0" constant="false"/>
       <parameter id="Reelin_step" value="0" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
@@ -109,6 +117,41 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="sigma_Dab1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_Dab1 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pDab1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pDab1 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pAkt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pAkt </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pSFK">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pSFK </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_tSFK">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_tSFK </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_tApoER2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_tApoER2 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_Reelin_step">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_Reelin_step </ci>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="observable_Reelin_step">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -280,7 +323,7 @@
             </logbase>
             <apply>
               <plus/>
-              <ci> observableParameter2_tApo </ci>
+              <ci> observableParameter2_tApoER2 </ci>
               <apply>
                 <times/>
                 <ci> observableParameter1_tApoER2 </ci>
