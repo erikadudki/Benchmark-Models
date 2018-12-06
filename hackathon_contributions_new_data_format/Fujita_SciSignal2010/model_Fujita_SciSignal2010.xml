@@ -42,9 +42,9 @@
       <parameter id="observableParameter1_pAkt_tot" value="334.979345701912" constant="true"/>
       <parameter id="observableParameter1_pEGFR_tot" value="9.60908283106834e-08" constant="true"/>
       <parameter id="observableParameter1_pS6_tot" value="380222.792056961" constant="true"/>
-      <parameter id="sigma_pAkt_tot" value="0.1" constant="true"/>
-      <parameter id="sigma_pEGFR_tot" value="0.1" constant="true"/>
-      <parameter id="sigma_pS6_tot" value="0.1" constant="true"/>
+      <parameter id="sigma_pAkt_tot" value="0.1" constant="false"/>
+      <parameter id="sigma_pEGFR_tot" value="0.1" constant="false"/>
+      <parameter id="sigma_pS6_tot" value="0.1" constant="false"/>
       <parameter id="noiseParameter1_pAkt_tot" value="0.1" constant="true"/>
       <parameter id="noiseParameter1_pEGFR_tot" value="0.1" constant="true"/>
       <parameter id="noiseParameter1_pS6_tot" value="0.1" constant="true"/>
