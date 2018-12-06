@@ -1,4 +1,4 @@
-observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation	experimentId	replicateId
+observableId	preequilibrationConditionId	simulationConditionId	simulatedData	time	observableParameters	noiseParameters	observableTransformation	experimentId	replicateId
 Epo_binding_1		Epo_binding_1	4.3598976290834	inf		sd_Epo_bound	log10	Epo_binding	rep1
 Epo_binding_2		Epo_binding_2	4.49469951448448	inf		sd_Epo_bound	log10	Epo_binding	rep1
 Epo_binding_3		Epo_binding_3	35.7812289888611	inf		sd_Epo_bound	log10	Epo_binding	rep1

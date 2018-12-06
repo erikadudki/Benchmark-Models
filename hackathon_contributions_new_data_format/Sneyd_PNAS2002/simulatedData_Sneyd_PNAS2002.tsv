@@ -1,4 +1,4 @@
-observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation	experimentName	replicateId	useData
+observableId	preequilibrationConditionId	simulationConditionId	simulatedData	time	observableParameters	noiseParameters	observableTransformation	experimentName	replicateId	useData
 open_probability		Ca_dose_response__1	0	0		0.022665679544462	lin	Ca^{2+} response	1	TRUE
 open_probability		Ca_dose_response__1	0.121894546523477	0.07		0.022665679544462	lin	Ca^{2+} response	1	TRUE
 open_probability		Ca_dose_response__1	0.060595553808957	0.14		0.022665679544462	lin	Ca^{2+} response	1	TRUE

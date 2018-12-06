@@ -1,4 +1,4 @@
-observableId	preequilibrationConditionId	simulationConditionId	simulation	time	observableParameters	noiseParameters	observableTransformation	experimentId
+observableId	preequilibrationConditionId	simulationConditionId	simulatedData	time	observableParameters	noiseParameters	observableTransformation	experimentId
 IRS1_P	Dose_0	Dose_0	5.04030994035096	10	k_IRSiP_DosR	sigmaYDosR	lin	dose_response
 IRS1_P	Dose_0	Dose_001	11.3541437232139	10	k_IRSiP_DosR	sigmaYDosR	lin	dose_response
 IRS1_P	Dose_0	Dose_01	30.7569560314701	10	k_IRSiP_DosR	sigmaYDosR	lin	dose_response

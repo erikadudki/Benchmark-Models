@@ -1,4 +1,4 @@
-observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableId	preequilibrationCondition	simulationCondition	simulatedData	time	observableParameters	noiseParameters	observableTransformation
 RecSurf_obs		model1_data1	1.3	0.0			
 RecSurf_obs		model1_data1	1.427926241975459	10.0			
 RecSurf_obs		model1_data1	1.431938356247297	20.0			

@@ -1,4 +1,4 @@
-observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation	experimentId	replicateId
+observableId	preequilibrationConditionId	simulationConditionId	simulatedData	time	observableParameters	noiseParameters	observableTransformation	experimentId	replicateId
 Epo_ext_cpm		Epo_treatment	0.939862375698063	0.82	offset;scale;init_Epo	sd_Epo_ext	log10	Epo_treatment	rep1
 Epo_ext_cpm		Epo_treatment	0.939862375698063	0.82	offset;scale;init_Epo	sd_Epo_ext	log10	Epo_treatment	rep2
 Epo_ext_cpm		Epo_treatment	0.939862375698063	0.82	offset;scale;init_Epo	sd_Epo_ext	log10	Epo_treatment	rep3

@@ -1,4 +1,4 @@
-observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableId	preequilibrationCondition	simulationCondition	simulatedData	time	observableParameters	noiseParameters	observableTransformation
 pJAK2_au		model1_data1	-2.023496333526894	0.0			
 pJAK2_au		model1_data1	-0.2932419633804935	5.0			
 pJAK2_au		model1_data1	-0.33726438983953005	10.0			
