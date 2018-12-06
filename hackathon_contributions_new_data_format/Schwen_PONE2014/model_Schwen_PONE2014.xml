@@ -112,19 +112,13 @@
       <assignmentRule variable="observable_IR1">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
+            <times/>
+            <ci> observableParameter2_IR1 </ci>
             <apply>
-              <times/>
-              <ci> observableParameter2_IR1 </ci>
-              <apply>
-                <plus/>
-                <ci> IR1 </ci>
-                <ci> IR1in </ci>
-                <ci> observableParameter1_IR1 </ci>
-              </apply>
+              <plus/>
+              <ci> IR1 </ci>
+              <ci> IR1in </ci>
+              <ci> observableParameter1_IR1 </ci>
             </apply>
           </apply>
         </math>
@@ -132,19 +126,13 @@
       <assignmentRule variable="observable_IR2">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
+            <times/>
+            <ci> observableParameter2_IR2 </ci>
             <apply>
-              <times/>
-              <ci> observableParameter2_IR2 </ci>
-              <apply>
-                <plus/>
-                <ci> IR2 </ci>
-                <ci> IR2in </ci>
-                <ci> observableParameter1_IR2 </ci>
-              </apply>
+              <plus/>
+              <ci> IR2 </ci>
+              <ci> IR2in </ci>
+              <ci> observableParameter1_IR2 </ci>
             </apply>
           </apply>
         </math>
@@ -152,37 +140,31 @@
       <assignmentRule variable="observable_IRsum">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
+            <times/>
+            <ci> observableParameter2_IRsum </ci>
             <apply>
-              <times/>
-              <ci> observableParameter2_IRsum </ci>
+              <plus/>
               <apply>
-                <plus/>
-                <apply>
-                  <times/>
-                  <cn> 0.605 </cn>
-                  <ci> IR1 </ci>
-                </apply>
-                <apply>
-                  <times/>
-                  <cn> 0.395 </cn>
-                  <ci> IR2 </ci>
-                </apply>
-                <apply>
-                  <times/>
-                  <cn> 0.605 </cn>
-                  <ci> IR1in </ci>
-                </apply>
-                <apply>
-                  <times/>
-                  <cn> 0.395 </cn>
-                  <ci> IR2in </ci>
-                </apply>
-                <ci> observableParameter1_IRsum </ci>
+                <times/>
+                <cn> 0.605 </cn>
+                <ci> IR1 </ci>
               </apply>
+              <apply>
+                <times/>
+                <cn> 0.395 </cn>
+                <ci> IR2 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <cn> 0.605 </cn>
+                <ci> IR1in </ci>
+              </apply>
+              <apply>
+                <times/>
+                <cn> 0.395 </cn>
+                <ci> IR2in </ci>
+              </apply>
+              <ci> observableParameter1_IRsum </ci>
             </apply>
           </apply>
         </math>
@@ -190,18 +172,27 @@
       <assignmentRule variable="observable_Insulin">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
+            <plus/>
+            <ci> observableParameter1_Insulin </ci>
             <apply>
-              <plus/>
-              <ci> observableParameter1_Insulin </ci>
+              <divide/>
               <apply>
-                <divide/>
+                <times/>
+                <ci> observableParameter2_Insulin </ci>
                 <apply>
-                  <times/>
-                  <ci> observableParameter2_Insulin </ci>
+                  <plus/>
+                  <ci> Ins </ci>
+                  <apply>
+                    <times/>
+                    <ci> InsulinFragments </ci>
+                    <ci> observableParameter3_Insulin </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <divide/>
                   <apply>
                     <plus/>
                     <ci> Ins </ci>
@@ -211,24 +202,9 @@
                       <ci> observableParameter3_Insulin </ci>
                     </apply>
                   </apply>
+                  <ci> observableParameter4_Insulin </ci>
                 </apply>
-                <apply>
-                  <plus/>
-                  <apply>
-                    <divide/>
-                    <apply>
-                      <plus/>
-                      <ci> Ins </ci>
-                      <apply>
-                        <times/>
-                        <ci> InsulinFragments </ci>
-                        <ci> observableParameter3_Insulin </ci>
-                      </apply>
-                    </apply>
-                    <ci> observableParameter4_Insulin </ci>
-                  </apply>
-                  <cn type="integer"> 1 </cn>
-                </apply>
+                <cn type="integer"> 1 </cn>
               </apply>
             </apply>
           </apply>
