@@ -89,19 +89,29 @@
 <parameter metaid="scale_IRS1_P" id="observableParameter1_IRS1_P" value="0" units="dimensionless"/>
 <parameter metaid="CDMT00046" id="sigma_IRS1_P" value="0" units="dimensionless" constant="false"/>
 <parameter metaid="CDMT00047" id="sigma_IR1_P" value="0" units="dimensionless" constant="false"/>
+<parameter metaid="insulin_time_1" id="insulin_time_1" value="0" units="time"/>
+<parameter metaid="insulin_time_2" id="insulin_time_2" value="1000" units="time"/>
+<parameter metaid="insulin_dose_1" id="insulin_dose_1" value="0.3" units="substance"/>
+<parameter metaid="insulin_dose_2" id="insulin_dose_2" value="0" units="substance"/>
 </listOfParameters>
 <listOfRules>
 <assignmentRule metaid="CDMT00043" variable="insulin">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
+<plus/>
+<apply>
 <times/>
-<cn> 0.3 </cn>
+<ci> insulin_dose_1 </ci>
 <piecewise>
 <piece>
 <cn type="integer"> 0 </cn>
 <apply>
 <lt/>
+<apply>
+<minus/>
 <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+<ci> insulin_time_1 </ci>
+</apply>
 <cn type="integer"> 0 </cn>
 </apply>
 </piece>
@@ -109,6 +119,28 @@
 <cn type="integer"> 1 </cn>
 </otherwise>
 </piecewise>
+</apply>
+<apply>
+<times/>
+<ci> insulin_dose_2 </ci>
+<piecewise>
+<piece>
+<cn type="integer"> 0 </cn>
+<apply>
+<lt/>
+<apply>
+<minus/>
+<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+<ci> insulin_time_2 </ci>
+</apply>
+<cn type="integer"> 0 </cn>
+</apply>
+</piece>
+<otherwise>
+<cn type="integer"> 1 </cn>
+</otherwise>
+</piecewise>
+</apply>
 </apply>
 </math>
 </assignmentRule>
