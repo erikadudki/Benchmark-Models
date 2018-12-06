@@ -1,4 +1,4 @@
-observableID	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
 yPKDpN0	model1_data1	model1_data2	1	0	scale_yPKDpN0	std_yPKDpN0	lin
 yPKDpN0	model1_data1	model1_data2	1.61952429260506	3	scale_yPKDpN0	std_yPKDpN0	lin
 yPKDpN0	model1_data1	model1_data2	1.62346610690388	6	scale_yPKDpN0	std_yPKDpN0	lin
