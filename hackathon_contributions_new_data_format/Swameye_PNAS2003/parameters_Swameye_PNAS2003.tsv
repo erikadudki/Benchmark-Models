@@ -1,0 +1,15 @@
+parameterId	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate	priorType	priorParameters	hierarchicalOptimization (optional)
+init_STAT	init_{STAT}	log10	-5	3	0.000000000000000	0			
+offset_pSTAT	offset_{pSTAT}	log10	-5	3	-0.620500868386156	1			
+offset_tSTAT	offset_{tSTAT}	log10	-5	3	-0.565499230926255	1			
+p1	p1	log10	-5	3	0.550817042274635	1			
+p2	p2	log10	-5	3	2.999999999999960	1			
+p3	p3	log10	-5	3	-0.907090463534035	1			
+p4	p4	log10	-5	3	-0.012903766677571	1			
+scale_pSTAT	scale_{pSTAT}	log10	-5	3	0.041161232194920	1			
+scale_tSTAT	scale_{tSTAT}	log10	-5	3	-0.175585674202499	1			
+sp1	sp1	log10	-5	3	-2.727754521616060	1			
+sp2	sp2	log10	-5	3	-0.255464156674321	1			
+sp3	sp3	log10	-5	3	-0.070589691562682	1			
+sp4	sp4	log10	-5	3	-0.429257257558489	1			
+sp5	sp5	log10	-5	3	-4.462643925653650	1			
