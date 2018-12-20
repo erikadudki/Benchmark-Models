@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 import pandas as pd
 
 filepath = 'C:\\Users\\phili\\Benchmark-Models\\hackathon_contributions_new_data_format\\Boehm_JProteomeRes2014\\General_info.xlsx'
@@ -10,13 +10,13 @@ output_new_format = new_format(filepath)
 print(output_new_format)
 
 def transform_format(y):
-    a = pd.DataFrame({'parameterID': [output_new_format.parameter],
-                    'parameterName': [output_new_format.parameter],
-                   'parameterScale': [output_new_format.values[:,4:5]],
-                   'lowerBound': [output_new_format.values[:,2:3]],
-                   'upperBound': [output_new_format.values[:,3:4]],
-                   'nominalValue': [output_new_format.value],
-                   'estimate': [output_new_format.estimated]})
+    a = pd.DataFrame({'parameterID': y.parameter,       #no brackets around y.---
+                    'parameterName': y.parameter,
+                   'parameterScale': y.loc[:,'analysis at log-scale'],
+                   'lowerBound': y.loc[:,'lower boundary'],       #not correct with nor without brackets
+                   'upperBound': y.loc[:,'upper boundary'],                       #y.values[:,3:4],
+                   'nominalValue': y.value,
+                   'estimate': y.estimated})
                    #'priorType': [], 'priorParameter': [], 'hierarchicalOptimization (optional)': []})
     return(a)
 
@@ -25,12 +25,12 @@ output_transformed_format = transform_format(y)
 print(output_transformed_format)
 
 def changing_stuff(w):
-    if pd.DataFrame.parameterID.startswith('log10('):
-        d = pd.DataFrame.parameterID.lstrip('log10(')
+    if w.parameterID.startswith('log10('):
+        d = w.parameterID.lstrip('log10(')
         e = d.rtsrip(')')
         print(e)
     else:
-        e = pd.DataFrame.parameterID
+        e = w.parameterID
         print(e)
 
     return(e)
@@ -38,6 +38,8 @@ def changing_stuff(w):
 w = output_transformed_format
 last_step = changing_stuff(w)
 print(last_step)
+
+np.vectorize
 
 # NOTIZEN:
 
