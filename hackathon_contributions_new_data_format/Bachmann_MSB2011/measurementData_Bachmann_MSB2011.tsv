@@ -303,30 +303,30 @@ CISRNA_foldC		model1_data3	0.561700788051793	60	scale_CISRNA_foldC	sd_RNA_fold	l
 CISRNA_foldC		model1_data3	0.377848187787285	120	scale_CISRNA_foldC	sd_RNA_fold	log10
 CISRNA_foldC		model1_data3	0.344469891560844	240	scale_CISRNA_foldC	sd_RNA_fold	log10
 CISRNA_foldC		model1_data3	0.168301014629429	360	scale_CISRNA_foldC	sd_RNA_fold	log10
-pSTAT5_au		model1_data30	-0.072964823319613	10			
-pSTAT5_au		model1_data30	-0.154983280926324	10			
-pSTAT5_au		model1_data30	-0.013880099560055	10			
-pSTAT5_au		model1_data31	-0.083873892509612	10			
-pSTAT5_au		model1_data31	-0.139014773226451	10			
-pSTAT5_au		model1_data31	0	10			
-pSTAT5_au		model1_data32	-0.405403283235218	10			
-pSTAT5_au		model1_data32	-0.712262822559923	10			
-pSTAT5_au		model1_data32	-0.560305243220961	10			
-pSTAT5_au		model1_data33	-2.02973966927433	10			
-pSTAT5_au		model1_data33	-2.37900622523081	10			
-pSTAT5_au		model1_data33	-2.01789481340937	10			
-CIS_au1		model1_data38	-0.101189713310361	90			
-CIS_au1		model1_data38	-0.013162469043527	90			
-CIS_au1		model1_data38	-0.04244580423914	90			
-CIS_au2		model1_data38	-0.146870628424801	90			
-CIS_au2		model1_data38	-0.21865525849734	90			
-CIS_au2		model1_data38	-0.284032883719125	90			
-CIS_au1		model1_data39	-0.136728067086745	90			
-CIS_au1		model1_data39	-0.052566085411668	90			
-CIS_au1		model1_data39	0	90			
-CIS_au2		model1_data39	0	90			
-CIS_au2		model1_data39	-0.07043541641746	90			
-CIS_au2		model1_data39	-0.039756809672215	90			
+pSTAT5_au		model1_data30	-0.072964823319613	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data30	-0.154983280926324	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data30	-0.013880099560055	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data31	-0.083873892509612	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data31	-0.139014773226451	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data31	0	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data32	-0.405403283235218	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data32	-0.712262822559923	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data32	-0.560305243220961	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data33	-2.02973966927433	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data33	-2.37900622523081	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+pSTAT5_au		model1_data33	-2.01789481340937	10	scale_pSTAT5_dr10	sd_STAT5_au	log10
+CIS_au1		model1_data38	-0.101189713310361	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data38	-0.013162469043527	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data38	-0.04244580423914	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data38	-0.146870628424801	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data38	-0.21865525849734	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data38	-0.284032883719125	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data39	-0.136728067086745	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data39	-0.052566085411668	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data39	0	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data39	0	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data39	-0.07043541641746	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data39	-0.039756809672215	90	scale2_CIS_dr90	sd_CIS_au	log10
 pJAK2_au		model1_data4	-1.7308796578295	0	offset_pJAK2_actd;scale_pJAK2_actd	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data4	0	5	offset_pJAK2_actd;scale_pJAK2_actd	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data4	-0.125173906054675	10	offset_pJAK2_actd;scale_pJAK2_actd	sd_JAK2EpoR_au	log10
@@ -372,24 +372,24 @@ CIS_au		model1_data4	-0.253463284800389	90	offset_CIS_actd;scale_CIS_actd 	sd_CI
 CIS_au		model1_data4	-0.077372025744708	120	offset_CIS_actd;scale_CIS_actd 	sd_CIS_au	log10
 CIS_au		model1_data4	-0.065712413199715	150	offset_CIS_actd;scale_CIS_actd 	sd_CIS_au	log10
 CIS_au		model1_data4	0	180	offset_CIS_actd;scale_CIS_actd 	sd_CIS_au	log10
-CIS_au1		model1_data40	-0.012820505183312	90			
-CIS_au1		model1_data40	-1.23840113633161E-05	90			
-CIS_au1		model1_data40	-0.068741815902421	90			
-CIS_au2		model1_data40	-0.022672723543829	90			
-CIS_au2		model1_data40	-0.231658204932813	90			
-CIS_au2		model1_data40	-0.058629475325478	90			
-CIS_au1		model1_data41	-0.289601874458826	90			
-CIS_au1		model1_data41	-0.325318153754375	90			
-CIS_au1		model1_data41	-0.344251828265026	90			
-CIS_au2		model1_data41	-0.253555701135469	90			
-CIS_au2		model1_data41	-0.393746583991171	90			
-CIS_au2		model1_data41	-0.266015177085708	90			
-CIS_au1		model1_data42	-1.38093403320306	90			
-CIS_au1		model1_data42	-1.42293141918203	90			
-CIS_au1		model1_data42	-1.40926124041088	90			
-CIS_au2		model1_data42	-1.44033824750225	90			
-CIS_au2		model1_data42	-1.34490959438506	90			
-CIS_au2		model1_data42	-1.38701974266468	90			
+CIS_au1		model1_data40	-0.012820505183312	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data40	-1.23840113633161E-05	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data40	-0.068741815902421	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data40	-0.022672723543829	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data40	-0.231658204932813	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data40	-0.058629475325478	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data41	-0.289601874458826	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data41	-0.325318153754375	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data41	-0.344251828265026	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data41	-0.253555701135469	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data41	-0.393746583991171	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data41	-0.266015177085708	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data42	-1.38093403320306	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data42	-1.42293141918203	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au1		model1_data42	-1.40926124041088	90	scale1_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data42	-1.44033824750225	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data42	-1.34490959438506	90	scale2_CIS_dr90	sd_CIS_au	log10
+CIS_au2		model1_data42	-1.38701974266468	90	scale2_CIS_dr90	sd_CIS_au	log10
 pJAK2_au		model1_data5	-1.65270722636302	0	offset_pJAK2_actd;scale_pJAK2_actd	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data5	-0.22585565325432	5	offset_pJAK2_actd;scale_pJAK2_actd	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data5	-0.051384309129623	10	offset_pJAK2_actd;scale_pJAK2_actd	sd_JAK2EpoR_au	log10
