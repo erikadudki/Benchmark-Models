@@ -290,6 +290,11 @@
               </apply>
           </math>
       </assignmentRule>
+      <assignmentRule variable="sigma_SOCS3_wb">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_SOCS3_wb </ci>
+          </math>
+      </assignmentRule>
       <assignmentRule variable="observable_pJAK1_wb">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
