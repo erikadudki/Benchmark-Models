@@ -1,4 +1,4 @@
-observableId	preequilibrationCondition	simulationCondition	measurement	time	observableParameters	noiseParameters	observableTransformation
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
 pJAK2_au		model1_data1	-1.95599762557561	0	offset_pJAK2_long;scale_pJAK2_long	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data1	0	5	offset_pJAK2_long;scale_pJAK2_long	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data1	-0.127344806374178	10	offset_pJAK2_long;scale_pJAK2_long	sd_JAK2EpoR_au	log10
