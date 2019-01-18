@@ -1,49 +1,87 @@
-#!/usr/bin/env python3
-import libsbml
 import os
-import sys
-#sys.path.insert(0, os.path.split(os.path.split(os.getcwd())[0])[0])
-sys.path.insert(0, '/home/dweindl/src/pyPESTO')
-
-import pypesto
-import sys
-import amici
-import importlib
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
-import petab
-import amici
-
-models = ['Bachmann_MSB2011', 'beer_MolBioSystems2014', 'boehm_JProteomeRes2014',
- 'Borghans_BiophysChem1997', 'Brannmark_JBC2010', 'Bruno_JExpBio2016',
-'Chen_MSB2009', 'Crauste_CellSystems2017', 'Elowitz_Nature2000',
-'Fiedler_BMC2016', 'Fujita_SciSignal2010', 'Hass_PONE2017',
-'Isensee_JCB2018', 'Lucarelli_CellSystems_2018',
-'Merkle_PCB2016', 'Raia_CancerResearch2011',
-'Schwen_PONE2014','Sneyd_PNAS2002', 'Sobotta_Frontiers2017',
-'Swameye_PNAS2003', 'Weber_BMC2015','Zheng_PNAS2012']
 
 
-#model_root = os.path.abspath(os.path.join('Benchmark-Models', 'hackathon_contributions_new_data_format'))
-model_root = '/home/yannik/benchmark-models/hackathon_contributions_new_data_format/'
-benchmark_model = 'Zheng_PNAS2012' # 'Zheng_PNAS2012'
-#benchmark_model = "Boehm_JProteomeRes2014"
-#benchmark_model = "Fujita_SciSignal2010"
+# INPUT - PLEASE INSERT FITTING PATH AND NAME TO GENERAL INFO INTO FUNCTION 'generateParameterSheet'
+def generateParameterSheet(filepath, filename):
+        # Example: filepath = r"C:\Benchmark-Models\hackathon_contributions_new_data_format\Boehm_JProteomeRes2014"
+        #          filename = r"General_info.xlsx"
+    whole_filepath = filepath + '/' + filename                       # Whole string
+    modelname = filepath.split('\\')[-1]                             # Only last part of 'filepath' == model name
+    output_new_format = new_excel_sheet(whole_filepath)              # Transformation of old excel sheet into new one
+    output_transformed_format = transform_format(output_new_format)
+    final_excel_sheet = final_form(output_transformed_format)        # Table with all input - printed in Python Console
+    print(final_excel_sheet)
+    final_excel_sheet.to_csv(path_or_buf=os.path.join(filepath,      # Save created file as '.tsv'
+        'parameters_%s.tsv' % modelname), sep='\t', index=False)     # in same folder as 'General_info' file
 
-manager = petab.Manager.from_folder(model_root + benchmark_model)
-manager.map_par_sim_to_par_opt()
-importer = pypesto.objective.Importer(manager)
-model = importer.model
 
-print("MODEL PAMS:", list(model.getParameterIds()))
-print("MODEL CONST PAMS:", list(model.getFixedParameterIds()))
-print("MODEL OUTPUTS:", list(model.getObservableIds()))
+# Read in old excel sheet 'General_info'
+def new_excel_sheet(filepath):
+    old_excel_sheet = pd.read_excel(filepath, sheet_name="Parameters")
+    return (old_excel_sheet)
 
-model.setParameterScale(amici.ParameterScaling_log10)
-obj, edatas = importer.create_objective()
-x_nom = manager.parameter_df['nominalValue'].values
 
-print(x_nom)
-print("obj: ", obj(x_nom))
+# Change headlines of all columns and fill with selected input of 'old_excel_sheet'
+def transform_format(y):
+    a = pd.DataFrame({'parameterID': y.parameter,
+                      'parameterName': y.parameter,
+                      'parameterScale': y.loc[:, 'analysis at log-scale'],
+                      'lowerBound': y.loc[:, 'lower boundary'],
+                      'upperBound': y.loc[:, 'upper boundary'],
+                      'nominalValue': y.value,
+                      'estimate': y.estimated})
+    return (a)
 
+
+# Change column 'parameterID' from old form into new form
+def changing_ID(w):
+    for iCount in range(len(w.parameterID)):
+        if w.iloc[iCount, 0].startswith('log10('):
+            d = w.iloc[iCount, 0].lstrip('log10(')
+            w.iloc[iCount, 0] = d.rstrip(')')
+        else:
+            w.iloc[iCount, 0] = w.iloc[iCount, 0]
+    return (w)
+
+
+# Change column 'parameterName' from old form into new form
+def changing_Name(w):
+    for iCount in range(len(w.parameterID)):
+        if w.iloc[iCount, 1].startswith('log10('):
+            d = w.iloc[iCount, 1].lstrip('log10(')
+            w.iloc[iCount, 1] = d.rstrip(')')
+        else:
+            w.iloc[iCount, 1] = w.iloc[iCount, 1]
+    return (w)
+
+
+# Change column 'parameterScale' from old form into new form
+def changing_Scale(w):
+    for iCount in range(len(w.parameterID)):
+        a = w.iloc[iCount, 2]
+        b = np.asarray(['lin', 'log10'])  # create array with 'lin' and 'log10'
+        w.iloc[iCount, 2] = b[a]
+    return (w)
+
+
+# Change column 'estimate' from old form into new form
+def changing_Estimate(w):
+    for iCount in range(len(w.parameterID)):
+        if w.iloc[iCount, 6].startswith('yes'):
+            d = w.iloc[iCount, 6].lstrip('yes')
+            w.iloc[iCount, 6] = d + '1'
+        else:
+            d = w.iloc[iCount, 6].lstrip('fixed')
+            w.iloc[iCount, 6] = d + '0'
+    return (w)
+
+
+# All previous changes are connected in 'final_form'
+def final_form(w):
+    w1 = changing_ID(w)
+    w2 = changing_Name(w1)
+    w3 = changing_Scale(w2)
+    w4 = changing_Estimate(w3)
+    return (w4)
