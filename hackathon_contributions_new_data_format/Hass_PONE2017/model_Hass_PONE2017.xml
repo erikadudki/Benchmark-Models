@@ -160,7 +160,7 @@
                 </apply>
               </piece>
               <otherwise>
-                <cn type="integer"> Reelin_input </cn>
+                <ci> Reelin_input </ci>
               </otherwise>
             </piecewise>
             <apply>
