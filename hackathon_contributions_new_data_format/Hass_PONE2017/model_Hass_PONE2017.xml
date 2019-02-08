@@ -179,11 +179,6 @@
       </assignmentRule>
       <assignmentRule variable="observable_Dab1">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
             <apply>
               <plus/>
               <ci> observableParameter2_Dab1 </ci>
@@ -202,17 +197,11 @@
                   <ci> pApoER2_re_Dab1 </ci>
                 </apply>
               </apply>
-            </apply>
           </apply>
         </math>
       </assignmentRule>
       <assignmentRule variable="observable_pDab1">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
             <apply>
               <plus/>
               <ci> observableParameter2_pDab1 </ci>
@@ -227,16 +216,10 @@
                 </apply>
               </apply>
             </apply>
-          </apply>
         </math>
       </assignmentRule>
       <assignmentRule variable="observable_pAkt">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
             <apply>
               <plus/>
               <ci> observableParameter2_pAkt </ci>
@@ -251,16 +234,10 @@
                 </apply>
               </apply>
             </apply>
-          </apply>
         </math>
       </assignmentRule>
       <assignmentRule variable="observable_pSFK">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
             <apply>
               <plus/>
               <ci> observableParameter2_pSFK </ci>
@@ -279,16 +256,10 @@
                 </apply>
               </apply>
             </apply>
-          </apply>
         </math>
       </assignmentRule>
       <assignmentRule variable="observable_tSFK">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
             <apply>
               <plus/>
               <ci> observableParameter2_tSFK </ci>
@@ -305,16 +276,10 @@
                 </apply>
               </apply>
             </apply>
-          </apply>
         </math>
       </assignmentRule>
       <assignmentRule variable="observable_tApoER2">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <log/>
-            <logbase>
-              <cn type="integer"> 10 </cn>
-            </logbase>
             <apply>
               <plus/>
               <ci> observableParameter2_tApoER2 </ci>
@@ -334,7 +299,6 @@
                 </apply>
               </apply>
             </apply>
-          </apply>
         </math>
       </assignmentRule>
     </listOfRules>
