@@ -26,7 +26,7 @@
     </listOfSpecies>
     <listOfParameters>
       <parameter id="ini_R1" value="47.2370172820096" constant="true"/>
-      <parameter id="init_Ins" value="0" constant="true"/>                                                        // input parameter
+      <parameter id="init_Ins" value="0" constant="true"/>
       <parameter id="ini_R2fold" value="16.457631927604" constant="true"/>
       <parameter id="ka1" value="0.00937980436663883" constant="true"/>
       <parameter id="ka2fold" value="2.0907692381484" constant="true"/>
