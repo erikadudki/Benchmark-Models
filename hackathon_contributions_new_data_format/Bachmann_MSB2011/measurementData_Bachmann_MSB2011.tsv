@@ -180,9 +180,9 @@ tSHP1_au		model1_data14	-0.088637487042067	60	scale_SHP1_shp1oe	sd_SHP1_au	log10
 pJAK2_au		model1_data15	-0.299430382504188	7	offset_pJAK2_dr7;scale_pJAK2_dr7	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data15	-0.119102070505252	7	offset_pJAK2_dr7;scale_pJAK2_dr7	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data15	-0.082721272540243	7	offset_pJAK2_dr7;scale_pJAK2_dr7	sd_JAK2EpoR_au	log10
-pEpoR_au		model1_data15	0	7		sd_JAK2EpoR_au	log10
-pEpoR_au		model1_data15	-0.172771143935636	7		sd_JAK2EpoR_au	log10
-pEpoR_au		model1_data15	-0.038021689072519	7		sd_JAK2EpoR_au	log10
+pEpoR_au		model1_data15	0	7	offset_pEpoR_dr7;scale_pEpoR_dr7	sd_JAK2EpoR_au	log10
+pEpoR_au		model1_data15	-0.172771143935636	7	offset_pEpoR_dr7;scale_pEpoR_dr7	sd_JAK2EpoR_au	log10
+pEpoR_au		model1_data15	-0.038021689072519	7	offset_pEpoR_dr7;scale_pEpoR_dr7	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data16	-0.248277860056807	7	offset_pJAK2_dr7;scale_pJAK2_dr7	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data16	-0.098515539723475	7	offset_pJAK2_dr7;scale_pJAK2_dr7	sd_JAK2EpoR_au	log10
 pJAK2_au		model1_data16	0	7	offset_pJAK2_dr7;scale_pJAK2_dr7	sd_JAK2EpoR_au	log10
