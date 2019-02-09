@@ -46,6 +46,7 @@
       <parameter id="CISRNAEqc" value="1" constant="true"/>
       <parameter id="CISRNATurn" value="999.999999999946" constant="true"/>
       <parameter id="CISTurn" value="0.0083988695167017" constant="true"/>
+      <parameter id="CISEqcOE" value="0.530264447119609" constant="true"/>
       <parameter id="EpoRActJAK2" value="0.267304849333058" constant="true"/>
       <parameter id="EpoRCISInh" value="999999.999999912" constant="true"/>
       <parameter id="EpoRCISRemove" value="5.42980693903448" constant="true"/>
@@ -53,6 +54,8 @@
       <parameter id="JAK2EpoRDeaSHP1" value="142.72332309738" constant="true"/>
       <parameter id="SHP1ActEpoR" value="0.00100000000000006" constant="true"/>
       <parameter id="SHP1Dea" value="0.00816220490950374" constant="true"/>
+      <parameter id="SHP1ProOE" value="2.82568153411555" constant="true"/>
+      <parameter id="SOCS3EqcOE" value="0.679165515556864" constant="true"/>
       <parameter id="SOCS3Eqc" value="173.64470023136" constant="true"/>
       <parameter id="SOCS3Inh" value="10.4078649133666" constant="true"/>
       <parameter id="SOCS3RNADelay" value="1.06458446742251" constant="true"/>
@@ -132,11 +135,16 @@
       <parameter id="observableParameter1_CISRNA_foldC" value="1" constant="true"/>
       <parameter id="observableParameter1_pSTAT5B_rel" value="1" constant="true"/>
       <parameter id="observableParameter1_tSHP1_au" value="1" constant="true"/>
+      <parameter id="observableParameter1_pSTAT5_au" value="1" constant="true"/>
+      <parameter id="observableParameter2_pSTAT5_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_STAT5_abs" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SHP1_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_pJAK2_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_pEpoR_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_CIS_au" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CIS_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_SOCS3_au" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_tSTAT5_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_pSTAT5_au" value="1" constant="true"/>
       <parameter id="noiseParameter2_pSTAT5_au" value="1" constant="true"/>
