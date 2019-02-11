@@ -1,0 +1,17 @@
+# amici options
+amici:
+  # sensitivity method and order
+  sensitivity_method: adjoint
+  sensitivity_order: first
+# pypesto options
+pypesto:
+  # number of starts
+  n_starts: 1000
+  # employed optimizer
+  optimizer: ScipyOptimizer
+  # specific method
+  method: L-BFGS-B
+  # options passed to optimizer
+  optimizer_options:
+    maxiter: 2000
+    disp: True
