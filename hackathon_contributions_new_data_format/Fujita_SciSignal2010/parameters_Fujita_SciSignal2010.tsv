@@ -15,6 +15,6 @@ reaction_6_k1	reaction_{6,k1}	log10	-8	8	-5.262553144389940	1
 reaction_7_k1	reaction_{7,k1}	log10	-8	8	-1.927999928058530	1			
 reaction_8_k1	reaction_{8,k1}	log10	-8	8	-3.024677686513830	1			
 reaction_9_k1	reaction_{9,k1}	log10	-8	8	-1.544990619577320	1			
-scaleFactor_pAkt	scaleFactor_{pAkt}	log10	-8	8	1.616760082136900	1			
-scaleFactor_pEGFR	scaleFactor_{pEGFR}	log10	-8	8	-7.248116492035960	1			
-scaleFactor_pS6	scaleFactor_{pS6}	log10	-8	8	4.894991083571910	1			
+scaling_pAkt_tot	scaling_{pAkt}_tot	log10	-8	8	1.616760082136900	1			
+scaling_pEGFR_tot	scaling_{pEGFR}_tot	log10	-8	8	-7.248116492035960	1			
+scaling_pS6_tot	scaling_{pS6}_tot	log10	-8	8	4.894991083571910	1			
