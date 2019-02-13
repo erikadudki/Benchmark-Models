@@ -69,12 +69,12 @@ yPI4K3BpRN24	model1_data1	model1_data2	2.77524433527846	25	scale_yPI4K3BpRN24	st
 yPI4K3BpRN24	model1_data1	model1_data2	1	24	scale_yPI4K3BpRN24	std_yPI4K3BpRN24	lin
 yPI4K3BpRN24	model1_data1	model1_data2	2.73995006687584	24.25	scale_yPI4K3BpRN24	std_yPI4K3BpRN24	lin
 yPI4K3BpRN24	model1_data1	model1_data2	2.67654460874697	25	scale_yPI4K3BpRN24	std_yPI4K3BpRN24	lin
-yPI4K3Bt	model1_data1	model1_data2	80034335.2791175	24	1	std_yPI4K3Bt	lin
-yPI4K3Bt	model1_data1	model1_data2	80034335.2791175	24	1	std_yPI4K3Bt	lin
-yPI4K3Bt	model1_data1	model1_data2	80034335.2791175	24	1	std_yPI4K3Bt	lin
-yCERTt	model1_data1	model1_data2	509860.755350048	0	1	std_yCERTt	lin
-yCERTt	model1_data1	model1_data2	509860.755350048	0	1	std_yCERTt	lin
-yCERTt	model1_data1	model1_data2	509860.755350048	0	1	std_yCERTt	lin
+yPI4K3Bt	model1_data1	model1_data2	80034335.2791175	24		std_yPI4K3Bt	lin
+yPI4K3Bt	model1_data1	model1_data2	80034335.2791175	24		std_yPI4K3Bt	lin
+yPI4K3Bt	model1_data1	model1_data2	80034335.2791175	24		std_yPI4K3Bt	lin
+yCERTt	model1_data1	model1_data2	509860.755350048	0		std_yCERTt	lin
+yCERTt	model1_data1	model1_data2	509860.755350048	0		std_yCERTt	lin
+yCERTt	model1_data1	model1_data2	509860.755350048	0		std_yCERTt	lin
 yPKDpN0	model1_data1	model1_data3	1	0	scale_yPKDpN0	std_yPKDpN0	lin
 yPKDpN0	model1_data1	model1_data3	2.06291920069505	3	scale_yPKDpN0	std_yPKDpN0	lin
 yPKDpN0	model1_data1	model1_data3	1.69749033340629	6	scale_yPKDpN0	std_yPKDpN0	lin
