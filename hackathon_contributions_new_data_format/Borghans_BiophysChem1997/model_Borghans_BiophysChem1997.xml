@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-  <model id="model_Borghans_BiophysChem_1997">
+  <model id="Borghans_BiophysChem1997" name="model_Borghans_BiophysChem_1997">
     <listOfUnitDefinitions>
       <unitDefinition id="time" name="time">
         <listOfUnits>
