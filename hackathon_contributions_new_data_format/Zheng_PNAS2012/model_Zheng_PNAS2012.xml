@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-  <model id="ModelHistoneZheng" name="HistoneMethylation">
+  <model id="Zheng_PNAS2012" name="HistoneMethylation">
     <listOfFunctionDefinitions>
       <functionDefinition id="Function_for_v_53" name="Function for v_53">
         <math xmlns="http://www.w3.org/1998/Math/MathML">

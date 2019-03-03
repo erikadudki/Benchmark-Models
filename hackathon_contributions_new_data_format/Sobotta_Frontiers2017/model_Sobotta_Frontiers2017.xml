@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-  <model id="il6_core">
+  <model id="Sobotta_Frontiers2017" name="il6_core">
     <listOfUnitDefinitions>
       <unitDefinition id="time" name="time">
         <listOfUnits>

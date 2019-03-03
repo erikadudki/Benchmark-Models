@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-<model metaid="arFramework3" id="model_Sneyd_PNAS2002">
+<model id="Sneyd_PNAS2002" name="model_Sneyd_PNAS2002">
 <annotation/>
 <listOfUnitDefinitions>
 <unitDefinition metaid="time" id="time" name="time">

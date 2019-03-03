@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-<model metaid="arFramework3" id="model_Mif">
+<model id="Brannmark_JBC2010" name="model_Mif">
 <annotation/>
 <listOfUnitDefinitions>
 <unitDefinition metaid="time" id="time" name="time">

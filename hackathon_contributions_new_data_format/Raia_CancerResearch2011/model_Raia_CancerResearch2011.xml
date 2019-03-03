@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-  <model metaid="arFramework3" id="il13_jak2_stat5">
+  <model id="Raia_CancerResearch2011" name="il13_jak2_stat5">
     <listOfUnitDefinitions>
       <unitDefinition id="time" name="time">
         <listOfUnits>

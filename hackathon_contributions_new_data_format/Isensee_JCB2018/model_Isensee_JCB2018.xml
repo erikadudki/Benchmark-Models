@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-<model metaid="arFramework3" id="PKA_cycle">
+<model id="Isensee_JCB2018" name="PKA_cycle">
 <annotation/>
 <listOfUnitDefinitions>
 <unitDefinition metaid="time" id="time" name="time">
