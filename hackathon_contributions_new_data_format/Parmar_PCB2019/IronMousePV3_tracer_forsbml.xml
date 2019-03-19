@@ -3364,6 +3364,10 @@
         </annotation>
       </parameter>
       <parameter id="ModelValue_23" name="Initial for vRestNTBI" value="0.0101453">
+        <annotation>
+          <initialValue xmlns="http://copasi.org/initialValue" parent="vRestNTBI"/>
+        </annotation>
+      </parameter>
 
       <parameter id="observable_FeOut" name="observable_FeOut" value="1" constant="false"/>
       <parameter id="observable_FePlasma" name="observable_FePlasma" value="1" constant="false"/>
@@ -3392,10 +3396,6 @@
       <parameter id="noiseParameter1_FeRest" name="noiseParameter1_FeRest" value="0" constant="true"/>
       <parameter id="noiseParameter1_FeBM" name="noiseParameter1_FeBM" value="0" constant="true"/>
 
-        <annotation>
-          <initialValue xmlns="http://copasi.org/initialValue" parent="vRestNTBI"/>
-        </annotation>
-      </parameter>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="Compartment_6">
