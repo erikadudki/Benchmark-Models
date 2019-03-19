@@ -44,6 +44,7 @@
       <parameter id="v0" value="2.31778715779187" constant="true"/>
       <parameter id="v1" value="1.00488755696677" constant="true"/>
       <parameter id="observable_Ca" value="0" constant="false"/>
+      <parameter id="cost_Ca" name="log10-normal" value="0" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="Z_state">
