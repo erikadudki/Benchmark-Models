@@ -1,78 +1,78 @@
-observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
-ob10		model1_data1	3.973385	5		0.406451	lin
-ob10		model1_data1	3.976118	15		0.406728	lin
-ob10		model1_data1	3.12959	30		0.320749	lin
-ob10		model1_data1	3.131418	60		0.320935	lin
-ob10		model1_data1	3.105543	90		0.31831	lin
-ob10		model1_data1	2.279702	120		0.234682	lin
-ob10		model1_data1	1.321613	180		0.138555	lin
-obcar		model1_data2	3.83496	15		0.251006	lin
-obcar		model1_data2	2.68932	30		0.179664	lin
-obcar		model1_data2	2.12541	45		0.145321	lin
-obcar		model1_data2	1.55414	60		0.111703	lin
-obcar		model1_data2	0.90185	90		0.076761	lin
-obcar		model1_data2	0.62496	120		0.064455	lin
-obcar		model1_data2	0.30276	180		0.054089	lin
-ob10		model1_data2	0.87947	15		0.110017	lin
-ob10		model1_data2	1.61775	30		0.194075	lin
-ob10		model1_data2	2.0221	45		0.240978	lin
-ob10		model1_data2	2.51711	60		0.298703	lin
-ob10		model1_data2	2.24951	90		0.267467	lin
-ob10		model1_data2	2.46923	120		0.29311	lin
-ob10		model1_data2	2.09599	180		0.249578	lin
-obcar		model1_data3	2.792	15		0.161073	lin
-obcar		model1_data3	2.51	30		0.146065	lin
-obcar		model1_data3	2.101	45		0.124582	lin
-obcar		model1_data3	1.917	60		0.115071	lin
-obcar		model1_data3	1.598	90		0.098916	lin
-obcar		model1_data3	1.135	120		0.076702	lin
-obcar		model1_data3	0.824	180		0.063285	lin
-ob10		model1_data3	0.573	15		0.066702	lin
-ob10		model1_data3	0.849	30		0.092359	lin
-ob10		model1_data3	0.968	45		0.10382	lin
-ob10		model1_data3	1.212	60		0.127709	lin
-ob10		model1_data3	1.411	90		0.147436	lin
-ob10		model1_data3	1.612	120		0.167498	lin
-ob10		model1_data3	2.168	180		0.223405	lin
-obcry		model1_data4	4.804181	15		0.43054	lin
-obcry		model1_data4	3.874252	30		0.353484	lin
-obcry		model1_data4	3.687507	45		0.338201	lin
-obcry		model1_data4	2.905136	60		0.275261	lin
-obcry		model1_data4	2.471236	90		0.241465	lin
-obcry		model1_data4	2.243992	120		0.224241	lin
-obcry		model1_data4	0.922679	180		0.137702	lin
-ob10		model1_data4	0.186897	15		0.043179	lin
-ob10		model1_data4	0.238582	30		0.046576	lin
-ob10		model1_data4	0.268357	45		0.048771	lin
-ob10		model1_data4	0.377915	60		0.057968	lin
-ob10		model1_data4	0.332696	90		0.053988	lin
-ob10		model1_data4	0.410503	120		0.060963	lin
-ob10		model1_data4	0.487949	180		0.068419	lin
-oohb10		model1_data4	0.750567	15		0.146042	lin
-oohb10		model1_data4	0.957066	30		0.185626	lin
-oohb10		model1_data4	1.058638	45		0.205133	lin
-oohb10		model1_data4	1.40061	60		0.270906	lin
-oohb10		model1_data4	1.342636	90		0.259748	lin
-oohb10		model1_data4	1.652208	120		0.319353	lin
-oohb10		model1_data4	2.005941	180		0.387509	lin
-oohb10		model1_data5	2.187219	5		0.365852	lin
-oohb10		model1_data5	1.490176	15		0.249545	lin
-oohb10		model1_data5	1.243819	30		0.208483	lin
-oohb10		model1_data5	1.100679	60		0.184647	lin
-oohb10		model1_data5	1.142316	90		0.191578	lin
-oohb10		model1_data5	0.794621	120		0.13378	lin
-oohb10		model1_data5	0.696621	180		0.117543	lin
-oohb10		model1_data6	0.098	15		0.023108	lin
-oohb10		model1_data6	0.1573	30		0.030931	lin
-oohb10		model1_data6	0.165	45		0.032031	lin
-oohb10		model1_data6	0.23	60		0.041749	lin
-oohb10		model1_data6	0.374	90		0.064588	lin
-oohb10		model1_data6	0.445	120		0.076127	lin
-oohb10		model1_data6	0.46	180		0.090733	lin
-ozea		model1_data6	2.761	15		0.172674	lin
-ozea		model1_data6	2.93	30		0.183243	lin
-ozea		model1_data6	2.842	45		0.17774	lin
-ozea		model1_data6	2.763	60		0.172799	lin
-ozea		model1_data6	2.581	90		0.161417	lin
-ozea		model1_data6	2.449	120		0.153161	lin
-ozea		model1_data6	2.128	180		0.133086	lin
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation	noiseDistribution
+ob10		model1_data1	3.973385	5		0.406451	lin	normal
+ob10		model1_data1	3.976118	15		0.406728	lin	normal
+ob10		model1_data1	3.12959	30		0.320749	lin	normal
+ob10		model1_data1	3.131418	60		0.320935	lin	normal
+ob10		model1_data1	3.105543	90		0.31831	lin	normal
+ob10		model1_data1	2.279702	120		0.234682	lin	normal
+ob10		model1_data1	1.321613	180		0.138555	lin	normal
+obcar		model1_data2	3.83496	15		0.251006	lin	normal
+obcar		model1_data2	2.68932	30		0.179664	lin	normal
+obcar		model1_data2	2.12541	45		0.145321	lin	normal
+obcar		model1_data2	1.55414	60		0.111703	lin	normal
+obcar		model1_data2	0.90185	90		0.076761	lin	normal
+obcar		model1_data2	0.62496	120		0.064455	lin	normal
+obcar		model1_data2	0.30276	180		0.054089	lin	normal
+ob10		model1_data2	0.87947	15		0.110017	lin	normal
+ob10		model1_data2	1.61775	30		0.194075	lin	normal
+ob10		model1_data2	2.0221	45		0.240978	lin	normal
+ob10		model1_data2	2.51711	60		0.298703	lin	normal
+ob10		model1_data2	2.24951	90		0.267467	lin	normal
+ob10		model1_data2	2.46923	120		0.29311	lin	normal
+ob10		model1_data2	2.09599	180		0.249578	lin	normal
+obcar		model1_data3	2.792	15		0.161073	lin	normal
+obcar		model1_data3	2.51	30		0.146065	lin	normal
+obcar		model1_data3	2.101	45		0.124582	lin	normal
+obcar		model1_data3	1.917	60		0.115071	lin	normal
+obcar		model1_data3	1.598	90		0.098916	lin	normal
+obcar		model1_data3	1.135	120		0.076702	lin	normal
+obcar		model1_data3	0.824	180		0.063285	lin	normal
+ob10		model1_data3	0.573	15		0.066702	lin	normal
+ob10		model1_data3	0.849	30		0.092359	lin	normal
+ob10		model1_data3	0.968	45		0.10382	lin	normal
+ob10		model1_data3	1.212	60		0.127709	lin	normal
+ob10		model1_data3	1.411	90		0.147436	lin	normal
+ob10		model1_data3	1.612	120		0.167498	lin	normal
+ob10		model1_data3	2.168	180		0.223405	lin	normal
+obcry		model1_data4	4.804181	15		0.43054	lin	normal
+obcry		model1_data4	3.874252	30		0.353484	lin	normal
+obcry		model1_data4	3.687507	45		0.338201	lin	normal
+obcry		model1_data4	2.905136	60		0.275261	lin	normal
+obcry		model1_data4	2.471236	90		0.241465	lin	normal
+obcry		model1_data4	2.243992	120		0.224241	lin	normal
+obcry		model1_data4	0.922679	180		0.137702	lin	normal
+ob10		model1_data4	0.186897	15		0.043179	lin	normal
+ob10		model1_data4	0.238582	30		0.046576	lin	normal
+ob10		model1_data4	0.268357	45		0.048771	lin	normal
+ob10		model1_data4	0.377915	60		0.057968	lin	normal
+ob10		model1_data4	0.332696	90		0.053988	lin	normal
+ob10		model1_data4	0.410503	120		0.060963	lin	normal
+ob10		model1_data4	0.487949	180		0.068419	lin	normal
+oohb10		model1_data4	0.750567	15		0.146042	lin	normal
+oohb10		model1_data4	0.957066	30		0.185626	lin	normal
+oohb10		model1_data4	1.058638	45		0.205133	lin	normal
+oohb10		model1_data4	1.40061	60		0.270906	lin	normal
+oohb10		model1_data4	1.342636	90		0.259748	lin	normal
+oohb10		model1_data4	1.652208	120		0.319353	lin	normal
+oohb10		model1_data4	2.005941	180		0.387509	lin	normal
+oohb10		model1_data5	2.187219	5		0.365852	lin	normal
+oohb10		model1_data5	1.490176	15		0.249545	lin	normal
+oohb10		model1_data5	1.243819	30		0.208483	lin	normal
+oohb10		model1_data5	1.100679	60		0.184647	lin	normal
+oohb10		model1_data5	1.142316	90		0.191578	lin	normal
+oohb10		model1_data5	0.794621	120		0.13378	lin	normal
+oohb10		model1_data5	0.696621	180		0.117543	lin	normal
+oohb10		model1_data6	0.098	15		0.023108	lin	normal
+oohb10		model1_data6	0.1573	30		0.030931	lin	normal
+oohb10		model1_data6	0.165	45		0.032031	lin	normal
+oohb10		model1_data6	0.23	60		0.041749	lin	normal
+oohb10		model1_data6	0.374	90		0.064588	lin	normal
+oohb10		model1_data6	0.445	120		0.076127	lin	normal
+oohb10		model1_data6	0.46	180		0.090733	lin	normal
+ozea		model1_data6	2.761	15		0.172674	lin	normal
+ozea		model1_data6	2.93	30		0.183243	lin	normal
+ozea		model1_data6	2.842	45		0.17774	lin	normal
+ozea		model1_data6	2.763	60		0.172799	lin	normal
+ozea		model1_data6	2.581	90		0.161417	lin	normal
+ozea		model1_data6	2.449	120		0.153161	lin	normal
+ozea		model1_data6	2.128	180		0.133086	lin	normal

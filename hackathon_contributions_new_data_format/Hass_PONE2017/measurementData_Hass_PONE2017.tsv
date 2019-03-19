@@ -1,222 +1,222 @@
-observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
-Dab1		model1_data1	0.5396547327	-30	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0610048678	log10
-Dab1		model1_data1	0.5540033146	0	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0437670545	log10
-Dab1		model1_data1	0.5798396976	1	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.048830041	log10
-Dab1		model1_data1	0.5690712499	2	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0586006712	log10
-Dab1		model1_data1	0.6013116653	3	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0586006711	log10
-Dab1		model1_data1	0.5615129604	5	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0437670542	log10
-Dab1		model1_data1	0.5772080112	10	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0488300409	log10
-Dab1		model1_data1	0.552982021	15	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0437670543	log10
-Dab1		model1_data1	0.4718708767	30	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.044924604	log10
-Dab1		model1_data1	0.4471428851	45	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0466792922	log10
-Dab1		model1_data1	0.3798138241	60	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0466792921	log10
-Dab1		model1_data1	0.0256184684	120	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0495766088	log10
-Dab1		model1_data1	-0.3165975562	240	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.046945167	log10
-pDab1		model1_data1	-0.724678174	0	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.083043265	log10
-pDab1		model1_data1	0.3079894352	1	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0895569443	log10
-pDab1		model1_data1	0.2752419257	2	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0996509209	log10
-pDab1		model1_data1	0.3845338061	3	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0996509206	log10
-pDab1		model1_data1	0.4073795006	5	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0828420081	log10
-pDab1		model1_data1	0.3899941657	10	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0895569448	log10
-pDab1		model1_data1	0.3293097257	15	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0828420085	log10
-pDab1		model1_data1	0.3255067633	30	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0848068327	log10
-pDab1		model1_data1	0.2479250138	45	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0900869047	log10
-pDab1		model1_data1	0.1579698891	60	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0900869047	log10
-pDab1		model1_data1	-0.2308484859	120	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0968194261	log10
-pDab1		model1_data1	-0.6147310441	240	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0906661851	log10
-pAkt		model1_data1	0.1030886162	-30	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.1025610858	log10
-pAkt		model1_data1	0.0308139807	0	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0735770722	log10
-pAkt		model1_data1	0.3455690338	1	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0820903267	log10
-pAkt		model1_data1	0.2759042961	2	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.098513561	log10
-pAkt		model1_data1	0.3641664219	3	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0985135604	log10
-pAkt		model1_data1	0.388779248	5	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0735770723	log10
-pAkt		model1_data1	0.4249774196	10	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0820903264	log10
-pAkt		model1_data1	0.432482525	15	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0735770723	log10
-pAkt		model1_data1	0.4936106864	30	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0755248428	log10
-pAkt		model1_data1	0.4774311432	45	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0784729498	log10
-pAkt		model1_data1	0.3212410905	60	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.07847295	log10
-pAkt		model1_data1	0.1402555408	120	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0833466691	log10
-pAkt		model1_data1	0.0514514894	240	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0793969649	log10
-pSFK		model1_data1	0.2841303202	-30	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0504568247	log10
-pSFK		model1_data1	0.1993060063	0	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0361620102	log10
-pSFK		model1_data1	0.4046772102	1	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0397191897	log10
-pSFK		model1_data1	0.381322417	2	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0461280564	log10
-pSFK		model1_data1	0.4896971922	3	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0461280565	log10
-pSFK		model1_data1	0.4714510947	5	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0361620101	log10
-pSFK		model1_data1	0.4911310098	10	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0397191897	log10
-pSFK		model1_data1	0.4233995462	15	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0361620102	log10
-pSFK		model1_data1	0.4068315099	30	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0371645252	log10
-pSFK		model1_data1	0.4298664649	45	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0389916361	log10
-pSFK		model1_data1	0.3931588686	60	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0389916359	log10
-pSFK		model1_data1	0.2690545784	120	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0413763369	log10
-pSFK		model1_data1	0.297019601	240	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0389916362	log10
-tSFK		model1_data1	0.0427758909	1	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.1039897672	log10
-tSFK		model1_data1	0.0120164895	3	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0968793469	log10
-tSFK		model1_data1	-0.0993926307	5	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0762877537	log10
-tSFK		model1_data1	-0.007319099	15	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0926607088	log10
-tSFK		model1_data1	0.004033512	30	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0951148256	log10
-tSFK		model1_data1	0.0359196126	60	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.1023609552	log10
-tSFK		model1_data1	-0.0562108757	120	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.082794949	log10
-tSFK		model1_data1	-0.0715262145	240	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0799260777	log10
-tApoER2		model1_data1	0.5228845647	0	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0653229642	log10
-tApoER2		model1_data1	0.5252074505	1	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0744796379	log10
-tApoER2		model1_data1	0.596575624	2	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.074479638	log10
-tApoER2		model1_data1	0.4693705131	3	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0744796382	log10
-tApoER2		model1_data1	0.5306955464	5	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0653229632	log10
-tApoER2		model1_data1	0.2336809471	10	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0744796378	log10
-tApoER2		model1_data1	0.5263520903	15	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0653229638	log10
-tApoER2		model1_data1	0.4946358418	30	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0653229641	log10
-tApoER2		model1_data1	0.3170776944	45	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0851707243	log10
-tApoER2		model1_data1	0.4605282375	60	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.085170725	log10
-tApoER2		model1_data1	0.3907487291	120	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0851707243	log10
-tApoER2		model1_data1	0.3771077306	240	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0851707243	log10
-Dab1		model1_data10	0.300369111	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10
-pDab1		model1_data10	-0.5275775202	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832536	log10
-pAkt		model1_data10	0.0925659588	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089011	log10
-pSFK		model1_data10	0.1084135853	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10
-Dab1		model1_data11	0.2719810465	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552184	log10
-pDab1		model1_data11	-0.3672368041	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832537	log10
-pAkt		model1_data11	0.1590093425	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089008	log10
-pSFK		model1_data11	0.1681193837	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10
-Dab1		model1_data12	0.2586506856	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10
-pDab1		model1_data12	-0.2866927279	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832532	log10
-pAkt		model1_data12	0.272557355	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089005	log10
-pSFK		model1_data12	0.2760402801	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713156	log10
-Dab1		model1_data13	0.289224101	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10
-pDab1		model1_data13	-0.0118543426	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832531	log10
-pAkt		model1_data13	0.2266832768	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089012	log10
-pSFK		model1_data13	0.2643049967	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713156	log10
-Dab1		model1_data14	0.2447302535	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552184	log10
-pDab1		model1_data14	0.11278539	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832533	log10
-pAkt		model1_data14	0.2904654279	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10
-pSFK		model1_data14	0.250651832	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10
-Dab1		model1_data15	0.269893611	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552188	log10
-pDab1		model1_data15	0.2035660132	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832534	log10
-pAkt		model1_data15	0.3173969597	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10
-pSFK		model1_data15	0.319075779	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713158	log10
-Dab1		model1_data16	0.2198573688	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10
-pDab1		model1_data16	0.2817352193	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832533	log10
-pAkt		model1_data16	0.2914126249	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.047208901	log10
-pSFK		model1_data16	0.3485845707	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713156	log10
-Dab1		model1_data17	0.1179387534	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552187	log10
-pDab1		model1_data17	0.30525187	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832539	log10
-pAkt		model1_data17	0.3580655805	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089011	log10
-pSFK		model1_data17	0.3574621744	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10
-Dab1		model1_data18	0.2760831004	0	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724625	log10
-Dab1		model1_data18	0.2792161613	1	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724622	log10
-Dab1		model1_data18	0.3337040852	3	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724625	log10
-Dab1		model1_data18	0.3368313009	5	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724625	log10
-Dab1		model1_data18	0.3216787064	15	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724624	log10
-Dab1		model1_data18	0.3473099146	30	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724624	log10
-Dab1		model1_data18	0.2423546651	60	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724627	log10
-Dab1		model1_data18	0.2467136418	120	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724626	log10
-Dab1		model1_data18	0.114432483	240	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0477468785	log10
-pDab1		model1_data18	-0.2423896934	0	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.14346649	log10
-pDab1		model1_data18	-0.329878306	1	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1508284681	log10
-pDab1		model1_data18	-0.0218333368	3	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664894	log10
-pDab1		model1_data18	-0.0580605065	5	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664926	log10
-pDab1		model1_data18	0.0473806678	15	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664932	log10
-pDab1		model1_data18	0.1956595886	30	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664902	log10
-pDab1		model1_data18	-0.2438689395	60	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664894	log10
-pDab1		model1_data18	-0.454879756	120	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664907	log10
-pDab1		model1_data18	-0.2979609106	240	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.175517078	log10
-pAkt		model1_data18	0.0937809593	0	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730026	log10
-pAkt		model1_data18	0.3012911737	1	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.072073004	log10
-pAkt		model1_data18	0.2906601715	3	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730038	log10
-pAkt		model1_data18	0.2469330513	5	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730042	log10
-pAkt		model1_data18	0.3657154992	15	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730041	log10
-pAkt		model1_data18	0.3660396243	30	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730036	log10
-pAkt		model1_data18	0.3110776701	60	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730037	log10
-pAkt		model1_data18	0.4359846472	120	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730036	log10
-pAkt		model1_data18	0.4065746935	240	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730037	log10
-pSFK		model1_data18	0.0142800858	0	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836931	log10
-pSFK		model1_data18	0.0687473869	1	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836923	log10
-pSFK		model1_data18	0.1030304863	3	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836923	log10
-pSFK		model1_data18	0.1102378849	5	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836927	log10
-pSFK		model1_data18	0.0036467626	15	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.046883695	log10
-pSFK		model1_data18	0.1229723192	30	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836922	log10
-pSFK		model1_data18	0.1492996114	60	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836924	log10
-pSFK		model1_data18	0.1327906754	120	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836925	log10
-pSFK		model1_data18	-0.0464897538	240	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0494461712	log10
-Dab1		model1_data2	0.3089206382	-30	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374925	log10
-Dab1		model1_data2	0.3010246937	-15	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374926	log10
-Dab1		model1_data2	0.3420143265	0	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374925	log10
-Dab1		model1_data2	0.3016054989	30	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374925	log10
-Dab1		model1_data2	0.3590946437	90	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374925	log10
-Dab1		model1_data2	0.3773977167	210	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374926	log10
-pDab1		model1_data2	0.6761268581	-30	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10
-pDab1		model1_data2	-0.8443165264	-15	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10
-pDab1		model1_data2	-0.8290455005	0	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10
-pDab1		model1_data2	-0.976313616	30	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10
-pDab1		model1_data2	-0.9532234175	90	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10
-pDab1		model1_data2	-0.9430157303	210	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10
-pAkt		model1_data2	0.2316903487	-30	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.0588546405	log10
-pAkt		model1_data2	-0.3678515185	-15	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.058854641	log10
-pAkt		model1_data2	-0.6109444782	0	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.0588546406	log10
-pAkt		model1_data2	-0.4374019978	30	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.0588546413	log10
-pAkt		model1_data2	-0.2183720237	90	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.0588546411	log10
-pAkt		model1_data2	-0.1768417954	210	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.058854641	log10
-pSFK		model1_data2	0.3208485255	-30	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.0660178493	log10
-pSFK		model1_data2	0.007344224	-15	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.066017847	log10
-pSFK		model1_data2	0.184159315	0	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.0660178496	log10
-pSFK		model1_data2	0.0972855245	30	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.0660178495	log10
-pSFK		model1_data2	0.093405055	90	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.0660178496	log10
-pSFK		model1_data2	0.0535634339	210	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.06601785	log10
-Dab1		model1_data3	0.3990580314	-30	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827946	log10
-Dab1		model1_data3	0.4046860002	0	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827946	log10
-Dab1		model1_data3	0.3517743733	1	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827947	log10
-Dab1		model1_data3	0.4583087535	5	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827948	log10
-Dab1		model1_data3	0.4107694101	10	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827946	log10
-Dab1		model1_data3	0.3292192696	15	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827948	log10
-Dab1		model1_data3	0.4170099387	45	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827947	log10
-Dab1		model1_data3	0.4978092131	60	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827948	log10
-Dab1		model1_data3	0.4870589741	240	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0516600024	log10
-pDab1		model1_data3	-0.5641358018	-30	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571558	log10
-pDab1		model1_data3	-3.2058068614	0	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571538	log10
-pDab1		model1_data3	-3.0058068622	1	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571561	log10
-pDab1		model1_data3	-2.9456008633	5	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571555	log10
-pDab1		model1_data3	-2.8501766127	10	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571558	log10
-pDab1		model1_data3	-2.8853948644	15	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571555	log10
-pDab1		model1_data3	-1.8531811889	45	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571553	log10
-pDab1		model1_data3	-1.3600960006	60	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571536	log10
-pDab1		model1_data3	-1.6016066496	240	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2512233606	log10
-pAkt		model1_data3	0.9565349801	-30	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102179	log10
-pAkt		model1_data3	-0.6022496472	0	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102174	log10
-pAkt		model1_data3	-0.5070524094	1	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102155	log10
-pAkt		model1_data3	-0.0248902659	5	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102165	log10
-pAkt		model1_data3	-0.0872736341	10	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102184	log10
-pAkt		model1_data3	-0.6406578009	15	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102164	log10
-pAkt		model1_data3	-0.1344117494	45	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102152	log10
-pAkt		model1_data3	0.1383376462	60	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102164	log10
-pAkt		model1_data3	0.33894686	240	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1699158712	log10
-pSFK		model1_data3	0.5678765613	-30	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098535	log10
-pSFK		model1_data3	0.0980852402	0	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098531	log10
-pSFK		model1_data3	-0.1126548357	1	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098549	log10
-pSFK		model1_data3	0.1757744418	5	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098534	log10
-pSFK		model1_data3	0.3803924455	10	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098541	log10
-pSFK		model1_data3	0.1509673353	15	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.117709853	log10
-pSFK		model1_data3	0.3045625938	45	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098539	log10
-pSFK		model1_data3	0.398396717	60	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098533	log10
-Dab1		model1_data4	0.385270532	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552186	log10
-pDab1		model1_data4	-1.0430968772	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0779182686	log10
-pAkt		model1_data4	0.2129349272	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10
-Dab1		model1_data5	0.390528251	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552186	log10
-pDab1		model1_data5	-0.9223309812	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0779182686	log10
-pAkt		model1_data5	0.1669752388	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089011	log10
-pSFK		model1_data5	0.1047325401	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0330576725	log10
-Dab1		model1_data6	0.3345298532	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552186	log10
-pDab1		model1_data6	-0.7629113545	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0779182683	log10
-pAkt		model1_data6	0.2120492011	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10
-pSFK		model1_data6	0.1144065969	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713159	log10
-Dab1		model1_data7	0.3248402492	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10
-pDab1		model1_data7	-0.7819462215	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832536	log10
-pAkt		model1_data7	0.1465678282	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10
-pSFK		model1_data7	0.084226717	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10
-Dab1		model1_data8	0.3004182468	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552186	log10
-pDab1		model1_data8	-0.8163867332	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832537	log10
-pAkt		model1_data8	0.1582914144	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089008	log10
-pSFK		model1_data8	0.0768645011	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10
-Dab1		model1_data9	0.2703443226	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10
-pDab1		model1_data9	-0.6950228394	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832534	log10
-pAkt		model1_data9	0.0997828209	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089004	log10
-pSFK		model1_data9	0.0987454961	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713156	log10
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation	noiseDistribution
+Dab1		model1_data1	0.5396547327	-30	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0610048678	log10	normal
+Dab1		model1_data1	0.5540033146	0	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0437670545	log10	normal
+Dab1		model1_data1	0.5798396976	1	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.048830041	log10	normal
+Dab1		model1_data1	0.5690712499	2	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0586006712	log10	normal
+Dab1		model1_data1	0.6013116653	3	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0586006711	log10	normal
+Dab1		model1_data1	0.5615129604	5	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0437670542	log10	normal
+Dab1		model1_data1	0.5772080112	10	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0488300409	log10	normal
+Dab1		model1_data1	0.552982021	15	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0437670543	log10	normal
+Dab1		model1_data1	0.4718708767	30	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.044924604	log10	normal
+Dab1		model1_data1	0.4471428851	45	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0466792922	log10	normal
+Dab1		model1_data1	0.3798138241	60	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0466792921	log10	normal
+Dab1		model1_data1	0.0256184684	120	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.0495766088	log10	normal
+Dab1		model1_data1	-0.3165975562	240	scaling_Dab1_ExpReelinStim;offset_Dab1_ExpReelinStim	0.046945167	log10	normal
+pDab1		model1_data1	-0.724678174	0	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.083043265	log10	normal
+pDab1		model1_data1	0.3079894352	1	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0895569443	log10	normal
+pDab1		model1_data1	0.2752419257	2	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0996509209	log10	normal
+pDab1		model1_data1	0.3845338061	3	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0996509206	log10	normal
+pDab1		model1_data1	0.4073795006	5	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0828420081	log10	normal
+pDab1		model1_data1	0.3899941657	10	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0895569448	log10	normal
+pDab1		model1_data1	0.3293097257	15	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0828420085	log10	normal
+pDab1		model1_data1	0.3255067633	30	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0848068327	log10	normal
+pDab1		model1_data1	0.2479250138	45	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0900869047	log10	normal
+pDab1		model1_data1	0.1579698891	60	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0900869047	log10	normal
+pDab1		model1_data1	-0.2308484859	120	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0968194261	log10	normal
+pDab1		model1_data1	-0.6147310441	240	scaling_pDab1_ExpReelinStim;offset_pDab1_ExpReelinStim	0.0906661851	log10	normal
+pAkt		model1_data1	0.1030886162	-30	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.1025610858	log10	normal
+pAkt		model1_data1	0.0308139807	0	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0735770722	log10	normal
+pAkt		model1_data1	0.3455690338	1	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0820903267	log10	normal
+pAkt		model1_data1	0.2759042961	2	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.098513561	log10	normal
+pAkt		model1_data1	0.3641664219	3	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0985135604	log10	normal
+pAkt		model1_data1	0.388779248	5	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0735770723	log10	normal
+pAkt		model1_data1	0.4249774196	10	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0820903264	log10	normal
+pAkt		model1_data1	0.432482525	15	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0735770723	log10	normal
+pAkt		model1_data1	0.4936106864	30	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0755248428	log10	normal
+pAkt		model1_data1	0.4774311432	45	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0784729498	log10	normal
+pAkt		model1_data1	0.3212410905	60	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.07847295	log10	normal
+pAkt		model1_data1	0.1402555408	120	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0833466691	log10	normal
+pAkt		model1_data1	0.0514514894	240	scaling_pAkt_ExpReelinStim;offset_pAkt_ExpReelinStim	0.0793969649	log10	normal
+pSFK		model1_data1	0.2841303202	-30	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0504568247	log10	normal
+pSFK		model1_data1	0.1993060063	0	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0361620102	log10	normal
+pSFK		model1_data1	0.4046772102	1	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0397191897	log10	normal
+pSFK		model1_data1	0.381322417	2	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0461280564	log10	normal
+pSFK		model1_data1	0.4896971922	3	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0461280565	log10	normal
+pSFK		model1_data1	0.4714510947	5	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0361620101	log10	normal
+pSFK		model1_data1	0.4911310098	10	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0397191897	log10	normal
+pSFK		model1_data1	0.4233995462	15	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0361620102	log10	normal
+pSFK		model1_data1	0.4068315099	30	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0371645252	log10	normal
+pSFK		model1_data1	0.4298664649	45	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0389916361	log10	normal
+pSFK		model1_data1	0.3931588686	60	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0389916359	log10	normal
+pSFK		model1_data1	0.2690545784	120	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0413763369	log10	normal
+pSFK		model1_data1	0.297019601	240	scaling_pSFK_ExpReelinStim;offset_pSFK_ExpReelinStim	0.0389916362	log10	normal
+tSFK		model1_data1	0.0427758909	1	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.1039897672	log10	normal
+tSFK		model1_data1	0.0120164895	3	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0968793469	log10	normal
+tSFK		model1_data1	-0.0993926307	5	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0762877537	log10	normal
+tSFK		model1_data1	-0.007319099	15	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0926607088	log10	normal
+tSFK		model1_data1	0.004033512	30	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0951148256	log10	normal
+tSFK		model1_data1	0.0359196126	60	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.1023609552	log10	normal
+tSFK		model1_data1	-0.0562108757	120	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.082794949	log10	normal
+tSFK		model1_data1	-0.0715262145	240	scaling_tSFK_ExpReelinStim;offset_tSFK_ExpReelinStim	0.0799260777	log10	normal
+tApoER2		model1_data1	0.5228845647	0	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0653229642	log10	normal
+tApoER2		model1_data1	0.5252074505	1	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0744796379	log10	normal
+tApoER2		model1_data1	0.596575624	2	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.074479638	log10	normal
+tApoER2		model1_data1	0.4693705131	3	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0744796382	log10	normal
+tApoER2		model1_data1	0.5306955464	5	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0653229632	log10	normal
+tApoER2		model1_data1	0.2336809471	10	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0744796378	log10	normal
+tApoER2		model1_data1	0.5263520903	15	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0653229638	log10	normal
+tApoER2		model1_data1	0.4946358418	30	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0653229641	log10	normal
+tApoER2		model1_data1	0.3170776944	45	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0851707243	log10	normal
+tApoER2		model1_data1	0.4605282375	60	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.085170725	log10	normal
+tApoER2		model1_data1	0.3907487291	120	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0851707243	log10	normal
+tApoER2		model1_data1	0.3771077306	240	scaling_tApoER2_ExpReelinStim;offset_tApoER2_ExpReelinStim	0.0851707243	log10	normal
+Dab1		model1_data10	0.300369111	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10	normal
+pDab1		model1_data10	-0.5275775202	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832536	log10	normal
+pAkt		model1_data10	0.0925659588	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089011	log10	normal
+pSFK		model1_data10	0.1084135853	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10	normal
+Dab1		model1_data11	0.2719810465	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552184	log10	normal
+pDab1		model1_data11	-0.3672368041	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832537	log10	normal
+pAkt		model1_data11	0.1590093425	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089008	log10	normal
+pSFK		model1_data11	0.1681193837	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10	normal
+Dab1		model1_data12	0.2586506856	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10	normal
+pDab1		model1_data12	-0.2866927279	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832532	log10	normal
+pAkt		model1_data12	0.272557355	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089005	log10	normal
+pSFK		model1_data12	0.2760402801	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713156	log10	normal
+Dab1		model1_data13	0.289224101	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10	normal
+pDab1		model1_data13	-0.0118543426	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832531	log10	normal
+pAkt		model1_data13	0.2266832768	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089012	log10	normal
+pSFK		model1_data13	0.2643049967	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713156	log10	normal
+Dab1		model1_data14	0.2447302535	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552184	log10	normal
+pDab1		model1_data14	0.11278539	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832533	log10	normal
+pAkt		model1_data14	0.2904654279	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10	normal
+pSFK		model1_data14	0.250651832	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10	normal
+Dab1		model1_data15	0.269893611	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552188	log10	normal
+pDab1		model1_data15	0.2035660132	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832534	log10	normal
+pAkt		model1_data15	0.3173969597	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10	normal
+pSFK		model1_data15	0.319075779	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713158	log10	normal
+Dab1		model1_data16	0.2198573688	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10	normal
+pDab1		model1_data16	0.2817352193	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832533	log10	normal
+pAkt		model1_data16	0.2914126249	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.047208901	log10	normal
+pSFK		model1_data16	0.3485845707	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713156	log10	normal
+Dab1		model1_data17	0.1179387534	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552187	log10	normal
+pDab1		model1_data17	0.30525187	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832539	log10	normal
+pAkt		model1_data17	0.3580655805	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089011	log10	normal
+pSFK		model1_data17	0.3574621744	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10	normal
+Dab1		model1_data18	0.2760831004	0	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724625	log10	normal
+Dab1		model1_data18	0.2792161613	1	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724622	log10	normal
+Dab1		model1_data18	0.3337040852	3	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724625	log10	normal
+Dab1		model1_data18	0.3368313009	5	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724625	log10	normal
+Dab1		model1_data18	0.3216787064	15	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724624	log10	normal
+Dab1		model1_data18	0.3473099146	30	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724624	log10	normal
+Dab1		model1_data18	0.2423546651	60	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724627	log10	normal
+Dab1		model1_data18	0.2467136418	120	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0452724626	log10	normal
+Dab1		model1_data18	0.114432483	240	scaling_Dab1_ExpEC50R;offset_Dab1_ExpEC50R	0.0477468785	log10	normal
+pDab1		model1_data18	-0.2423896934	0	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.14346649	log10	normal
+pDab1		model1_data18	-0.329878306	1	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1508284681	log10	normal
+pDab1		model1_data18	-0.0218333368	3	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664894	log10	normal
+pDab1		model1_data18	-0.0580605065	5	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664926	log10	normal
+pDab1		model1_data18	0.0473806678	15	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664932	log10	normal
+pDab1		model1_data18	0.1956595886	30	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664902	log10	normal
+pDab1		model1_data18	-0.2438689395	60	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664894	log10	normal
+pDab1		model1_data18	-0.454879756	120	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.1434664907	log10	normal
+pDab1		model1_data18	-0.2979609106	240	scaling_pDab1_ExpEC50R;offset_pDab1_ExpEC50R	0.175517078	log10	normal
+pAkt		model1_data18	0.0937809593	0	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730026	log10	normal
+pAkt		model1_data18	0.3012911737	1	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.072073004	log10	normal
+pAkt		model1_data18	0.2906601715	3	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730038	log10	normal
+pAkt		model1_data18	0.2469330513	5	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730042	log10	normal
+pAkt		model1_data18	0.3657154992	15	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730041	log10	normal
+pAkt		model1_data18	0.3660396243	30	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730036	log10	normal
+pAkt		model1_data18	0.3110776701	60	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730037	log10	normal
+pAkt		model1_data18	0.4359846472	120	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730036	log10	normal
+pAkt		model1_data18	0.4065746935	240	scaling_pAkt_ExpEC50R;offset_pAkt_ExpEC50R	0.0720730037	log10	normal
+pSFK		model1_data18	0.0142800858	0	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836931	log10	normal
+pSFK		model1_data18	0.0687473869	1	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836923	log10	normal
+pSFK		model1_data18	0.1030304863	3	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836923	log10	normal
+pSFK		model1_data18	0.1102378849	5	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836927	log10	normal
+pSFK		model1_data18	0.0036467626	15	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.046883695	log10	normal
+pSFK		model1_data18	0.1229723192	30	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836922	log10	normal
+pSFK		model1_data18	0.1492996114	60	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836924	log10	normal
+pSFK		model1_data18	0.1327906754	120	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0468836925	log10	normal
+pSFK		model1_data18	-0.0464897538	240	scaling_pSFK_ExpEC50R;offset_pSFK_ExpEC50R	0.0494461712	log10	normal
+Dab1		model1_data2	0.3089206382	-30	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374925	log10	normal
+Dab1		model1_data2	0.3010246937	-15	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374926	log10	normal
+Dab1		model1_data2	0.3420143265	0	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374925	log10	normal
+Dab1		model1_data2	0.3016054989	30	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374925	log10	normal
+Dab1		model1_data2	0.3590946437	90	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374925	log10	normal
+Dab1		model1_data2	0.3773977167	210	scaling_Dab1_ExponlyInh;offset_Dab1_ExponlyInh	0.0270374926	log10	normal
+pDab1		model1_data2	0.6761268581	-30	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10	normal
+pDab1		model1_data2	-0.8443165264	-15	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10	normal
+pDab1		model1_data2	-0.8290455005	0	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10	normal
+pDab1		model1_data2	-0.976313616	30	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10	normal
+pDab1		model1_data2	-0.9532234175	90	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10	normal
+pDab1		model1_data2	-0.9430157303	210	scaling_pDab1_ExponlyInh;offset_pDab1_ExponlyInh	0.1096004257	log10	normal
+pAkt		model1_data2	0.2316903487	-30	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.0588546405	log10	normal
+pAkt		model1_data2	-0.3678515185	-15	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.058854641	log10	normal
+pAkt		model1_data2	-0.6109444782	0	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.0588546406	log10	normal
+pAkt		model1_data2	-0.4374019978	30	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.0588546413	log10	normal
+pAkt		model1_data2	-0.2183720237	90	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.0588546411	log10	normal
+pAkt		model1_data2	-0.1768417954	210	scaling_pAkt_ExponlyInh;offset_pAkt_ExponlyInh	0.058854641	log10	normal
+pSFK		model1_data2	0.3208485255	-30	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.0660178493	log10	normal
+pSFK		model1_data2	0.007344224	-15	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.066017847	log10	normal
+pSFK		model1_data2	0.184159315	0	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.0660178496	log10	normal
+pSFK		model1_data2	0.0972855245	30	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.0660178495	log10	normal
+pSFK		model1_data2	0.093405055	90	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.0660178496	log10	normal
+pSFK		model1_data2	0.0535634339	210	scaling_pSFK_ExponlyInh;offset_pSFK_ExponlyInh	0.06601785	log10	normal
+Dab1		model1_data3	0.3990580314	-30	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827946	log10	normal
+Dab1		model1_data3	0.4046860002	0	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827946	log10	normal
+Dab1		model1_data3	0.3517743733	1	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827947	log10	normal
+Dab1		model1_data3	0.4583087535	5	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827948	log10	normal
+Dab1		model1_data3	0.4107694101	10	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827946	log10	normal
+Dab1		model1_data3	0.3292192696	15	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827948	log10	normal
+Dab1		model1_data3	0.4170099387	45	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827947	log10	normal
+Dab1		model1_data3	0.4978092131	60	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0489827948	log10	normal
+Dab1		model1_data3	0.4870589741	240	scaling_Dab1_ExpReelin_Inh;offset_Dab1_ExpReelin_Inh	0.0516600024	log10	normal
+pDab1		model1_data3	-0.5641358018	-30	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571558	log10	normal
+pDab1		model1_data3	-3.2058068614	0	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571538	log10	normal
+pDab1		model1_data3	-3.0058068622	1	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571561	log10	normal
+pDab1		model1_data3	-2.9456008633	5	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571555	log10	normal
+pDab1		model1_data3	-2.8501766127	10	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571558	log10	normal
+pDab1		model1_data3	-2.8853948644	15	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571555	log10	normal
+pDab1		model1_data3	-1.8531811889	45	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571553	log10	normal
+pDab1		model1_data3	-1.3600960006	60	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2341571536	log10	normal
+pDab1		model1_data3	-1.6016066496	240	scaling_pDab1_ExpReelin_Inh;offset_pDab1_ExpReelin_Inh	0.2512233606	log10	normal
+pAkt		model1_data3	0.9565349801	-30	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102179	log10	normal
+pAkt		model1_data3	-0.6022496472	0	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102174	log10	normal
+pAkt		model1_data3	-0.5070524094	1	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102155	log10	normal
+pAkt		model1_data3	-0.0248902659	5	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102165	log10	normal
+pAkt		model1_data3	-0.0872736341	10	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102184	log10	normal
+pAkt		model1_data3	-0.6406578009	15	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102164	log10	normal
+pAkt		model1_data3	-0.1344117494	45	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102152	log10	normal
+pAkt		model1_data3	0.1383376462	60	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1611102164	log10	normal
+pAkt		model1_data3	0.33894686	240	scaling_pAkt_ExpReelin_Inh;offset_pAkt_ExpReelin_Inh	0.1699158712	log10	normal
+pSFK		model1_data3	0.5678765613	-30	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098535	log10	normal
+pSFK		model1_data3	0.0980852402	0	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098531	log10	normal
+pSFK		model1_data3	-0.1126548357	1	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098549	log10	normal
+pSFK		model1_data3	0.1757744418	5	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098534	log10	normal
+pSFK		model1_data3	0.3803924455	10	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098541	log10	normal
+pSFK		model1_data3	0.1509673353	15	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.117709853	log10	normal
+pSFK		model1_data3	0.3045625938	45	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098539	log10	normal
+pSFK		model1_data3	0.398396717	60	scaling_pSFK_ExpReelin_Inh;offset_pSFK_ExpReelin_Inh	0.1177098533	log10	normal
+Dab1		model1_data4	0.385270532	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552186	log10	normal
+pDab1		model1_data4	-1.0430968772	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0779182686	log10	normal
+pAkt		model1_data4	0.2129349272	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10	normal
+Dab1		model1_data5	0.390528251	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552186	log10	normal
+pDab1		model1_data5	-0.9223309812	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0779182686	log10	normal
+pAkt		model1_data5	0.1669752388	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089011	log10	normal
+pSFK		model1_data5	0.1047325401	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0330576725	log10	normal
+Dab1		model1_data6	0.3345298532	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552186	log10	normal
+pDab1		model1_data6	-0.7629113545	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0779182683	log10	normal
+pAkt		model1_data6	0.2120492011	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10	normal
+pSFK		model1_data6	0.1144065969	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713159	log10	normal
+Dab1		model1_data7	0.3248402492	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10	normal
+pDab1		model1_data7	-0.7819462215	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832536	log10	normal
+pAkt		model1_data7	0.1465678282	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089009	log10	normal
+pSFK		model1_data7	0.084226717	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10	normal
+Dab1		model1_data8	0.3004182468	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552186	log10	normal
+pDab1		model1_data8	-0.8163867332	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832537	log10	normal
+pAkt		model1_data8	0.1582914144	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089008	log10	normal
+pSFK		model1_data8	0.0768645011	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713157	log10	normal
+Dab1		model1_data9	0.2703443226	15	scaling_Dab1_ExpReelin_DR;offset_Dab1_ExpReelin_DR	0.0333552185	log10	normal
+pDab1		model1_data9	-0.6950228394	15	scaling_pDab1_ExpReelin_DR;offset_pDab1_ExpReelin_DR	0.0731832534	log10	normal
+pAkt		model1_data9	0.0997828209	15	scaling_pAkt_ExpReelin_DR;offset_pAkt_ExpReelin_DR	0.0472089004	log10	normal
+pSFK		model1_data9	0.0987454961	15	scaling_pSFK_ExpReelin_DR;offset_pSFK_ExpReelin_DR	0.0336713156	log10	normal
