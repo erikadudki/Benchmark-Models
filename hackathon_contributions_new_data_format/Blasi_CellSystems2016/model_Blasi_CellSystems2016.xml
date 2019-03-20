@@ -41,7 +41,7 @@
 <species metaid="x_0ac" id="x_0ac" name="H4" compartment="default" initialAmount="1" hasOnlySubstanceUnits="true" charge="0">
 <annotation/>
 </species>
-<species metaid="x_k8" id="x_k8" name="H4" compartment="default" initialAmount="0" hasOnlySubstanceUnits="true" charge="0">
+<species metaid="x_k8" id="x_k8" name="H4" compartment="default" initialAmount="0" charge="0">
 <annotation/>
 </species>
 <species metaid="x_k5" id="x_k5" name="H4" compartment="default" initialAmount="0" charge="0">
@@ -88,38 +88,38 @@
 </species>
 </listOfSpecies>
 <listOfParameters>
-<parameter metaid="a_1" id="a_k5" value="0.067" units="rate"/>
+<parameter metaid="a_1" id="a_k5" value="0.067" units="rate" constant="false"/>
 <parameter metaid="d" id="d" value="1" units="rate"/>
 <parameter metaid="a_2" id="a_k8" value="0.0273" units="rate"/>
-<parameter metaid="a_3" id="a_k12" value="0.067" units="rate"/>
-<parameter metaid="a_4" id="a_k16" value="0.067" units="rate"/>
-<parameter metaid="a_5" id="a_k5_k5k8" value="0.067" units="rate"/>
+<parameter metaid="a_3" id="a_k12" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_4" id="a_k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_5" id="a_k5_k5k8" value="0.067" units="rate" constant="false"/>
 <parameter metaid="a_6" id="a_k5_k5k12" value="2.062" units="rate"/>
-<parameter metaid="a_7" id="a_k5_k5k16" value="0.067" units="rate"/>
-<parameter metaid="a_8" id="a_k8_k5k8" value="0.067" units="rate"/>
-<parameter metaid="a_9" id="a_k8_k8k12" value="0.067" units="rate"/>
-<parameter metaid="a_10" id="a_k8_k8k16" value="0.067" units="rate"/>
+<parameter metaid="a_7" id="a_k5_k5k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_8" id="a_k8_k5k8" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_9" id="a_k8_k8k12" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_10" id="a_k8_k8k16" value="0.067" units="rate" constant="false"/>
 <parameter metaid="a_11" id="a_k12_k5k12" value="0.552" units="rate"/>
-<parameter metaid="a_12" id="a_k12_k8k12" value="0.067" units="rate"/>
-<parameter metaid="a_13" id="a_k12_k12k16" value="0.067" units="rate"/>
-<parameter metaid="a_14" id="a_k16_k5k16" value="0.067" units="rate"/>
-<parameter metaid="a_15" id="a_k16_k8k16" value="0.067" units="rate"/>
+<parameter metaid="a_12" id="a_k12_k8k12" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_13" id="a_k12_k12k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_14" id="a_k16_k5k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_15" id="a_k16_k8k16" value="0.067" units="rate" constant="false"/>
 <parameter metaid="a_16" id="a_k16_k12k16" value="0.696" units="rate"/>
-<parameter metaid="a_17" id="a_k5k8_k5k8k12" value="0.067" units="rate"/>
-<parameter metaid="a_18" id="a_k5k8_k5k8k16" value="0.067" units="rate"/>
+<parameter metaid="a_17" id="a_k5k8_k5k8k12" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_18" id="a_k5k8_k5k8k16" value="0.067" units="rate" constant="false"/>
 <parameter metaid="a_19" id="a_k5k12_k5k8k12" value="0.325" units="rate"/>
-<parameter metaid="a_20" id="a_k5k12_k5k12k16" value="0.067" units="rate"/>
-<parameter metaid="a_21" id="a_k5k16_k5k8k16" value="0.067" units="rate"/>
-<parameter metaid="a_22" id="a_k5k16_k5k12k16" value="0.067" units="rate"/>
-<parameter metaid="a_23" id="a_k8k12_k5k8k12" value="0.067" units="rate"/>
-<parameter metaid="a_24" id="a_k8k12_k8k12k16" value="0.067" units="rate"/>
-<parameter metaid="a_25" id="a_k8k16_k5k8k16" value="0.067" units="rate"/>
-<parameter metaid="a_26" id="a_k8k16_k8k12k16" value="0.067" units="rate"/>
-<parameter metaid="a_27" id="a_k12k16_k5k12k16" value="0.067" units="rate"/>
+<parameter metaid="a_20" id="a_k5k12_k5k12k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_21" id="a_k5k16_k5k8k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_22" id="a_k5k16_k5k12k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_23" id="a_k8k12_k5k8k12" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_24" id="a_k8k12_k8k12k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_25" id="a_k8k16_k5k8k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_26" id="a_k8k16_k8k12k16" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_27" id="a_k12k16_k5k12k16" value="0.067" units="rate" constant="false"/>
 <parameter metaid="a_28" id="a_k12k16_k8k12k16" value="2.206" units="rate"/>
-<parameter metaid="a_29" id="a_k5k8k12_4ac" value="0.067" units="rate"/>
-<parameter metaid="a_30" id="a_k5k8k16_4ac" value="0.067" units="rate"/>
-<parameter metaid="a_31" id="a_k5k12k16_4ac" value="0.067" units="rate"/>
+<parameter metaid="a_29" id="a_k5k8k12_4ac" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_30" id="a_k5k8k16_4ac" value="0.067" units="rate" constant="false"/>
+<parameter metaid="a_31" id="a_k5k12k16_4ac" value="0.067" units="rate" constant="false"/>
 <parameter metaid="a_32" id="a_k8k12k16_4ac" value="3.5917" units="rate"/>
 <parameter metaid="observable_0ac" id="observable_0ac" value="0" units="substance" constant="false"/>
 <parameter metaid="observable_k5" id="observable_k5" value="0" units="substance" constant="false"/>
@@ -169,8 +169,134 @@
 <parameter metaid="sigma_k5k12k16" id="sigma_k5k12k16" value="0" units="substance" constant="false"/>
 <parameter metaid="sigma_k8k12k16" id="sigma_k8k12k16" value="0" units="substance" constant="false"/>
 <parameter metaid="sigma_4ac" id="sigma_4ac" value="0" units="substance" constant="false"/>
+<parameter metaid="a_basal" id="a_basal" value="0.067" units="rate"/>
 </listOfParameters>
 <listOfRules>
+<assignmentRule metaid="a_k5" variable="a_k5">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5_k5k8" variable="a_k5_k5k8">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5_k5k16" variable="a_k5_k5k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5k8_k5k8k12" variable="a_k5k8_k5k8k12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5k8_k5k8k16" variable="a_k5k8_k5k8k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5k8k12_4ac" variable="a_k5k8k12_4ac">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5k8k16_4ac" variable="a_k5k8k16_4ac">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5k12_k5k8k12" variable="a_k5k12_k5k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5k12k16_4ac" variable="a_k5k12k16_4ac">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5k16_k5k8k16" variable="a_k5k16_k5k8k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k5k16_k5k12k16" variable="a_k5k16_k5k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k8_k5k8" variable="a_k8_k5k8">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k8_k8k12" variable="a_k8_k8k12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k8_k8k16" variable="a_k8_k8k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k8k12_k5k8k12" variable="a_k8k12_k5k8k12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k8k12_k8k12k16" variable="a_k8k12_k8k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k8k16_k5k8k16" variable="a_k8k16_k5k8k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k8k16_k8k12k16" variable="a_k8k16_k8k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k12" variable="a_k12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k12_k8k12" variable="a_k12_k8k12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k12_k12k16" variable="a_k12_k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k12k16_k5k12k16" variable="a_k12k16_k5k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k16" variable="a_k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k16_k5k16" variable="a_k16_k5k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="a_k16_k8k16" variable="a_k16_k8k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> a_basal </ci>
+</math>
+</assignmentRule>
 <assignmentRule metaid="CDMT00103" variable="observable_0ac">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <ci> x_0ac </ci>
@@ -181,39 +307,9 @@
 <ci> x_4ac </ci>
 </math>
 </assignmentRule>
-<assignmentRule metaid="CDMT00105" variable="observable_k12">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> x_k12 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00106" variable="observable_k12k16">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> x_k12k16 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00107" variable="observable_k16">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> x_k16 </ci>
-</math>
-</assignmentRule>
 <assignmentRule metaid="CDMT00108" variable="observable_k5">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <ci> x_k5 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00109" variable="observable_k5k12">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> x_k5k12 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00110" variable="observable_k5k12k16">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> x_k5k12k16 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00111" variable="observable_k5k16">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> x_k5k16 </ci>
 </math>
 </assignmentRule>
 <assignmentRule metaid="CDMT00112" variable="observable_k5k8">
@@ -229,6 +325,21 @@
 <assignmentRule metaid="CDMT00114" variable="observable_k5k8k16">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <ci> x_k5k8k16 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00109" variable="observable_k5k12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> x_k5k12 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00110" variable="observable_k5k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> x_k5k12k16 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00111" variable="observable_k5k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> x_k5k16 </ci>
 </math>
 </assignmentRule>
 <assignmentRule metaid="CDMT00115" variable="observable_k8">
@@ -251,6 +362,21 @@
 <ci> x_k8k16 </ci>
 </math>
 </assignmentRule>
+<assignmentRule metaid="CDMT00105" variable="observable_k12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> x_k12 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00106" variable="observable_k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> x_k12k16 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00107" variable="observable_k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> x_k16 </ci>
+</math>
+</assignmentRule>
 <assignmentRule metaid="CDMT00119" variable="sigma_0ac">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <ci> noiseParameter1_0ac </ci>
@@ -261,39 +387,9 @@
 <ci> noiseParameter1_4ac </ci>
 </math>
 </assignmentRule>
-<assignmentRule metaid="CDMT00121" variable="sigma_k12">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> noiseParameter1_k12 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00122" variable="sigma_k12k16">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> noiseParameter1_k12k16 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00123" variable="sigma_k16">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> noiseParameter1_k16 </ci>
-</math>
-</assignmentRule>
 <assignmentRule metaid="CDMT00124" variable="sigma_k5">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <ci> noiseParameter1_k5 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00125" variable="sigma_k5k12">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> noiseParameter1_k5k12 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00126" variable="sigma_k5k12k16">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> noiseParameter1_k5k12k16 </ci>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00127" variable="sigma_k5k16">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<ci> noiseParameter1_k5k16 </ci>
 </math>
 </assignmentRule>
 <assignmentRule metaid="CDMT00128" variable="sigma_k5k8">
@@ -309,6 +405,21 @@
 <assignmentRule metaid="CDMT00130" variable="sigma_k5k8k16">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <ci> noiseParameter1_k5k8k16 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00125" variable="sigma_k5k12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> noiseParameter1_k5k12 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00126" variable="sigma_k5k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> noiseParameter1_k5k12k16 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00127" variable="sigma_k5k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> noiseParameter1_k5k16 </ci>
 </math>
 </assignmentRule>
 <assignmentRule metaid="CDMT00131" variable="sigma_k8">
@@ -329,6 +440,21 @@
 <assignmentRule metaid="CDMT00134" variable="sigma_k8k16">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <ci> noiseParameter1_k8k16 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00121" variable="sigma_k12">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> noiseParameter1_k12 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00122" variable="sigma_k12k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> noiseParameter1_k12k16 </ci>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00123" variable="sigma_k16">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> noiseParameter1_k16 </ci>
 </math>
 </assignmentRule>
 </listOfRules>
