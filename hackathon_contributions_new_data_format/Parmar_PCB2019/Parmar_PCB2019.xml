@@ -3107,21 +3107,6 @@
           </COPASI>
         </annotation>
       </parameter>
-      <parameter metaid="COPASI84" id="TotalFe_target_g" name="TotalFe_target_g" value="0.00159555" constant="true">
-        <annotation>
-          <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI84">
-                <dcterms:created>
-                  <rdf:Description>
-                    <dcterms:W3CDTF>2017-05-18T12:56:30Z</dcterms:W3CDTF>
-                  </rdf:Description>
-                </dcterms:created>
-              </rdf:Description>
-            </rdf:RDF>
-          </COPASI>
-        </annotation>
-      </parameter>
       <parameter metaid="COPASI85" id="kRestLoss" name="kRestLoss" value="0.0168620187974302" constant="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
@@ -3183,11 +3168,6 @@
         </annotation>
       </parameter>
       <parameter id="quantity_to_number_factor" name="quantity to number factor" value="6.02214179e+23" constant="true"/>
-      <parameter id="Avogadro_4" name="Avogadro Constant" value="6.02214179e+23">
-        <annotation>
-          <avogadro xmlns="http://copasi.org/constant"/>
-        </annotation>
-      </parameter>
       <parameter id="Compartment_6" name="Initial for BoneMarrow" value="0.000214286">
         <annotation>
           <initialValue xmlns="http://copasi.org/initialValue" parent="BoneMarrow"/>
