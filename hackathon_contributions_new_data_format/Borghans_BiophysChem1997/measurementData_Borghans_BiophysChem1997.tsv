@@ -1,112 +1,112 @@
-observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
-Ca		model1_data1	-0.457057499	0.029484867	offset;scale	sigma	log10
-Ca		model1_data1	-0.427784593	0.147620899	offset;scale	sigma	log10
-Ca		model1_data1	-0.463256361	0.312814778	offset;scale	sigma	log10
-Ca		model1_data1	-0.427267951	0.445614618	offset;scale	sigma	log10
-Ca		model1_data1	-0.466177465	0.566227379	offset;scale	sigma	log10
-Ca		model1_data1	-0.436277873	0.699263097	offset;scale	sigma	log10
-Ca		model1_data1	-0.093351808	0.724620082	offset;scale	sigma	log10
-Ca		model1_data1	0	0.79062687	offset;scale	sigma	log10
-Ca		model1_data1	-0.054563757	0.840515264	offset;scale	sigma	log10
-Ca		model1_data1	-0.145338033	0.922325941	offset;scale	sigma	log10
-Ca		model1_data1	-0.241524304	1.017974848	offset;scale	sigma	log10
-Ca		model1_data1	-0.215783924	1.090940065	offset;scale	sigma	log10
-Ca		model1_data1	-0.25372625	1.167679344	offset;scale	sigma	log10
-Ca		model1_data1	-0.196894057	1.223857844	offset;scale	sigma	log10
-Ca		model1_data1	-0.26845691	1.302602094	offset;scale	sigma	log10
-Ca		model1_data1	-0.191259218	1.38740057	offset;scale	sigma	log10
-Ca		model1_data1	-0.094235872	1.42502326	offset;scale	sigma	log10
-Ca		model1_data1	-0.213429727	1.508013332	offset;scale	sigma	log10
-Ca		model1_data1	-0.359112408	1.634876884	offset;scale	sigma	log10
-Ca		model1_data1	-0.470793163	1.743538446	offset;scale	sigma	log10
-Ca		model1_data1	-0.403663768	1.845359519	offset;scale	sigma	log10
-Ca		model1_data1	-0.197970768	1.96896008	offset;scale	sigma	log10
-Ca		model1_data1	-0.252706012	2.046760814	offset;scale	sigma	log10
-Ca		model1_data1	-0.296463426	2.138517719	offset;scale	sigma	log10
-Ca		model1_data1	-0.43351907	2.26373012	offset;scale	sigma	log10
-Ca		model1_data1	-0.329766621	2.333864789	offset;scale	sigma	log10
-Ca		model1_data1	-0.552628566	2.401719295	offset;scale	sigma	log10
-Ca		model1_data1	-0.469254828	2.548121486	offset;scale	sigma	log10
-Ca		model1_data1	-0.486661425	2.608309927	offset;scale	sigma	log10
-Ca		model1_data1	-0.448873357	2.681511023	offset;scale	sigma	log10
-Ca		model1_data1	-0.489744848	2.861722528	offset;scale	sigma	log10
-Ca		model1_data1	-0.451671684	2.949823309	offset;scale	sigma	log10
-Ca		model1_data1	-0.507482062	3.17520563	offset;scale	sigma	log10
-Ca		model1_data1	-0.464284105	3.367486273	offset;scale	sigma	log10
-Ca		model1_data1	-0.403756691	3.588740712	offset;scale	sigma	log10
-Ca		model1_data1	-0.055150781	3.641892098	offset;scale	sigma	log10
-Ca		model1_data1	-0.136324615	3.782593882	offset;scale	sigma	log10
-Ca		model1_data1	-0.196071595	3.831420821	offset;scale	sigma	log10
-Ca		model1_data1	-0.167673498	3.874232847	offset;scale	sigma	log10
-Ca		model1_data1	-0.242275699	3.953448856	offset;scale	sigma	log10
-Ca		model1_data1	-0.232076847	4.072056646	offset;scale	sigma	log10
-Ca		model1_data1	-0.307878981	4.150682957	offset;scale	sigma	log10
-Ca		model1_data1	-0.229927814	4.220935566	offset;scale	sigma	log10
-Ca		model1_data1	-0.33961253	4.301213029	offset;scale	sigma	log10
-Ca		model1_data1	-0.233740269	4.370168304	offset;scale	sigma	log10
-Ca		model1_data1	-0.355005335	4.421118154	offset;scale	sigma	log10
-Ca		model1_data1	-0.279881882	4.521759832	offset;scale	sigma	log10
-Ca		model1_data1	-0.426329237	4.587963185	offset;scale	sigma	log10
-Ca		model1_data1	-0.255937482	4.669459357	offset;scale	sigma	log10
-Ca		model1_data1	-0.223479194	4.727171069	offset;scale	sigma	log10
-Ca		model1_data1	-0.166808124	4.783113689	offset;scale	sigma	log10
-Ca		model1_data1	-0.233211508	4.846958254	offset;scale	sigma	log10
-Ca		model1_data1	-0.206051656	4.934705217	offset;scale	sigma	log10
-Ca		model1_data1	-0.277136178	4.953732784	offset;scale	sigma	log10
-Ca		model1_data1	-0.213518095	5.02457509	offset;scale	sigma	log10
-Ca		model1_data1	-0.306723436	5.029764427	offset;scale	sigma	log10
-Ca		model1_data1	-0.263896036	5.116921693	offset;scale	sigma	log10
-Ca		model1_data1	-0.367265025	5.181591833	offset;scale	sigma	log10
-Ca		model1_data1	-0.589052319	5.293437761	offset;scale	sigma	log10
-Ca		model1_data1	-0.477731713	5.349734199	offset;scale	sigma	log10
-Ca		model1_data1	-0.495458305	5.424822326	offset;scale	sigma	log10
-Ca		model1_data1	-0.450275711	5.512687229	offset;scale	sigma	log10
-Ca		model1_data1	-0.498757205	5.603736497	offset;scale	sigma	log10
-Ca		model1_data1	-0.446675681	5.691365521	offset;scale	sigma	log10
-Ca		model1_data1	-0.505864068	5.752969235	offset;scale	sigma	log10
-Ca		model1_data1	-0.466471224	5.811270645	offset;scale	sigma	log10
-Ca		model1_data1	-0.540572551	5.888127864	offset;scale	sigma	log10
-Ca		model1_data1	-0.420907045	5.943716666	offset;scale	sigma	log10
-Ca		model1_data1	-0.497814706	6.065626761	offset;scale	sigma	log10
-Ca		model1_data1	-0.127973723	6.091573444	offset;scale	sigma	log10
-Ca		model1_data1	-0.041576119	6.188676938	offset;scale	sigma	log10
-Ca		model1_data1	-0.070730541	6.235970664	offset;scale	sigma	log10
-Ca		model1_data1	-0.161923561	6.347344833	offset;scale	sigma	log10
-Ca		model1_data1	-0.202609124	6.454355242	offset;scale	sigma	log10
-Ca		model1_data1	-0.281901808	6.488754253	offset;scale	sigma	log10
-Ca		model1_data1	-0.219560103	6.559714499	offset;scale	sigma	log10
-Ca		model1_data1	-0.357056213	6.62650755	offset;scale	sigma	log10
-Ca		model1_data1	-0.247367405	6.680563139	offset;scale	sigma	log10
-Ca		model1_data1	-0.306836896	6.743346248	offset;scale	sigma	log10
-Ca		model1_data1	-0.239083677	6.784389183	offset;scale	sigma	log10
-Ca		model1_data1	-0.180458638	6.855231489	offset;scale	sigma	log10
-Ca		model1_data1	-0.29727414	6.906771036	offset;scale	sigma	log10
-Ca		model1_data1	-0.173319279	6.988856904	offset;scale	sigma	log10
-Ca		model1_data1	-0.244853102	7.08273672	offset;scale	sigma	log10
-Ca		model1_data1	-0.18019547	7.123425836	offset;scale	sigma	log10
-Ca		model1_data1	-0.21312058	7.200047176	offset;scale	sigma	log10
-Ca		model1_data1	-0.180063946	7.257523009	offset;scale	sigma	log10
-Ca		model1_data1	-0.322972445	7.280560518	offset;scale	sigma	log10
-Ca		model1_data1	-0.198022541	7.318301148	offset;scale	sigma	log10
-Ca		model1_data1	-0.2875804	7.33839017	offset;scale	sigma	log10
-Ca		model1_data1	-0.232350346	7.424721859	offset;scale	sigma	log10
-Ca		model1_data1	-0.280721148	7.442334153	offset;scale	sigma	log10
-Ca		model1_data1	-0.261052016	7.515771128	offset;scale	sigma	log10
-Ca		model1_data1	-0.350417315	7.564951885	offset;scale	sigma	log10
-Ca		model1_data1	-0.201395001	7.631430431	offset;scale	sigma	log10
-Ca		model1_data1	-0.280352849	7.740327872	offset;scale	sigma	log10
-Ca		model1_data1	-0.201256898	7.765527604	offset;scale	sigma	log10
-Ca		model1_data1	-0.273605931	7.844271855	offset;scale	sigma	log10
-Ca		model1_data1	-0.243870397	7.946918504	offset;scale	sigma	log10
-Ca		model1_data1	-0.352450937	7.967361345	offset;scale	sigma	log10
-Ca		model1_data1	-0.181055744	8.047324303	offset;scale	sigma	log10
-Ca		model1_data1	-0.288888748	8.098392092	offset;scale	sigma	log10
-Ca		model1_data1	-0.247705342	8.185549358	offset;scale	sigma	log10
-Ca		model1_data1	-0.432535402	8.223958311	offset;scale	sigma	log10
-Ca		model1_data1	-0.53119716	8.301759045	offset;scale	sigma	log10
-Ca		model1_data1	-0.572524256	8.392336556	offset;scale	sigma	log10
-Ca		model1_data1	-0.496565251	8.479493821	offset;scale	sigma	log10
-Ca		model1_data1	-0.526668664	8.569835453	offset;scale	sigma	log10
-Ca		model1_data1	-0.481851483	8.642918609	offset;scale	sigma	log10
-Ca		model1_data1	-0.485018763	8.836732465	offset;scale	sigma	log10
-Ca		model1_data1	-0.431204722	8.983842293	offset;scale	sigma	log10
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation	noiseDistribution
+Ca		model1_data1	0.3490940936384476	0.029484867	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3734353331605424	0.147620899	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3441467233856444	0.312814778	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.37387984072006664	0.445614618	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3418397285954241	0.566227379	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3662031932664888	0.699263097	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.8065813798845957	0.724620082	offset;scale	sigma	log10	normal
+Ca		model1_data1	1.0	0.79062687	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.8819343194553096	0.840515264	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.7155862170446442	0.922325941	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5734237756905898	1.017974848	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6084376440204943	1.090940065	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5575370720258778	1.167679344	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6354859351459171	1.223857844	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5389433158096066	1.302602094	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6437848939593427	1.38740057	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.8049411465657063	1.42502326	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6117447811018735	1.508013332	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.43740887640987375	1.634876884	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.33822588124144654	1.743538446	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.39476281026685794	1.845359519	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6339123779353693	1.96896008	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5588483692833001	2.046760814	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5052851956134419	2.138517719	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.36853685893398574	2.26373012	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.4679865580082301	2.333864789	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.2801376195868456	2.401719295	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3394260514477877	2.548121486	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.32609082160333386	2.608309927	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.35573503801812967	2.681511023	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.32378382703530584	2.861722528	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3534502685723564	2.949823309	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3108264283125555	3.17520563	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3433332740532276	3.367486273	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.39467835462196504	3.588740712	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.8807430381948125	3.641892098	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.7305927950875905	3.782593882	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6366905515392621	3.831420821	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6797144489745944	3.874232847	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5724325237691013	3.953448856	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5860344584423713	4.072056646	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.4921766648237281	4.150682957	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5889415377893975	4.220935566	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.45749617773823176	4.301213029	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5837941395708067	4.370168304	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.44156502300654943	4.421118154	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5249502150872135	4.521759832	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.37468884435739835	4.587963185	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5547055587482842	4.669459357	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5977516808424742	4.727171069	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6810701964122866	4.783113689	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5845053518435972	4.846958254	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6222262717215729	4.934705217	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5282795777007382	4.953732784	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6116203190935983	5.02457509	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.4934879630417728	5.029764427	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5446330147336279	5.116921693	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.42927438529546136	5.181591833	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.2576010808993292	5.293437761	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3328651184339796	5.349734199	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3195521140196557	5.424822326	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3545882081348129	5.512687229	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.31713399246257157	5.603736497	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.357539739182399	5.691365521	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3119865933717823	5.752969235	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.34160858464384286	5.811270645	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.28802318528797594	5.888127864	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3793961810274026	5.943716666	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.31782297896905404	6.065626761	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.7447770352984933	6.091573444	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.9087070155971699	6.188676938	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.8497075144797753	6.235970664	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6887735148442766	6.347344833	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6271780868420604	6.454355242	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5225143137461794	6.488754253	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6031702280520924	6.559714499	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.4394847269557289	6.62650755	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.565760463769103	6.680563139	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.4933590555069625	6.743346248	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5766553465343209	6.784389183	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6599960889841535	6.855231489	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5043428403913555	6.906771036	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6709354219455089	6.988856904	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5690453751307512	7.08273672	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6603961458436138	7.123425836	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6121803988651662	7.200047176	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6605961739348956	7.257523009	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.47536538584172244	7.280560518	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6338368126432679	7.318301148	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.515726680866965	7.33839017	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5856655166594882	7.424721859	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5239367381488433	7.442334153	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5482113010269408	7.515771128	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.4462545785673597	7.564951885	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6289338925396044	7.631430431	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5243812458021989	7.740327872	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6291339214889653	7.765527604	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5325913013958874	7.844271855	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5703344471973107	7.946918504	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.44416983716730435	7.967361345	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.6590892922087285	8.047324303	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5141753495712993	8.098392092	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.5653204005508413	8.185549358	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3693725333162194	8.223958311	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.29430852354759884	8.301759045	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.2675936133967877	8.392336556	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3187386647688086	8.479493821	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.297393406799128	8.569835453	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.32972244908492526	8.642918609	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3273265529520109	8.836732465	offset;scale	sigma	log10	normal
+Ca		model1_data1	0.3705060278395613	8.983842293	offset;scale	sigma	log10	normal
