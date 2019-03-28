@@ -38,52 +38,52 @@
 <compartment metaid="default" id="default" size="1" units="volume"/>
 </listOfCompartments>
 <listOfSpecies>
-<species metaid="x_0ac" id="x_0ac" name="H4" compartment="default" initialAmount="1" hasOnlySubstanceUnits="true" charge="0">
+<species metaid="x_0ac" id="x_0ac" name="H4" compartment="default" initialConcentration="1" hasOnlySubstanceUnits="true" charge="0">
 <annotation/>
 </species>
-<species metaid="x_k8" id="x_k8" name="H4" compartment="default" initialAmount="0" charge="0">
+<species metaid="x_k8" id="x_k8" name="H4" compartment="default" initialConcentration="0" charge="0">
 <annotation/>
 </species>
-<species metaid="x_k5" id="x_k5" name="H4" compartment="default" initialAmount="0" charge="0">
+<species metaid="x_k5" id="x_k5" name="H4" compartment="default" initialConcentration="0" charge="0">
 <annotation/>
 </species>
-<species metaid="x_k12" id="x_k12" name="H4" compartment="default" initialAmount="0" charge="0">
+<species metaid="x_k12" id="x_k12" name="H4" compartment="default" initialConcentration="0" charge="0">
 <annotation/>
 </species>
-<species metaid="x_k16" id="x_k16" name="H4" compartment="default" initialAmount="0" charge="0">
+<species metaid="x_k16" id="x_k16" name="H4" compartment="default" initialConcentration="0" charge="0">
 <annotation/>
 </species>
-<species metaid="x_k5k8" id="x_k5k8" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k5k8" id="x_k5k8" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_k5k12" id="x_k5k12" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k5k12" id="x_k5k12" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_k5k16" id="x_k5k16" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k5k16" id="x_k5k16" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_k8k12" id="x_k8k12" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k8k12" id="x_k8k12" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_k8k16" id="x_k8k16" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k8k16" id="x_k8k16" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_k12k16" id="x_k12k16" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k12k16" id="x_k12k16" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_k5k8k12" id="x_k5k8k12" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k5k8k12" id="x_k5k8k12" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_k5k8k16" id="x_k5k8k16" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k5k8k16" id="x_k5k8k16" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_k5k12k16" id="x_k5k12k16" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k5k12k16" id="x_k5k12k16" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_k8k12k16" id="x_k8k12k16" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_k8k12k16" id="x_k8k12k16" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
-<species metaid="x_4ac" id="x_4ac" name="H4" compartment="default" initialAmount="0">
+<species metaid="x_4ac" id="x_4ac" name="H4" compartment="default" initialConcentration="0">
 <annotation/>
 </species>
 </listOfSpecies>
