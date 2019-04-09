@@ -216,6 +216,11 @@
                 <ci> noiseParameter1_pJAK2_au </ci>
             </math>
         </assignmentRule>
+        <assignmentRule variable="sigma_pEpoR_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_pEpoR_au </ci>
+        </math>
+        </assignmentRule>
         <assignmentRule variable="sigma_STAT5_abs">
             <math xmlns="http://www.w3.org/1998/Math/MathML">
                 <ci> noiseParameter1_STAT5_abs </ci>
