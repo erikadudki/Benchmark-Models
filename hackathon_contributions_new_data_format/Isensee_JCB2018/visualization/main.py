@@ -12,10 +12,9 @@ ConditionFilePath = "https://raw.githubusercontent.com/LoosC/" \
                     "experimentalCondition_Isensee_JCB2018.tsv"
 
 VisualizationFilePath = "https://raw.githubusercontent.com/LoosC/"\
-                        "Benchmark-Models/hackathon_contributions"\
+                        "Benchmark-Models/visualization/hackathon_contributions"\
                         "_new_data_format/Isensee_JCB2018/visualizationSpecific"\
                         "ation_Isensee_JCB2018.tsv"
-#test
 
 # import measurement data
 measurement_data = pd.DataFrame.from_csv(
