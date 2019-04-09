@@ -141,6 +141,9 @@
       <parameter id="noiseParameter1_SHP1_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_pJAK2_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_pEpoR_au" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CIS_au1" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CIS_au2" value="1" constant="true"/>
+      <parameter id="noiseParameter1_tSHP1_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_CIS_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_CIS_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_SOCS3_au" value="1" constant="true"/>
@@ -148,6 +151,13 @@
       <parameter id="noiseParameter1_tSTAT5_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_pSTAT5_au" value="1" constant="true"/>
       <parameter id="noiseParameter2_pSTAT5_au" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3RNA_foldA" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3RNA_foldB" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3RNA_foldC" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CISRNA_foldA" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CISRNA_foldB" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CISRNA_foldC" value="1" constant="true"/>
+      <parameter id="noiseParameter1_pSTAT5B_rel" value="1" constant="true"/>
 
     </listOfParameters>
     <listOfInitialAssignments>
@@ -251,8 +261,6 @@
         <ci> noiseParameter1_CISRNA_foldC </ci>
         </math>
         </assignmentRule>
-        
-        
         <assignmentRule variable="sigma_pEpoR_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
         <ci> noiseParameter1_pEpoR_au </ci>
