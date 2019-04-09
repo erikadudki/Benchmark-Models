@@ -11,7 +11,8 @@ ConditionFilePath = "https://raw.githubusercontent.com/LoosC/" \
                     "new_data_format/Isensee_JCB2018/" \
                     "experimentalCondition_Isensee_JCB2018.tsv"
 
-VisualizationFilePath = "/home/simon/Benchmark-Models/hackathon_contributions"\
+VisualizationFilePath = "https://raw.githubusercontent.com/LoosC/"\
+                        "Benchmark-Models/hackathon_contributions"\
                         "_new_data_format/Isensee_JCB2018/visualizationSpecific"\
                         "ation_Isensee_JCB2018.tsv"
 
