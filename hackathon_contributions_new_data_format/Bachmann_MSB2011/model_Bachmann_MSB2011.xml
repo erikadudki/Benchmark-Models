@@ -212,13 +212,55 @@
             </math>
         </assignmentRule>
         <assignmentRule variable="sigma_pJAK2_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_pJAK2_au </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_pSTAT5B_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_pSTAT5B_rel </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_SOCS3RNA_foldA">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_SOCS3RNA_foldA </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_SOCS3RNA_foldB">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_SOCS3RNA_foldB </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_SOCS3RNA_foldC">
             <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <ci> noiseParameter1_pJAK2_au </ci>
+                <ci> noiseParameter1_SOCS3RNA_foldC </ci>
             </math>
         </assignmentRule>
+        <assignmentRule variable="sigma_CISRNA_foldA">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CISRNA_foldA </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CISRNA_foldB">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CISRNA_foldB </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CISRNA_foldC">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CISRNA_foldC </ci>
+        </math>
+        </assignmentRule>
+        
+        
         <assignmentRule variable="sigma_pEpoR_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
         <ci> noiseParameter1_pEpoR_au </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CIS_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CIS_au </ci>
         </math>
         </assignmentRule>
         <assignmentRule variable="sigma_STAT5_abs">
@@ -226,6 +268,22 @@
                 <ci> noiseParameter1_STAT5_abs </ci>
             </math>
         </assignmentRule>
+        <assignmentRule variable="sigma_SOCS3_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_SOCS3_au </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CIS_au1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CIS_au1 </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CIS_au2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CIS_au2 </ci>
+        </math>
+        </assignmentRule>
+        
       <assignmentRule variable="observable_pJAK2_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -438,6 +496,11 @@
               <ci> noiseParameter1_SHP1_abs </ci>
           </math>
       </assignmentRule>
+      <assignmentRule variable="sigma_tSTAT5_au">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <ci> noiseParameter1_tSTAT5_au </ci>
+      </math>
+      </assignmentRule>
       <assignmentRule variable="observable_CIS_abs">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
@@ -453,6 +516,11 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <ci> noiseParameter1_CIS_abs </ci>
           </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_tSHP1_au">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <ci> noiseParameter1_tSHP1_au </ci>
+      </math>
       </assignmentRule>
       <assignmentRule variable="observable_SOCS3_abs">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
