@@ -114,6 +114,7 @@
       <parameter id="CISoe" value="1.25e-07" constant="true"/>
       <parameter id="SOCS3oe" value="1.25e-07" constant="true"/>
       <parameter id="init_SHP1_multiplier" value="1" constant="true"/>
+      <parameter id="init_EpoRJAK2_CIS" value="0" constant="true"/>
       <parameter id="init_CIS_multiplier" value="0" constant="true"/>
       <parameter id="init_SOCS3_multiplier" value="0" constant="true"/>
       <parameter id="observableParameter1_pJAK2_au" value="1" constant="true"/>
@@ -165,6 +166,11 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> init_EpoRJAK2 </ci>
         </math>
+      </initialAssignment>
+      <initialAssignment symbol="EpoRJAK2_CIS">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> init_EpoRJAK2_CIS </ci>
+          </math>
       </initialAssignment>
       <initialAssignment symbol="SOCS3">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
