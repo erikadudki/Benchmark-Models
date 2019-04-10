@@ -42,7 +42,7 @@ for i_plotId, var_plotId in enumerate(plotIds):
     #print(var_plotId)
     ind_plot = visualization_specification['plotId'] == var_plotId
 
-    counter_cond = 0        # counter for the case, if independent Variable=='condition'
+    counter_cond = 0        # counter for the condition case, (if independentVariable == 'condition')
 
     #print(visualization_specification[ind_plot])
 
@@ -87,7 +87,6 @@ for i_plotId, var_plotId in enumerate(plotIds):
                 ms.at[ID,'mean'] = np.mean(measurement_data[meas].measurement)
                 ms.at[ID,'sd'] = np.std(measurement_data[meas].measurement)
 
-            #print(ms)
 
             plt.errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
                          color=cmap[min(7,i-plotInd[i_plotId])],
@@ -95,8 +94,6 @@ for i_plotId, var_plotId in enumerate(plotIds):
                          )
             plt.legend()
 
-        #elif indepVar == 'time':
-        #    plt.plot()
 
         elif indepVar == 'condition':
             # if conditionIds == 'control':
@@ -114,22 +111,12 @@ for i_plotId, var_plotId in enumerate(plotIds):
             for ID in conditionIds:
                 #print(conditionIds)
                 if conditionIds == 'control':       # datasetId and conditionIds have to coincide, since there are multiple experiments called 'control'
-                    #print(measurement_data.simulationConditionId[ind_dataset])
-                    #print(ind_dataset)
                     # ind_meas = measurement_data.simulationConditionId[ind_dataset] == ID
-                    #print(measurement_data.measurement[ind_dataset])
-                    meas = measurement_data['simulationConditionId'] == ID
-                    #print(meas)
-                    #print(measurement_data[meas].measurement)
+                    # meas = measurement_data['simulationConditionId'] == ID
                     ms_c.at[ID, 'mean'] = np.mean(measurement_data.measurement[ind_dataset])        # check datasetId is enough
                     ms_c.at[ID, 'sd'] = np.std(measurement_data.measurement[ind_dataset])
-                    #print(measurement_data.measurement[ind_dataset])
-                    print(ms_c)
-                    #print(ID)
                 else:
-
                     meas = measurement_data['simulationConditionId'] == ID
-                    #print(measurement_data[meas].measurement)
                     ms_c.at[ID, 'mean'] = np.mean(measurement_data[meas].measurement)
                     ms_c.at[ID, 'sd'] = np.std(measurement_data[meas].measurement)
                     print(ms_c)
@@ -142,6 +129,37 @@ for i_plotId, var_plotId in enumerate(plotIds):
             counter_cond = counter_cond + 1
             #plt.xticks(x_pos,bars)
             #plt.legend()
+
+        elif indepVar == 'time':
+
+            # obtain unique observation times
+            uni_times = np.unique(measurement_data[ind_dataset].time)
+            print(uni_times)
+
+            # create empty dataframe for means and SDs
+            ms = pd.DataFrame(columns=['mean', 'sd'], index=uni_times)
+            print(ms)
+
+            print(measurement_data[ind_dataset].time)
+            # group measurement values for each conditionId
+            for var_time in uni_times:
+                ind_meas = ((measurement_data['time'] == var_time) &
+                            (measurement_data['datasetId']==datasetId))
+                print(var_time)
+                print(measurement_data[ind_meas].measurement)
+                print(np.mean(measurement_data[ind_meas].measurement))
+                print(np.std(measurement_data[ind_meas].measurement))
+                ms.at[var_time, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
+                ms.at[var_time, 'sd'] = np.std(measurement_data[ind_meas].measurement)
+
+            print(ms)
+
+            plt.errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
+                         color=cmap[min(7,i-plotInd[i_plotId])],
+                         label=visualization_specification[ind_plot].legendEntry[i]
+                         )
+            plt.legend()
+
 
     plt.xlabel(visualization_specification.independentVariableName[i_plotId])
     plt.show()
