@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import pylab
 import matplotlib.pyplot as plt
 
 DataFilePath = "https://raw.githubusercontent.com/LoosC/Benchmark-Models/" \
@@ -78,18 +79,37 @@ for i_plotId, var_plotId in enumerate(plotIds):
             # group measurement values for each conditionId
             for ID in conditionIds:
                 meas = measurement_data['simulationConditionId'] == ID
-                #print(ID)
-                #print(measurement_data[meas].measurement)
-                #print(np.mean(measurement_data[meas].measurement))
-                #print(np.std(measurement_data[meas].measurement))
+
                 ms.at[ID,'mean'] = np.mean(measurement_data[meas].measurement)
                 ms.at[ID,'sd'] = np.std(measurement_data[meas].measurement)
+
+            # set xScale
+            if visualization_specification.xScale[i] == 'lin':
+                plt.xscale("linear")
+            elif visualization_specification.xScale[i] == 'log10':
+                plt.xscale("log")
+            elif visualization_specification.xScale[i] == 'order':        # equidistant
+                plt.xscale("linear")
+                # check if conditions are monotone decreasing or increasing
+                if np.all(np.diff(conditions) < 0):             # monotone decreasing
+                    xlabel = conditions[::-1]                   # reversing
+                    conditions = range(len(conditions))[::-1]   # reversing
+                    plt.xticks(range(len(conditions)), xlabel)
+                elif np.all(np.diff(conditions) > 0):
+                    print('monotone increasing')
+                    xlabel = conditions
+                    conditions = range(len(conditions))
+                    plt.xticks(range(len(conditions)), xlabel)
+                else:
+                    print('Error: x-conditions do not coincide, some are mon. increasing, some monotonically decreasing')
 
 
             plt.errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
                          color=cmap[min(7,i-plotInd[i_plotId])],
                          label=visualization_specification[ind_plot].legendEntry[i]
                          )
+
+
             plt.legend()
 
 
@@ -115,11 +135,8 @@ for i_plotId, var_plotId in enumerate(plotIds):
             # barplot
             x_pos = range(len(visualization_specification[ind_plot].index.values))         # how many x-values (how many bars)
             x_name = visualization_specification[ind_plot].legendEntry[i]
-            #plt.bar(x_name, [x_pos[counter_cond], ms_c['mean']], yerr=[x_pos[counter_cond],ms_c['sd']])
             plt.bar(x_name, ms_c['mean'], yerr=ms_c['sd'])
 
-            #plt.xticks(x_pos,bars)
-            #plt.legend()
 
         elif indepVar == 'time':
 
