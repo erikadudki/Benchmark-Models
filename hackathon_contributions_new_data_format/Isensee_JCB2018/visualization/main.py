@@ -121,11 +121,10 @@ for i_plotId, var_plotId in enumerate(plotIds):
                     ms_c.at[ID, 'sd'] = np.std(measurement_data[meas].measurement)
                     #print(ms_c)
 
-            bars = ('a','b','c')
-            #print(conditionIds)
-            x_pos = np.arange(len(bars))
-
-            plt.bar(conditionIds,[x_pos[counter_cond], ms_c['mean']])
+            x_pos = range(len(visualization_specification[ind_plot].index.values))         # how many x-values
+            x_name = visualization_specification[ind_plot].legendEntry[i]
+            
+            plt.bar(x_name,[x_pos[counter_cond], ms_c['mean']])
             counter_cond = counter_cond + 1
             #plt.xticks(x_pos,bars)
             #plt.legend()
@@ -152,7 +151,7 @@ for i_plotId, var_plotId in enumerate(plotIds):
                 ms.at[var_time, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
                 ms.at[var_time, 'sd'] = np.std(measurement_data[ind_meas].measurement)
 
-            print(ms)
+            #print(ms)
 
             plt.errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
                          color=cmap[min(7,i-plotInd[i_plotId])],
