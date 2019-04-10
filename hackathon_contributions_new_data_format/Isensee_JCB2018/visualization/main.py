@@ -87,6 +87,34 @@ for i_plotId, var_plotId in enumerate(plotIds):
                          )
             plt.legend()
         elif indepVar == 'time':
-            plt.plot()
+
+            # obtain unique observation times
+            uni_times = np.unique(measurement_data[ind_dataset].time)
+            print(uni_times)
+
+            # create empty dataframe for means and SDs
+            ms = pd.DataFrame(columns=['mean', 'sd'], index=uni_times)
+            print(ms)
+
+            print(measurement_data[ind_dataset].time)
+            # group measurement values for each conditionId
+            for var_time in uni_times:
+                ind_meas = ((measurement_data['time'] == var_time) &
+                            (measurement_data['datasetId']==datasetId))
+                print(var_time)
+                print(measurement_data[ind_meas].measurement)
+                print(np.mean(measurement_data[ind_meas].measurement))
+                print(np.std(measurement_data[ind_meas].measurement))
+                ms.at[var_time, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
+                ms.at[var_time, 'sd'] = np.std(measurement_data[ind_meas].measurement)
+
+            print(ms)
+
+            plt.errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
+                         color=cmap[min(7,i-plotInd[i_plotId])],
+                         label=visualization_specification[ind_plot].legendEntry[i]
+                         )
+            plt.legend()
+
     plt.xlabel(visualization_specification.independentVariableName[i_plotId])
     plt.show()
