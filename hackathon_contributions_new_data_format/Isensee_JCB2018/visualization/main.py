@@ -37,7 +37,15 @@ plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=Tr
 #print(plotIds)
 #print(plotInd)
 
+num_subplot = len(plotIds)
+num_row = np.round(np.sqrt(num_subplot))
+num_col = np.ceil(num_subplot / num_row)
+fig, ax = plt.subplots(int(num_row), int(num_col))
+
 for i_plotId, var_plotId in enumerate(plotIds):
+    # setting axis indices
+    axx = int(np.ceil((i_plotId+1)/ num_col))-1
+    axy = int(((i_plotId+1) - axx * num_col))-1
     #print(i_plotId)
     #print(var_plotId)
     ind_plot = visualization_specification['plotId'] == var_plotId
@@ -85,12 +93,11 @@ for i_plotId, var_plotId in enumerate(plotIds):
                 ms.at[ID,'mean'] = np.mean(measurement_data[meas].measurement)
                 ms.at[ID,'sd'] = np.std(measurement_data[meas].measurement)
 
-
-            plt.errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
+            ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
                          color=cmap[min(7,i-plotInd[i_plotId])],
                          label=visualization_specification[ind_plot].legendEntry[i]
                          )
-            plt.legend()
+            ax[axx, axy].legend()
 
 
         elif indepVar == 'condition':
@@ -116,7 +123,7 @@ for i_plotId, var_plotId in enumerate(plotIds):
             x_pos = range(len(visualization_specification[ind_plot].index.values))         # how many x-values (how many bars)
             x_name = visualization_specification[ind_plot].legendEntry[i]
             #plt.bar(x_name, [x_pos[counter_cond], ms_c['mean']], yerr=[x_pos[counter_cond],ms_c['sd']])
-            plt.bar(x_name, ms_c['mean'], yerr=ms_c['sd'])
+            ax[axx, axy].bar(x_name, ms_c['mean'], yerr=ms_c['sd'])
 
             #plt.xticks(x_pos,bars)
             #plt.legend()
@@ -145,11 +152,11 @@ for i_plotId, var_plotId in enumerate(plotIds):
 
             #print(ms)
 
-            plt.errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
+            ax[axx, axy].errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
                          color=cmap[min(7,i-plotInd[i_plotId])],
                          label=visualization_specification[ind_plot].legendEntry[i]
                          )
-            plt.legend()
+            ax[axx, axy].legend()
 
-    plt.xlabel(visualization_specification.independentVariableName[i])
-    plt.show()
+    ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
+plt.show()
