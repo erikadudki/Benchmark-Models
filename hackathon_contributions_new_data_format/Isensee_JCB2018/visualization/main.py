@@ -41,7 +41,7 @@ plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=Tr
 num_subplot = len(plotIds)
 num_row = np.round(np.sqrt(num_subplot))
 num_col = np.ceil(num_subplot / num_row)
-fig, ax = plt.subplots(int(num_row), int(num_col))
+fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False)
 
 for i_plotId, var_plotId in enumerate(plotIds):
     # setting axis indices
