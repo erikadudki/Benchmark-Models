@@ -42,8 +42,6 @@ for i_plotId, var_plotId in enumerate(plotIds):
     #print(var_plotId)
     ind_plot = visualization_specification['plotId'] == var_plotId
 
-    counter_cond = 0        # counter for the condition case, (if independentVariable == 'condition')
-
     #print(visualization_specification[ind_plot])
 
     for i in visualization_specification[ind_plot].index.values:
@@ -107,25 +105,19 @@ for i_plotId, var_plotId in enumerate(plotIds):
             ms_c = pd.DataFrame(columns=['mean', 'sd'], index=conditionIds)
 
             # group measurement values for each conditionId
-
             for ID in conditionIds:
-                #print(conditionIds)
-                if conditionIds == 'control':       # datasetId and conditionIds have to coincide, since there are multiple experiments called 'control'
-                    # ind_meas = measurement_data.simulationConditionId[ind_dataset] == ID
-                    # meas = measurement_data['simulationConditionId'] == ID
-                    ms_c.at[ID, 'mean'] = np.mean(measurement_data.measurement[ind_dataset])        # check datasetId is enough
-                    ms_c.at[ID, 'sd'] = np.std(measurement_data.measurement[ind_dataset])
-                else:
-                    meas = measurement_data['simulationConditionId'] == ID
-                    ms_c.at[ID, 'mean'] = np.mean(measurement_data[meas].measurement)
-                    ms_c.at[ID, 'sd'] = np.std(measurement_data[meas].measurement)
-                    #print(ms_c)
+                ind_meas = ((measurement_data['simulationConditionId'] == ID) &
+                            (measurement_data['datasetId'] == datasetId))
+                ms_c.at[ID, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
+                ms_c.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
+                print(ms_c)
 
-            x_pos = range(len(visualization_specification[ind_plot].index.values))         # how many x-values
+            # barplot
+            x_pos = range(len(visualization_specification[ind_plot].index.values))         # how many x-values (how many bars)
             x_name = visualization_specification[ind_plot].legendEntry[i]
-            
-            plt.bar(x_name,[x_pos[counter_cond], ms_c['mean']])
-            counter_cond = counter_cond + 1
+            #plt.bar(x_name, [x_pos[counter_cond], ms_c['mean']], yerr=[x_pos[counter_cond],ms_c['sd']])
+            plt.bar(x_name, ms_c['mean'], yerr=ms_c['sd'])
+
             #plt.xticks(x_pos,bars)
             #plt.legend()
 
