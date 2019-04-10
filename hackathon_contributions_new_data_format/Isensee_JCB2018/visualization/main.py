@@ -119,10 +119,10 @@ for i_plotId, var_plotId in enumerate(plotIds):
                     meas = measurement_data['simulationConditionId'] == ID
                     ms_c.at[ID, 'mean'] = np.mean(measurement_data[meas].measurement)
                     ms_c.at[ID, 'sd'] = np.std(measurement_data[meas].measurement)
-                    print(ms_c)
+                    #print(ms_c)
 
             bars = ('a','b','c')
-            print(conditionIds)
+            #print(conditionIds)
             x_pos = np.arange(len(bars))
 
             plt.bar(conditionIds,[x_pos[counter_cond], ms_c['mean']])
@@ -134,21 +134,21 @@ for i_plotId, var_plotId in enumerate(plotIds):
 
             # obtain unique observation times
             uni_times = np.unique(measurement_data[ind_dataset].time)
-            print(uni_times)
+            #print(uni_times)
 
             # create empty dataframe for means and SDs
             ms = pd.DataFrame(columns=['mean', 'sd'], index=uni_times)
-            print(ms)
+            #print(ms)
 
-            print(measurement_data[ind_dataset].time)
+            #print(measurement_data[ind_dataset].time)
             # group measurement values for each conditionId
             for var_time in uni_times:
                 ind_meas = ((measurement_data['time'] == var_time) &
                             (measurement_data['datasetId']==datasetId))
-                print(var_time)
-                print(measurement_data[ind_meas].measurement)
-                print(np.mean(measurement_data[ind_meas].measurement))
-                print(np.std(measurement_data[ind_meas].measurement))
+                #print(var_time)
+                #print(measurement_data[ind_meas].measurement)
+                #print(np.mean(measurement_data[ind_meas].measurement))
+                #print(np.std(measurement_data[ind_meas].measurement))
                 ms.at[var_time, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
                 ms.at[var_time, 'sd'] = np.std(measurement_data[ind_meas].measurement)
 
@@ -160,6 +160,5 @@ for i_plotId, var_plotId in enumerate(plotIds):
                          )
             plt.legend()
 
-
-    plt.xlabel(visualization_specification.independentVariableName[i_plotId])
+    plt.xlabel(visualization_specification.independentVariableName[i])
     plt.show()
