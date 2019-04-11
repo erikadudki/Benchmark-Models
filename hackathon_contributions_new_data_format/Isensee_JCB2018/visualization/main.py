@@ -40,7 +40,7 @@ uni_plotIds, plotInd = np.unique(visualization_specification.plotId, return_inde
 num_subplot = len(uni_plotIds)
 num_row = np.round(np.sqrt(num_subplot))
 num_col = np.ceil(num_subplot / num_row)
-fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False)
+fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False, figsize=(20,10))
 
 
 # loop over unique plotIds
@@ -183,4 +183,5 @@ for i_plotId, var_plotId in enumerate(uni_plotIds):
             ax[axx, axy].set_title(visualization_specification.plotName[i], fontsize=10)
 
     ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
+
 plt.show()
