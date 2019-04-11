@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-def getDataToBePlotted(visualization_specification, measurement_data, conditionIds, i, datasetId, indepVar):
+def getDataToBePlotted(visualization_specification, measurement_data, conditionIds, i):
 
     '''
     group the data, which should be plotted and save it in dataframe called 'ms'
@@ -15,8 +15,6 @@ def getDataToBePlotted(visualization_specification, measurement_data, conditionI
     conditionIds: array containing all unique condition IDs which should be plotted in one figure (can be found in
                     measurementData file, column simulationConditionId)
     i: current index (row number) of row which should be plotted in visualizationSpecification file
-    datasetId: visualization_specification.datasetId[i]
-    indepVar: visualization_specification.independentVariable[i]
 
     Return:
     ----------
@@ -35,10 +33,10 @@ def getDataToBePlotted(visualization_specification, measurement_data, conditionI
         #         ms.at[ID,'mean'] = np.mean(measurement_data[ind_meas].measurement)
         #         ms.at[ID,'sd'] = np.std(measurement_data[ind_meas].measurement)
 
-        if indepVar == 'time':
+        if visualization_specification.independentVariable[i] == 'time':
             for ID in conditionIds:
                 ind_meas = ((measurement_data['time'] == ID) &
-                            (measurement_data['datasetId'] == datasetId))
+                            (measurement_data['datasetId'] == visualization_specification.datasetId[i]))
 
                 ms.at[ID, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
                 ms.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
@@ -46,7 +44,7 @@ def getDataToBePlotted(visualization_specification, measurement_data, conditionI
         else:
             for ID in conditionIds:
                 ind_meas = ((measurement_data['simulationConditionId'] == ID) &
-                            (measurement_data['datasetId'] == datasetId))
+                            (measurement_data['datasetId'] == visualization_specification.datasetId[i]))
                 ms.at[ID, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
                 ms.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
 
