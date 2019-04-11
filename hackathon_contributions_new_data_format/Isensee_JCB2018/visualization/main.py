@@ -88,7 +88,7 @@ for i_plotId, var_plotId in enumerate(plotIds):
             # group measurement values for each conditionId
             ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, conditionIds, i,
                                                        clmn_name_unique)
-            #print(ms)
+            #print(ms['repl'])
 
 
             # set xScale
@@ -111,10 +111,23 @@ for i_plotId, var_plotId in enumerate(plotIds):
                 else:
                     print('Error: x-conditions do not coincide, some are mon. increasing, some monotonically decreasing')
 
-            ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
-                      color=cmap[min(7, i - plotInd[i_plotId])],
-                      label=visualization_specification[ind_plot].legendEntry[i]
-                      )
+
+
+            if visualization_specification.plotTypeData[i] == 'MeanAndSD':
+                ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
+                                        color = cmap[min(7, i - plotInd[i_plotId])],
+                                        label = visualization_specification[ind_plot].legendEntry[i])
+            elif visualization_specification.plotTypeData[i] == 'MeanAndSEM':
+                ax[axx, axy].errorbar(conditions, ms['mean'], ms['sem'], linestyle='-', marker='.',
+                                      color=cmap[min(7, i - plotInd[i_plotId])],
+                                      label=visualization_specification[ind_plot].legendEntry[i])
+            elif visualization_specification.plotTypeData[i] == 'replicate':  # plotting all measurement data
+                for ii in range(0,len(ms['repl'])):
+                    for k in range(0,len(ms.repl[ii])):
+                        ax[axx, axy].plot(conditions[conditions.index.values[ii]], ms.repl[ii][ms.repl[ii].index.values[k]], 'x',
+                                 color=cmap[min(7, i - plotInd[i_plotId])])
+
+
             ax[axx, axy].legend()
             ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
 
