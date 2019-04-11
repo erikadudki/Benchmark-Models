@@ -24,14 +24,7 @@ def getDataToBePlotted(visualization_specification, measurement_data, conditionI
 
     if visualization_specification.plotTypeData[i] == 'MeanAndSD':
         # create empty dataframe for means and SDs
-        ms = pd.DataFrame(columns=['mean', 'sd'], index=conditionIds)
-
-        # if indepVar not in ['time', "condition"]:
-        #     # group measurement values for each conditionId
-        #     for ID in conditionIds:
-        #         ind_meas = measurement_data['simulationConditionId'] == ID
-        #         ms.at[ID,'mean'] = np.mean(measurement_data[ind_meas].measurement)
-        #         ms.at[ID,'sd'] = np.std(measurement_data[ind_meas].measurement)
+        ms = pd.DataFrame(columns=['mean', 'sd', 'sem'], index=conditionIds)
 
         if visualization_specification.independentVariable[i] == 'time':
             for ID in conditionIds:
@@ -40,12 +33,18 @@ def getDataToBePlotted(visualization_specification, measurement_data, conditionI
 
                 ms.at[ID, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
                 ms.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
-
+                ms.at[ID, 'sem'] = np.std(measurement_data[ind_meas].measurement) / np.sqrt(
+                    len(measurement_data[ind_meas].measurement))  # Standard Error of Mean
         else:
             for ID in conditionIds:
                 ind_meas = ((measurement_data['simulationConditionId'] == ID) &
                             (measurement_data['datasetId'] == visualization_specification.datasetId[i]))
+
                 ms.at[ID, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
                 ms.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
+                ms.at[ID, 'sem'] = np.std(measurement_data[ind_meas].measurement)/np.sqrt(
+                    len(measurement_data[ind_meas].measurement))                             # Standard Error of Mean
+
+
 
     return ms
