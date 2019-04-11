@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import pylab
 import matplotlib.pyplot as plt
 import getDataToBePlotted
 
@@ -35,24 +34,25 @@ cmap = ['#8c510a','#bf812d','#dfc27d','#f6e8c3','#c7eae5','#80cdc1','#35978f','#
 
 
 # get unique plotIDs
-plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=True)
-#print(plotIds)
-#print(plotInd)
+uni_plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=True)
 
-num_subplot = len(plotIds)
+# Initiate subplots
+num_subplot = len(uni_plotIds)
 num_row = np.round(np.sqrt(num_subplot))
 num_col = np.ceil(num_subplot / num_row)
 fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False)
 
-for i_plotId, var_plotId in enumerate(plotIds):
+
+# loop over unique plotIds
+for i_plotId, var_plotId in enumerate(uni_plotIds):
+
     # setting axis indices
     axx = int(np.ceil((i_plotId+1)/ num_col))-1
     axy = int(((i_plotId+1) - axx * num_col))-1
-    #print(i_plotId)
-    #print(var_plotId)
+
+    # get indices for specific plotId
     ind_plot = visualization_specification['plotId'] == var_plotId
 
-    #print(visualization_specification[ind_plot])
 
     for i in visualization_specification[ind_plot].index.values:
         # get datasetID and independent variable of first entry of plot1
@@ -63,15 +63,14 @@ for i_plotId, var_plotId in enumerate(plotIds):
         ind_dataset = measurement_data['datasetId'] == datasetId
 
         # gather simulationConditionIds belonging to datasetId
-        conditionIds = np.unique(measurement_data[ind_dataset].simulationConditionId)
+        uni_conditionIds = np.unique(measurement_data[ind_dataset].simulationConditionId)
         clmn_name_unique = 'simulationConditionId'
-        #print(conditionIds)
 
         # Case seperation indepParameter custom, time or condition
         if indepVar not in ['time', "condition"]:
 
             # extract conditions (plot input) from condition file
-            ind_cond = experimental_condition['conditionId'].isin(conditionIds)
+            ind_cond = experimental_condition['conditionId'].isin(uni_conditionIds)
             conditions = experimental_condition[ind_cond][indepVar]
 
             # # create empty dataframe for means and SDs
@@ -83,13 +82,10 @@ for i_plotId, var_plotId in enumerate(plotIds):
             #
             #     ms.at[ID,'mean'] = np.mean(measurement_data[meas].measurement)
             #     ms.at[ID,'sd'] = np.std(measurement_data[meas].measurement)
-            # print(ms)
 
             # group measurement values for each conditionId
-            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, conditionIds, i,
-                                                       clmn_name_unique)
-            #print(ms['repl'])
-
+            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_conditionIds,
+                                                       i, clmn_name_unique)
 
             # set xScale
             if visualization_specification.xScale[i] == 'lin':
@@ -112,7 +108,6 @@ for i_plotId, var_plotId in enumerate(plotIds):
                     print('Error: x-conditions do not coincide, some are mon. increasing, some monotonically decreasing')
 
 
-
             if visualization_specification.plotTypeData[i] == 'MeanAndSD':
                 ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
                                         color = cmap[min(7, i - plotInd[i_plotId])],
@@ -124,9 +119,8 @@ for i_plotId, var_plotId in enumerate(plotIds):
             elif visualization_specification.plotTypeData[i] == 'replicate':  # plotting all measurement data
                 for ii in range(0,len(ms['repl'])):
                     for k in range(0,len(ms.repl[ii])):
-                        ax[axx, axy].plot(conditions[conditions.index.values[ii]], ms.repl[ii][ms.repl[ii].index.values[k]], 'x',
-                                 color=cmap[min(7, i - plotInd[i_plotId])])
-
+                        ax[axx, axy].plot(conditions[conditions.index.values[ii]], ms.repl[ii][ms.repl[ii].index.values[k]],
+                                          'x', color=cmap[min(7, i - plotInd[i_plotId])])
 
             ax[axx, axy].legend()
             ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
@@ -149,12 +143,10 @@ for i_plotId, var_plotId in enumerate(plotIds):
             #                 (measurement_data['datasetId'] == datasetId))
             #     ms_c.at[ID, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
             #     ms_c.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
-            # print(ms_c)
 
             # group measurement values for each conditionId
-            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, conditionIds, i,
+            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_conditionIds, i,
                                                        clmn_name_unique)
-            #print(ms)
 
             # barplot
             x_pos = range(len(visualization_specification[ind_plot].index.values))         # how many x-values (how many bars)
@@ -162,7 +154,6 @@ for i_plotId, var_plotId in enumerate(plotIds):
 
             ax[axx, axy].bar(x_name, ms['mean'], yerr=ms['sd'])
             ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
-
 
         elif indepVar == 'time':
 
@@ -179,12 +170,10 @@ for i_plotId, var_plotId in enumerate(plotIds):
             #                 (measurement_data['datasetId']==datasetId))
             #     ms.at[var_time, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
             #     ms.at[var_time, 'sd'] = np.std(measurement_data[ind_meas].measurement)
-            # print(ms)
 
             # group measurement values for each conditionId/unique time
             ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_times, i,
                                                        clmn_name_unique)
-            #print(ms)
 
             ax[axx, axy].errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
                          color=cmap[min(7,i-plotInd[i_plotId])],
