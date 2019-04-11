@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import pylab
 import matplotlib.pyplot as plt
+import getDataToBePlotted
 
 DataFilePath = "https://raw.githubusercontent.com/LoosC/Benchmark-Models/" \
                "hackathon/hackathon_contributions_new_data_format/" \
@@ -60,36 +61,32 @@ for i_plotId, var_plotId in enumerate(plotIds):
 
         # define index to reduce measurement_data to data linked to datasetId
         ind_dataset = measurement_data['datasetId'] == datasetId
-        #print(measurement_data[ind_dataset])
 
         # gather simulationConditionIds belonging to datasetId
         conditionIds = np.unique(measurement_data[ind_dataset].simulationConditionId)
-        #print(conditionIds)
+        print(conditionIds)
 
         # Case seperation indepParameter custom, time or condition
         if indepVar not in ['time', "condition"]:
-            #print(datasetId)
-            #print(indepVar)
-
-            # gather simulationConditionIds belonging to datasetId
-            #conditionIds = np.unique(measurement_data[ind_dataset].simulationConditionId)
-            #print(conditionIds)
 
             # extract conditions (plot input) from condition file
             ind_cond = experimental_condition['conditionId'].isin(conditionIds)
             conditions = experimental_condition[ind_cond][indepVar]
-            #print(conditions)
 
-            # create empty dataframe for means and SDs
-            ms = pd.DataFrame(columns = ['mean', 'sd'], index=conditionIds)
-            #print(conditionIds)
+            # # create empty dataframe for means and SDs
+            # ms = pd.DataFrame(columns = ['mean', 'sd'], index=conditionIds)
+
+            # # group measurement values for each conditionId
+            # for ID in conditionIds:
+            #     meas = measurement_data['simulationConditionId'] == ID
+            #
+            #     ms.at[ID,'mean'] = np.mean(measurement_data[meas].measurement)
+            #     ms.at[ID,'sd'] = np.std(measurement_data[meas].measurement)
 
             # group measurement values for each conditionId
-            for ID in conditionIds:
-                meas = measurement_data['simulationConditionId'] == ID
+            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, conditionIds, i)
 
-                ms.at[ID,'mean'] = np.mean(measurement_data[meas].measurement)
-                ms.at[ID,'sd'] = np.std(measurement_data[meas].measurement)
+
 
             # set xScale
             if visualization_specification.xScale[i] == 'lin':
@@ -126,47 +123,45 @@ for i_plotId, var_plotId in enumerate(plotIds):
             #     #do smth with information in this file
             # get measurement values for each condId
 
-            # create empty dataframe for means and SDs
-            ms_c = pd.DataFrame(columns=['mean', 'sd'], index=conditionIds)
+            # # create empty dataframe for means and SDs
+            # ms_c = pd.DataFrame(columns=['mean', 'sd'], index=conditionIds)
+
+            # # group measurement values for each conditionId
+            # for ID in conditionIds:
+            #     ind_meas = ((measurement_data['simulationConditionId'] == ID) &
+            #                 (measurement_data['datasetId'] == datasetId))
+            #     ms_c.at[ID, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
+            #     ms_c.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
 
             # group measurement values for each conditionId
-            for ID in conditionIds:
-                ind_meas = ((measurement_data['simulationConditionId'] == ID) &
-                            (measurement_data['datasetId'] == datasetId))
-                ms_c.at[ID, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
-                ms_c.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
-                # print(ms_c)
+            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, conditionIds, i)
 
             # barplot
             x_pos = range(len(visualization_specification[ind_plot].index.values))         # how many x-values (how many bars)
             x_name = visualization_specification[ind_plot].legendEntry[i]
 
-            ax[axx, axy].bar(x_name, ms_c['mean'], yerr=ms_c['sd'])
+            ax[axx, axy].bar(x_name, ms['mean'], yerr=ms['sd'])
 
 
         elif indepVar == 'time':
 
             # obtain unique observation times
             uni_times = np.unique(measurement_data[ind_dataset].time)
-            #print(uni_times)
 
             # create empty dataframe for means and SDs
             ms = pd.DataFrame(columns=['mean', 'sd'], index=uni_times)
-            #print(ms)
 
-            #print(measurement_data[ind_dataset].time)
             # group measurement values for each conditionId
             for var_time in uni_times:
                 ind_meas = ((measurement_data['time'] == var_time) &
                             (measurement_data['datasetId']==datasetId))
-                #print(var_time)
-                #print(measurement_data[ind_meas].measurement)
-                #print(np.mean(measurement_data[ind_meas].measurement))
-                #print(np.std(measurement_data[ind_meas].measurement))
                 ms.at[var_time, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
                 ms.at[var_time, 'sd'] = np.std(measurement_data[ind_meas].measurement)
+            print(ms)
 
-            #print(ms)
+            # group measurement values for each conditionId/unique time
+            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_times, i)
+            print(ms)
 
             ax[axx, axy].errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
                          color=cmap[min(7,i-plotInd[i_plotId])],
