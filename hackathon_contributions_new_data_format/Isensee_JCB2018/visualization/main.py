@@ -113,6 +113,7 @@ for i_plotId, var_plotId in enumerate(plotIds):
                       label=visualization_specification[ind_plot].legendEntry[i]
                       )
             ax[axx, axy].legend()
+            ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
 
 
         elif indepVar == 'condition':
@@ -141,6 +142,7 @@ for i_plotId, var_plotId in enumerate(plotIds):
             x_name = visualization_specification[ind_plot].legendEntry[i]
 
             ax[axx, axy].bar(x_name, ms['mean'], yerr=ms['sd'])
+            ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
 
 
         elif indepVar == 'time':
@@ -157,17 +159,18 @@ for i_plotId, var_plotId in enumerate(plotIds):
                             (measurement_data['datasetId']==datasetId))
                 ms.at[var_time, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
                 ms.at[var_time, 'sd'] = np.std(measurement_data[ind_meas].measurement)
-            print(ms)
+            #print(ms)
 
             # group measurement values for each conditionId/unique time
             ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_times, i)
-            print(ms)
+            #print(ms)
 
             ax[axx, axy].errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
                          color=cmap[min(7,i-plotInd[i_plotId])],
                          label=visualization_specification[ind_plot].legendEntry[i]
                          )
             ax[axx, axy].legend()
+            ax[axx, axy].set_title(visualization_specification.plotName[i], fontsize=10)
 
     ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
 plt.show()
