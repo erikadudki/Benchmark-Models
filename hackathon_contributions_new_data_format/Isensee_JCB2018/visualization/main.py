@@ -3,6 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import getDataToBePlotted
 import petab
+import seaborn as sns
+#sns.set()
+
 
 data_file_path = "https://raw.githubusercontent.com/LoosC/Benchmark-Models/" \
                "hackathon/hackathon_contributions_new_data_format/" \
@@ -29,8 +32,8 @@ visualization_specification = pd.DataFrame.from_csv(
         visualization_file_path, sep="\t", index_col=None)
 
 # Set Colormap
-cmap = ['#8c510a','#bf812d','#dfc27d','#f6e8c3','#c7eae5','#80cdc1','#35978f','#01665e']
-
+ccodes = ['#8c510a','#bf812d','#dfc27d','#f6e8c3','#c7eae5','#80cdc1','#35978f','#01665e']
+sns.set_palette(ccodes)
 
 # get unique plotIDs
 uni_plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=True)
@@ -111,17 +114,15 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
 
             if visualization_specification.plotTypeData[i] == 'MeanAndSD':
                 ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
-                                        color = cmap[min(7, i - plotInd[i_plot_id])],
                                         label = visualization_specification[ind_plot].legendEntry[i])
             elif visualization_specification.plotTypeData[i] == 'MeanAndSEM':
                 ax[axx, axy].errorbar(conditions, ms['mean'], ms['sem'], linestyle='-', marker='.',
-                                      color=cmap[min(7, i - plotInd[i_plot_id])],
                                       label=visualization_specification[ind_plot].legendEntry[i])
             elif visualization_specification.plotTypeData[i] == 'replicate':  # plotting all measurement data
                 for ii in range(0,len(ms['repl'])):
                     for k in range(0,len(ms.repl[ii])):
                         ax[axx, axy].plot(conditions[conditions.index.values[ii]], ms.repl[ii][ms.repl[ii].index.values[k]],
-                                          'x', color=cmap[min(7, i - plotInd[i_plot_id])])
+                                          'x')
 
             ax[axx, axy].legend()
             ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
@@ -177,7 +178,6 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
                                                        clmn_name_unique)
 
             ax[axx, axy].errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
-                         color=cmap[min(7,i-plotInd[i_plot_id])],
                          label=visualization_specification[ind_plot].legendEntry[i]
                          )
             ax[axx, axy].legend()
