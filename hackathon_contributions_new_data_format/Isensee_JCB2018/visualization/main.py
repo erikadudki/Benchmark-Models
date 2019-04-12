@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import getDataToBePlotted
+import petab
 
 DataFilePath = "https://raw.githubusercontent.com/LoosC/Benchmark-Models/" \
                "hackathon/hackathon_contributions_new_data_format/" \
@@ -18,12 +19,15 @@ VisualizationFilePath = "https://raw.githubusercontent.com/LoosC/"\
                         "ation_Isensee_JCB2018.tsv"
 
 # import measurement data
-measurement_data = pd.DataFrame.from_csv(
-        DataFilePath, sep="\t", index_col=None)
+#measurement_data = pd.DataFrame.from_csv(
+#        DataFilePath, sep="\t", index_col=None)
+measurement_data = petab.get_measurement_df(DataFilePath)
 
 # import experimental condition
 experimental_condition = pd.DataFrame.from_csv(
         ConditionFilePath, sep="\t", index_col=None)
+#experimental_condition = petab.get_condition_df(ConditionFilePath)       # -> doesnt know ['conditionId']
+
 
 # import visualization specification
 visualization_specification = pd.DataFrame.from_csv(
