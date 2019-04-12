@@ -102,8 +102,8 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
                     conditions = range(len(conditions))
                     ax[axx, axy].set_xticks(range(len(conditions)), xlabel)
                 else:
-                    print('Error: x-conditions do not coincide, some are mon. increasing, some monotonically decreasing')
-
+                    print('Error: x-conditions do not coincide, some are mon. increasing,'/
+                          ' some monotonically decreasing')
 
             if visualization_specification.plotTypeData[i] == 'MeanAndSD':
                 ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
@@ -114,16 +114,16 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             elif visualization_specification.plotTypeData[i] == 'replicate':  # plotting all measurement data
                 for ii in range(0,len(ms['repl'])):
                     for k in range(0,len(ms.repl[ii])):
-                        ax[axx, axy].plot(conditions[conditions.index.values[ii]], ms.repl[ii][ms.repl[ii].index.values[k]],
-                                          'x')
+                        ax[axx, axy].plot(conditions[conditions.index.values[ii]],
+                                          ms.repl[ii][ms.repl[ii].index.values[k]], 'x')
             ax[axx, axy].legend()
             ax[axx, axy].set_title(visualization_specification.plotName[i])
 
 
         elif indep_var == 'condition':
 
-            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_condition_id, i,
-                                                       clmn_name_unique)
+            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_condition_id,
+                                                       i, clmn_name_unique)
             # barplot
             x_pos = range(len(visualization_specification[ind_plot]))       # how many x-values (how many bars)
             x_name = visualization_specification[ind_plot].legendEntry[i]
