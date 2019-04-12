@@ -32,8 +32,8 @@ visualization_specification = pd.DataFrame.from_csv(
         visualization_file_path, sep="\t", index_col=None)
 
 # Set Colormap
-ccodes = ['#8c510a','#bf812d','#dfc27d','#f6e8c3','#c7eae5','#80cdc1','#35978f','#01665e']
-sns.set_palette(ccodes)
+#ccodes = ['#8c510a','#bf812d','#dfc27d','#f6e8c3','#c7eae5','#80cdc1','#35978f','#01665e']
+sns.set_palette("colorblind")
 
 # get unique plotIDs
 uni_plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=True)
