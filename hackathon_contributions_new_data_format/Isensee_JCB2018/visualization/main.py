@@ -19,15 +19,10 @@ visualization_file_path = "https://raw.githubusercontent.com/LoosC/"\
                         "ation_Isensee_JCB2018.tsv"
 
 # import measurement data
-
-#measurement_data = pd.DataFrame.from_csv(
-#        data_file_path, sep="\t", index_col=None)
 measurement_data = petab.get_measurement_df(data_file_path)
 
 # import experimental condition
-experimental_condition = pd.DataFrame.from_csv(
-        condition_file_path, sep="\t", index_col=None)
-#experimental_condition = petab.get_condition_df(condition_file_path)    # -> doesnt know ['conditionId']
+experimental_condition = petab.get_condition_df(condition_file_path)
 
 # import visualization specification
 visualization_specification = pd.DataFrame.from_csv(
@@ -74,7 +69,9 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
         if indep_var not in ['time', "condition"]:
 
             # extract conditions (plot input) from condition file
-            ind_cond = experimental_condition['conditionId'].isin(uni_condition_id)
+            ind_cond = experimental_condition.index.isin(uni_condition_id)
+
+
             conditions = experimental_condition[ind_cond][indep_var]
 
             # # create empty dataframe for means and SDs
