@@ -150,7 +150,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
                                                        clmn_name_unique)
 
             # barplot
-            x_pos = range(len(visualization_specification[ind_plot].index.values))   # how many x-values (how many bars)
+            x_pos = range(len(visualization_specification[ind_plot]))       # how many x-values (how many bars)
             x_name = visualization_specification[ind_plot].legendEntry[i]
 
             ax[axx, axy].bar(x_name, ms['mean'], yerr=ms['sd'])
