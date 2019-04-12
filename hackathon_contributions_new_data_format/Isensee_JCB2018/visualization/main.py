@@ -3,31 +3,31 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import getDataToBePlotted
 
-DataFilePath = "https://raw.githubusercontent.com/LoosC/Benchmark-Models/" \
+data_file_path = "https://raw.githubusercontent.com/LoosC/Benchmark-Models/" \
                "hackathon/hackathon_contributions_new_data_format/" \
                "Isensee_JCB2018/measurementData_Isensee_JCB2018.tsv"
 
-ConditionFilePath = "https://raw.githubusercontent.com/LoosC/" \
+condition_file_path = "https://raw.githubusercontent.com/LoosC/" \
                     "Benchmark-Models/hackathon/hackathon_contributions_" \
                     "new_data_format/Isensee_JCB2018/" \
                     "experimentalCondition_Isensee_JCB2018.tsv"
 
-VisualizationFilePath = "https://raw.githubusercontent.com/LoosC/"\
+visualization_file_path = "https://raw.githubusercontent.com/LoosC/"\
                         "Benchmark-Models/visualization/hackathon_contributions"\
                         "_new_data_format/Isensee_JCB2018/visualizationSpecific"\
                         "ation_Isensee_JCB2018.tsv"
 
 # import measurement data
 measurement_data = pd.DataFrame.from_csv(
-        DataFilePath, sep="\t", index_col=None)
+        data_file_path, sep="\t", index_col=None)
 
 # import experimental condition
 experimental_condition = pd.DataFrame.from_csv(
-        ConditionFilePath, sep="\t", index_col=None)
+        condition_file_path, sep="\t", index_col=None)
 
 # import visualization specification
 visualization_specification = pd.DataFrame.from_csv(
-        VisualizationFilePath, sep="\t", index_col=None)
+        visualization_file_path, sep="\t", index_col=None)
 
 # Set Colormap
 cmap = ['#8c510a','#bf812d','#dfc27d','#f6e8c3','#c7eae5','#80cdc1','#35978f','#01665e']
@@ -44,34 +44,34 @@ fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False, figsize=(20,10
 
 
 # loop over unique plotIds
-for i_plotId, var_plotId in enumerate(uni_plotIds):
+for i_plot_id, var_plot_id in enumerate(uni_plotIds):
 
     # setting axis indices
-    axx = int(np.ceil((i_plotId+1)/ num_col))-1
-    axy = int(((i_plotId+1) - axx * num_col))-1
+    axx = int(np.ceil((i_plot_id+1)/ num_col))-1
+    axy = int(((i_plot_id+1) - axx * num_col))-1
 
     # get indices for specific plotId
-    ind_plot = visualization_specification['plotId'] == var_plotId
+    ind_plot = visualization_specification['plotId'] == var_plot_id
 
 
     for i in visualization_specification[ind_plot].index.values:
         # get datasetID and independent variable of first entry of plot1
-        datasetId = visualization_specification.datasetId[i]
-        indepVar = visualization_specification.independentVariable[i]
+        dataset_id = visualization_specification.datasetId[i]
+        indep_var = visualization_specification.independentVariable[i]
 
         # define index to reduce measurement_data to data linked to datasetId
-        ind_dataset = measurement_data['datasetId'] == datasetId
+        ind_dataset = measurement_data['datasetId'] == dataset_id
 
         # gather simulationConditionIds belonging to datasetId
-        uni_conditionIds = np.unique(measurement_data[ind_dataset].simulationConditionId)
+        uni_condition_id = np.unique(measurement_data[ind_dataset].simulationConditionId)
         clmn_name_unique = 'simulationConditionId'
 
         # Case seperation indepParameter custom, time or condition
-        if indepVar not in ['time', "condition"]:
+        if indep_var not in ['time', "condition"]:
 
             # extract conditions (plot input) from condition file
-            ind_cond = experimental_condition['conditionId'].isin(uni_conditionIds)
-            conditions = experimental_condition[ind_cond][indepVar]
+            ind_cond = experimental_condition['conditionId'].isin(uni_condition_id)
+            conditions = experimental_condition[ind_cond][indep_var]
 
             # # create empty dataframe for means and SDs
             # ms = pd.DataFrame(columns = ['mean', 'sd'], index=conditionIds)
@@ -84,7 +84,7 @@ for i_plotId, var_plotId in enumerate(uni_plotIds):
             #     ms.at[ID,'sd'] = np.std(measurement_data[meas].measurement)
 
             # group measurement values for each conditionId
-            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_conditionIds,
+            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_condition_id,
                                                        i, clmn_name_unique)
 
             # set xScale
@@ -110,23 +110,23 @@ for i_plotId, var_plotId in enumerate(uni_plotIds):
 
             if visualization_specification.plotTypeData[i] == 'MeanAndSD':
                 ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
-                                        color = cmap[min(7, i - plotInd[i_plotId])],
+                                        color = cmap[min(7, i - plotInd[i_plot_id])],
                                         label = visualization_specification[ind_plot].legendEntry[i])
             elif visualization_specification.plotTypeData[i] == 'MeanAndSEM':
                 ax[axx, axy].errorbar(conditions, ms['mean'], ms['sem'], linestyle='-', marker='.',
-                                      color=cmap[min(7, i - plotInd[i_plotId])],
+                                      color=cmap[min(7, i - plotInd[i_plot_id])],
                                       label=visualization_specification[ind_plot].legendEntry[i])
             elif visualization_specification.plotTypeData[i] == 'replicate':  # plotting all measurement data
                 for ii in range(0,len(ms['repl'])):
                     for k in range(0,len(ms.repl[ii])):
                         ax[axx, axy].plot(conditions[conditions.index.values[ii]], ms.repl[ii][ms.repl[ii].index.values[k]],
-                                          'x', color=cmap[min(7, i - plotInd[i_plotId])])
+                                          'x', color=cmap[min(7, i - plotInd[i_plot_id])])
 
             ax[axx, axy].legend()
             ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
 
 
-        elif indepVar == 'condition':
+        elif indep_var == 'condition':
             # if conditionIds == 'control':
             #     # dont have to go in expCondFile, all Cond are 0
             # else:
@@ -145,17 +145,17 @@ for i_plotId, var_plotId in enumerate(uni_plotIds):
             #     ms_c.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
 
             # group measurement values for each conditionId
-            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_conditionIds, i,
+            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_condition_id, i,
                                                        clmn_name_unique)
 
             # barplot
-            x_pos = range(len(visualization_specification[ind_plot].index.values))         # how many x-values (how many bars)
+            x_pos = range(len(visualization_specification[ind_plot].index.values))   # how many x-values (how many bars)
             x_name = visualization_specification[ind_plot].legendEntry[i]
 
             ax[axx, axy].bar(x_name, ms['mean'], yerr=ms['sd'])
             ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
 
-        elif indepVar == 'time':
+        elif indep_var == 'time':
 
             # obtain unique observation times
             uni_times = np.unique(measurement_data[ind_dataset].time)
@@ -176,7 +176,7 @@ for i_plotId, var_plotId in enumerate(uni_plotIds):
                                                        clmn_name_unique)
 
             ax[axx, axy].errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
-                         color=cmap[min(7,i-plotInd[i_plotId])],
+                         color=cmap[min(7,i-plotInd[i_plot_id])],
                          label=visualization_specification[ind_plot].legendEntry[i]
                          )
             ax[axx, axy].legend()
