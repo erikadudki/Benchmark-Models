@@ -28,7 +28,7 @@ measurement_data = petab.get_measurement_df(data_file_path)
 experimental_condition = petab.get_condition_df(condition_file_path)
 
 # import visualization specification
-visualization_specification = pd.DataFrame.from_csv(
+visualization_specification = pd.read_csv(
         visualization_file_path, sep="\t", index_col=None)
 
 # Set Colormap
@@ -102,7 +102,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
                     conditions = range(len(conditions))
                     ax[axx, axy].set_xticks(range(len(conditions)), xlabel)
                 else:
-                    print('Error: x-conditions do not coincide, some are mon. increasing,'/
+                    print('Error: x-conditions do not coincide, some are mon. increasing,'\
                           ' some monotonically decreasing')
 
             if visualization_specification.plotTypeData[i] == 'MeanAndSD':
