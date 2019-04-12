@@ -80,24 +80,10 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
 
             # extract conditions (plot input) from condition file
             ind_cond = experimental_condition.index.isin(uni_condition_id)
-
-
             conditions = experimental_condition[ind_cond][indep_var]
 
-            # # create empty dataframe for means and SDs
-            # ms = pd.DataFrame(columns = ['mean', 'sd'], index=conditionIds)
-            #
-            # # group measurement values for each conditionId
-            # for ID in conditionIds:
-            #     meas = measurement_data['simulationConditionId'] == ID
-            #
-            #     ms.at[ID,'mean'] = np.mean(measurement_data[meas].measurement)
-            #     ms.at[ID,'sd'] = np.std(measurement_data[meas].measurement)
-
-            # group measurement values for each conditionId
             ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_condition_id,
                                                        i, clmn_name_unique)
-
             # set xScale
             if visualization_specification.xScale[i] == 'lin':
                 ax[axx, axy].set_xscale("linear")
@@ -130,33 +116,14 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
                     for k in range(0,len(ms.repl[ii])):
                         ax[axx, axy].plot(conditions[conditions.index.values[ii]], ms.repl[ii][ms.repl[ii].index.values[k]],
                                           'x')
-
             ax[axx, axy].legend()
             ax[axx, axy].set_title(visualization_specification.plotName[i])
 
 
         elif indep_var == 'condition':
-            # if conditionIds == 'control':
-            #     # dont have to go in expCondFile, all Cond are 0
-            # else:
-            #     ind_expCond = experimental_condition.conditionId == conditionIds
-            #     #do smth with information in this file
-            # get measurement values for each condId
 
-            # # create empty dataframe for means and SDs
-            # ms_c = pd.DataFrame(columns=['mean', 'sd'], index=conditionIds)
-            #
-            # # group measurement values for each conditionId
-            # for ID in conditionIds:
-            #     ind_meas = ((measurement_data['simulationConditionId'] == ID) &
-            #                 (measurement_data['datasetId'] == datasetId))
-            #     ms_c.at[ID, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
-            #     ms_c.at[ID, 'sd'] = np.std(measurement_data[ind_meas].measurement)
-
-            # group measurement values for each conditionId
             ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_condition_id, i,
                                                        clmn_name_unique)
-
             # barplot
             x_pos = range(len(visualization_specification[ind_plot]))       # how many x-values (how many bars)
             x_name = visualization_specification[ind_plot].legendEntry[i]
@@ -169,16 +136,6 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             # obtain unique observation times
             uni_times = np.unique(measurement_data[ind_dataset].time)
             clmn_name_unique = 'time'
-
-            # # create empty dataframe for means and SDs
-            # ms = pd.DataFrame(columns=['mean', 'sd'], index=uni_times)
-            #
-            # # group measurement values for each conditionId
-            # for var_time in uni_times:
-            #     ind_meas = ((measurement_data['time'] == var_time) &
-            #                 (measurement_data['datasetId']==datasetId))
-            #     ms.at[var_time, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
-            #     ms.at[var_time, 'sd'] = np.std(measurement_data[ind_meas].measurement)
 
             # group measurement values for each conditionId/unique time
             ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_times, i,
