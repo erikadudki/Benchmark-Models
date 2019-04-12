@@ -33,7 +33,7 @@ def getDataToBePlotted(visualization_specification, measurement_data, condition_
         ind_meas = ((measurement_data[clmn_name_unique] == var_cond_id) &
                     (measurement_data['datasetId'] == visualization_specification.datasetId[i]))
 
-        ms.at[var_cond_id, 'mean'] = np.mean(measurement_data[ind_meas].measurement)
+        ms.at[var_cond_id, 'mean'] = measurement_data[ind_meas].measurement.mean()
         ms.at[var_cond_id, 'sd'] = np.std(measurement_data[ind_meas].measurement)
         ms.at[var_cond_id, 'sem'] = np.std(measurement_data[ind_meas].measurement) / np.sqrt(
             len(measurement_data[ind_meas].measurement))  # Standard Error of Mean
