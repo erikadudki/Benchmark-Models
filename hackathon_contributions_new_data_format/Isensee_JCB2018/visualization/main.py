@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import getDataToBePlotted
+import get_data_to_plot
 import petab
-import seaborn as sns
+#import seaborn as sns
 #sns.set()
 
 
@@ -33,7 +33,7 @@ visualization_specification = pd.read_csv(
 
 # Set Colormap
 #ccodes = ['#8c510a','#bf812d','#dfc27d','#f6e8c3','#c7eae5','#80cdc1','#35978f','#01665e']
-sns.set_palette("colorblind")
+#sns.set_palette("colorblind")
 
 # get unique plotIDs
 uni_plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=True)
@@ -92,7 +92,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             ind_cond = experimental_condition.index.isin(uni_condition_id)
             conditions = experimental_condition[ind_cond][indep_var]
 
-            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_condition_id,
+            ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, uni_condition_id,
                                                        i, clmn_name_unique)
             # set xScale
             if visualization_specification.xScale[i] == 'lin':
@@ -132,7 +132,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
 
         elif indep_var == 'condition':
 
-            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_condition_id,
+            ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, uni_condition_id,
                                                        i, clmn_name_unique)
             # barplot
             x_pos = range(len(visualization_specification[ind_plot]))       # how many x-values (how many bars)
@@ -148,7 +148,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             clmn_name_unique = 'time'
 
             # group measurement values for each conditionId/unique time
-            ms = getDataToBePlotted.getDataToBePlotted(visualization_specification, measurement_data, uni_times, i,
+            ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, uni_times, i,
                                                        clmn_name_unique)
 
             ax[axx, axy].errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
