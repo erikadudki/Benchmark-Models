@@ -39,7 +39,13 @@ sns.set_palette("colorblind")
 uni_plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=True)
 
 # Initiate subplots
-num_subplot = len(uni_plotIds)
+subplots=False
+
+if subplots:
+    num_subplot = len(uni_plotIds)
+else:
+    num_subplot = 1
+
 num_row = np.round(np.sqrt(num_subplot))
 num_col = np.ceil(num_subplot / num_row)
 
@@ -56,8 +62,12 @@ fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False) #, figsize=(20
 for i_plot_id, var_plot_id in enumerate(uni_plotIds):
 
     # setting axis indices
-    axx = int(np.ceil((i_plot_id+1)/ num_col))-1
-    axy = int(((i_plot_id+1) - axx * num_col))-1
+    if subplots:
+        axx = int(np.ceil((i_plot_id+1)/ num_col))-1
+        axy = int(((i_plot_id+1) - axx * num_col))-1
+    else:
+        axx=0
+        axy=0
 
     # get indices for specific plotId
     ind_plot = visualization_specification['plotId'] == var_plot_id
@@ -150,4 +160,11 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
     ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
 
 
-plt.show()
+
+    if subplots is False:
+        filename='Plot'+str(i_plot_id)+'.png'
+        plt.savefig(filename)
+        ax[0,0].clear()
+
+if subplots:
+    plt.savefig("Plot")
