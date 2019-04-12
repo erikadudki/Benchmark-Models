@@ -10,7 +10,7 @@ def getDataToBePlotted(visualization_specification, measurement_data, conditionI
     Parameters:
     ----------
 
-    visualization_specification: panda data frame contains defined data format (visualization file)
+    visualization_specification: pandas data frame contains defined data format (visualization file)
     measurement_data: panda data frame contains defined data format (measurement file)
     conditionIds: array containing all unique condition IDs which should be plotted in one figure (can be found in
                     measurementData file, column simulationConditionId)
