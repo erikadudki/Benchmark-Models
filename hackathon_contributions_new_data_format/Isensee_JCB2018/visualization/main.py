@@ -39,7 +39,14 @@ uni_plotIds, plotInd = np.unique(visualization_specification.plotId, return_inde
 num_subplot = len(uni_plotIds)
 num_row = np.round(np.sqrt(num_subplot))
 num_col = np.ceil(num_subplot / num_row)
-fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False, figsize=(20,10))
+
+# Set Options for plots
+plt.rcParams['font.size'] = 10                  # possible options: see: plt.rcParams.keys()
+plt.rcParams['axes.titlesize'] = 10
+plt.rcParams['figure.figsize'] = [20,10]
+
+fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False) #, figsize=(20,10))
+
 
 
 # loop over unique plotIds
@@ -124,7 +131,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
                                           'x', color=cmap[min(7, i - plotInd[i_plot_id])])
 
             ax[axx, axy].legend()
-            ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
+            ax[axx, axy].set_title(visualization_specification.plotName[i])
 
 
         elif indep_var == 'condition':
@@ -154,7 +161,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             x_name = visualization_specification[ind_plot].legendEntry[i]
 
             ax[axx, axy].bar(x_name, ms['mean'], yerr=ms['sd'])
-            ax[axx, axy].set_title(visualization_specification.plotName[i],fontsize=10)
+            ax[axx, axy].set_title(visualization_specification.plotName[i])
 
         elif indep_var == 'time':
 
@@ -181,8 +188,9 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
                          label=visualization_specification[ind_plot].legendEntry[i]
                          )
             ax[axx, axy].legend()
-            ax[axx, axy].set_title(visualization_specification.plotName[i], fontsize=10)
+            ax[axx, axy].set_title(visualization_specification.plotName[i])
 
     ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
+
 
 plt.show()
