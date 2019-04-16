@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import get_data_to_plot
 import petab
-#import seaborn as sns
-#sns.set()
+import seaborn as sns
+sns.set()
 
 
 data_file_path = "https://raw.githubusercontent.com/LoosC/Benchmark-Models/" \
@@ -16,10 +16,14 @@ condition_file_path = "https://raw.githubusercontent.com/LoosC/" \
                     "new_data_format/Isensee_JCB2018/" \
                     "experimentalCondition_Isensee_JCB2018.tsv"
 
+#visualization_file_path = "https://raw.githubusercontent.com/LoosC/"\
+#                        "Benchmark-Models/visualization/hackathon_contributions"\
+#                        "_new_data_format/Isensee_JCB2018/visualizationSpecific"\
+#                        "ation_Isensee_JCB2018.tsv"
 visualization_file_path = "https://raw.githubusercontent.com/LoosC/"\
                         "Benchmark-Models/visualization/hackathon_contributions"\
                         "_new_data_format/Isensee_JCB2018/visualizationSpecific"\
-                        "ation_Isensee_JCB2018.tsv"
+                        "ation_Isensee_JCB2018_2.tsv"
 
 # import measurement data
 measurement_data = petab.get_measurement_df(data_file_path)
@@ -33,7 +37,7 @@ visualization_specification = pd.read_csv(
 
 # Set Colormap
 #ccodes = ['#8c510a','#bf812d','#dfc27d','#f6e8c3','#c7eae5','#80cdc1','#35978f','#01665e']
-#sns.set_palette("colorblind")
+sns.set_palette("colorblind")
 
 # get unique plotIDs
 uni_plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=True)
@@ -76,7 +80,8 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
     for i in visualization_specification[ind_plot].index.values:
         # get datasetID and independent variable of first entry of plot1
         dataset_id = visualization_specification.datasetId[i]
-        indep_var = visualization_specification.independentVariable[i]
+        #indep_var = visualization_specification.independentVariable[i]
+        indep_var = visualization_specification.xValues[i]
 
         # define index to reduce measurement_data to data linked to datasetId
         ind_dataset = measurement_data['datasetId'] == dataset_id
@@ -157,7 +162,8 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             ax[axx, axy].legend()
             ax[axx, axy].set_title(visualization_specification.plotName[i])
 
-    ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
+    #ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
+    ax[axx, axy].set_xlabel(visualization_specification.xLabel[i])
 
 
 
