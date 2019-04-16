@@ -30,14 +30,47 @@ def get_data_to_plot(visualization_specification, measurement_data, condition_id
 
     # if visualization_specification.independentVariable[i] == 'time':
     for var_cond_id in condition_ids:
-        ind_meas = ((measurement_data[clmn_name_unique] == var_cond_id) &
-                    (measurement_data['datasetId'] == visualization_specification.datasetId[i]))
+        vec_bool_meas = ((measurement_data[clmn_name_unique] == var_cond_id) &
+                    (measurement_data['datasetId'] == visualization_specification.datasetId[i]))    # get boolean vector which fulfill the requirements
+        # get indices of rows with "True" values of vec_bool_meas
+        ind_meas = [i for i,x in enumerate(vec_bool_meas) if x]
 
-        ms.at[var_cond_id, 'mean'] = measurement_data[ind_meas].measurement.mean()
-        ms.at[var_cond_id, 'sd'] = np.std(measurement_data[ind_meas].measurement)
-        ms.at[var_cond_id, 'sem'] = np.std(measurement_data[ind_meas].measurement) / np.sqrt(
-            len(measurement_data[ind_meas].measurement))  # Standard Error of Mean
-        ms.at[var_cond_id, 'repl'] = measurement_data[ind_meas].measurement
+        # check that all entries for all columns-conditions are the same, for grouping the measurement data
+        if clmn_name_unique != 'time':
+            vec_bool_allcond = ((measurement_data.preequilibrationConditionId[ind_meas[0]] == measurement_data.preequilibrationConditionId) &
+                                (measurement_data.time[ind_meas[0]] == measurement_data.time) &
+                                (measurement_data.observableParameters[ind_meas[0]] == measurement_data.observableParameters) &
+                                (measurement_data.noiseParameters[ind_meas[0]] == measurement_data.noiseParameters) &
+                                (measurement_data.observableTransformation[ind_meas[0]] == measurement_data.observableTransformation) &
+                                (measurement_data.noiseDistribution[ind_meas[0]] == measurement_data.noiseDistribution))
+        else:
+            vec_bool_allcond = ((measurement_data.preequilibrationConditionId[
+                                     ind_meas[0]] == measurement_data.preequilibrationConditionId) &
+                                (measurement_data.observableParameters[
+                                     ind_meas[0]] == measurement_data.observableParameters) &
+                                (measurement_data.noiseParameters[ind_meas[0]] == measurement_data.noiseParameters) &
+                                (measurement_data.observableTransformation[
+                                     ind_meas[0]] == measurement_data.observableTransformation) &
+                                (measurement_data.noiseDistribution[ind_meas[0]] == measurement_data.noiseDistribution))
+        # get indices of rows with "True" values, of vec_bool_allcond
+        ind_bool_allcond = [i for i,x in enumerate(vec_bool_allcond) if x]
+        # get intersection of ind_meas and ind_bool_allcond
+        ind_intersec = np.intersect1d(ind_meas, ind_bool_allcond)
+
+        # TODO: Here not the case: So, if entries of preequCondId, time,observableParams,noiseParams, observableTransf,
+        #  noiseDistr are not the same, then this belongs not to the data of interest, which should be in one group ->
+        #  differ these data into different groups!
+        if len(ind_intersec) != len(ind_meas):
+            unique_values = np.setdiff1d(ind_meas, ind_intersec)     # find unique values in ind_meas that are not in ind_intersec
+            print(unique_values)
+        else:
+            ind_intersec = ind_intersec
+
+        ms.at[var_cond_id, 'mean'] = np.mean(measurement_data.measurement[ind_intersec])           #measurement_data[ind_meas].measurement.mean()
+        ms.at[var_cond_id, 'sd'] = np.std(measurement_data.measurement[ind_intersec])
+        ms.at[var_cond_id, 'sem'] = np.std(measurement_data.measurement[ind_intersec]) / np.sqrt(
+            len(measurement_data.measurement[ind_intersec]))  # Standard Error of Mean
+        ms.at[var_cond_id, 'repl'] = measurement_data.measurement[ind_intersec]
 
 
     return ms
