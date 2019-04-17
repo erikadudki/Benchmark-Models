@@ -123,6 +123,8 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
                     print('Error: x-conditions do not coincide, some are mon. increasing,'\
                           ' some monotonically decreasing')
 
+            conditions = conditions + visualization_specification.xOffset[i]
+
             if visualization_specification.plotTypeData[i] == 'MeanAndSD':
                 ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
                                         label = visualization_specification[ind_plot].legendEntry[i])
@@ -153,11 +155,14 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
 
             # obtain unique observation times
             uni_times = np.unique(measurement_data[ind_dataset].time)
+
             clmn_name_unique = 'time'
 
             # group measurement values for each conditionId/unique time
             ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, uni_times, i,
                                                        clmn_name_unique)
+
+            uni_times = uni_times + visualization_specification.xOffset[i]
 
             ax[axx, axy].errorbar(uni_times, ms['mean'], ms['sd'], linestyle='-', marker='.',
                          label=visualization_specification[ind_plot].legendEntry[i]
