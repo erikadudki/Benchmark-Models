@@ -1,5 +1,24 @@
 
 def plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i):
+    '''
+       plotting routine / preparations
+
+       Parameters:
+       ----------
+
+       visualization_specification: pandas data frame contains defined data format (visualization file)
+       ax:
+       axx:
+       axy:
+       conditions: Values on x-axis
+       ms:
+       ind_plot:
+       i: current index (row number) of row which should be plotted in visualizationSpecification file
+
+       Return:
+       ----------
+       ax: matplotlib.Axes
+       '''
 
     # not time,condition
     if visualization_specification.plotTypeSimulation[i] == 'LinePlot':

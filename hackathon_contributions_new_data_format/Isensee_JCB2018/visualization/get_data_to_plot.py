@@ -11,7 +11,7 @@ def get_data_to_plot(visualization_specification, measurement_data, condition_id
     ----------
 
     visualization_specification: pandas data frame contains defined data format (visualization file)
-    measurement_data: panda data frame contains defined data format (measurement file)
+    measurement_data: pandas data frame contains defined data format (measurement file)
     conditionIds: array containing all unique condition IDs which should be plotted in one figure (can be found in
                     measurementData file, column simulationConditionId)
     i: current index (row number) of row which should be plotted in visualizationSpecification file
@@ -21,7 +21,7 @@ def get_data_to_plot(visualization_specification, measurement_data, condition_id
     Return:
     ----------
 
-    ms: panda data frame containing the data which should be plotted (Mean and Std)
+    ms: pandas data frame containing the data which should be plotted (Mean and Std)
     '''
 
 

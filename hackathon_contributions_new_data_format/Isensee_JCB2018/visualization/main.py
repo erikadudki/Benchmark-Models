@@ -12,8 +12,6 @@ data_file_path = "https://raw.githubusercontent.com/LoosC/Benchmark-Models/" \
                "hackathon/hackathon_contributions_new_data_format/" \
                "Isensee_JCB2018/measurementData_Isensee_JCB2018.tsv"
 
-#data_file_path = "/home/erika/Benchmark-Models/hackathon_contributions_new_data_format/Isensee_JCB2018/measurementData_Isensee_JCB2018_2.tsv"
-
 condition_file_path = "https://raw.githubusercontent.com/LoosC/" \
                     "Benchmark-Models/hackathon/hackathon_contributions_" \
                     "new_data_format/Isensee_JCB2018/" \
@@ -63,7 +61,6 @@ plt.rcParams['figure.figsize'] = [20,10]
 plt.rcParams['errorbar.capsize'] = 2
 
 fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False) #, figsize=(20,10))
-
 
 
 # loop over unique plotIds
@@ -175,6 +172,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
 
     #ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
     ax[axx, axy].set_xlabel(visualization_specification.xLabel[i])
+    ax[axx, axy].set_ylabel(visualization_specification.yLabel[i])
 
 
 
