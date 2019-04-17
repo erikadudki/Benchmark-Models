@@ -139,7 +139,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             #                               ms.repl[ii][ms.repl[ii].index.values[k]], 'x')
             # ax[axx, axy].legend()
             # ax[axx, axy].set_title(visualization_specification.plotName[i])
-            ax = plotting_config.plotting_config(visualization_specification, ax, conditions, ms, ind_plot)
+            ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i)
 
         elif indep_var == 'condition':
 
@@ -151,7 +151,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             #
             # ax[axx, axy].bar(x_name, ms['mean'], yerr=ms['sd'])
             # ax[axx, axy].set_title(visualization_specification.plotName[i])
-            ax = plotting_config.plotting_config(visualization_specification, ax, conditions, ms, ind_plot)
+            ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i)
 
         elif indep_var == 'time':
 
@@ -171,7 +171,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             #              )
             # ax[axx, axy].legend()
             # ax[axx, axy].set_title(visualization_specification.plotName[i])
-            ax = plotting_config.plotting_config(visualization_specification, ax, uni_times, ms, ind_plot)
+            ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, uni_times, ms, ind_plot, i)
 
     #ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
     ax[axx, axy].set_xlabel(visualization_specification.xLabel[i])
