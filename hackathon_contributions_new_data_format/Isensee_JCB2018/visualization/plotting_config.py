@@ -1,5 +1,6 @@
+import numpy as np
 
-def plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i):
+def plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i, plt):
     '''
        plotting routine / preparations
 
@@ -11,7 +12,8 @@ def plotting_config(visualization_specification, ax, axx, axy, conditions, ms, i
        axx: subplot axis indices
        axy: subplot axis indices
        conditions: Values on x-axis
-       ms: pandas data frame containing the data which should be plotted
+       ms: pandas data frame containing measurement data which should be plotted
+       ms_sim:
        ind_plot: boolean vector, with size: len(rows in visualization file) x 1 with 'True' entries for rows which should be plotted
        i: current index (row number) of row which should be plotted in visualizationSpecification file
 
@@ -49,8 +51,12 @@ def plotting_config(visualization_specification, ax, axx, axy, conditions, ms, i
 
         # construct errorbar-plots
         if visualization_specification.plotTypeData[i] == 'MeanAndSD':
-            ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
+            p = ax[axx, axy].errorbar(conditions, ms['mean'], ms['sd'], linestyle='-', marker='.',
                                   label=visualization_specification[ind_plot].legendEntry[i])
+            colors = p[0].get_color()
+            if plt.plot_simulation:
+                ax[axx, axy].plot(conditions, ms['sim'], linestyle='-.', marker='o',
+                                  label=visualization_specification[ind_plot].legendEntry[i] + " simulation", color = colors)
         elif visualization_specification.plotTypeData[i] == 'MeanAndSEM':
             ax[axx, axy].errorbar(conditions, ms['mean'], ms['sem'], linestyle='-', marker='.',
                                   label=visualization_specification[ind_plot].legendEntry[i])

@@ -25,24 +25,27 @@ visualization_file_path = "https://raw.githubusercontent.com/LoosC/"\
                         "Benchmark-Models/visualization/hackathon_contributions"\
                         "_new_data_format/Isensee_JCB2018/visualizationSpecific"\
                         "ation_Isensee_JCB2018_2.tsv"
+simulation_file_path = "https://raw.githubusercontent.com/LoosC/"\
+                        "Benchmark-Models/visualization/hackathon_contributions"\
+                        "_new_data_format/Isensee_JCB2018/simulationData"\
+                        "_Isensee_JCB2018.tsv"
 
 # Set Options for plots
 plt.rcParams['font.size'] = 10                  # possible options: see: plt.rcParams.keys()
 plt.rcParams['axes.titlesize'] = 10
 plt.rcParams['figure.figsize'] = [20,10]
 plt.rcParams['errorbar.capsize'] = 2
+plt.plot_simulation = True
 
 subplots = True
 
-# import measurement data
+# import measurement data, experimental condition, visualization specification, simulation data
 measurement_data = petab.get_measurement_df(data_file_path)
-
-# import experimental condition
 experimental_condition = petab.get_condition_df(condition_file_path)
-
-# import visualization specification
 visualization_specification = pd.read_csv(
         visualization_file_path, sep="\t", index_col=None)
+simulation_data = pd.read_csv(
+        simulation_file_path, sep="\t", index_col=None)
 
 # Set Colormap
 #ccodes = ['#8c510a','#bf812d','#dfc27d','#f6e8c3','#c7eae5','#80cdc1','#35978f','#01665e']
@@ -97,8 +100,9 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             ind_cond = experimental_condition.index.isin(uni_condition_id)
             conditions = experimental_condition[ind_cond][indep_var]
 
-            ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, uni_condition_id,
+            ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, simulation_data, uni_condition_id,
                                                        i, clmn_name_unique)
+
             # # set xScale
             # if visualization_specification.xScale[i] == 'lin':
             #     ax[axx, axy].set_xscale("linear")
@@ -135,12 +139,12 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             #                               ms.repl[ii][ms.repl[ii].index.values[k]], 'x')
             # ax[axx, axy].legend()
             # ax[axx, axy].set_title(visualization_specification.plotName[i])
-            
-            ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i)
+
+            ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i, plt)
 
         elif indep_var == 'condition':
 
-            ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, uni_condition_id,
+            ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, simulation_data, uni_condition_id,
                                                        i, clmn_name_unique)
             # # barplot
             # x_pos = range(len(visualization_specification[ind_plot]))       # how many x-values (how many bars)
@@ -148,7 +152,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             #
             # ax[axx, axy].bar(x_name, ms['mean'], yerr=ms['sd'])
             # ax[axx, axy].set_title(visualization_specification.plotName[i])
-            ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i)
+            ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i, plt)
 
         elif indep_var == 'time':
 
@@ -158,7 +162,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             clmn_name_unique = 'time'
 
             # group measurement values for each conditionId/unique time
-            ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, uni_times, i,
+            ms = get_data_to_plot.get_data_to_plot(visualization_specification, measurement_data, simulation_data, uni_times, i,
                                                        clmn_name_unique)
 
             # uni_times = uni_times + visualization_specification.xOffset[i]
@@ -168,7 +172,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             #              )
             # ax[axx, axy].legend()
             # ax[axx, axy].set_title(visualization_specification.plotName[i])
-            ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, uni_times, ms, ind_plot, i)
+            ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, uni_times, ms, ind_plot, i, plt)
 
     #ax[axx, axy].set_xlabel(visualization_specification.independentVariableName[i])
     ax[axx, axy].set_xlabel(visualization_specification.xLabel[i])

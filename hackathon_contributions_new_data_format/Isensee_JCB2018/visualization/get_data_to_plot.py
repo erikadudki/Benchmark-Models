@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-def get_data_to_plot(visualization_specification, measurement_data, condition_ids, i, clmn_name_unique):
+def get_data_to_plot(visualization_specification, measurement_data, simulation_data, condition_ids, i, clmn_name_unique):
 
     '''
     group the data, which should be plotted and save it in dataframe called 'ms'
@@ -26,7 +26,7 @@ def get_data_to_plot(visualization_specification, measurement_data, condition_id
 
 
     # create empty dataframe for means and SDs
-    ms = pd.DataFrame(columns=['mean', 'sd', 'sem','repl'], index=condition_ids)
+    ms = pd.DataFrame(columns=['mean', 'sd', 'sem','repl', 'sim'], index=condition_ids)
 
     # if visualization_specification.independentVariable[i] == 'time':
     for var_cond_id in condition_ids:
@@ -71,6 +71,8 @@ def get_data_to_plot(visualization_specification, measurement_data, condition_id
         ms.at[var_cond_id, 'sem'] = np.std(measurement_data.measurement[ind_intersec]) / np.sqrt(
             len(measurement_data.measurement[ind_intersec]))  # Standard Error of Mean
         ms.at[var_cond_id, 'repl'] = measurement_data.measurement[ind_intersec]
+
+        ms.at[var_cond_id, 'sim'] = np.mean(simulation_data.simulatedData[ind_intersec])
 
 
     return ms
