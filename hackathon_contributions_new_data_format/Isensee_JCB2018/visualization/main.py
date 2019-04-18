@@ -26,6 +26,14 @@ visualization_file_path = "https://raw.githubusercontent.com/LoosC/"\
                         "_new_data_format/Isensee_JCB2018/visualizationSpecific"\
                         "ation_Isensee_JCB2018_2.tsv"
 
+# Set Options for plots
+plt.rcParams['font.size'] = 10                  # possible options: see: plt.rcParams.keys()
+plt.rcParams['axes.titlesize'] = 10
+plt.rcParams['figure.figsize'] = [20,10]
+plt.rcParams['errorbar.capsize'] = 2
+
+subplots = True
+
 # import measurement data
 measurement_data = petab.get_measurement_df(data_file_path)
 
@@ -44,8 +52,6 @@ sns.set_palette("colorblind")
 uni_plotIds, plotInd = np.unique(visualization_specification.plotId, return_index=True)
 
 # Initiate subplots
-subplots=False
-
 if subplots:
     num_subplot = len(uni_plotIds)
 else:
@@ -54,14 +60,7 @@ else:
 num_row = np.round(np.sqrt(num_subplot))
 num_col = np.ceil(num_subplot / num_row)
 
-# Set Options for plots
-plt.rcParams['font.size'] = 10                  # possible options: see: plt.rcParams.keys()
-plt.rcParams['axes.titlesize'] = 10
-plt.rcParams['figure.figsize'] = [20,10]
-plt.rcParams['errorbar.capsize'] = 2
-
-fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False) #, figsize=(20,10))
-
+fig, ax = plt.subplots(int(num_row), int(num_col), squeeze=False)
 
 # loop over unique plotIds
 for i_plot_id, var_plot_id in enumerate(uni_plotIds):
@@ -71,8 +70,8 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
         axx = int(np.ceil((i_plot_id+1)/ num_col))-1
         axy = int(((i_plot_id+1) - axx * num_col))-1
     else:
-        axx=0
-        axy=0
+        axx = 0
+        axy = 0
 
     # get indices for specific plotId
     ind_plot = visualization_specification['plotId'] == var_plot_id
@@ -136,6 +135,7 @@ for i_plot_id, var_plot_id in enumerate(uni_plotIds):
             #                               ms.repl[ii][ms.repl[ii].index.values[k]], 'x')
             # ax[axx, axy].legend()
             # ax[axx, axy].set_title(visualization_specification.plotName[i])
+            
             ax = plotting_config.plotting_config(visualization_specification, ax, axx, axy, conditions, ms, ind_plot, i)
 
         elif indep_var == 'condition':
