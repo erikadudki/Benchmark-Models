@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-  <model metaid="arFramework3" id="jak2_stat5_feedbacks">
+  <model id="Bachmann_MSB2011" name="jak2_stat5_feedbacks">
     <listOfUnitDefinitions>
       <unitDefinition id="time" name="time">
         <listOfUnits>
@@ -46,6 +46,7 @@
       <parameter id="CISRNAEqc" value="1" constant="true"/>
       <parameter id="CISRNATurn" value="999.999999999946" constant="true"/>
       <parameter id="CISTurn" value="0.0083988695167017" constant="true"/>
+      <parameter id="CISEqcOE" value="0.530264447119609" constant="true"/>
       <parameter id="EpoRActJAK2" value="0.267304849333058" constant="true"/>
       <parameter id="EpoRCISInh" value="999999.999999912" constant="true"/>
       <parameter id="EpoRCISRemove" value="5.42980693903448" constant="true"/>
@@ -53,6 +54,8 @@
       <parameter id="JAK2EpoRDeaSHP1" value="142.72332309738" constant="true"/>
       <parameter id="SHP1ActEpoR" value="0.00100000000000006" constant="true"/>
       <parameter id="SHP1Dea" value="0.00816220490950374" constant="true"/>
+      <parameter id="SHP1ProOE" value="2.82568153411555" constant="true"/>
+      <parameter id="SOCS3EqcOE" value="0.679165515556864" constant="true"/>
       <parameter id="SOCS3Eqc" value="173.64470023136" constant="true"/>
       <parameter id="SOCS3Inh" value="10.4078649133666" constant="true"/>
       <parameter id="SOCS3RNADelay" value="1.06458446742251" constant="true"/>
@@ -111,6 +114,7 @@
       <parameter id="CISoe" value="1.25e-07" constant="true"/>
       <parameter id="SOCS3oe" value="1.25e-07" constant="true"/>
       <parameter id="init_SHP1_multiplier" value="1" constant="true"/>
+      <parameter id="init_EpoRJAK2_CIS" value="0" constant="true"/>
       <parameter id="init_CIS_multiplier" value="0" constant="true"/>
       <parameter id="init_SOCS3_multiplier" value="0" constant="true"/>
       <parameter id="observableParameter1_pJAK2_au" value="1" constant="true"/>
@@ -132,14 +136,29 @@
       <parameter id="observableParameter1_CISRNA_foldC" value="1" constant="true"/>
       <parameter id="observableParameter1_pSTAT5B_rel" value="1" constant="true"/>
       <parameter id="observableParameter1_tSHP1_au" value="1" constant="true"/>
+      <parameter id="observableParameter1_pSTAT5_au" value="1" constant="true"/>
+      <parameter id="observableParameter2_pSTAT5_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_STAT5_abs" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SHP1_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_pJAK2_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_pEpoR_au" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CIS_au1" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CIS_au2" value="1" constant="true"/>
+      <parameter id="noiseParameter1_tSHP1_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_CIS_au" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CIS_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_SOCS3_au" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3_abs" value="1" constant="true"/>
       <parameter id="noiseParameter1_tSTAT5_au" value="1" constant="true"/>
       <parameter id="noiseParameter1_pSTAT5_au" value="1" constant="true"/>
       <parameter id="noiseParameter2_pSTAT5_au" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3RNA_foldA" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3RNA_foldB" value="1" constant="true"/>
+      <parameter id="noiseParameter1_SOCS3RNA_foldC" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CISRNA_foldA" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CISRNA_foldB" value="1" constant="true"/>
+      <parameter id="noiseParameter1_CISRNA_foldC" value="1" constant="true"/>
+      <parameter id="noiseParameter1_pSTAT5B_rel" value="1" constant="true"/>
 
     </listOfParameters>
     <listOfInitialAssignments>
@@ -147,6 +166,11 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> init_EpoRJAK2 </ci>
         </math>
+      </initialAssignment>
+      <initialAssignment symbol="EpoRJAK2_CIS">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> init_EpoRJAK2_CIS </ci>
+          </math>
       </initialAssignment>
       <initialAssignment symbol="SOCS3">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -203,11 +227,77 @@
                 </apply>
             </math>
         </assignmentRule>
+        <assignmentRule variable="sigma_pJAK2_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_pJAK2_au </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_pSTAT5B_rel">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_pSTAT5B_rel </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_SOCS3RNA_foldA">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_SOCS3RNA_foldA </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_SOCS3RNA_foldB">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_SOCS3RNA_foldB </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_SOCS3RNA_foldC">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <ci> noiseParameter1_SOCS3RNA_foldC </ci>
+            </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CISRNA_foldA">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CISRNA_foldA </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CISRNA_foldB">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CISRNA_foldB </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CISRNA_foldC">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CISRNA_foldC </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_pEpoR_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_pEpoR_au </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CIS_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CIS_au </ci>
+        </math>
+        </assignmentRule>
         <assignmentRule variable="sigma_STAT5_abs">
             <math xmlns="http://www.w3.org/1998/Math/MathML">
                 <ci> noiseParameter1_STAT5_abs </ci>
             </math>
         </assignmentRule>
+        <assignmentRule variable="sigma_SOCS3_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_SOCS3_au </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CIS_au1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CIS_au1 </ci>
+        </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_CIS_au2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> noiseParameter1_CIS_au2 </ci>
+        </math>
+        </assignmentRule>
+        
       <assignmentRule variable="observable_pJAK2_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -420,6 +510,11 @@
               <ci> noiseParameter1_SHP1_abs </ci>
           </math>
       </assignmentRule>
+      <assignmentRule variable="sigma_tSTAT5_au">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <ci> noiseParameter1_tSTAT5_au </ci>
+      </math>
+      </assignmentRule>
       <assignmentRule variable="observable_CIS_abs">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <apply>
@@ -435,6 +530,11 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
               <ci> noiseParameter1_CIS_abs </ci>
           </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_tSHP1_au">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <ci> noiseParameter1_tSHP1_au </ci>
+      </math>
       </assignmentRule>
       <assignmentRule variable="observable_SOCS3_abs">
           <math xmlns="http://www.w3.org/1998/Math/MathML">

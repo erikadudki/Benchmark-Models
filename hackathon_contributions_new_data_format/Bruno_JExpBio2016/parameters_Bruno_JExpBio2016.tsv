@@ -1,14 +1,14 @@
 parameterId	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate	priorType	priorParameters	hierarchicalOptimization (optional
-init_b10	init_{b10}	log10	-5	3	0.625548049798466	1			
-init_bcar1	init_{bcar1}	log10	-5	3	0.647411895036251	1			
-init_bcar2	init_{bcar2}	log10	-5	3	0.518740214807586	1			
-init_bcry	init_{bcry}	log10	-5	3	0.717415730073373	1			
-init_ohb10	init_{ohb10}	log10	-5	3	0.239861510180478	1			
-init_zea	init_{zea}	log10	-5	3	0.471016230513743	1			
-k5	k5	log10	-5	3	-2.510509346141760	1			
-kb1	kb1	log10	-5	3	-1.779149276029990	1			
-kb2	kb2	log10	-5	3	-2.233302291193810	1			
-kc1	kc1	log10	-5	3	-2.774994509491630	1			
-kc2	kc2	log10	-5	3	-2.156394208478600	1			
-kc4	kc4	log10	-5	3	-2.215903538348850	1			
-szea	szea	log10	-5	3	-0.286650801043120	1			
+init_b10_1	init_{b10}	log10	-5	3	0.6255480498	1			
+init_bcar1	init_{bcar1}	log10	-5	3	0.647411895	1			
+init_bcar2	init_{bcar2}	log10	-5	3	0.5187402148	1			
+init_bcry_1	init_{bcry}	log10	-5	3	0.7174157301	1			
+init_ohb10_1	init_{ohb10}	log10	-5	3	0.2398615102	1			
+init_zea_1	init_{zea}	log10	-5	3	0.4710162305	1			
+k5	k5	log10	-5	3	-2.5105093461	1			
+kb1	kb1	log10	-5	3	-1.779149276	1			
+kb2	kb2	log10	-5	3	-2.2333022912	1			
+kc1	kc1	log10	-5	3	-2.7749945095	1			
+kc2	kc2	log10	-5	3	-2.1563942085	1			
+kc4	kc4	log10	-5	3	-2.2159035383	1			
+szea	szea	log10	-5	3	-0.286650801	1			

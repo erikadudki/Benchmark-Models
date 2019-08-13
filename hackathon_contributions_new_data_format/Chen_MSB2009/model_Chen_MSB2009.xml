@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-  <model id="model_ChenMSB2009_sin">
+  <model id="Chen_MSB2009" name="model_ChenMSB2009_sin">
     <listOfUnitDefinitions>
       <unitDefinition id="time" name="time">
         <listOfUnits>
@@ -716,6 +716,7 @@
       <parameter id="c285" value="0" constant="false"/>
       <parameter id="c514" value="0" constant="true"/>
       <parameter id="Step10Mio" value="0" constant="false"/>
+      <parameter id="Step0" value="0" constant="true"/>
       <parameter id="Step33" value="0" constant="false"/>
       <parameter id="Step1" value="0" constant="false"/>
       <parameter id="StepMini" value="0" constant="false"/>

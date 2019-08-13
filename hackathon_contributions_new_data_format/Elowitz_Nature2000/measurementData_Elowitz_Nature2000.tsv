@@ -1,59 +1,59 @@
-observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation
-fluorescence		model1_data1	-0.599467180749683	10	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-1.0466252120919	30	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.775558439805364	50	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.943962870194754	60	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.880293790325377	70	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.842505229435977	80	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.666413970380296	90	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.353484751416607	100	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.193332693462374	110	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.197410605882813	120	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.197410605882813	130	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.147169509755053	140	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.218395097364941	150	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.240445238108015	160	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.347655207755883	170	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.459288477584646	180	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.44456522076394	190	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.390207558441347	200	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.423375921694001	210	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.451864459505439	220	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.498440601546794	230	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.416536497163696	240	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.490322711324615	250	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.490322711324615	260	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.416536497163696	270	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.150834463841458	280	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.049530202735309	290	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.007872623099885	300	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.024059384193161	310	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.049530202735309	320	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.052454755752626	330	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.058363615363146	340	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.193332693462374	350	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.162018630793972	360	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.209879246442411	370	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.193332693462374	380	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.278233798997415	390	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.31962648415564	400	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.218395097364941	410	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.136356640472835	420	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.064353979052334	430	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.052454755752626	440	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	0	450	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.032384772977292	460	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.058363615363146	470	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.092382702652577	480	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.150834463841458	490	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.150834463841458	500	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.181323785989358	510	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.197410605882813	520	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.249588617547885	530	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.353484751416607	540	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.459288477584646	550	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.365383974716315	560	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.347655207755883	570	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.283197218528965	580	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.26367507882649	590	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
-fluorescence		model1_data1	-0.330621868457103	600	offset_fluorescence;scaling_fluorescence	sd_fluorescence	log10
+observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation	noiseDistribution
+fluorescence		model1_data1	-0.599467180749683	10	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-1.0466252120919	30	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.775558439805364	50	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.943962870194754	60	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.880293790325377	70	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.842505229435977	80	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.666413970380296	90	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.353484751416607	100	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.193332693462374	110	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.197410605882813	120	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.197410605882813	130	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.147169509755053	140	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.218395097364941	150	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.240445238108015	160	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.347655207755883	170	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.459288477584646	180	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.44456522076394	190	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.390207558441347	200	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.423375921694001	210	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.451864459505439	220	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.498440601546794	230	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.416536497163696	240	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.490322711324615	250	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.490322711324615	260	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.416536497163696	270	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.150834463841458	280	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.049530202735309	290	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.007872623099885	300	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.024059384193161	310	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.049530202735309	320	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.052454755752626	330	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.058363615363146	340	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.193332693462374	350	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.162018630793972	360	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.209879246442411	370	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.193332693462374	380	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.278233798997415	390	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.31962648415564	400	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.218395097364941	410	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.136356640472835	420	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.064353979052334	430	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.052454755752626	440	background;scale	sigma	log10	normal
+fluorescence		model1_data1	0	450	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.032384772977292	460	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.058363615363146	470	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.092382702652577	480	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.150834463841458	490	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.150834463841458	500	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.181323785989358	510	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.197410605882813	520	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.249588617547885	530	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.353484751416607	540	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.459288477584646	550	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.365383974716315	560	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.347655207755883	570	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.283197218528965	580	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.26367507882649	590	background;scale	sigma	log10	normal
+fluorescence		model1_data1	-0.330621868457103	600	background;scale	sigma	log10	normal

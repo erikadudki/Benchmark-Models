@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-<model metaid="arFramework3" id="PKA_cycle">
+<model metaid="Isensee_JCB2018" id="Isensee_JCB2018" name="PKA_cycle">
 <annotation/>
 <listOfUnitDefinitions>
 <unitDefinition metaid="time" id="time" name="time">
@@ -124,7 +124,7 @@
 <parameter metaid="KD_cAMP" id="KD_cAMP" value="2.84986906175302"/>
 <parameter metaid="PDE_total" id="PDE_total" value="1"/>
 <parameter metaid="RII2_total" id="RII2_total" value="1"/>
-<parameter metaid="b_pRII_global" id="observableParameter3_pRII" value="99.7217778967635" units="time"/>
+<parameter metaid="b_pRII_global" id="observableParameter3_pRII_Microscopy" value="99.7217778967635" units="time"/>
 <parameter metaid="kdeg_cAMP" id="kdeg_cAMP" value="1.00032978441703e-05"/>
 <parameter metaid="kdeg_cAMP_free" id="kdeg_cAMP_free" value="7.35892283451732"/>
 <parameter metaid="kdp_AC" id="kdp_AC" value="0"/>
@@ -145,10 +145,10 @@
 <parameter metaid="ki_Sp8_Br_cAMPS_AM" id="ki_Sp8_Br_cAMPS_AM" value="0.131083036712545"/>
 <parameter metaid="kp_AC" id="kp_AC" value="0"/>
 <parameter metaid="ks_AC_cAMP" id="ks_AC_cAMP" value="0.423299046028554"/>
-<parameter metaid="rel_open" id="observableParameter4_pRII" value="0.232764114977018" units="time"/>
-<parameter metaid="s_pRII_JI09_150302_Drg345_343_CycNuc" id="observableParameter1_pRII" value="1.10313696623937" units="time"/>
-<parameter metaid="s_pRII_global" id="observableParameter2_pRII" value="2205.15492853024" units="time"/>
-<parameter metaid="sigma_pRII" id="sigma_pRII" value="0" units="substance" constant="false"/>
+<parameter metaid="rel_open" id="observableParameter4_pRII_Microscopy" value="0.232764114977018" units="time"/>
+<parameter metaid="s_pRII_JI09_150302_Drg345_343_CycNuc" id="observableParameter1_pRII_Microscopy" value="1.10313696623937" units="time"/>
+<parameter metaid="s_pRII_global" id="observableParameter2_pRII_Microscopy" value="2205.15492853024" units="time"/>
+<parameter metaid="sigma_pRII" id="sigma_pRII_Microscopy" value="0" units="substance" constant="false"/>
 <parameter metaid="xi_AC_cAMP_Fsk" id="xi_AC_cAMP_Fsk" value="640.551657640036"/>
 <parameter metaid="xi_KD_Rp8_Br_cAMPS" id="xi_KD_Rp8_Br_cAMPS" value="0.040150612333366"/>
 <parameter metaid="xi_KD_Rp8_pCPT_cAMPS" id="xi_KD_Rp8_pCPT_cAMPS" value="0.194630402579553"/>
@@ -166,7 +166,7 @@
 <parameter metaid="xi_kf_RII_C_2__RII_2" id="xi_kf_RII_C_2__RII_2" value="0.811223214879921"/>
 <parameter metaid="xi_pAC" id="xi_pAC" value="1"/>
 <parameter metaid="xi_pPDE" id="xi_pPDE" value="1"/>
-<parameter metaid="xi_rel_open" id="observableParameter5_pRII" value="0.749660486959971" units="time"/>
+<parameter metaid="xi_rel_open" id="observableParameter5_pRII_Microscopy" value="0.749660486959971" units="time"/>
 <parameter metaid="Fsk" id="Fsk" value="10" units="time" constant="false"/>
 <parameter metaid="IBMXex" id="IBMXex" value="0" constant="false"/>
 <parameter metaid="H89" id="H89" value="0" constant="false"/>
@@ -180,34 +180,34 @@
 <parameter metaid="H89_level" id="H89_level" value="0" units="substance"/>
 <parameter metaid="IBMX_level" id="IBMX_level" value="0" units="substance"/>
 <parameter metaid="Rp8_Br_cAMPS_pAB_level" id="Rp8_Br_cAMPS_pAB_level" value="0" units="substance"/>
-<parameter metaid="Rp8_Br_cAMPS_pAB_time" id="Rp8_Br_cAMPS_pAB_time" value="0" units="time"/>
+<parameter metaid="Rp8_Br_cAMPS_pAB_time" id="Rp8_Br_cAMPS_pAB_incubation_time" value="0" units="time"/>
 <parameter metaid="H89_time" id="H89_time" value="0" units="time"/>
 <parameter metaid="IBMX_time" id="IBMX_time" value="0" units="time"/>
 <parameter metaid="Rp8_pCPT_cAMPS_pAB_level" id="Rp8_pCPT_cAMPS_pAB_level" value="0" units="substance"/>
-<parameter metaid="Rp8_pCPT_cAMPS_pAB_time" id="Rp8_pCPT_cAMPS_pAB_time" value="0" units="time"/>
+<parameter metaid="Rp8_pCPT_cAMPS_pAB_time" id="Rp8_pCPT_cAMPS_pAB_incubation_time" value="0" units="time"/>
 <parameter metaid="Rp_cAMPS_pAB_level" id="Rp_cAMPS_pAB_level" value="0" units="substance"/>
-<parameter metaid="Rp_cAMPS_pAB_time" id="Rp_cAMPS_pAB_time" value="0" units="time"/>
+<parameter metaid="Rp_cAMPS_pAB_time" id="Rp_cAMPS_pAB_incubation_time" value="0" units="time"/>
 <parameter metaid="Sp8_Br_cAMPS_AM_level" id="Sp8_Br_cAMPS_AM_level" value="0" units="substance"/>
 <parameter metaid="Sp8_Br_cAMPS_AM_time" id="Sp8_Br_cAMPS_AM_time" value="0" units="time"/>
 <parameter metaid="fourABnOH_level" id="fourABnOH_level" value="0" units="substance"/>
-<parameter metaid="fourABnOH_time" id="fourABnOH_time" value="0" units="time"/>
-<parameter metaid="observable_pRII" id="observable_pRII" value="0" units="substance" constant="false"/>
-<parameter metaid="noiseParameter1_pRII" id="noiseParameter1_pRII" value="1.10313696623937" units="substance"/>
-<parameter metaid="noiseParameter2_pRII" id="noiseParameter2_pRII" value="2205.15492853024" units="substance"/>
-<parameter metaid="noiseParameter3_pRII" id="noiseParameter3_pRII" value="0.0420436289656355" units="substance"/>
+<parameter metaid="fourABnOH_time" id="fourABnOH_incubation_time" value="0" units="time"/>
+<parameter metaid="observable_pRII" id="observable_pRII_Microscopy" value="0" units="substance" constant="false"/>
+<parameter metaid="noiseParameter1_pRII" id="noiseParameter1_pRII_Microscopy" value="1.10313696623937" units="substance"/>
+<parameter metaid="noiseParameter2_pRII" id="noiseParameter2_pRII_Microscopy" value="2205.15492853024" units="substance"/>
+<parameter metaid="noiseParameter3_pRII" id="noiseParameter3_pRII_Microscopy" value="0.0420436289656355" units="substance"/>
 <parameter metaid="observable_pRII_Western" id="observable_pRII_Western" value="0" units="substance" constant="false"/>
 <parameter metaid="sigma_pRII_Western" id="sigma_pRII_Western" value="0" units="substance" constant="false"/>
 <parameter metaid="observableParameter1_pRII_Western" id="observableParameter1_pRII_Western" value="1.14770844672296" units="substance"/>
 <parameter metaid="noiseParameter1_pRII_Western" id="noiseParameter1_pRII_Western" value="1.14770844672296" units="substance"/>
 <parameter metaid="noiseParameter2_pRII_Western" id="noiseParameter2_pRII_Western" value="0.102621139980074" units="substance"/>
-<parameter metaid="observable_Calpha" id="observable_Calpha" value="0" units="substance" constant="false"/>
-<parameter metaid="sigma_Calpha" id="sigma_Calpha" value="0" units="substance" constant="false"/>
-<parameter metaid="observableParameter1_Calpha" id="observableParameter1_Calpha" value="1756.86825686956" units="substance"/>
-<parameter metaid="observableParameter2_Calpha" id="observableParameter2_Calpha" value="101.652962830343" units="substance"/>
-<parameter metaid="observableParameter3_Calpha" id="observableParameter3_Calpha" value="0.232764114977018" units="substance"/>
-<parameter metaid="observableParameter4_Calpha" id="observableParameter4_Calpha" value="0.749660486959971" units="substance"/>
-<parameter metaid="noiseParameter1_Calpha" id="noiseParameter1_Calpha" value="1756.86825686956" units="substance"/>
-<parameter metaid="noiseParameter2_Calpha" id="noiseParameter2_Calpha" value="0.0513957822318373" units="substance"/>
+<parameter metaid="observable_Calpha" id="observable_Calpha_Microscopy" value="0" units="substance" constant="false"/>
+<parameter metaid="sigma_Calpha" id="sigma_Calpha_Microscopy" value="0" units="substance" constant="false"/>
+<parameter metaid="observableParameter1_Calpha" id="observableParameter1_Calpha_Microscopy" value="1756.86825686956" units="substance"/>
+<parameter metaid="observableParameter2_Calpha" id="observableParameter2_Calpha_Microscopy" value="101.652962830343" units="substance"/>
+<parameter metaid="observableParameter3_Calpha" id="observableParameter3_Calpha_Microscopy" value="0.232764114977018" units="substance"/>
+<parameter metaid="observableParameter4_Calpha" id="observableParameter4_Calpha_Microscopy" value="0.749660486959971" units="substance"/>
+<parameter metaid="noiseParameter1_Calpha" id="noiseParameter1_Calpha_Microscopy" value="1756.86825686956" units="substance"/>
+<parameter metaid="noiseParameter2_Calpha" id="noiseParameter2_Calpha_Microscopy" value="0.0513957822318373" units="substance"/>
 </listOfParameters>
 <listOfRules>
 <assignmentRule metaid="CDMT00167" variable="Fsk">
@@ -224,31 +224,6 @@
 <minus/>
 <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
 <ci> Fsk_time </ci>
-</apply>
-<cn type="integer"> 0 </cn>
-</apply>
-</piece>
-<otherwise>
-<cn type="integer"> 1 </cn>
-</otherwise>
-</piecewise>
-</apply>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00168" variable="IBMXex">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<apply>
-<times/>
-<ci> IBMX_level </ci>
-<piecewise>
-<piece>
-<cn type="integer"> 0 </cn>
-<apply>
-<lt/>
-<apply>
-<minus/>
-<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
-<ci> IBMX_time </ci>
 </apply>
 <cn type="integer"> 0 </cn>
 </apply>
@@ -285,6 +260,118 @@
 </apply>
 </math>
 </assignmentRule>
+<assignmentRule metaid="CDMT00168" variable="IBMXex">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<ci> IBMX_level </ci>
+<piecewise>
+<piece>
+<cn type="integer"> 0 </cn>
+<apply>
+<lt/>
+<apply>
+<minus/>
+<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+<ci> IBMX_time </ci>
+</apply>
+<cn type="integer"> 0 </cn>
+</apply>
+</piece>
+<otherwise>
+<cn type="integer"> 1 </cn>
+</otherwise>
+</piecewise>
+</apply>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00172" variable="Rp8_Br_cAMPS_pAB">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<ci> Rp8_Br_cAMPS_pAB_level </ci>
+<piecewise>
+<piece>
+<cn type="integer"> 0 </cn>
+<apply>
+<lt/>
+<apply>
+<minus/>
+<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+<apply>
+<minus/>
+<cn type="integer"> 60 </cn>
+<ci> Rp8_Br_cAMPS_pAB_incubation_time </ci>
+</apply>
+</apply>
+<cn type="integer"> 0 </cn>
+</apply>
+</piece>
+<otherwise>
+<cn type="integer"> 1 </cn>
+</otherwise>
+</piecewise>
+</apply>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00173" variable="Rp8_pCPT_cAMPS_pAB">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<ci> Rp8_pCPT_cAMPS_pAB_level </ci>
+<piecewise>
+<piece>
+<cn type="integer"> 0 </cn>
+<apply>
+<lt/>
+<apply>
+<minus/>
+<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+<apply>
+<minus/>
+<cn type="integer"> 60 </cn>
+<ci> Rp8_pCPT_cAMPS_pAB_incubation_time </ci>
+</apply>
+</apply>
+<cn type="integer"> 0 </cn>
+</apply>
+</piece>
+<otherwise>
+<cn type="integer"> 1 </cn>
+</otherwise>
+</piecewise>
+</apply>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00174" variable="Rp_cAMPS_pAB">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<ci> Rp_cAMPS_pAB_level </ci>
+<piecewise>
+<piece>
+<cn type="integer"> 0 </cn>
+<apply>
+<lt/>
+<apply>
+<minus/>
+<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+<apply>
+<minus/>
+<cn type="integer"> 60 </cn>
+<ci> Rp_cAMPS_pAB_incubation_time </ci>
+</apply>
+</apply>
+<cn type="integer"> 0 </cn>
+</apply>
+</piece>
+<otherwise>
+<cn type="integer"> 1 </cn>
+</otherwise>
+</piecewise>
+</apply>
+</math>
+</assignmentRule>
 <assignmentRule metaid="CDMT00171" variable="Sp8_Br_cAMPS_AM">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
@@ -310,81 +397,6 @@
 </apply>
 </math>
 </assignmentRule>
-<assignmentRule metaid="CDMT00172" variable="Rp8_Br_cAMPS_pAB">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<apply>
-<times/>
-<ci> Rp8_Br_cAMPS_pAB_level </ci>
-<piecewise>
-<piece>
-<cn type="integer"> 0 </cn>
-<apply>
-<lt/>
-<apply>
-<minus/>
-<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
-<ci> Rp8_Br_cAMPS_pAB_time </ci>
-</apply>
-<cn type="integer"> 0 </cn>
-</apply>
-</piece>
-<otherwise>
-<cn type="integer"> 1 </cn>
-</otherwise>
-</piecewise>
-</apply>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00173" variable="Rp8_pCPT_cAMPS_pAB">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<apply>
-<times/>
-<ci> Rp8_pCPT_cAMPS_pAB_level </ci>
-<piecewise>
-<piece>
-<cn type="integer"> 0 </cn>
-<apply>
-<lt/>
-<apply>
-<minus/>
-<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
-<ci> Rp8_pCPT_cAMPS_pAB_time </ci>
-</apply>
-<cn type="integer"> 0 </cn>
-</apply>
-</piece>
-<otherwise>
-<cn type="integer"> 1 </cn>
-</otherwise>
-</piecewise>
-</apply>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00174" variable="Rp_cAMPS_pAB">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<apply>
-<times/>
-<ci> Rp_cAMPS_pAB_level </ci>
-<piecewise>
-<piece>
-<cn type="integer"> 0 </cn>
-<apply>
-<lt/>
-<apply>
-<minus/>
-<csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
-<ci> Rp_cAMPS_pAB_time </ci>
-</apply>
-<cn type="integer"> 0 </cn>
-</apply>
-</piece>
-<otherwise>
-<cn type="integer"> 1 </cn>
-</otherwise>
-</piecewise>
-</apply>
-</math>
-</assignmentRule>
 <assignmentRule metaid="CDMT00175" variable="fourABnOH">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
@@ -398,7 +410,11 @@
 <apply>
 <minus/>
 <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
-<ci> fourABnOH_time </ci>
+<apply>
+<minus/>
+<cn type="integer"> 60 </cn>
+<ci> fourABnOH_incubation_time </ci>
+</apply>
 </apply>
 <cn type="integer"> 0 </cn>
 </apply>
@@ -410,17 +426,76 @@
 </apply>
 </math>
 </assignmentRule>
-<assignmentRule metaid="CDMT00178" variable="observable_pRII">
+<assignmentRule metaid="CDMT00180" variable="observable_Calpha_Microscopy">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<plus/>
+<ci> observableParameter2_Calpha_Microscopy </ci>
+<apply>
+<times/>
+<ci> observableParameter1_Calpha_Microscopy </ci>
+<apply>
+<plus/>
+<apply>
+<times/>
+<cn type="integer"> 2 </cn>
+<ci> Csub </ci>
+</apply>
+<apply>
+<times/>
+<cn type="integer"> 2 </cn>
+<ci> Csub_H89 </ci>
+</apply>
+<apply>
+<times/>
+<cn type="integer"> 2 </cn>
+<ci> observableParameter3_Calpha_Microscopy </ci>
+<apply>
+<plus/>
+<ci> RIIp_C_2 </ci>
+<ci> RIIp_Rp_cAMPS_C_2 </ci>
+<ci> RIIp_Rp8_Br_cAMPS_C_2 </ci>
+<ci> RIIp_Rp8_pCPT_cAMPS_C_2 </ci>
+</apply>
+</apply>
+<apply>
+<times/>
+<cn type="integer"> 2 </cn>
+<apply>
+<plus/>
+<ci> RIIp_cAMP_C_2 </ci>
+<ci> RIIp_Sp8_Br_cAMPS_C_2 </ci>
+</apply>
+<apply>
+<minus/>
+<ci> observableParameter3_Calpha_Microscopy </ci>
+<apply>
+<times/>
+<ci> observableParameter4_Calpha_Microscopy </ci>
+<apply>
+<minus/>
+<ci> observableParameter3_Calpha_Microscopy </ci>
+<cn type="integer"> 1 </cn>
+</apply>
+</apply>
+</apply>
+</apply>
+</apply>
+</apply>
+</apply>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00178" variable="observable_pRII_Microscopy">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
-<ci> observableParameter1_pRII </ci>
+<ci> observableParameter1_pRII_Microscopy </ci>
 <apply>
 <plus/>
-<ci> observableParameter3_pRII </ci>
+<ci> observableParameter3_pRII_Microscopy </ci>
 <apply>
 <times/>
-<ci> observableParameter2_pRII </ci>
+<ci> observableParameter2_pRII_Microscopy </ci>
 <apply>
 <plus/>
 <apply>
@@ -441,7 +516,7 @@
 <apply>
 <times/>
 <cn type="integer"> 2 </cn>
-<ci> observableParameter4_pRII </ci>
+<ci> observableParameter4_pRII_Microscopy </ci>
 <apply>
 <plus/>
 <ci> RIIp_C_2 </ci>
@@ -460,13 +535,13 @@
 </apply>
 <apply>
 <minus/>
-<ci> observableParameter4_pRII </ci>
+<ci> observableParameter4_pRII_Microscopy </ci>
 <apply>
 <times/>
-<ci> observableParameter5_pRII </ci>
+<ci> observableParameter5_pRII_Microscopy </ci>
 <apply>
 <minus/>
-<ci> observableParameter4_pRII </ci>
+<ci> observableParameter4_pRII_Microscopy </ci>
 <cn type="integer"> 1 </cn>
 </apply>
 </apply>
@@ -475,16 +550,6 @@
 </apply>
 </apply>
 </apply>
-</apply>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00179" variable="sigma_pRII">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<apply>
-<times/>
-<ci> noiseParameter1_pRII </ci>
-<ci> noiseParameter2_pRII </ci>
-<ci> noiseParameter3_pRII </ci>
 </apply>
 </math>
 </assignmentRule>
@@ -544,80 +609,31 @@
 </apply>
 </math>
 </assignmentRule>
+<assignmentRule metaid="CDMT00181" variable="sigma_Calpha_Microscopy">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<ci> noiseParameter1_Calpha_Microscopy </ci>
+<ci> noiseParameter2_Calpha_Microscopy </ci>
+</apply>
+</math>
+</assignmentRule>
+<assignmentRule metaid="CDMT00179" variable="sigma_pRII_Microscopy">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<ci> noiseParameter1_pRII_Microscopy </ci>
+<ci> noiseParameter2_pRII_Microscopy </ci>
+<ci> noiseParameter3_pRII_Microscopy </ci>
+</apply>
+</math>
+</assignmentRule>
 <assignmentRule metaid="CDMT00177" variable="sigma_pRII_Western">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <apply>
 <times/>
 <ci> noiseParameter1_pRII_Western </ci>
 <ci> noiseParameter2_pRII_Western </ci>
-</apply>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00180" variable="observable_Calpha">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<apply>
-<plus/>
-<ci> observableParameter2_Calpha </ci>
-<apply>
-<times/>
-<ci> observableParameter1_Calpha </ci>
-<apply>
-<plus/>
-<apply>
-<times/>
-<cn type="integer"> 2 </cn>
-<ci> Csub </ci>
-</apply>
-<apply>
-<times/>
-<cn type="integer"> 2 </cn>
-<ci> Csub_H89 </ci>
-</apply>
-<apply>
-<times/>
-<cn type="integer"> 2 </cn>
-<ci> observableParameter3_Calpha </ci>
-<apply>
-<plus/>
-<ci> RIIp_C_2 </ci>
-<ci> RIIp_Rp_cAMPS_C_2 </ci>
-<ci> RIIp_Rp8_Br_cAMPS_C_2 </ci>
-<ci> RIIp_Rp8_pCPT_cAMPS_C_2 </ci>
-</apply>
-</apply>
-<apply>
-<times/>
-<cn type="integer"> 2 </cn>
-<apply>
-<plus/>
-<ci> RIIp_cAMP_C_2 </ci>
-<ci> RIIp_Sp8_Br_cAMPS_C_2 </ci>
-</apply>
-<apply>
-<minus/>
-<ci> observableParameter3_Calpha </ci>
-<apply>
-<times/>
-<ci> observableParameter4_Calpha </ci>
-<apply>
-<minus/>
-<ci> observableParameter3_Calpha </ci>
-<cn type="integer"> 1 </cn>
-</apply>
-</apply>
-</apply>
-</apply>
-</apply>
-</apply>
-</apply>
-</math>
-</assignmentRule>
-<assignmentRule metaid="CDMT00181" variable="sigma_Calpha">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<apply>
-<times/>
-<ci> noiseParameter1_Calpha </ci>
-<ci> noiseParameter2_Calpha </ci>
 </apply>
 </math>
 </assignmentRule>
