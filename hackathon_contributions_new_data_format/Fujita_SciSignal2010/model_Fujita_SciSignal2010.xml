@@ -130,9 +130,6 @@
         <listOfProducts>
           <speciesReference species="EGF_EGFR" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="EGF_EGFR"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -164,9 +161,6 @@
         <listOfProducts>
           <speciesReference species="pEGFR_Akt" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="pEGFR_Akt"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -232,9 +226,6 @@
         <listOfProducts>
           <speciesReference species="pAkt_S6" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="pAkt_S6"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
