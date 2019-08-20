@@ -50,8 +50,8 @@ ksyn_typeIDT1	ksyn_{typeIDT1}	log10	-5	5	-2.0799037518	1
 ksyn_typeIDT3	ksyn_{typeIDT3}	log10	-5	5	-3.0540028235	1			
 ksyn_typeIDT5	ksyn_{typeIDT5}	log10	-5	5	-1.0187120262	1			
 ksyn_typeIDwt	ksyn_{typeIDwt}	log10	-5	5	-2.2987853585	1			
-sigma_Bacnorm	sigma_{Bacnorm}	log10	-5	5	-1.4228499099	1			
-sigma_IndconcNormRange	sigma_{IndconcNormRange}	log10	-5	5	-1.6864445781	1			
+sd_Bacnorm	sd_{Bacnorm}	log10	-5	5	-1.4228499099	1			
+sd_IndconcNormRange	sd_{IndconcNormRange}	log10	-5	5	-1.6864445781	1			
 tau_typeIDT1_ExpID1	tau_{typeIDT1,ExpID1}	log10	-5	5	-0.7859869072	1			
 tau_typeIDT1_ExpID2	tau_{typeIDT1,ExpID2}	log10	-5	5	-1.2558019537	1			
 tau_typeIDT1_ExpID3	tau_{typeIDT1,ExpID3}	log10	-5	5	-2.4974036337	1			
