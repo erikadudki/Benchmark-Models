@@ -124,6 +124,10 @@
       <parameter id="sigma_tp21_au" name="sigma_tp21_au" value="0.316227766016838" constant="false"/>
       <parameter id="sigma_tp53_au" name="sigma_tp53_au" value="0.199526231496888" constant="false"/>
       <parameter id="sigma_yH2AX_au" name="sigma_yH2AX_au" value="0.125892541179417" constant="false"/>
+
+<parameter id="sigma_p21_mRNA_fold" name="sigma_p21_mRNA_fold" value="1" constant="false"/>
+<parameter id="sigma_Wip1_mRNA_fold" name="sigma_Wip1_mRNA_fold" value="1" constant="false"/>
+
       <parameter id="pATM_au" value="0" constant="false"/>
       <parameter id="pDNAPK_au" value="0" constant="false"/>
       <parameter id="pChk1_au" value="0" constant="false"/>
