@@ -1242,6 +1242,23 @@
           </math>
         </kineticLaw>
       </reaction>
+      <reaction id="v24_v_23" name="v_23" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Cells_Cycle_S" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cells_SSBDamage_S" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cells_Cycle_S </ci>
+              <ci> k_damage_sn38_ssb </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
       <reaction id="v25_v_24" name="v_24" reversible="false">
         <listOfReactants>
           <speciesReference species="Cells_SSBDamage_S" stoichiometry="1"/>
