@@ -50,7 +50,6 @@
       <species id="Wip1_G2" name="Wip1_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="hill_ka" value="0" constant="false"/>
       <parameter id="dox_level_hill" value="0" constant="false"/>
       <parameter id="k_damage_dox_dsb" name="k_damage_dox_dsb" value="214.760281583402" constant="false"/>
       <parameter id="k_dox_apo" name="k_dox_apo" value="0.0488009964455022" constant="false"/>
@@ -190,31 +189,6 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
-      <assignmentRule variable="hill_ka">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <divide/>
-		<apply>
-			<power/>
-			<ci> dox_level_hill </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> dox_level_hill </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
-          </apply>
-        </math>
-      </assignmentRule>
       <assignmentRule variable="dox_level_hill">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
 		<piecewise>
@@ -734,10 +708,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -788,10 +758,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -815,10 +781,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -842,10 +804,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -869,10 +827,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -896,10 +850,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -923,10 +873,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -950,10 +896,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -977,10 +919,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -1004,10 +942,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
