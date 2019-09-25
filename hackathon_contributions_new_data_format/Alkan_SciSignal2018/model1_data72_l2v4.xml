@@ -190,6 +190,45 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="hill_ka">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="dox_level_hill">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+		<piecewise>
+		  <piece>
+		    <cn>1</cn>
+		    <apply><gt/><ci>k_damage_dox_dsb</ci><cn>0</cn></apply>
+		  </piece>
+		  <piece>
+		    <cn>0</cn>
+		    <apply><eq/><ci>k_damage_dox_dsb</ci><cn>0</cn></apply>
+		  </piece>
+		</piecewise>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="observable_pATM_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
