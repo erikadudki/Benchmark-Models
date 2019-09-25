@@ -197,6 +197,50 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="observable_p21_mRNA_fold">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <apply>
+              <times/>
+              <ci> scale_p21_mRNA_fold </ci>
+              <apply>
+                <plus/>
+                <ci> p21_mRNA_S </ci>
+                <ci> p21_mRNA_G2 </ci>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_Wip1_mRNA_fold">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <apply>
+              <times/>
+              <ci> scale_wip1_mRNA_fold </ci>
+              <apply>
+                <plus/>
+                <ci> Wip1_mRNA_G2 </ci>
+                <ci> Wip1_mRNA_S </ci>
+              </apply>
+            </apply>
+            <cn type="integer"> 1 </cn>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_p21_mRNA_fold">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> sd_p21_mRNA_fold </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_Wip1_mRNA_fold">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> sd_wip1_mRNA_fold </ci>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="dox_level_hill">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
 		<piecewise>
