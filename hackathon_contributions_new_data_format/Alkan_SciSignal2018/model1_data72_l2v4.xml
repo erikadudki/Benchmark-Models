@@ -715,10 +715,25 @@
               <ci> Cells </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -731,10 +746,6 @@
         <listOfProducts>
           <speciesReference species="Cells_Apo_ReOx" stoichiometry="1"/>
         </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference species="k_dox_kd"/>
-          <modifierSpeciesReference species="k_dox_apo"/>
-        </listOfModifiers>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
@@ -742,10 +753,25 @@
               <ci> Cells_Cycle_S </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -765,10 +791,25 @@
               <ci> Cells_Cycle_G2 </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -788,10 +829,25 @@
               <ci> Cells_SSBDamage_S </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -811,10 +867,25 @@
               <ci> Cells_DSBDamage_S </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -834,10 +905,25 @@
               <ci> Cells_DSBDamage_G2 </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -857,10 +943,25 @@
               <ci> Cells_Apo </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -880,10 +981,25 @@
               <ci> Cells_Apo1 </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -903,10 +1019,25 @@
               <ci> Cells_Apo2 </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -926,10 +1057,25 @@
               <ci> Cells_Apo3 </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -949,10 +1095,25 @@
               <ci> Cells_Apo4 </ci>
               <ci> k_dox_apo </ci>
               <apply>
-                <ci> hill_ka </ci>
-                <cn type="integer"> 0 </cn>
-                <ci> k_dox_kd </ci>
-                <cn type="integer"> 6 </cn>
+                <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> k_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
               </apply>
             </apply>
           </math>
@@ -1811,10 +1972,25 @@
                   <times/>
                   <ci> p_mrna_exp_inh_dox </ci>
                   <apply>
-                    <ci> hill_ka </ci>
-                    <cn type="integer"> 0 </cn>
-                    <ci> p_mrna_exp_inh_dox_kd </ci>
-                    <cn type="integer"> 6 </cn>
+                    <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> p_mrna_exp_inh_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -1892,10 +2068,25 @@
                   <times/>
                   <ci> p_mrna_exp_inh_dox </ci>
                   <apply>
-                    <ci> hill_ka </ci>
-                    <cn type="integer"> 0 </cn>
-                    <ci> p_mrna_exp_inh_dox_kd </ci>
-                    <cn type="integer"> 6 </cn>
+                    <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> p_mrna_exp_inh_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -2499,10 +2690,25 @@
                   <times/>
                   <ci> p_mrna_exp_inh_dox </ci>
                   <apply>
-                    <ci> hill_ka </ci>
-                    <cn type="integer"> 0 </cn>
-                    <ci> p_mrna_exp_inh_dox_kd </ci>
-                    <cn type="integer"> 6 </cn>
+                    <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> p_mrna_exp_inh_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -2580,10 +2786,25 @@
                   <times/>
                   <ci> p_mrna_exp_inh_dox </ci>
                   <apply>
-                    <ci> hill_ka </ci>
-                    <cn type="integer"> 0 </cn>
-                    <ci> p_mrna_exp_inh_dox_kd </ci>
-                    <cn type="integer"> 6 </cn>
+                    <divide/>
+		<apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		 </apply>		
+		 <apply>
+		      <plus/>
+		      <apply>
+			<power/>
+			<ci> dox_level_hill </ci>
+			<cn> 6 </cn>
+		      </apply>
+		      <apply>
+			<power/>
+			<ci> p_mrna_exp_inh_dox_kd </ci>
+			<cn> 6 </cn>
+		      </apply>
+		 </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
