@@ -1955,8 +1955,6 @@
           <speciesReference species="p21_mRNA_S" stoichiometry="1"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="p_mrna_exp_inh_dox"/>
-          <modifierSpeciesReference species="p_mrna_exp_inh_dox_kd"/>
           <modifierSpeciesReference species="pp53_S"/>
         </listOfModifiers>
         <kineticLaw>
@@ -2051,8 +2049,6 @@
           <speciesReference species="Wip1_mRNA_S" stoichiometry="1"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="p_mrna_exp_inh_dox"/>
-          <modifierSpeciesReference species="p_mrna_exp_inh_dox_kd"/>
           <modifierSpeciesReference species="pp53_S"/>
         </listOfModifiers>
         <kineticLaw>
@@ -2673,8 +2669,6 @@
           <speciesReference species="p21_mRNA_G2" stoichiometry="1"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="p_mrna_exp_inh_dox"/>
-          <modifierSpeciesReference species="p_mrna_exp_inh_dox_kd"/>
           <modifierSpeciesReference species="pp53_G2"/>
         </listOfModifiers>
         <kineticLaw>
@@ -2769,8 +2763,6 @@
           <speciesReference species="Wip1_mRNA_G2" stoichiometry="1"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="p_mrna_exp_inh_dox"/>
-          <modifierSpeciesReference species="p_mrna_exp_inh_dox_kd"/>
           <modifierSpeciesReference species="pp53_G2"/>
         </listOfModifiers>
         <kineticLaw>
