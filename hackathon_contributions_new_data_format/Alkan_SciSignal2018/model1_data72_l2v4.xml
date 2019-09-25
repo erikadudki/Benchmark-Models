@@ -50,6 +50,8 @@
       <species id="Wip1_G2" name="Wip1_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
+      <parameter id="k_damage_sn38_ssb" name="k_damage_sn38_ssb" value="174.434737098025" constant="false"/>
+      <parameter id="k_ssb_to_dsb_sn38" name="k_ssb_to_dsb_sn38" value="999.999674332206" constant="false"/>
       <parameter id="p_mrna_exp_inh_dox" name="p_mrna_exp_inh_dox" value="999.999999999919" constant="false"/>
       <parameter id="p_mrna_exp_inh_dox_kd" name="p_mrna_exp_inh_dox_kd" value="0.356451179497663" constant="false"/>
       <parameter id="dox_level_hill" value="0" constant="false"/>
@@ -3014,4 +3016,3 @@
     </listOfReactions>
   </model>
 </sbml>
-
