@@ -50,6 +50,11 @@
       <species id="Wip1_G2" name="Wip1_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
+      <parameter id="hill_ka" value="0" constant="false"/>
+      <parameter id="dox_level_hill" value="0" constant="false"/>
+      <parameter id="k_damage_dox_dsb" name="k_damage_dox_dsb" value="214.760281583402" constant="false"/>
+      <parameter id="k_dox_apo" name="k_dox_apo" value="0.0488009964455022" constant="false"/>
+      <parameter id="k_dox_kd" name="k_dox_kd" value="0.356451133426244" constant="false"/>
       <parameter id="init_Cells" name="init_Cells" value="1" constant="false"/>
       <parameter id="init_Cells_Cycle_G2_rel" name="init_Cells_Cycle_G2_rel" value="0.4" constant="false"/>
       <parameter id="init_Cells_Cycle_S_rel" name="init_Cells_Cycle_S_rel" value="0.5" constant="false"/>
