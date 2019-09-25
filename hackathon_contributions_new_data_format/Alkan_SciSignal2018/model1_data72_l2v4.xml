@@ -140,6 +140,8 @@
       <parameter id="observable_pp53_au" value="0" constant="false"/>
       <parameter id="observable_tp21_au" value="0" constant="false"/>
       <parameter id="observable_yH2AX_au" value="0" constant="false"/>
+      <parameter id="observable_Wip1_mRNA_fold" value="0" constant="false"/>
+      <parameter id="observable_p21_mRNA_fold" value="0" constant="false"/>
       <parameter id="scale_p21_mRNA_fold" name="scale_p21_mRNA_fold" value="19.80629123797" constant="false"/>
       <parameter id="scale_wip1_mRNA_fold" name="scale_wip1_mRNA_fold" value="2.27700032377414" constant="false"/>
       <parameter id="sd_p21_mRNA_fold" name="sd_p21_mRNA_fold" value="1" constant="false"/>
