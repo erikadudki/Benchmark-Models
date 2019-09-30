@@ -108,6 +108,8 @@
       <parameter id="scale_tp21_au" name="scale_tp21_au" value="3.91785506773406" constant="false"/>
       <parameter id="scale_tp53_au" name="scale_tp53_au" value="1.43133618287554" constant="false"/>
       <parameter id="scale_yh2ax_au" name="scale_yh2ax_au" value="60.5031667365335" constant="false"/>
+      <parameter id="scale_p21_mRNA_fold" name="scale_p21_mRNA_fold" value="19.80629123797" constant="false"/>
+      <parameter id="scale_wip1_mRNA_fold" name="scale_wip1_mRNA_fold" value="2.27700032377414" constant="false"/>
       <parameter id="sd_patm_au" name="sd_patm_au" value="0.0794328234724281" constant="false"/>
       <parameter id="sd_pchk1_au" name="sd_pchk1_au" value="0.1" constant="false"/>
       <parameter id="sd_pchk2_au" name="sd_pchk2_au" value="0.316227766016838" constant="false"/>
@@ -116,6 +118,8 @@
       <parameter id="sd_tp21_au" name="sd_tp21_au" value="0.316227766016838" constant="false"/>
       <parameter id="sd_tp53_au" name="sd_tp53_au" value="0.199526231496888" constant="false"/>
       <parameter id="sd_yh2ax_au" name="sd_yh2ax_au" value="0.125892541179417" constant="false"/>
+      <parameter id="sd_p21_mRNA_fold" name="sd_p21_mRNA_fold" value="1" constant="false"/>
+      <parameter id="sd_wip1_mRNA_fold" name="sd_wip1_mRNA_fold" value="1" constant="false"/>
       <parameter id="sigma_pATM_au" name="sigma_pATM_au" value="0.0794328234724281" constant="false"/>
       <parameter id="sigma_pChk1_au" name="sigma_pChk1_au" value="0.1" constant="false"/>
       <parameter id="sigma_pChk2_au" name="sigma_pChk2_au" value="0.316227766016838" constant="false"/>
@@ -134,6 +138,8 @@
       <parameter id="pp53_au" value="0" constant="false"/>
       <parameter id="tp21_au" value="0" constant="false"/>
       <parameter id="yH2AX_au" value="0" constant="false"/>
+      <parameter id="p21_mRNA_fold" value="0" constant="false"/>
+      <parameter id="Wip1_mRNA_fold" value="0" constant="false"/>
       <parameter id="observable_pATM_au" value="0" constant="false"/>
       <parameter id="observable_pDNAPK_au" value="0" constant="false"/>
       <parameter id="observable_pChk1_au" value="0" constant="false"/>
@@ -144,12 +150,6 @@
       <parameter id="observable_yH2AX_au" value="0" constant="false"/>
       <parameter id="observable_Wip1_mRNA_fold" value="0" constant="false"/>
       <parameter id="observable_p21_mRNA_fold" value="0" constant="false"/>
-      <parameter id="scale_p21_mRNA_fold" name="scale_p21_mRNA_fold" value="19.80629123797" constant="false"/>
-      <parameter id="scale_wip1_mRNA_fold" name="scale_wip1_mRNA_fold" value="2.27700032377414" constant="false"/>
-      <parameter id="sd_p21_mRNA_fold" name="sd_p21_mRNA_fold" value="1" constant="false"/>
-      <parameter id="sd_wip1_mRNA_fold" name="sd_wip1_mRNA_fold" value="1" constant="false"/>
-      <parameter id="p21_mRNA_fold" value="0" constant="false"/>
-      <parameter id="Wip1_mRNA_fold" value="0" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="Space">
