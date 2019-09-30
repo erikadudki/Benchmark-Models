@@ -1284,7 +1284,6 @@
                 <apply>
                   <times/>
                   <ci> k_ssb_to_dsb_sn38 </ci>
-                  <apply>
                     <piecewise>
 			  <piece>
 			    <cn>1</cn>
@@ -1295,7 +1294,6 @@
 			    <apply><eq/><ci>k_damage_sn38_ssb</ci><cn>0</cn></apply>
 			  </piece>
 		    </piecewise>
-                  </apply>
                 </apply>
               </apply>
             </apply>
