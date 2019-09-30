@@ -1,4 +1,4 @@
-parameterID	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate
+parameterId	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate
 init_Cells	init_Cells	log10	-1	3	0	0
 init_Cells_Cycle_G2_rel	init_Cells_Cycle_G2_rel	lin	0	1	0.4	0
 init_Cells_Cycle_S_rel	init_Cells_Cycle_S_rel	lin	0	1	0.5	0
@@ -25,7 +25,7 @@ k_ssb_to_dsb	k_ssb_to_dsb	log10	-5	0	-1.51570547440724	1
 k_ssb_to_dsb_sn38	k_ssb_to_dsb_sn38	log10	-5	3	2.99999985856425	1
 kt	kt	log10	-1	0	-0.72724873800882	1
 kt_apo	kt_apo	log10	-2	0	-0.908327523401711	0
-p_atm_act_dsb	p_atm_act_dsb	log10	-2	0	-3.28801603590101e-14	1
+p_atm_act_dsb	p_atm_act_dsb	log10	-2	0	-3.28801603590101E-14	1
 p_atr_act_atm	p_atr_act_atm	log10	-2	0	-1.0447055676182	1
 p_atr_act_ssb	p_atr_act_ssb	log10	-2	0	-1.10136574743901	1
 p_chk1_act	p_chk1_act	log10	-2	1	0.925956311284326	1
@@ -41,7 +41,7 @@ p_h2ax_dea	p_h2ax_dea	log10	-5	3	-4.99998494698696	1
 p_mrna_exp_inh_dox	p_mrna_exp_inh_dox	log10	0	3	2.99999999999996	1
 p_mrna_exp_inh_dox_kd	p_mrna_exp_inh_dox_kd	log10	-2	1	-0.447999943867309	0
 p_p21_mrna_turn	p_p21_mrna_turn	log10	-2	0	-0.961163719377574	1
-p_p21_turn	p_p21_turn	log10	-2	0	-3.41966539030477e-14	1
+p_p21_turn	p_p21_turn	log10	-2	0	-3.41966539030477E-14	1
 p_p53_act_atm	p_p53_act_atm	log10	-2	0	-0.762789292531232	1
 p_p53_act_atr	p_p53_act_atr	log10	-5	0	-4.99999999999996	1
 p_p53_act_chk1	p_p53_act_chk1	log10	-5	3	-4.99999999999629	1
@@ -49,11 +49,11 @@ p_p53_act_chk2	p_p53_act_chk2	log10	-5	3	-1.29039821765088	1
 p_wip1_mrna_turn	p_wip1_mrna_turn	log10	-1	1	0.531608713463267	1
 p_wip1_turn	p_wip1_turn	log10	-1	1	0.532963569909637	1
 scale_p21_mRNA_fold	scale_p21_mRNA_fold	log10	-5	3	1.29680316076431	1
-scale_patm_au	scale_patm_au	log10	-5	3	-0.0359987704333586	1
-scale_pchk1_au	scale_pchk1_au	log10	-5	3	0.0211932275350697	1
+scale_patm_au	scale_patm_au	log10	-5	3	-0.035998770433359	1
+scale_pchk1_au	scale_pchk1_au	log10	-5	3	0.02119322753507	1
 scale_pchk2_au	scale_pchk2_au	log10	-5	3	0.183429937939437	1
 scale_pdnapk_au	scale_pdnapk_au	log10	-5	3	-0.329927425851421	1
-scale_pp53_au	scale_pp53_au	log10	-5	3	0.0552865027026589	1
+scale_pp53_au	scale_pp53_au	log10	-5	3	0.055286502702659	1
 scale_tp21_au	scale_tp21_au	log10	-5	3	0.593048366205028	1
 scale_tp53_au	scale_tp53_au	log10	-5	3	0.155741649986454	1
 scale_wip1_mRNA_fold	scale_wip1_mRNA_fold	log10	-5	3	0.357363092368903	1
