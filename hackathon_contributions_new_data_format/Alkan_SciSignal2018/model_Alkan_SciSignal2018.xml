@@ -110,16 +110,16 @@
       <parameter id="scale_yh2ax_au" name="scale_yh2ax_au" value="60.5031667365335" constant="false"/>
       <parameter id="scale_p21_mRNA_fold" name="scale_p21_mRNA_fold" value="19.80629123797" constant="false"/>
       <parameter id="scale_wip1_mRNA_fold" name="scale_wip1_mRNA_fold" value="2.27700032377414" constant="false"/>
-      <parameter id="sd_patm_au" name="sd_patm_au" value="0.0794328234724281" constant="false"/>
-      <parameter id="sd_pchk1_au" name="sd_pchk1_au" value="0.1" constant="false"/>
-      <parameter id="sd_pchk2_au" name="sd_pchk2_au" value="0.316227766016838" constant="false"/>
-      <parameter id="sd_pdnapk_au" name="sd_pdnapk_au" value="0.199526231496888" constant="false"/>
-      <parameter id="sd_pp53_au" name="sd_pp53_au" value="0.199526231496888" constant="false"/>
-      <parameter id="sd_tp21_au" name="sd_tp21_au" value="0.316227766016838" constant="false"/>
-      <parameter id="sd_tp53_au" name="sd_tp53_au" value="0.199526231496888" constant="false"/>
-      <parameter id="sd_yh2ax_au" name="sd_yh2ax_au" value="0.125892541179417" constant="false"/>
-      <parameter id="sd_p21_mRNA_fold" name="sd_p21_mRNA_fold" value="1" constant="false"/>
-      <parameter id="sd_wip1_mRNA_fold" name="sd_wip1_mRNA_fold" value="1" constant="false"/>
+      <parameter id="noiseParameter1_patm_au" name="noiseParameter1_patm_au" value="0.0794328234724281" constant="false"/>
+      <parameter id="noiseParameter1_pchk1_au" name="noiseParameter1_pchk1_au" value="0.1" constant="false"/>
+      <parameter id="noiseParameter1_pchk2_au" name="noiseParameter1_pchk2_au" value="0.316227766016838" constant="false"/>
+      <parameter id="noiseParameter1_pdnapk_au" name="noiseParameter1_pdnapk_au" value="0.199526231496888" constant="false"/>
+      <parameter id="noiseParameter1_pp53_au" name="noiseParameter1_pp53_au" value="0.199526231496888" constant="false"/>
+      <parameter id="noiseParameter1_tp21_au" name="noiseParameter1_tp21_au" value="0.316227766016838" constant="false"/>
+      <parameter id="noiseParameter1_tp53_au" name="noiseParameter1_tp53_au" value="0.199526231496888" constant="false"/>
+      <parameter id="noiseParameter1_yh2ax_au" name="noiseParameter1_yh2ax_au" value="0.125892541179417" constant="false"/>
+      <parameter id="noiseParameter1_p21_mRNA_fold" name="noiseParameter1_p21_mRNA_fold" value="1" constant="false"/>
+      <parameter id="noiseParameter1_wip1_mRNA_fold" name="noiseParameter1_wip1_mRNA_fold" value="1" constant="false"/>
       <parameter id="sigma_pATM_au" name="sigma_pATM_au" value="0.0794328234724281" constant="false"/>
       <parameter id="sigma_pChk1_au" name="sigma_pChk1_au" value="0.1" constant="false"/>
       <parameter id="sigma_pChk2_au" name="sigma_pChk2_au" value="0.316227766016838" constant="false"/>
@@ -154,7 +154,7 @@
       <parameter id="noiseParameter1_count_abs" value="1" constant="false"/>
       <parameter id="sigma_count_abs" value="1" constant="false"/>
       <parameter id="observable_CellsCasp_count" value="0" constant="false"/>
-      <parameter id="sd_count_casp_abs" value="1" constant="false"/>
+      <parameter id="noiseParameter1_count_casp_abs" value="1" constant="false"/>
       <parameter id="sigma_count_casp_abs" value="1" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
@@ -273,12 +273,12 @@
       </assignmentRule>
       <assignmentRule variable="sigma_p21_mRNA_fold">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_p21_mRNA_fold </ci>
+          <ci> noiseParameter1_p21_mRNA_fold </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_Wip1_mRNA_fold">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_wip1_mRNA_fold </ci>
+          <ci> noiseParameter1_wip1_mRNA_fold </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="dox_level_hill">
@@ -401,7 +401,7 @@
       </assignmentRule>
       <assignmentRule variable="sigma_count_casp_abs">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_count_casp_abs </ci>
+          <ci> noiseParameter1_count_casp_abs </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_count_abs">
@@ -411,42 +411,42 @@
       </assignmentRule>
       <assignmentRule variable="sigma_pATM_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_patm_au </ci>
+          <ci> noiseParameter1_patm_au </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_pDNAPK_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_pdnapk_au </ci>
+          <ci> noiseParameter1_pdnapk_au </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_pChk1_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_pchk1_au </ci>
+          <ci> noiseParameter1_pchk1_au </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_pChk2_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_pchk2_au </ci>
+          <ci> noiseParameter1_pchk2_au </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_tp53_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_tp53_au </ci>
+          <ci> noiseParameter1_tp53_au </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_pp53_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_pp53_au </ci>
+          <ci> noiseParameter1_pp53_au </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_tp21_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_tp21_au </ci>
+          <ci> noiseParameter1_tp21_au </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_yH2AX_au">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> sd_yh2ax_au </ci>
+          <ci> noiseParameter1_yh2ax_au </ci>
         </math>
       </assignmentRule>
     </listOfRules>
