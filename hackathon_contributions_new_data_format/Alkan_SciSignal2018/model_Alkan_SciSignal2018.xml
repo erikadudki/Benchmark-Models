@@ -213,11 +213,6 @@
     <listOfRules>
       <assignmentRule variable="observable_Cells_count">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> tCells </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="tCells">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
               <plus/>
               <ci> Cells </ci>
@@ -236,11 +231,6 @@
         </math>
       </assignmentRule>
       <assignmentRule variable="observable_CellsCasp_count">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> tCellsCasp </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="tCellsCasp">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
               <plus/>
@@ -409,6 +399,16 @@
               <ci> yH2AX_G2 </ci>
             </apply>
           </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_count_casp_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> sd_count_casp_abs </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_count_abs">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> sd_count_abs </ci>
         </math>
       </assignmentRule>
       <assignmentRule variable="sigma_pATM_au">
