@@ -150,6 +150,14 @@
       <parameter id="observable_yH2AX_au" value="0" constant="false"/>
       <parameter id="observable_Wip1_mRNA_fold" value="0" constant="false"/>
       <parameter id="observable_p21_mRNA_fold" value="0" constant="false"/>
+      <parameter id="observable_Cells_count" value="0" constant="false"/>
+      <parameter id="tCells" value="0" constant="false"/>
+      <parameter id="sd_count_abs" value="0" constant="false"/>
+      <parameter id="sigma_count_abs" value="0" constant="false"/>
+      <parameter id="observable_CellsCasp_count" value="0" constant="false"/>
+      <parameter id="tCellsCasp" value="0" constant="false"/>
+      <parameter id="sd_count_casp_abs" value="0" constant="false"/>
+      <parameter id="sigma_count_casp_abs" value="0" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="Space">
@@ -203,6 +211,44 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="observable_Cells_count">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> tCells </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="tCells">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+              <plus/>
+              <ci> Cells </ci>
+              <ci> Cells_Cycle_S </ci>
+              <ci> Cells_Cycle_G2 </ci>
+              <ci> Cells_SSBDamage_S </ci>
+              <ci> Cells_DSBDamage_S </ci>
+              <ci> Cells_DSBDamage_G2 </ci>
+              <ci> Cells_Apo </ci>
+              <ci> Cells_Apo1 </ci>
+              <ci> Cells_Apo2 </ci>
+              <ci> Cells_Apo3 </ci>
+              <ci> Cells_Apo4 </ci>
+              <ci> Cells_Apo_ReOx </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_CellsCasp_count">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> tCellsCasp </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="tCellsCasp">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+              <plus/>
+              <ci> Cells_Apo4 </ci>
+              <ci> Cells_Apo_ReOx </ci>
+          </apply>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="observable_p21_mRNA_fold">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
