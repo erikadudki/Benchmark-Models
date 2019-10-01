@@ -26,28 +26,28 @@
       <species id="Cells_Apo4" name="Cells_Apo4" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="Cells_Apo_ReOx" name="Cells_Apo_ReOx" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="Cells_Dead" name="Cells_Dead" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pATR_S" name="pATR_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pATR_G2" name="pATR_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pChk1_S" name="pChk1_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pChk1_G2" name="pChk1_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pATM_S" name="pATM_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pATM_G2" name="pATM_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pChk2_S" name="pChk2_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pChk2_G2" name="pChk2_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pDNAPK_S" name="pDNAPK_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pDNAPK_G2" name="pDNAPK_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pp53_S" name="pp53_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pp53_G2" name="pp53_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="yH2AX_S" name="yH2AX_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="yH2AX_G2" name="yH2AX_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="p21_mRNA_S" name="p21_mRNA_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="p21_S" name="p21_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="p21_mRNA_G2" name="p21_mRNA_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="p21_G2" name="p21_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="Wip1_mRNA_S" name="Wip1_mRNA_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="Wip1_S" name="Wip1_S" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="Wip1_mRNA_G2" name="Wip1_mRNA_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="Wip1_G2" name="Wip1_G2" compartment="default" initialConcentration="0" substanceUnits="au" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pATR_S" name="pATR_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pATR_G2" name="pATR_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pChk1_S" name="pChk1_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pChk1_G2" name="pChk1_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pATM_S" name="pATM_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pATM_G2" name="pATM_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pChk2_S" name="pChk2_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pChk2_G2" name="pChk2_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pDNAPK_S" name="pDNAPK_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pDNAPK_G2" name="pDNAPK_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pp53_S" name="pp53_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pp53_G2" name="pp53_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="yH2AX_S" name="yH2AX_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="yH2AX_G2" name="yH2AX_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="p21_mRNA_S" name="p21_mRNA_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="p21_S" name="p21_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="p21_mRNA_G2" name="p21_mRNA_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="p21_G2" name="p21_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Wip1_mRNA_S" name="Wip1_mRNA_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Wip1_S" name="Wip1_S" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Wip1_mRNA_G2" name="Wip1_mRNA_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Wip1_G2" name="Wip1_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="dox_level_hill" value="0" constant="false"/>
