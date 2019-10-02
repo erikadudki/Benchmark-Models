@@ -151,10 +151,10 @@
       <parameter id="observable_Wip1_mRNA_fold" value="0" constant="false"/>
       <parameter id="observable_p21_mRNA_fold" value="0" constant="false"/>
       <parameter id="observable_Cells_count" value="0" constant="false"/>
-      <parameter id="noiseParameter1_count_abs" value="1" constant="false"/>
+      <parameter id="noiseParameter1_count_abs" name="noiseParameter1_count_abs" value="1" constant="false"/>
       <parameter id="sigma_count_abs" value="1" constant="false"/>
       <parameter id="observable_CellsCasp_count" value="0" constant="false"/>
-      <parameter id="noiseParameter1_count_casp_abs" value="1" constant="false"/>
+      <parameter id="noiseParameter1_count_casp_abs" name="noiseParameter1_count_casp_abs" value="1" constant="false"/>
       <parameter id="sigma_count_casp_abs" value="1" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
