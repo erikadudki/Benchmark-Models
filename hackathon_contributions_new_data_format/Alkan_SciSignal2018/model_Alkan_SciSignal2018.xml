@@ -273,7 +273,7 @@
             <plus/>
             <apply>
               <times/>
-              <ci> scale_wip1_mRNA_fold </ci>
+              <ci> scale_Wip1_mRNA_fold </ci>
               <apply>
                 <plus/>
                 <ci> Wip1_mRNA_G2 </ci>
@@ -312,7 +312,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> scale_patm_au </ci>
+            <ci> scale_pATM_au </ci>
             <apply>
               <plus/>
               <ci> pATM_G2 </ci>
@@ -325,7 +325,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> scale_pdnapk_au </ci>
+            <ci> scale_pDNAPK_au </ci>
             <apply>
               <plus/>
               <ci> pDNAPK_G2 </ci>
@@ -338,7 +338,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> scale_pchk1_au </ci>
+            <ci> scale_pChk1_au </ci>
             <apply>
               <plus/>
               <ci> pChk1_G2 </ci>
@@ -351,7 +351,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> scale_pchk2_au </ci>
+            <ci> scale_pChk2_au </ci>
             <apply>
               <plus/>
               <ci> pChk2_S </ci>
@@ -403,7 +403,7 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
-            <ci> scale_yh2ax_au </ci>
+            <ci> scale_yH2AX_au </ci>
             <apply>
               <plus/>
               <ci> yH2AX_S </ci>
