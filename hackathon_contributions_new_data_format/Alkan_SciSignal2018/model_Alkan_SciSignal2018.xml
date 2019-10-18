@@ -303,7 +303,7 @@
 		  </piece>
 		  <piece>
 		    <cn>0</cn>
-		    <apply><eq/><ci>k_damage_dox_dsb</ci><cn>0</cn></apply>
+		    <apply><leq/><ci>k_damage_dox_dsb</ci><cn>0</cn></apply>
 		  </piece>
 		</piecewise>
         </math>
@@ -1345,7 +1345,7 @@
 			  </piece>
 			  <piece>
 			    <cn>0</cn>
-			    <apply><eq/><ci>k_damage_sn38_ssb</ci><cn>0</cn></apply>
+			    <apply><leq/><ci>k_damage_sn38_ssb</ci><cn>0</cn></apply>
 			  </piece>
 		    </piecewise>
                 </apply>
