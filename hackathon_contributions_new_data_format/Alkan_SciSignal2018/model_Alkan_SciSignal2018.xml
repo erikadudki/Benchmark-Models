@@ -50,7 +50,10 @@
       <species id="Wip1_G2" name="Wip1_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="dox_level_hill" value="0" constant="false"/>
+      <parameter id="Gem_level" value="0" constant="false"/>
+      <parameter id="Dox_level" value="0" constant="false"/>
+      <parameter id="SN38_level" value="0" constant="false"/>      
+
       <parameter id="init_Cells" name="init_Cells" value="1" constant="false"/>
       <parameter id="init_Cells_Cycle_G2_rel" name="init_Cells_Cycle_G2_rel" value="0.4" constant="false"/>
       <parameter id="init_Cells_Cycle_S_rel" name="init_Cells_Cycle_S_rel" value="0.5" constant="false"/>
@@ -292,20 +295,6 @@
       <assignmentRule variable="sigma_Wip1_mRNA_fold">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> noiseParameter1_Wip1_mRNA_fold </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="dox_level_hill">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-		<piecewise>
-		  <piece>
-		    <cn>1</cn>
-		    <apply><gt/><ci>k_damage_dox_dsb</ci><cn>0</cn></apply>
-		  </piece>
-		  <piece>
-		    <cn>0</cn>
-		    <apply><leq/><ci>k_damage_dox_dsb</ci><cn>0</cn></apply>
-		  </piece>
-		</piecewise>
         </math>
       </assignmentRule>
       <assignmentRule variable="observable_pATM_au">
@@ -833,14 +822,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -871,14 +860,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -909,14 +898,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -947,14 +936,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -985,14 +974,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -1023,14 +1012,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -1061,14 +1050,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -1099,14 +1088,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -1137,14 +1126,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -1175,14 +1164,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -1213,14 +1202,14 @@
                 <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -1279,7 +1268,7 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
-              <cn> 0.3 </cn>
+              <ci> Gem_level </ci>
               <ci> Cells_Cycle_S </ci>
               <ci> k_damage_gem_ssb </ci>
             </apply>
@@ -1299,6 +1288,7 @@
               <times/>
               <ci> Cells_Cycle_G2 </ci>
               <ci> k_damage_dox_dsb </ci>
+              <ci> Dox_level </ci>
             </apply>
           </math>
         </kineticLaw>
@@ -1314,6 +1304,7 @@
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
+              <ci> SN38_level </ci>
               <ci> Cells_Cycle_S </ci>
               <ci> k_damage_sn38_ssb </ci>
             </apply>
@@ -1341,13 +1332,13 @@
                     <piecewise>
 			  <piece>
 			    <cn>1</cn>
-			    <apply><gt/><ci>k_damage_sn38_ssb</ci><cn>0</cn></apply>
+			    <apply><gt/><ci>SN38_level</ci><cn>0</cn></apply>
 			  </piece>
 			  <piece>
 			    <cn>0</cn>
-			    <apply><leq/><ci>k_damage_sn38_ssb</ci><cn>0</cn></apply>
+			    <apply><leq/><ci>SN38_level</ci><cn>0</cn></apply>
 			  </piece>
-		    </piecewise>
+		   </piecewise>
                 </apply>
               </apply>
             </apply>
@@ -2125,14 +2116,14 @@
                     <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -2219,14 +2210,14 @@
                     <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -2839,14 +2830,14 @@
                     <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
@@ -2933,14 +2924,14 @@
                     <divide/>
 		<apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		 </apply>		
 		 <apply>
 		      <plus/>
 		      <apply>
 			<power/>
-			<ci> dox_level_hill </ci>
+			<ci> Dox_level </ci>
 			<cn> 6 </cn>
 		      </apply>
 		      <apply>
