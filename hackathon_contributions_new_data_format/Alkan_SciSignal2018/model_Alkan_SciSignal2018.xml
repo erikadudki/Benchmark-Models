@@ -50,7 +50,7 @@
       <species id="Wip1_G2" name="Wip1_G2" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="Gem_level" value="0" constant="false"/>
+      <parameter id="Gem_level" value="0.1" constant="false"/>
       <parameter id="Dox_level" value="0" constant="false"/>
       <parameter id="SN38_level" value="0" constant="false"/>      
 
@@ -2114,24 +2114,24 @@
                   <ci> p_mrna_exp_inh_dox </ci>
                   <apply>
                     <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> p_mrna_exp_inh_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+			<apply>
+				<power/>
+				<ci> Dox_level </ci>
+				<cn> 6 </cn>
+			 </apply>		
+			 <apply>
+			      <plus/>
+			         <apply>
+				   <power/>
+				   <ci> Dox_level </ci>
+				   <cn> 6 </cn>
+			         </apply>
+			         <apply>
+				   <power/>
+				   <ci> p_mrna_exp_inh_dox_kd </ci>
+				   <cn> 6 </cn>
+			         </apply>
+			 </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
