@@ -12,7 +12,6 @@ hEPO	hEPO'	log10			0.8129133566	0
 hEPOHepcidin	hEPOHepcidin'	log10			0.6020599913	0			
 hNTBI	hNTBI'	log10			0	0			
 KaNTBI	KaNTBI'	log10	-5	-3	-3.5934325706	1			
-kBMSpleen	kBMSpleen'	log10			-0.9862428699	0			
 kdEPO	kdEPO'	log10			0.6812412374	0			
 kdHepcidin	kdHepcidin'	log10			-0.1213863	0			
 kdTf	kdTf'	log10			-0.3979400087	0			
@@ -21,17 +20,11 @@ KEPOHepcidin	KEPOHepcidin'	log10			-11.3	0
 kFe1Tf_Fe2Tf	kFe1Tf_Fe2Tf'	log10			9	0			
 KiEPORBC	KiEPORBC'	log10			-2	0			
 KiHepcidinFPN	KiHepcidinFPN'	log10			-8.2	0			
-kInBM	kInBM'	log10			12.6	0			
 kInDuo	kInDuo'	log10	-3	0	-1.3915049886	1			
 kInLiver	kInLiver'	log10	-0.5431	0.6021	0.3256511027	1			
-kInRBC	kInRBC'	log10			11.7022964862	0			
-kInRest	kInRest'	log10			0.6795377702	0			
 KmFeFPN	KmFeFPN'	log10	-2	0	-0.9488050153	1			
 KmNTBI	KmNTBI'	log10	-4	-3	-3.17	1			
-kNTBI_Fe1Tf	kNTBI_Fe1Tf'	log10			9	0			
 kRBCSpleen	kRBCSpleen'	log10			-1.52	0			
-kRestLoss	kRestLoss'	log10			-1.77	0			
-ksHepcidin	ksHepcidin'	log10			-3.3992820714	0			
 Metabolite_1	Initial for FeDuo'	log10	-6	-1.301	-2	1			
 Metabolite_10	Initial for Tf'	log10			-4.94	0			
 Metabolite_12	Initial for Hepcidin'	log10			-7.64	0			
@@ -47,10 +40,5 @@ Metabolite_7	Initial for FeLiver'	log10			-2.8860566477	0
 quantity_to_number_factor	quantity to number factor'	log10			23.8	0			
 TotalFe_DailyLossFraction	TotalFe_DailyLossFraction'	log10			-2.3316140833	0			
 vDiet	vDiet'	log10			-2.459713723	0			
-vDuoNTBI	vDuoNTBI'	log10			-0.6970049412	0			
-vEPO	vEPO'	log10			-8.58	0			
-vLiverNTBI	vLiverNTBI'	log10			-1.35	0			
 vNTBILiver	vNTBILiver'	log10	1	2	1.1507902	1			
 vRestNTBI	vRestNTBI'	log10	-3	1.1761	-1.9937351062	1			
-vSpleenNTBI	vSpleenNTBI'	log10			0.3154203685	0			
-vTf	vTf'	log10			-4.81	0			
