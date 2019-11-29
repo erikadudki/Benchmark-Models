@@ -51,7 +51,10 @@
       <parameter id="observable_pEGFR_tot" value="0" constant="false"/>
       <parameter id="observable_pAkt_tot" value="0" constant="false"/>
       <parameter id="observable_pS6_tot" value="0" constant="false"/>
-      <parameter id="EGF_step" value="0.1" constant="false"/>
+      <parameter id="EGF" value="0.1" constant="false"/>
+      <parameter id="EGF_step" value="0.1" constant="true"/>
+      <parameter id="EGF_impulse" value="0.1" constant="true"/>
+      <parameter id="EGF_ramp" value="0.1" constant="true"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="EGFR">
@@ -71,6 +74,36 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+	<assignmentRule variable="EGF">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <plus/>
+            <ci> EGF_step </ci>
+            <piecewise>
+              <piece>
+                <ci> EGF_impulse </ci>
+                <apply>
+                  <leq/>
+                  <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                  <ci> 60 </ci>
+                </apply>
+              </piece>
+              <otherwise>
+                <cn> 0 </cn>
+              </otherwise>
+            </piecewise>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> EGF_ramp </ci>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+              </apply>
+              <ci> 3600 </ci>
+            </apply>
+          </apply>
+        </math>
+	</assignmentRule>
       <assignmentRule variable="sigma_pAkt_tot">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <ci> noiseParameter1_pAkt_tot </ci>
@@ -139,7 +172,7 @@
                 <minus/>
                 <apply>
                   <times/>
-                  <ci> EGF_step </ci>
+                  <ci> EGF </ci>
                   <ci> EGFR </ci>
                   <ci> reaction_1_k1 </ci>
                 </apply>
