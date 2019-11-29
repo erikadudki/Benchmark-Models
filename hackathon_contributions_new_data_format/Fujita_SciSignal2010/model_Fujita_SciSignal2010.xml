@@ -51,7 +51,7 @@
       <parameter id="observable_pEGFR_tot" value="0" constant="false"/>
       <parameter id="observable_pAkt_tot" value="0" constant="false"/>
       <parameter id="observable_pS6_tot" value="0" constant="false"/>
-      <parameter id="EGF" value="0.1" constant="false"/>
+      <parameter id="EGF_step" value="0.1" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="EGFR">
@@ -139,7 +139,7 @@
                 <minus/>
                 <apply>
                   <times/>
-                  <ci> EGF </ci>
+                  <ci> EGF_step </ci>
                   <ci> EGFR </ci>
                   <ci> reaction_1_k1 </ci>
                 </apply>
