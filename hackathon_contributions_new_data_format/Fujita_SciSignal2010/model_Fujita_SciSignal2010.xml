@@ -85,7 +85,7 @@
                 <apply>
                   <leq/>
                   <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
-                  <ci> 60 </ci>
+                  <cn> 60 </cn>
                 </apply>
               </piece>
               <otherwise>
@@ -99,7 +99,7 @@
                 <ci> EGF_ramp </ci>
                 <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
               </apply>
-              <ci> 3600 </ci>
+              <cn> 3600 </cn>
             </apply>
           </apply>
         </math>
