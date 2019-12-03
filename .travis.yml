@@ -9,7 +9,7 @@ dist:
 
 install:
   - pip3 install --upgrade setuptools wheel pkgconfig
-  - pip3 install petab
+  - pip3 install https://github.com/ICB-DCM/PEtab/archive/develop.zip
 
 # run tests
 script:

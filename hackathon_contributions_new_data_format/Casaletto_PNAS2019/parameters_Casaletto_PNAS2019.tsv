@@ -1,4 +1,4 @@
-parameterID	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate
+parameterId	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate
 abc_fac_h1993	abc_fac_h1993	log10	-5	3	-2.52841794472593	1
 abc_fac_h292	abc_fac_h292	log10	-5	3	-2.36711045969896	1
 abc_fac_snu5	abc_fac_snu5	log10	-5	3	-2.50906874449584	1

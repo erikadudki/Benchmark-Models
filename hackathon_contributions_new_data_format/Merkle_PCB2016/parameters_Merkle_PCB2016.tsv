@@ -1,4 +1,4 @@
-parameterID	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate
+parameterId	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate
 ActDstrength	ActDstrength	log10	-2	0	-4.26607487769333e-14	1
 ActDstrength_val	ActDstrength_val	log10	-5	0	-0.0617110180997188	0
 CISHRNAbasal	CISHRNAbasal	log10	-5	3	-4.60841676280485	1

@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
-<model id="Brannmark_JBC2010" name="model_Mif">
-<annotation/>
+  <model metaid="arFramework3" id="Brannmark_JBC2010" name="model_Mif">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <pre>PEtab implementation of the model from Brannmark et al. (2010), THE JOURNAL OF BIOLOGICAL CHEMISTRY VOL. 285, NO. 26, pp. 20171–20179, </pre>
+      </body>
+    </notes>
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#arFramework3">
+          <dc:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Brannmark</vCard:Family>
+                  <vCard:Given>Cecilia</vCard:Given>
+                </vCard:N>
+              </rdf:li>
+            </rdf:Bag>
+          </dc:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2019-11-29T09:41:48Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2019-11-29T09:41:48Z</dcterms:W3CDTF>
+          </dcterms:modified>
+          <bqbiol:isDescribedBy>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/doi/10.1074/jbc.M110.106849"/>
+            </rdf:Bag>
+          </bqbiol:isDescribedBy>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
 <listOfUnitDefinitions>
 <unitDefinition metaid="time" id="time" name="time">
 <listOfUnits>
