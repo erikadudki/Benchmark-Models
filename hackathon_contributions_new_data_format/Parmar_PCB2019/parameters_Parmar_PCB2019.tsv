@@ -1,44 +1,44 @@
 parameterId	parameterName	parameterScale	lowerBound	upperBound	nominalValue	estimate	priorType	priorParameters	hierarchicalOptimization (optional)
-Compartment_0	Initial for Duodenum	log10			-4.41	0			
-Compartment_1	Initial for RBC	log10			-3.1	0			
-Compartment_2	Initial for Spleen	log10	-6	-2.2218	-4.17	1			
-Compartment_3	Initial for Liver	log10			-2.93	0			
-Compartment_4	Initial for Plasma	log10			-2.8860566477	0			
-Compartment_5	Initial for RestOfBody	log10			-1.7056491748	0			
-Compartment_6	Initial for BoneMarrow	log10			-3.67	0			
-fDiet_iron-deficient	fDiet iron deficient	log10	-6	0	-5.89	1			
-fDiet_iron-rich	fDiet iron rich	log10	0.4771	1	0.4938942177	1			
-hEPO	hEPO	log10			0.8129133566	0			
-hEPOHepcidin	hEPOHepcidin	log10			0.6020599913	0			
-hNTBI	hNTBI	log10			0	0			
-KaNTBI	KaNTBI	log10	-5	-3	-3.5934325706	1			
-kdEPO	kdEPO	log10			0.6812412374	0			
-kdHepcidin	kdHepcidin	log10			-0.1213863	0			
-kdTf	kdTf	log10			-0.3979400087	0			
-kDuoLoss	kDuoLoss	log10	-6	-0.699	-4.17	1			
-KEPOHepcidin	KEPOHepcidin	log10			-11.3	0			
-kFe1Tf_Fe2Tf	kFe1Tf_Fe2Tf	log10			9	0			
-KiEPORBC	KiEPORBC	log10			-2	0			
-KiHepcidinFPN	KiHepcidinFPN	log10			-8.2	0			
-kInDuo	kInDuo	log10	-3	0	-1.3915049886	1			
-kInLiver	kInLiver	log10	-0.5431	0.6021	0.3256511027	1			
-KmFeFPN	KmFeFPN	log10	-2	0	-0.9488050153	1			
-KmNTBI	KmNTBI	log10	-4	-3	-3.17	1			
-kRBCSpleen	kRBCSpleen	log10			-1.52	0			
-Metabolite_1	Initial for FeDuo	log10	-6	-1.301	-2	1			
-Metabolite_10	Initial for Tf	log10			-4.94	0			
-Metabolite_12	Initial for Hepcidin	log10			-7.64	0			
-Metabolite_13	Initial for Fe2Tf	log10			-4.72	0			
-Metabolite_14	Initial for Fe1Tf	log10			-5.09	0			
-Metabolite_15	Initial for NTBI	log10			-7.4	0			
-Metabolite_17	Initial for EPO	log10			-11.6	0			
-Metabolite_20	Initial for FeRest	log10			-3.3960333046	0			
-Metabolite_22	Initial for FeBM	log10	-3	-2.301	-2.68	1			
-Metabolite_3	Initial for FeRBC	log10			-1.638272164	0			
-Metabolite_5	Initial for FeSpleen	log10			-2.6442841905	0			
-Metabolite_7	Initial for FeLiver	log10			-2.8860566477	0			
-quantity_to_number_factor	quantity to number factor	log10			23.8	0			
-TotalFe_DailyLossFraction	TotalFe_DailyLossFraction	log10			-2.3316140833	0			
-vDiet	vDiet	log10			-2.459713723	0			
-vNTBILiver	vNTBILiver	log10	1	2	1.1507902	1			
-vRestNTBI	vRestNTBI	log10	-3	1.1761	-1.9937351062	1			
+Compartment_0	Initial for Duodenum	log10			3.8904514499428046e-05	0			
+Compartment_1	Initial for RBC	log10			0.0007943282347242813	0			
+Compartment_2	Initial for Spleen	log10	1e-06	0.006000673538641164	6.760829753919819e-05	1			
+Compartment_3	Initial for Liver	log10			0.001174897554939529	0			
+Compartment_4	Initial for Plasma	log10			0.0012999999999795356	0			
+Compartment_5	Initial for RestOfBody	log10			0.019694766000903856	0			
+Compartment_6	Initial for BoneMarrow	log10			0.00021379620895022324	0			
+fDiet_iron-deficient	fDiet iron deficient	log10	1e-06	1.0	1.288249551693135e-06	1			
+fDiet_iron-rich	fDiet iron rich	log10	2.999853181190793	10.0	3.118130000100827	1			
+hEPO	hEPO	log10			6.499999999358589	0			
+hEPOHepcidin	hEPOHepcidin	log10			3.9999999997424567	0			
+hNTBI	hNTBI	log10			1.0	0			
+KaNTBI	KaNTBI	log10	1e-05	0.001	0.0002550159999830073	1			
+kdEPO	kdEPO	log10			4.8000000002698195	0			
+kdHepcidin	kdHepcidin	log10			0.7561600000830951	0			
+kdTf	kdTf	log10			0.39999999997424573	0			
+kDuoLoss	kDuoLoss	log10	1e-06	0.1999861869632744	6.760829753919819e-05	1			
+KEPOHepcidin	KEPOHepcidin	log10			5.011872336272715e-12	0			
+kFe1Tf_Fe2Tf	kFe1Tf_Fe2Tf	log10			1000000000.0	0			
+KiEPORBC	KiEPORBC	log10			0.01	0			
+KiHepcidinFPN	KiHepcidinFPN	log10			6.309573444801943e-09	0			
+kInDuo	kInDuo	log10	0.001	1.0	0.040597099996744546	1			
+kInLiver	kInLiver	log10	0.2863518544478933	4.000368510461249	2.1166599999340905	1			
+KmFeFPN	KmFeFPN	log10	0.01	1.0	0.11251099999460534	1			
+KmNTBI	KmNTBI	log10	0.0001	0.001	0.0006760829753919819	1			
+kRBCSpleen	kRBCSpleen	log10			0.03019951720402016	0			
+Metabolite_1	Initial for FeDuo	log10	1e-06	0.05000345349769786	0.01	1			
+Metabolite_10	Initial for Tf	log10			1.1481536214968817e-05	0			
+Metabolite_12	Initial for Hepcidin	log10			2.2908676527677746e-08	0			
+Metabolite_13	Initial for Fe2Tf	log10			1.9054607179632484e-05	0			
+Metabolite_14	Initial for Fe1Tf	log10			8.128305161640995e-06	0			
+Metabolite_15	Initial for NTBI	log10			3.981071705534969e-08	0			
+Metabolite_17	Initial for EPO	log10			2.5118864315095823e-12	0			
+Metabolite_20	Initial for FeRest	log10			0.00040176000002881904	0			
+Metabolite_22	Initial for FeBM	log10	0.001	0.005000345349769783	0.0020892961308540386	1			
+Metabolite_3	Initial for FeRBC	log10			0.022999999999068294	0			
+Metabolite_5	Initial for FeSpleen	log10			0.0022683799999212973	0			
+Metabolite_7	Initial for FeLiver	log10			0.0012999999999795356	0			
+quantity_to_number_factor	quantity to number factor	log10			6.309573444801942e+23	0			
+TotalFe_DailyLossFraction	TotalFe_DailyLossFraction	log10			0.004660000000107295	0			
+vDiet	vDiet	log10			0.003469654868099903	0			
+vNTBILiver	vNTBILiver	log10	10.0	100.0	14.151100001414697	1			
+vRestNTBI	vRestNTBI	log10	0.001	15.000301904559475	0.010145300000093439	1			
