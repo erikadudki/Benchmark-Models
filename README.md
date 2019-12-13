@@ -6,4 +6,4 @@ Export can be repeated by compiling the respective model within the 'Example' fo
 
 We provide descriptions about using the benchmark models in the Wiki (https://github.com/Benchmarking-Initiative/Benchmark-Models/wiki) in this github repository. 
 
-Contributions to the collection are very welcome. For this, please fork the repository, add your model and test your files with the provided functions, and start a pull request. We will then check your model and merge it into the collection. We are continuously working on the extension of the collection.
+Contributions to the collection are very welcome. For this, please fork the repository, add your model and test your files with the provided functions, and start a pull request. We will then check your model and merge it into the collection. We are continuously working on the extension of the collection
