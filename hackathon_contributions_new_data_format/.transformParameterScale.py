@@ -6,7 +6,7 @@ import numpy as np
 
 model_list = os.scandir()
 model_list = sorted(f.name for f in model_list if f.is_dir())
-model_list = [model_list[1]]
+#model_list = [model_list[0]]
 
 for benchmark_model in model_list:
 
