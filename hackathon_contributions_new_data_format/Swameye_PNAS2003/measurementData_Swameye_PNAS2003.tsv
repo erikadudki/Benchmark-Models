@@ -1,5 +1,5 @@
 observableId	preequilibrationConditionId	simulationConditionId	measurement	time	observableParameters	noiseParameters	observableTransformation	noiseDistribution
-tSTAT_au		model1_data1	1	0	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin	normal
+tSTAT_au		model1_data1	1.0	0	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin	normal
 tSTAT_au		model1_data1	0.9275	2	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin	normal
 tSTAT_au		model1_data1	0.7923	4	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin	normal
 tSTAT_au		model1_data1	0.7778	6	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin	normal
@@ -16,25 +16,25 @@ tSTAT_au		model1_data1	0.8068	40	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin	normal
 tSTAT_au		model1_data1	0.9275	50	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin	normal
 tSTAT_au		model1_data1	0.971	60	offset_tSTAT;scale_tSTAT	sd_tSTAT_au	lin	normal
 pSTAT_au		model1_data1	0.344058121432278	2	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
-pSTAT_au		model1_data1	0.89724961079398	4	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
-pSTAT_au		model1_data1	1	6	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
+pSTAT_au		model1_data1	0.8972496107939799	4	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
+pSTAT_au		model1_data1	1.0	6	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
 pSTAT_au		model1_data1	0.963051375194603	8	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
-pSTAT_au		model1_data1	0.847119875454074	10	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
-pSTAT_au		model1_data1	0.783912817851583	12	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
+pSTAT_au		model1_data1	0.8471198754540742	10	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
+pSTAT_au		model1_data1	0.7839128178515831	12	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
 pSTAT_au		model1_data1	0.797093928386092	14	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
-pSTAT_au		model1_data1	0.873482096523093	16	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
+pSTAT_au		model1_data1	0.8734820965230929	16	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
 pSTAT_au		model1_data1	0.797093928386092	18	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
-pSTAT_au		model1_data1	0.831344058121432	20	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
-pSTAT_au		model1_data1	0.812869745718734	25	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
-pSTAT_au		model1_data1	0.839231966787753	30	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
+pSTAT_au		model1_data1	0.8313440581214321	20	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
+pSTAT_au		model1_data1	0.8128697457187339	25	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
+pSTAT_au		model1_data1	0.8392319667877529	30	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
 pSTAT_au		model1_data1	0.507317073170732	40	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
 pSTAT_au		model1_data1	0.288738972496108	50	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
 pSTAT_au		model1_data1	0.264971458225221	60	offset_pSTAT;scale_pSTAT	sd_pSTAT_au	lin	normal
-pEpoR_au		model1_data1	0.01713	0		sd_pEpoR_au	lin	normal
+pEpoR_au		model1_data1	0.017130000000000003	0		sd_pEpoR_au	lin	normal
 pEpoR_au		model1_data1	0.145	2		sd_pEpoR_au	lin	normal
 pEpoR_au		model1_data1	0.2442	4		sd_pEpoR_au	lin	normal
 pEpoR_au		model1_data1	0.7659	6		sd_pEpoR_au	lin	normal
-pEpoR_au		model1_data1	1	8		sd_pEpoR_au	lin	normal
+pEpoR_au		model1_data1	1.0	8		sd_pEpoR_au	lin	normal
 pEpoR_au		model1_data1	0.8605	10		sd_pEpoR_au	lin	normal
 pEpoR_au		model1_data1	0.7829	12		sd_pEpoR_au	lin	normal
 pEpoR_au		model1_data1	0.5705	14		sd_pEpoR_au	lin	normal
