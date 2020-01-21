@@ -68,7 +68,7 @@
     <listOfReactions>
       <reaction metaid="metaid_12" id="v1" reversible="true" fast="false">
         <listOfProducts>
-          <speciesReference metaid="metaid_10" species="Tstar" stoichiometry="1" constant="true"/>
+          <speciesReference metaid="metaid_10" species="Tstar" stoichiometry="1"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference metaid="metaid_11" species="Vin"/>
@@ -86,7 +86,7 @@
       </reaction>
       <reaction metaid="metaid_14" id="v2" reversible="true" fast="false">
         <listOfReactants>
-          <speciesReference metaid="metaid_13" species="Tstar" stoichiometry="1" constant="true"/>
+          <speciesReference metaid="metaid_13" species="Tstar" stoichiometry="1"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -100,8 +100,8 @@
       </reaction>
       <reaction metaid="metaid_17" id="v3" reversible="true" fast="false">
         <listOfReactants>
-          <speciesReference metaid="metaid_15" species="V" stoichiometry="1" constant="true"/>
-          <speciesReference metaid="metaid_16" species="Vin" stoichiometry="1" constant="true"/>
+          <speciesReference metaid="metaid_15" species="V" stoichiometry="1"/>
+          <speciesReference metaid="metaid_16" species="Vin" stoichiometry="1"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -115,8 +115,8 @@
       </reaction>
       <reaction metaid="metaid_20" id="v4" reversible="true" fast="false">
         <listOfReactants>
-          <speciesReference metaid="metaid_18" species="V" stoichiometry="1" constant="true"/>
-          <speciesReference metaid="metaid_19" species="Vni" stoichiometry="1" constant="true"/>
+          <speciesReference metaid="metaid_18" species="V" stoichiometry="1"/>
+          <speciesReference metaid="metaid_19" species="Vni" stoichiometry="1"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -130,8 +130,8 @@
       </reaction>
       <reaction metaid="metaid_24" id="v5" reversible="true" fast="false">
         <listOfProducts>
-          <speciesReference metaid="metaid_21" species="V" stoichiometry="1" constant="true"/>
-          <speciesReference metaid="metaid_22" species="Vni" stoichiometry="1" constant="true"/>
+          <speciesReference metaid="metaid_21" species="V" stoichiometry="1"/>
+          <speciesReference metaid="metaid_22" species="Vni" stoichiometry="1"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference metaid="metaid_23" species="Tstar"/>
