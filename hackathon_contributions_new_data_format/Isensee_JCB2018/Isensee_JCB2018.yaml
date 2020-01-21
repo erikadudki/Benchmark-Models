@@ -7,3 +7,5 @@ problems:
   - measurementData_Isensee_JCB2018.tsv
   sbml_files:
   - model_Isensee_JCB2018.xml
+  visualization_files:
+  - visualizationSpecification_Isensee_JCB2018.tsv

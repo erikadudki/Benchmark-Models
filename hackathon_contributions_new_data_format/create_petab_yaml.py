@@ -32,6 +32,11 @@ def create_petab_yaml(model_dir):
         ]
     }
 
+    # Add visualization file if exists
+    vis_file_name =  f"visualizationSpecification_{model_dir}.tsv"
+    if os.path.isfile(os.path.join(model_dir, vis_file_name)):
+        config['problems'][0]['visualization_files'] = [vis_file_name]
+
     data = [
         (filename, config),
     ]

@@ -7,3 +7,5 @@ problems:
   - measurementData_Chen_MSB2009.tsv
   sbml_files:
   - model_Chen_MSB2009.xml
+  visualization_files:
+  - visualizationSpecification_Chen_MSB2009.tsv
