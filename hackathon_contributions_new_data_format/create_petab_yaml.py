@@ -11,7 +11,7 @@ from copy import deepcopy
 def create_petab_yaml(model_dir):
     filename = f'{model_dir}.yaml'
     config = {
-        'petab_version': petab.__version__,
+        'format_version': petab.__format_version__,
         'parameter_file':
             petab.get_default_parameter_file_name(model_dir),
         'problems': [
