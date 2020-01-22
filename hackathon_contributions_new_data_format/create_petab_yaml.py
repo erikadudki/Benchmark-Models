@@ -11,7 +11,7 @@ from copy import deepcopy
 def create_petab_yaml(model_dir):
     filename = f'{model_dir}.yaml'
     config = {
-        'petab_version': petab.__version__,
+        'format_version': petab.__format_version__,
         'parameter_file':
             petab.get_default_parameter_file_name(model_dir),
         'problems': [
@@ -31,6 +31,11 @@ def create_petab_yaml(model_dir):
             },
         ]
     }
+
+    # Add visualization file if exists
+    vis_file_name =  f"visualizationSpecification_{model_dir}.tsv"
+    if os.path.isfile(os.path.join(model_dir, vis_file_name)):
+        config['problems'][0]['visualization_files'] = [vis_file_name]
 
     data = [
         (filename, config),
