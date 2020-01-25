@@ -28,6 +28,10 @@ def create_petab_yaml(model_dir):
                     [
                         petab.get_default_measurement_file_name(model_dir),
                     ],
+                #'observable_files':
+                #    [
+                #        f"observables_{model_dir}.tsv",
+                #    ],
             },
         ]
     }
