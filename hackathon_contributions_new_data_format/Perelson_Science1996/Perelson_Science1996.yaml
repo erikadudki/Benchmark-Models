@@ -5,5 +5,7 @@ problems:
   - experimentalCondition_Perelson_Science1996.tsv
   measurement_files:
   - measurementData_Perelson_Science1996.tsv
+  observable_files:
+  - observables_Perelson_Science1996.tsv
   sbml_files:
   - model_Perelson_Science1996.xml

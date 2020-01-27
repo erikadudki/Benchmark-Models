@@ -5,6 +5,8 @@ problems:
   - experimentalCondition_Fujita_SciSignal2010.tsv
   measurement_files:
   - measurementData_Fujita_SciSignal2010.tsv
+  observable_files:
+  - observables_Fujita_SciSignal2010.tsv
   sbml_files:
   - model_Fujita_SciSignal2010.xml
   visualization_files:

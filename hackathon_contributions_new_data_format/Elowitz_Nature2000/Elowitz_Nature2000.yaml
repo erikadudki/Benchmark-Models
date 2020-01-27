@@ -5,5 +5,7 @@ problems:
   - experimentalCondition_Elowitz_Nature2000.tsv
   measurement_files:
   - measurementData_Elowitz_Nature2000.tsv
+  observable_files:
+  - observables_Elowitz_Nature2000.tsv
   sbml_files:
   - model_Elowitz_Nature2000.xml

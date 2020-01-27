@@ -5,5 +5,7 @@ problems:
   - experimentalCondition_Borghans_BiophysChem1997.tsv
   measurement_files:
   - measurementData_Borghans_BiophysChem1997.tsv
+  observable_files:
+  - observables_Borghans_BiophysChem1997.tsv
   sbml_files:
   - model_Borghans_BiophysChem1997.xml

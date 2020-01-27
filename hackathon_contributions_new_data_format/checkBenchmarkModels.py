@@ -9,8 +9,9 @@ model_list = sorted(f.name for f in model_list if f.is_dir())
 num_failures = 0
 
 for benchmark_model in model_list:
+	print(benchmark_model)
     ret = os.system(
-        "cd {} && petablint -v -n {} ".format(
+        "cd {} && petablint -v -y {}.yaml ".format(
             benchmark_model, benchmark_model
         )
     )

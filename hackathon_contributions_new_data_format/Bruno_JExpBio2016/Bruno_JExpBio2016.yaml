@@ -5,5 +5,7 @@ problems:
   - experimentalCondition_Bruno_JExpBio2016.tsv
   measurement_files:
   - measurementData_Bruno_JExpBio2016.tsv
+  observable_files:
+  - observables_Bruno_JExpBio2016.tsv
   sbml_files:
   - model_Bruno_JExpBio2016.xml

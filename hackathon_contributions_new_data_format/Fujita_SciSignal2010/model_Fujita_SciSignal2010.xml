@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model metaid="arFramework3" id="Fujita_SciSignal2010" name="model_AktPathwayFujita">
     <notes>
@@ -72,18 +71,6 @@
       <parameter id="reaction_7_k1" value="0.0119329694583145" constant="true"/>
       <parameter id="reaction_8_k1" value="0.000941161525754959" constant="true"/>
       <parameter id="reaction_9_k1" value="0.0273281571867514" constant="true"/>
-      <parameter id="observableParameter1_pAkt_tot" value="334.979345701912" constant="true"/>
-      <parameter id="observableParameter1_pEGFR_tot" value="9.60908283106834e-08" constant="true"/>
-      <parameter id="observableParameter1_pS6_tot" value="380222.792056961" constant="true"/>
-      <parameter id="sigma_pAkt_tot" value="0.1" constant="false"/>
-      <parameter id="sigma_pEGFR_tot" value="0.1" constant="false"/>
-      <parameter id="sigma_pS6_tot" value="0.1" constant="false"/>
-      <parameter id="noiseParameter1_pAkt_tot" value="0.1" constant="true"/>
-      <parameter id="noiseParameter1_pEGFR_tot" value="0.1" constant="true"/>
-      <parameter id="noiseParameter1_pS6_tot" value="0.1" constant="true"/>
-      <parameter id="observable_pEGFR_tot" value="0" constant="false"/>
-      <parameter id="observable_pAkt_tot" value="0" constant="false"/>
-      <parameter id="observable_pS6_tot" value="0" constant="false"/>
       <parameter id="EGF" value="0.1" constant="false"/>
       <parameter id="EGF_step" value="0.1" constant="true"/>
       <parameter id="EGF_impulse" value="0.1" constant="true"/>
@@ -107,8 +94,8 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
-	<assignmentRule variable="EGF">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+      <assignmentRule variable="EGF">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <plus/>
             <ci> EGF_step </ci>
@@ -134,56 +121,6 @@
               </apply>
               <cn> 3600 </cn>
             </apply>
-          </apply>
-        </math>
-	</assignmentRule>
-      <assignmentRule variable="sigma_pAkt_tot">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_pAkt_tot </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_pEGFR_tot">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_pEGFR_tot </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_pS6_tot">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_pS6_tot </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_pEGFR_tot">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_pEGFR_tot </ci>
-            <apply>
-              <plus/>
-              <ci> pEGFR </ci>
-              <ci> pEGFR_Akt </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_pAkt_tot">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_pAkt_tot </ci>
-            <apply>
-              <plus/>
-              <ci> pAkt </ci>
-              <ci> pAkt_S6 </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_pS6_tot">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> pS6 </ci>
-            <ci> observableParameter1_pS6_tot </ci>
           </apply>
         </math>
       </assignmentRule>
