@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Fiedler_BMC2016" name="model_RafMekErk">
     <notes>
@@ -66,20 +65,11 @@
       <parameter id="k4" value="2.90831656859387" constant="true"/>
       <parameter id="k5" value="578.350366636763" constant="true"/>
       <parameter id="k6" value="3.61401250365661" constant="true"/>
-      <parameter id="observable_pErk" value="0" constant="false"/>
-      <parameter id="observable_pMek" value="0" constant="false"/>
-      <parameter id="sigma_pErk" value="0.0532677681269102" constant="false"/>
-      <parameter id="sigma_pMek" value="0.0006829835644915" constant="false"/>
-      <parameter id="noiseParameter1_pErk" name="noiseParameter1_pErk" value="0" constant="true"/>
-      <parameter id="noiseParameter1_pMek" name="noiseParameter1_pMek" value="0" constant="true"/>
-      <parameter id="observableParameter1_pErk" name="observableParameter1_pErk" value="0" constant="false"/>
-      <parameter id="observableParameter1_pMek" name="observableParameter1_pMek" value="0" constant="false"/>
       <parameter id="tau1" value="0.251674841461275" constant="true"/>
       <parameter id="tau2" value="0.0210740597705876" constant="true"/>
       <parameter id="k1max" value="0.0233013569106142" constant="false"/>
       <parameter id="Sorafenib" value="0" constant="false"/>
       <parameter id="UO126" value="0" constant="false"/>
-
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="RAF">
@@ -3350,16 +3340,6 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
-        <assignmentRule variable="sigma_pErk">
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <ci> noiseParameter1_pErk </ci>
-            </math>
-        </assignmentRule>
-        <assignmentRule variable="sigma_pMek">
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <ci> noiseParameter1_pMek </ci>
-            </math>
-        </assignmentRule>
       <assignmentRule variable="k1max">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -3398,25 +3378,6 @@
           </apply>
         </math>
       </assignmentRule>
-      <assignmentRule variable="observable_pErk">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> pERK </ci>
-            <ci> observableParameter1_pErk </ci>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_pMek">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> pMEK </ci>
-            <ci> observableParameter1_pMek </ci>
-          </apply>
-        </math>
-      </assignmentRule>
-
     </listOfRules>
     <listOfReactions>
       <reaction id="v1_v_0" name="v_0" reversible="false">

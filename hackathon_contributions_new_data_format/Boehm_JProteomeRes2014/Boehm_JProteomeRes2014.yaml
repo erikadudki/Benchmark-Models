@@ -5,6 +5,8 @@ problems:
   - experimentalCondition_Boehm_JProteomeRes2014.tsv
   measurement_files:
   - measurementData_Boehm_JProteomeRes2014.tsv
+  observable_files:
+  - observables_Boehm_JProteomeRes2014.tsv
   sbml_files:
   - model_Boehm_JProteomeRes2014.xml
   visualization_files:

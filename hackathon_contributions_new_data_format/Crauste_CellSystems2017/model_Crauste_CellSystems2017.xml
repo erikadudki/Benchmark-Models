@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Crauste_CellSystems2017" name="ModelImmuneCells">
     <notes>
@@ -64,61 +63,7 @@
       <parameter id="mu_PL" value="3.6340308186265e-05" constant="true"/>
       <parameter id="rho_E" value="0.507415703707752" constant="true"/>
       <parameter id="rho_P" value="0.126382288121756" constant="true"/>
-      <parameter id="observable_Naive" value="0" constant="false"/>
-      <parameter id="observable_EarlyEffector" value="0" constant="false"/>
-      <parameter id="observable_LateEffector" value="0" constant="false"/>
-      <parameter id="observable_Memory" value="0" constant="false"/>
-      <parameter id="noiseParameter1_Naive" value="0" constant="false"/>
-      <parameter id="noiseParameter1_EarlyEffector" value="0" constant="false"/>
-      <parameter id="noiseParameter1_LateEffector" value="0" constant="false"/>
-      <parameter id="noiseParameter1_Memory" value="0" constant="false"/>
-      <parameter id="sigma_Naive" value="0" constant="false"/>
-      <parameter id="sigma_EarlyEffector" value="0" constant="false"/>
-      <parameter id="sigma_LateEffector" value="0" constant="false"/>
-      <parameter id="sigma_Memory" value="0" constant="false"/>
     </listOfParameters>
-    <listOfRules>
-      <assignmentRule variable="sigma_Naive">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_Naive </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_EarlyEffector">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_EarlyEffector </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_LateEffector">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_LateEffector </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_Memory">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_Memory </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_Naive">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> Naive </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_EarlyEffector">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> EarlyEffector </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_LateEffector">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> LateEffector </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_Memory">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> Memory </ci>
-        </math>
-      </assignmentRule>
-    </listOfRules>
     <listOfReactions>
       <reaction id="v1_v_0" name="v_0" reversible="false">
         <listOfReactants>
