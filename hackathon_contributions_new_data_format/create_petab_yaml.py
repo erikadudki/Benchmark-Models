@@ -28,13 +28,14 @@ def create_petab_yaml(model_dir):
                     [
                         petab.get_default_measurement_file_name(model_dir),
                     ],
-                #'observable_files':
-                #    [
-                #        f"observables_{model_dir}.tsv",
-                #    ],
             },
         ]
     }
+
+    # Add observable file if exists
+    obs_file_name = f"observables_{model_dir}.tsv"
+    if os.path.isfile(os.path.join(model_dir, obs_file_name)):
+        config['problems'][0]['observable_files'] = [obs_file_name]
 
     # Add visualization file if exists
     vis_file_name =  f"visualizationSpecification_{model_dir}.tsv"
