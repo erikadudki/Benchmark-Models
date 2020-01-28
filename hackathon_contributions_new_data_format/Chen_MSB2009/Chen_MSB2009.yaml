@@ -5,6 +5,8 @@ problems:
   - experimentalCondition_Chen_MSB2009.tsv
   measurement_files:
   - measurementData_Chen_MSB2009.tsv
+  observable_files:
+  - observables_Chen_MSB2009.tsv
   sbml_files:
   - model_Chen_MSB2009.xml
   visualization_files:

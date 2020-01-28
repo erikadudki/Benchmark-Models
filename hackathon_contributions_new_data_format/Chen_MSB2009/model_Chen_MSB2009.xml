@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Chen_MSB2009" name="model_ChenMSB2009_sin">
     <notes>
@@ -547,9 +546,6 @@
       <species id="c558" name="(EGF:ErbB1:ATP::EGF:ErbB1_h:Inh)-HalfActive" compartment="cyt" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="observableParameter1_AKT_PP" value="10000" constant="true"/>
-      <parameter id="observableParameter1_ERB_B1_P_tot" value="10000" constant="true"/>
-      <parameter id="observableParameter1_ERK_PP" value="10000" constant="true"/>
       <parameter id="k101" value="8.33000000000001e-07" constant="true"/>
       <parameter id="k102" value="5e-07" constant="true"/>
       <parameter id="k103" value="8.36983000000001e-09" constant="true"/>
@@ -735,15 +731,6 @@
       <parameter id="kd97c" value="0.001" constant="true"/>
       <parameter id="kd98" value="0.001" constant="true"/>
       <parameter id="kd99" value="0.5" constant="true"/>
-      <parameter id="noiseParameter1_AKT_PP" value="0.1" constant="true"/>
-      <parameter id="noiseParameter1_ERB_B1_P_tot" value="0.1" constant="true"/>
-      <parameter id="noiseParameter1_ERK_PP" value="0.1" constant="true"/>
-      <parameter id="sigma_AKT_PP" value="1" constant="false"/>
-      <parameter id="sigma_ERB_B1_P_tot" value="1" constant="false"/>
-      <parameter id="sigma_ERK_PP" value="1" constant="false"/>
-      <parameter id="observable_ERB_B1_P_tot" value="0" constant="false"/>
-      <parameter id="observable_ERK_PP" value="0" constant="false"/>
-      <parameter id="observable_AKT_PP" value="0" constant="false"/>
       <parameter id="c1" value="0" constant="true"/>
       <parameter id="c515" value="0" constant="false"/>
       <parameter id="c285" value="0" constant="false"/>
@@ -757,21 +744,6 @@
       <parameter id="StepLate" value="0" constant="false"/>
     </listOfParameters>
     <listOfRules>
-      <assignmentRule variable="sigma_AKT_PP">
-	<math xmlns="http://www.w3.org/1998/Math/MathML">
-	  <ci> noiseParameter1_AKT_PP </ci>
-	</math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_ERB_B1_P_tot">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_ERB_B1_P_tot </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_ERK_PP">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_ERK_PP </ci>
-        </math>
-      </assignmentRule>
       <assignmentRule variable="c515">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <cn type="integer"> 0 </cn>
@@ -1301,447 +1273,6 @@
                 </apply>
               </apply>
             </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_ERB_B1_P_tot">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <divide/>
-            <apply>
-              <plus/>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c5 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c7 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c8 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c15 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c17 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c18 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c19 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c20 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c21 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c23 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c25 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c27 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c29 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c32 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c33 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c34 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c35 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c36 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c37 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c63 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c64 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c65 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c66 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c67 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c68 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c88 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c89 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c90 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c91 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c92 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c93 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c94 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c95 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c96 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c97 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c98 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c99 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c100 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c104 </ci>
-              </apply>
-              <ci> c130 </ci>
-              <ci> c131 </ci>
-              <ci> c132 </ci>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c136 </ci>
-              </apply>
-              <ci> c148 </ci>
-              <ci> c149 </ci>
-              <ci> c150 </ci>
-              <ci> c151 </ci>
-              <ci> c152 </ci>
-              <ci> c153 </ci>
-              <ci> c162 </ci>
-              <ci> c163 </ci>
-              <ci> c164 </ci>
-              <ci> c165 </ci>
-              <ci> c166 </ci>
-              <ci> c167 </ci>
-              <ci> c171 </ci>
-              <ci> c172 </ci>
-              <ci> c173 </ci>
-              <ci> c174 </ci>
-              <ci> c175 </ci>
-              <ci> c176 </ci>
-              <ci> c180 </ci>
-              <ci> c181 </ci>
-              <ci> c182 </ci>
-              <ci> c183 </ci>
-              <ci> c184 </ci>
-              <ci> c185 </ci>
-              <ci> c189 </ci>
-              <ci> c190 </ci>
-              <ci> c191 </ci>
-              <ci> c192 </ci>
-              <ci> c193 </ci>
-              <ci> c194 </ci>
-              <ci> c195 </ci>
-              <ci> c196 </ci>
-              <ci> c197 </ci>
-              <ci> c198 </ci>
-              <ci> c199 </ci>
-              <ci> c200 </ci>
-              <ci> c201 </ci>
-              <ci> c202 </ci>
-              <ci> c203 </ci>
-              <ci> c204 </ci>
-              <ci> c205 </ci>
-              <ci> c206 </ci>
-              <ci> c207 </ci>
-              <ci> c208 </ci>
-              <ci> c209 </ci>
-              <ci> c210 </ci>
-              <ci> c211 </ci>
-              <ci> c212 </ci>
-              <ci> c213 </ci>
-              <ci> c214 </ci>
-              <ci> c215 </ci>
-              <ci> c216 </ci>
-              <ci> c217 </ci>
-              <ci> c218 </ci>
-              <ci> c219 </ci>
-              <ci> c220 </ci>
-              <ci> c221 </ci>
-              <ci> c222 </ci>
-              <ci> c223 </ci>
-              <ci> c224 </ci>
-              <ci> c225 </ci>
-              <ci> c226 </ci>
-              <ci> c227 </ci>
-              <ci> c228 </ci>
-              <ci> c229 </ci>
-              <ci> c230 </ci>
-              <ci> c231 </ci>
-              <ci> c232 </ci>
-              <ci> c233 </ci>
-              <ci> c234 </ci>
-              <ci> c235 </ci>
-              <ci> c236 </ci>
-              <ci> c237 </ci>
-              <ci> c238 </ci>
-              <ci> c239 </ci>
-              <ci> c240 </ci>
-              <ci> c241 </ci>
-              <ci> c242 </ci>
-              <ci> c243 </ci>
-              <ci> c244 </ci>
-              <ci> c245 </ci>
-              <ci> c246 </ci>
-              <ci> c247 </ci>
-              <ci> c248 </ci>
-              <ci> c249 </ci>
-              <ci> c250 </ci>
-              <ci> c251 </ci>
-              <ci> c252 </ci>
-              <ci> c253 </ci>
-              <ci> c254 </ci>
-              <ci> c255 </ci>
-              <ci> c256 </ci>
-              <ci> c257 </ci>
-              <ci> c258 </ci>
-              <ci> c259 </ci>
-              <ci> c260 </ci>
-              <ci> c261 </ci>
-              <ci> c262 </ci>
-              <ci> c263 </ci>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c264 </ci>
-              </apply>
-              <ci> c265 </ci>
-              <ci> c266 </ci>
-              <ci> c267 </ci>
-              <ci> c281 </ci>
-              <ci> c282 </ci>
-              <ci> c409 </ci>
-              <ci> c410 </ci>
-              <ci> c411 </ci>
-              <ci> c412 </ci>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c415 </ci>
-              </apply>
-              <ci> c416 </ci>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c419 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c420 </ci>
-              </apply>
-              <ci> c427 </ci>
-              <ci> c428 </ci>
-              <ci> c429 </ci>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c431 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c432 </ci>
-              </apply>
-              <ci> c433 </ci>
-              <ci> c434 </ci>
-              <ci> c435 </ci>
-              <ci> c437 </ci>
-              <ci> c438 </ci>
-              <ci> c440 </ci>
-              <ci> c445 </ci>
-              <ci> c446 </ci>
-              <ci> c447 </ci>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c448 </ci>
-              </apply>
-              <ci> c449 </ci>
-              <ci> c450 </ci>
-              <ci> c451 </ci>
-              <ci> c464 </ci>
-              <ci> c465 </ci>
-              <ci> c466 </ci>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c483 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c486 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <cn type="integer"> 2 </cn>
-                <ci> c489 </ci>
-              </apply>
-            </apply>
-            <ci> observableParameter1_ERB_B1_P_tot </ci>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_ERK_PP">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <divide/>
-            <apply>
-              <plus/>
-              <ci> c59 </ci>
-              <ci> c61 </ci>
-              <ci> c83 </ci>
-              <ci> c84 </ci>
-              <ci> c95 </ci>
-              <ci> c96 </ci>
-              <ci> c97 </ci>
-              <ci> c98 </ci>
-              <ci> c101 </ci>
-              <ci> c102 </ci>
-              <ci> c431 </ci>
-              <ci> c432 </ci>
-              <ci> c433 </ci>
-              <ci> c434 </ci>
-              <ci> c435 </ci>
-              <ci> c437 </ci>
-              <ci> c438 </ci>
-              <ci> c440 </ci>
-              <ci> c474 </ci>
-              <ci> c475 </ci>
-              <ci> c477 </ci>
-              <ci> c478 </ci>
-              <ci> c480 </ci>
-              <ci> c481 </ci>
-            </apply>
-            <ci> observableParameter1_ERK_PP </ci>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_AKT_PP">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <divide/>
-            <apply>
-              <plus/>
-              <ci> c472 </ci>
-              <ci> c484 </ci>
-              <ci> c497 </ci>
-              <ci> c498 </ci>
-            </apply>
-            <ci> observableParameter1_AKT_PP </ci>
           </apply>
         </math>
       </assignmentRule>
@@ -27609,16 +27140,16 @@
               <apply>
                 <minus/>
                 <apply>
-	          <times/>
-	          <ci> c514 </ci>
-	          <ci> Step10Mio </ci>
-	          <ci> c140 </ci>
-	        </apply>
-	        <apply>
-	          <times/>
-	          <ci> c142 </ci>
-	          <ci> kd119 </ci>
-	        </apply>
+                  <times/>
+                  <ci> c514 </ci>
+                  <ci> Step10Mio </ci>
+                  <ci> c140 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> c142 </ci>
+                  <ci> kd119 </ci>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -27642,16 +27173,16 @@
               <apply>
                 <minus/>
                 <apply>
-		  <times/>
-		  <ci> c514 </ci>
-		  <ci> Step10Mio </ci>
-		  <ci> c143 </ci>
-		</apply>
-		<apply>
-		  <times/>
-		  <ci> c144 </ci>
-		  <ci> kd119 </ci>
-		</apply>
+                  <times/>
+                  <ci> c514 </ci>
+                  <ci> Step10Mio </ci>
+                  <ci> c143 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> c144 </ci>
+                  <ci> kd119 </ci>
+                </apply>
               </apply>
             </apply>
           </math>
