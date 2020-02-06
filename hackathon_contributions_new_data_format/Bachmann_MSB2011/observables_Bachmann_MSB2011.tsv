@@ -1,5 +1,4 @@
 observableId	observableName	observableFormula	noiseFormula	observableTransformation	noiseDistribution
-<<<<<<< HEAD
 CISRNA_foldA		CISRNA * observableParameter1_CISRNA_foldA / CISRNAEqc + 1	noiseParameter1_CISRNA_foldA	log10	normal
 CISRNA_foldB		CISRNA * observableParameter1_CISRNA_foldB / CISRNAEqc + 1	noiseParameter1_CISRNA_foldB	log10	normal
 CISRNA_foldC		CISRNA * observableParameter1_CISRNA_foldC / CISRNAEqc + 1	noiseParameter1_CISRNA_foldC	log10	normal
@@ -20,7 +19,6 @@ pSTAT5B_rel		observableParameter1_pSTAT5B_rel + 100 * pSTAT5 / (STAT5 + pSTAT5)	
 pSTAT5_au		observableParameter1_pSTAT5_au + pSTAT5 * observableParameter2_pSTAT5_au / init_STAT5	noiseParameter1_pSTAT5_au + noiseParameter2_pSTAT5_au	log10	normal
 tSHP1_au		observableParameter1_tSHP1_au * (SHP1 + SHP1Act) / init_SHP1	noiseParameter1_tSHP1_au	log10	normal
 tSTAT5_au		observableParameter1_tSTAT5_au * (STAT5 + pSTAT5) / init_STAT5	noiseParameter1_tSTAT5_au	log10	normal
-=======
 CISRNA_foldA		log10(CISRNA * observableParameter1_CISRNA_foldA / CISRNAEqc + 1)	noiseParameter1_CISRNA_foldA	log10	normal
 CISRNA_foldB		log10(CISRNA * observableParameter1_CISRNA_foldB / CISRNAEqc + 1)	noiseParameter1_CISRNA_foldB	log10	normal
 CISRNA_foldC		log10(CISRNA * observableParameter1_CISRNA_foldC / CISRNAEqc + 1)	noiseParameter1_CISRNA_foldC	log10	normal
@@ -41,4 +39,3 @@ pSTAT5B_rel		observableParameter1_pSTAT5B_rel + 100 * pSTAT5 / (STAT5 + pSTAT5)	
 pSTAT5_au		log10(observableParameter1_pSTAT5_au + pSTAT5 * observableParameter2_pSTAT5_au / init_STAT5)	noiseParameter1_pSTAT5_au + noiseParameter2_pSTAT5_au	log10	normal
 tSHP1_au		log10(observableParameter1_tSHP1_au * (SHP1 + SHP1Act) / init_SHP1)	noiseParameter1_tSHP1_au	log10	normal
 tSTAT5_au		log10(observableParameter1_tSTAT5_au * (STAT5 + pSTAT5) / init_STAT5)	noiseParameter1_tSTAT5_au	log10	normal
->>>>>>> 0020cf799df969d80d35a5e71bee2b522cd8b711
