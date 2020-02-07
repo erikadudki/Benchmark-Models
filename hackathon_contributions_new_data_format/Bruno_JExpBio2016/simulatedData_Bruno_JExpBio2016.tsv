@@ -20,20 +20,20 @@ ob10		model1_data2	2.2970886058	60		0.298703	lin	model1_data2_ob10
 ob10		model1_data2	2.513277279	90		0.267467	lin	model1_data2_ob10
 ob10		model1_data2	2.4647021073	120		0.29311	lin	model1_data2_ob10
 ob10		model1_data2	2.048059315	180		0.249578	lin	model1_data2_ob10
-obcar		model1_data3	2.902383118	15		0.161073	lin	
-obcar		model1_data3	2.5513452752	30		0.146065	lin	
-obcar		model1_data3	2.2427647857	45		0.124582	lin	
-obcar		model1_data3	1.9715063376	60		0.115071	lin	
-obcar		model1_data3	1.5234468824	90		0.098916	lin	
-obcar		model1_data3	1.1772168464	120		0.076702	lin	
-obcar		model1_data3	0.702934202	180		0.063285	lin	
-ob10		model1_data3	0.3902359533	15		0.066702	lin	
-ob10		model1_data3	0.7159890441	30		0.092359	lin	
-ob10		model1_data3	0.9858237042	45		0.10382	lin	
-ob10		model1_data3	1.20723512	60		0.127709	lin	
-ob10		model1_data3	1.5301859784	90		0.147436	lin	
-ob10		model1_data3	1.7279982289	120		0.167498	lin	
-ob10		model1_data3	1.8720253587	180		0.223405	lin	
+obcar		model1_data3	2.902383118	15		0.161073	lin	model1_data3_obcar
+obcar		model1_data3	2.5513452752	30		0.146065	lin	model1_data3_obcar
+obcar		model1_data3	2.2427647857	45		0.124582	lin	model1_data3_obcar
+obcar		model1_data3	1.9715063376	60		0.115071	lin	model1_data3_obcar
+obcar		model1_data3	1.5234468824	90		0.098916	lin	model1_data3_obcar
+obcar		model1_data3	1.1772168464	120		0.076702	lin	model1_data3_obcar
+obcar		model1_data3	0.702934202	180		0.063285	lin	model1_data3_obcar
+ob10		model1_data3	0.3902359533	15		0.066702	lin	model1_data3_ob10
+ob10		model1_data3	0.7159890441	30		0.092359	lin	model1_data3_ob10
+ob10		model1_data3	0.9858237042	45		0.10382	lin	model1_data3_ob10
+ob10		model1_data3	1.20723512	60		0.127709	lin	model1_data3_ob10
+ob10		model1_data3	1.5301859784	90		0.147436	lin	model1_data3_ob10
+ob10		model1_data3	1.7279982289	120		0.167498	lin	model1_data3_ob10
+ob10		model1_data3	1.8720253587	180		0.223405	lin	model1_data3_ob10
 obcry		model1_data4	4.5817845289	15		0.43054	lin	model1_data4_obcry
 obcry		model1_data4	4.0239593714	30		0.353484	lin	model1_data4_obcry
 obcry		model1_data4	3.5340485114	45		0.338201	lin	model1_data4_obcry
