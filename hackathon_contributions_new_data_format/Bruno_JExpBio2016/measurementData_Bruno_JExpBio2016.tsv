@@ -20,20 +20,20 @@ ob10		model1_data2	2.51711	60		0.298703	model1_data2_ob10
 ob10		model1_data2	2.24951	90		0.267467	model1_data2_ob10
 ob10		model1_data2	2.46923	120		0.29311	model1_data2_ob10
 ob10		model1_data2	2.09599	180		0.249578	model1_data2_ob10
-obcar		model1_data3	2792	15		0.161073	
-obcar		model1_data3	2.51	30		0.146065	
-obcar		model1_data3	2101	45		0.124582	
-obcar		model1_data3	1917	60		0.115071	
-obcar		model1_data3	1598	90		0.098916	
-obcar		model1_data3	1135	120		0.07670199999999999	
-obcar		model1_data3	0.8240000000000001	180		0.06328500000000001	
-ob10		model1_data3	573	15		0.066702	
-ob10		model1_data3	0.8490000000000001	30		0.092359	
-ob10		model1_data3	968	45		0.10382	
-ob10		model1_data3	1212	60		0.127709	
-ob10		model1_data3	1411	90		0.14743599999999998	
-ob10		model1_data3	1612	120		0.167498	
-ob10		model1_data3	2168	180		0.223405	
+obcar		model1_data3	2792	15		0.161073	model1_data3_obcar
+obcar		model1_data3	2.51	30		0.146065	model1_data3_obcar
+obcar		model1_data3	2101	45		0.124582	model1_data3_obcar
+obcar		model1_data3	1917	60		0.115071	model1_data3_obcar
+obcar		model1_data3	1598	90		0.098916	model1_data3_obcar
+obcar		model1_data3	1135	120		0.07670199999999999	model1_data3_obcar
+obcar		model1_data3	0.8240000000000001	180		0.06328500000000001	model1_data3_obcar
+ob10		model1_data3	573	15		0.066702	model1_data3_ob10
+ob10		model1_data3	0.8490000000000001	30		0.092359	model1_data3_ob10
+ob10		model1_data3	968	45		0.10382	model1_data3_ob10
+ob10		model1_data3	1212	60		0.127709	model1_data3_ob10
+ob10		model1_data3	1411	90		0.14743599999999998	model1_data3_ob10
+ob10		model1_data3	1612	120		0.167498	model1_data3_ob10
+ob10		model1_data3	2168	180		0.223405	model1_data3_ob10
 obcry		model1_data4	4.804181	15		0.43054	model1_data4_obcry
 obcry		model1_data4	3.874252	30		0.353484	model1_data4_obcry
 obcry		model1_data4	3.687507	45		0.33820100000000003	model1_data4_obcry
