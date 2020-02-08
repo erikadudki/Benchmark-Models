@@ -9,3 +9,5 @@ problems:
   - observables_Bruno_JExpBio2016.tsv
   sbml_files:
   - model_Bruno_JExpBio2016.xml
+  visualization_files:
+  - visualizationSpecification_Bruno_JExpBio2016.tsv
