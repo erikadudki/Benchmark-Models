@@ -4,13 +4,18 @@ import os
 import sys
 
 model_list = os.scandir()
-model_list = sorted(f.name  for f in model_list if f.is_dir())
+model_list = sorted(f.name for f in model_list if f.is_dir())
 
 num_failures = 0
 
 for benchmark_model in model_list:
-    ret = os.system("cd {} && petablint -v -n {} ".format(benchmark_model,benchmark_model))
-    print('='*100) # just for output readability
+    print(benchmark_model)
+    ret = os.system(
+        "cd {} && petablint -v -y {}.yaml ".format(
+            benchmark_model, benchmark_model
+        )
+    )
+    print('='*100)  # just for output readability
 
     if ret:
         num_failures += 1

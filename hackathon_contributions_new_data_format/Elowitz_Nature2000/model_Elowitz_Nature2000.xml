@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Elowitz_Nature2000" name="model_Elowitz_Nature2000">
     <notes>
@@ -73,12 +72,6 @@
       <parameter id="tau_prot_GFP" value="71.9312640934983" constant="true"/>
       <parameter id="tps_active" value="0.612278991244992" constant="true"/>
       <parameter id="tps_repr" value="1.00000000000883e-05" constant="true"/>
-      <parameter id="observable_fluorescence" value="0" constant="false"/>
-      <parameter id="observableParameter1_fluorescence" value="1.04454130394406e-05" constant="true"/>
-      <parameter id="observableParameter2_fluorescence" value="0.52599663700947" constant="true"/>
-      <parameter id="noiseParameter1_fluorescence" value="0.0718414138316143" constant="true"/>
-      <parameter id="sigma_fluorescence" value="1" constant="false"/>
-
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="X_protein">
@@ -122,26 +115,6 @@
         </math>
       </initialAssignment>
     </listOfInitialAssignments>
-    <listOfRules>
-      <assignmentRule variable="sigma_fluorescence">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_fluorescence </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_fluorescence">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <plus/>
-            <ci> observableParameter1_fluorescence </ci>
-            <apply>
-              <times/>
-              <ci> GFP </ci>
-              <ci> observableParameter2_fluorescence </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-    </listOfRules>
     <listOfReactions>
       <reaction id="v1_v_0" name="v_0" reversible="false">
         <listOfReactants>

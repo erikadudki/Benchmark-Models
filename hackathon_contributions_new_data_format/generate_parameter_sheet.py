@@ -1,20 +1,33 @@
+# -*- coding: utf-8 -*-
+
 import os
 import numpy as np
 import pandas as pd
 
 
-# INPUT - PLEASE INSERT FITTING PATH AND NAME TO GENERAL INFO INTO FUNCTION 'generateParameterSheet'
+# INPUT - PLEASE INSERT FITTING PATH AND NAME
+# TO GENERAL INFO INTO FUNCTION 'generateParameterSheet'
 def generateParameterSheet(filepath, filename):
-        # Example: filepath = r"C:\Benchmark-Models\hackathon_contributions_new_data_format\Boehm_JProteomeRes2014"
-        #          filename = r"General_info.xlsx"
-    whole_filepath = filepath + '/' + filename                       # Whole string
-    modelname = filepath.split('\\')[-1]                             # Only last part of 'filepath' == model name
-    output_new_format = new_excel_sheet(whole_filepath)              # Transformation of old excel sheet into new one
+    # Example: filepath = r"C:\Benchmark-Models\hackathon_contributions_new_data_format\Boehm_JProteomeRes2014" # noqa: E501
+    #          filename = r"General_info.xlsx"
+    whole_filepath = filepath + '/' + filename  # Whole string
+    modelname = filepath.split('\\')[-1]  # Last part 'filepath' == model name
+
+    # Transformation of old excel sheet into new one
+    output_new_format = new_excel_sheet(whole_filepath)
+
     output_transformed_format = transform_format(output_new_format)
-    final_excel_sheet = final_form(output_transformed_format)        # Table with all input - printed in Python Console
+
+    # Table with all input - printed in Python Console
+    final_excel_sheet = final_form(output_transformed_format)
     print(final_excel_sheet)
-    final_excel_sheet.to_csv(path_or_buf=os.path.join(filepath,      # Save created file as '.tsv'
-        'parameters_%s.tsv' % modelname), sep='\t', index=False)     # in same folder as 'General_info' file
+    final_excel_sheet.to_csv(
+        path_or_buf=os.path.join(
+            filepath,      # Save created file as '.tsv'
+            'parameters_%s.tsv' % modelname
+        ), sep='\t',
+        index=False
+    )     # in same folder as 'General_info' file
 
 
 # Read in old excel sheet 'General_info'
@@ -23,7 +36,8 @@ def new_excel_sheet(filepath):
     return (old_excel_sheet)
 
 
-# Change headlines of all columns and fill with selected input of 'old_excel_sheet'
+# Change headlines of all columns and
+# fill with selected input of 'old_excel_sheet'
 def transform_format(y):
     a = pd.DataFrame({'parameterID': y.parameter,
                       'parameterName': y.parameter,

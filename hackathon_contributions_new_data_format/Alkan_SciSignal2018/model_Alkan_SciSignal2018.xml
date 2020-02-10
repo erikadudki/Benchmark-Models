@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model metaid="arFramework3" id="combined_model" name="NoName">
     <notes>
@@ -85,8 +84,7 @@
     <listOfParameters>
       <parameter id="Gem_level" value="0.1" constant="false"/>
       <parameter id="Dox_level" value="0" constant="false"/>
-      <parameter id="SN38_level" value="0" constant="false"/>      
-
+      <parameter id="SN38_level" value="0" constant="false"/>
       <parameter id="init_Cells" name="init_Cells" value="1" constant="false"/>
       <parameter id="init_Cells_Cycle_G2_rel" name="init_Cells_Cycle_G2_rel" value="0.4" constant="false"/>
       <parameter id="init_Cells_Cycle_S_rel" name="init_Cells_Cycle_S_rel" value="0.5" constant="false"/>
@@ -136,75 +134,6 @@
       <parameter id="p_p53_act_chk2" name="p_p53_act_chk2" value="0.0512391341519817" constant="false"/>
       <parameter id="p_wip1_mrna_turn" name="p_wip1_mrna_turn" value="3.40101630069606" constant="false"/>
       <parameter id="p_wip1_turn" name="p_wip1_turn" value="3.41164292406599" constant="false"/>
-
-      <parameter id="observable_pATM_au" value="0" constant="false"/>
-      <parameter id="pATM_au" value="0" constant="false"/>
-      <parameter id="observableParameter1_pATM_au" name="observableParameter1_pATM_au" value="0.920452177716954" constant="false"/>
-      <parameter id="noiseParameter1_pATM_au" name="noiseParameter1_pATM_au" value="0.0794328234724281" constant="false"/>
-      <parameter id="sigma_pATM_au" name="sigma_pATM_au" value="0.0794328234724281" constant="false"/>
-
-      <parameter id="observable_pChk1_au" value="0" constant="false"/>
-      <parameter id="pChk1_au" value="0" constant="false"/>
-      <parameter id="observableParameter1_pChk1_au" name="observableParameter1_pChk1_au" value="1.05000949794947" constant="false"/>
-      <parameter id="noiseParameter1_pChk1_au" name="noiseParameter1_pChk1_au" value="0.1" constant="false"/>
-      <parameter id="sigma_pChk1_au" name="sigma_pChk1_au" value="0.1" constant="false"/>
-
-      <parameter id="observable_pChk2_au" value="0" constant="false"/>
-      <parameter id="pChk2_au" value="0" constant="false"/>
-      <parameter id="observableParameter1_pChk2_au" name="observableParameter1_pChk2_au" value="1.52556226536717" constant="false"/>
-      <parameter id="noiseParameter1_pChk2_au" name="noiseParameter1_pChk2_au" value="0.316227766016838" constant="false"/>
-      <parameter id="sigma_pChk2_au" name="sigma_pChk2_au" value="0.316227766016838" constant="false"/>
-
-      <parameter id="observable_pDNAPK_au" value="0" constant="false"/>
-      <parameter id="pDNAPK_au" value="0" constant="false"/>
-      <parameter id="observableParameter1_pDNAPK_au" name="observableParameter1_pDNAPK_au" value="0.467813310173738" constant="false"/>
-      <parameter id="noiseParameter1_pDNAPK_au" name="noiseParameter1_pDNAPK_au" value="0.199526231496888" constant="false"/>
-      <parameter id="sigma_pDNAPK_au" name="sigma_pDNAPK_au" value="0.199526231496888" constant="false"/>
-
-      <parameter id="observable_pp53_au" value="0" constant="false"/>
-      <parameter id="pp53_au" value="0" constant="false"/>
-      <parameter id="observableParameter1_pp53_au" name="observableParameter1_pp53_au" value="1.13575982576731" constant="false"/>
-      <parameter id="noiseParameter1_pp53_au" name="noiseParameter1_pp53_au" value="0.199526231496888" constant="false"/>
-      <parameter id="sigma_pp53_au" name="sigma_pp53_au" value="0.199526231496888" constant="false"/>
-
-      <parameter id="observable_tp21_au" value="0" constant="false"/>
-      <parameter id="tp21_au" value="0" constant="false"/>
-      <parameter id="observableParameter1_tp21_au" name="observableParameter1_tp21_au" value="3.91785506773406" constant="false"/>
-      <parameter id="noiseParameter1_tp21_au" name="noiseParameter1_tp21_au" value="0.316227766016838" constant="false"/>
-      <parameter id="sigma_tp21_au" name="sigma_tp21_au" value="0.316227766016838" constant="false"/>
-
-      <parameter id="observable_tp53_au" value="0" constant="false"/>
-      <parameter id="tp53_au" value="0" constant="false"/>
-      <parameter id="observableParameter1_tp53_au" name="observableParameter1_tp53_au" value="1.43133618287554" constant="false"/>
-      <parameter id="noiseParameter1_tp53_au" name="noiseParameter1_tp53_au" value="0.199526231496888" constant="false"/>
-      <parameter id="sigma_tp53_au" name="sigma_tp53_au" value="0.199526231496888" constant="false"/>
-
-      <parameter id="observable_yH2AX_au" value="0" constant="false"/>
-      <parameter id="yH2AX_au" value="0" constant="false"/>
-      <parameter id="observableParameter1_yH2AX_au" name="observableParameter1_yH2AX_au" value="60.5031667365335" constant="false"/>
-      <parameter id="noiseParameter1_yH2AX_au" name="noiseParameter1_yH2AX_au" value="0.125892541179417" constant="false"/>
-      <parameter id="sigma_yH2AX_au" name="sigma_yH2AX_au" value="0.125892541179417" constant="false"/>
-
-      <parameter id="observable_p21_mRNA_fold" value="0" constant="false"/>
-      <parameter id="p21_mRNA_fold" value="0" constant="false"/>
-      <parameter id="observableParameter1_p21_mRNA_fold" name="observableParameter1_p21_mRNA_fold" value="19.80629123797" constant="false"/>
-      <parameter id="noiseParameter1_p21_mRNA_fold" name="noiseParameter1_p21_mRNA_fold" value="1" constant="false"/>
-      <parameter id="sigma_p21_mRNA_fold" name="sigma_p21_mRNA_fold" value="1" constant="false"/>
-
-      <parameter id="observable_Wip1_mRNA_fold" value="0" constant="false"/>
-      <parameter id="Wip1_mRNA_fold" value="0" constant="false"/>
-      <parameter id="observableParameter1_Wip1_mRNA_fold" name="observableParameter1_Wip1_mRNA_fold" value="2.27700032377414" constant="false"/>
-      <parameter id="noiseParameter1_Wip1_mRNA_fold" name="noiseParameter1_Wip1_mRNA_fold" value="1" constant="false"/>
-      <parameter id="sigma_Wip1_mRNA_fold" name="sigma_Wip1_mRNA_fold" value="1" constant="false"/>
-
-      <parameter id="observable_Cells_count" value="0" constant="false"/>
-      <parameter id="noiseParameter1_Cells_count" name="noiseParameter1_Cells_count" value="1" constant="false"/>
-      <parameter id="sigma_Cells_count" value="1" constant="false"/>
-
-      <parameter id="observable_CellsCasp_count" value="0" constant="false"/>
-      <parameter id="noiseParameter1_CellsCasp_count" name="noiseParameter1_CellsCasp_count" value="1" constant="false"/>
-      <parameter id="sigma_CellsCasp_count" value="1" constant="false"/>
-
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="Space">
@@ -257,234 +186,6 @@
         </math>
       </initialAssignment>
     </listOfInitialAssignments>
-    <listOfRules>
-      <assignmentRule variable="observable_Cells_count">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-              <plus/>
-              <ci> Cells </ci>
-              <ci> Cells_Cycle_S </ci>
-              <ci> Cells_Cycle_G2 </ci>
-              <ci> Cells_SSBDamage_S </ci>
-              <ci> Cells_DSBDamage_S </ci>
-              <ci> Cells_DSBDamage_G2 </ci>
-              <ci> Cells_Apo </ci>
-              <ci> Cells_Apo1 </ci>
-              <ci> Cells_Apo2 </ci>
-              <ci> Cells_Apo3 </ci>
-              <ci> Cells_Apo4 </ci>
-              <ci> Cells_Apo_ReOx </ci>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_CellsCasp_count">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-              <plus/>
-              <ci> Cells_Apo4 </ci>
-              <ci> Cells_Apo_ReOx </ci>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_p21_mRNA_fold">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <plus/>
-            <apply>
-              <times/>
-              <ci> observableParameter1_p21_mRNA_fold </ci>
-              <apply>
-                <plus/>
-                <ci> p21_mRNA_S </ci>
-                <ci> p21_mRNA_G2 </ci>
-              </apply>
-            </apply>
-            <cn type="integer"> 1 </cn>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_Wip1_mRNA_fold">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <plus/>
-            <apply>
-              <times/>
-              <ci> observableParameter1_Wip1_mRNA_fold </ci>
-              <apply>
-                <plus/>
-                <ci> Wip1_mRNA_G2 </ci>
-                <ci> Wip1_mRNA_S </ci>
-              </apply>
-            </apply>
-            <cn type="integer"> 1 </cn>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_p21_mRNA_fold">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_p21_mRNA_fold </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_Wip1_mRNA_fold">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_Wip1_mRNA_fold </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_pATM_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_pATM_au </ci>
-            <apply>
-              <plus/>
-              <ci> pATM_G2 </ci>
-              <ci> pATM_S </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_pDNAPK_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_pDNAPK_au </ci>
-            <apply>
-              <plus/>
-              <ci> pDNAPK_G2 </ci>
-              <ci> pDNAPK_S </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_pChk1_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_pChk1_au </ci>
-            <apply>
-              <plus/>
-              <ci> pChk1_G2 </ci>
-              <ci> pChk1_S </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_pChk2_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_pChk2_au </ci>
-            <apply>
-              <plus/>
-              <ci> pChk2_S </ci>
-              <ci> pChk2_G2 </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_tp53_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_tp53_au </ci>
-            <apply>
-              <plus/>
-              <ci> pp53_S </ci>
-              <ci> pp53_G2 </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_pp53_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_pp53_au </ci>
-            <apply>
-              <plus/>
-              <ci> pp53_S </ci>
-              <ci> pp53_G2 </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_tp21_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_tp21_au </ci>
-            <apply>
-              <plus/>
-              <ci> p21_S </ci>
-              <ci> p21_G2 </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_yH2AX_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <apply>
-            <times/>
-            <ci> observableParameter1_yH2AX_au </ci>
-            <apply>
-              <plus/>
-              <ci> yH2AX_S </ci>
-              <ci> yH2AX_G2 </ci>
-            </apply>
-          </apply>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_CellsCasp_count">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_CellsCasp_count </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_Cells_count">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_Cells_count </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_pATM_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_pATM_au </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_pDNAPK_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_pDNAPK_au </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_pChk1_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_pChk1_au </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_pChk2_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_pChk2_au </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_tp53_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_tp53_au </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_pp53_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_pp53_au </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_tp21_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_tp21_au </ci>
-        </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_yH2AX_au">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <ci> noiseParameter1_yH2AX_au </ci>
-        </math>
-      </assignmentRule>
-    </listOfRules>
     <listOfReactions>
       <reaction id="v1_v_0" name="v_0" reversible="false">
         <listOfReactants>
@@ -853,24 +554,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -891,24 +592,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -929,24 +630,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -967,24 +668,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -1005,24 +706,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -1043,24 +744,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -1081,24 +782,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -1119,24 +820,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -1157,24 +858,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -1195,24 +896,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -1233,24 +934,24 @@
               <ci> k_dox_apo </ci>
               <apply>
                 <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> k_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                <apply>
+                  <power/>
+                  <ci> Dox_level </ci>
+                  <cn> 6 </cn>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <power/>
+                    <ci> Dox_level </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                  <apply>
+                    <power/>
+                    <ci> k_dox_kd </ci>
+                    <cn> 6 </cn>
+                  </apply>
+                </apply>
               </apply>
             </apply>
           </math>
@@ -1362,16 +1063,24 @@
                 <apply>
                   <times/>
                   <ci> k_ssb_to_dsb_sn38 </ci>
-                    <piecewise>
-			  <piece>
-			    <cn>1</cn>
-			    <apply><gt/><ci>SN38_level</ci><cn>0</cn></apply>
-			  </piece>
-			  <piece>
-			    <cn>0</cn>
-			    <apply><leq/><ci>SN38_level</ci><cn>0</cn></apply>
-			  </piece>
-		   </piecewise>
+                  <piecewise>
+                    <piece>
+                      <cn> 1 </cn>
+                      <apply>
+                        <gt/>
+                        <ci> SN38_level </ci>
+                        <cn> 0 </cn>
+                      </apply>
+                    </piece>
+                    <piece>
+                      <cn> 0 </cn>
+                      <apply>
+                        <leq/>
+                        <ci> SN38_level </ci>
+                        <cn> 0 </cn>
+                      </apply>
+                    </piece>
+                  </piecewise>
                 </apply>
               </apply>
             </apply>
@@ -2147,24 +1856,24 @@
                   <ci> p_mrna_exp_inh_dox </ci>
                   <apply>
                     <divide/>
-			<apply>
-				<power/>
-				<ci> Dox_level </ci>
-				<cn> 6 </cn>
-			 </apply>		
-			 <apply>
-			      <plus/>
-			         <apply>
-				   <power/>
-				   <ci> Dox_level </ci>
-				   <cn> 6 </cn>
-			         </apply>
-			         <apply>
-				   <power/>
-				   <ci> p_mrna_exp_inh_dox_kd </ci>
-				   <cn> 6 </cn>
-			         </apply>
-			 </apply>
+                    <apply>
+                      <power/>
+                      <ci> Dox_level </ci>
+                      <cn> 6 </cn>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> Dox_level </ci>
+                        <cn> 6 </cn>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p_mrna_exp_inh_dox_kd </ci>
+                        <cn> 6 </cn>
+                      </apply>
+                    </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -2241,24 +1950,24 @@
                   <ci> p_mrna_exp_inh_dox </ci>
                   <apply>
                     <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> p_mrna_exp_inh_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                    <apply>
+                      <power/>
+                      <ci> Dox_level </ci>
+                      <cn> 6 </cn>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> Dox_level </ci>
+                        <cn> 6 </cn>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p_mrna_exp_inh_dox_kd </ci>
+                        <cn> 6 </cn>
+                      </apply>
+                    </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -2861,24 +2570,24 @@
                   <ci> p_mrna_exp_inh_dox </ci>
                   <apply>
                     <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> p_mrna_exp_inh_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                    <apply>
+                      <power/>
+                      <ci> Dox_level </ci>
+                      <cn> 6 </cn>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> Dox_level </ci>
+                        <cn> 6 </cn>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p_mrna_exp_inh_dox_kd </ci>
+                        <cn> 6 </cn>
+                      </apply>
+                    </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>
@@ -2955,24 +2664,24 @@
                   <ci> p_mrna_exp_inh_dox </ci>
                   <apply>
                     <divide/>
-		<apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		 </apply>		
-		 <apply>
-		      <plus/>
-		      <apply>
-			<power/>
-			<ci> Dox_level </ci>
-			<cn> 6 </cn>
-		      </apply>
-		      <apply>
-			<power/>
-			<ci> p_mrna_exp_inh_dox_kd </ci>
-			<cn> 6 </cn>
-		      </apply>
-		 </apply>
+                    <apply>
+                      <power/>
+                      <ci> Dox_level </ci>
+                      <cn> 6 </cn>
+                    </apply>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <power/>
+                        <ci> Dox_level </ci>
+                        <cn> 6 </cn>
+                      </apply>
+                      <apply>
+                        <power/>
+                        <ci> p_mrna_exp_inh_dox_kd </ci>
+                        <cn> 6 </cn>
+                      </apply>
+                    </apply>
                   </apply>
                 </apply>
                 <cn type="integer"> 1 </cn>

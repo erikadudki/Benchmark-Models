@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.25 (Build 207) on 2019-03-19 09:39 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model metaid="COPASI0" id="Iron_Mouse_PV3___tracer" name="Iron Mouse PV3 - tracer">
     <notes>
@@ -3348,34 +3347,6 @@
           <initialValue xmlns="http://copasi.org/initialValue" parent="vRestNTBI"/>
         </annotation>
       </parameter>
-
-      <parameter id="observable_FeOut" name="observable_FeOut" value="1" constant="false"/>
-      <parameter id="observable_FePlasma" name="observable_FePlasma" value="1" constant="false"/>
-      <parameter id="observable_FeRBC" name="observable_FeRBC" value="1" constant="false"/>
-      <parameter id="observable_FeSpleen" name="observable_FeSpleen" value="1" constant="false"/>
-      <parameter id="observable_FeLiver" name="observable_FeLiver" value="1" constant="false"/>
-      <parameter id="observable_FeGut" name="observable_FeGut" value="1" constant="false"/>
-      <parameter id="observable_FeRest" name="observable_FeRest" value="1" constant="false"/>
-      <parameter id="observable_FeBM" name="observable_FeBM" value="1" constant="false"/>
-
-      <parameter id="sigma_FeOut" name="sigma_FeOut" value="1" constant="false"/>
-      <parameter id="sigma_FePlasma" name="sigma_FePlasma" value="1" constant="false"/>
-      <parameter id="sigma_FeRBC" name="sigma_FeRBC" value="1" constant="false"/>
-      <parameter id="sigma_FeSpleen" name="sigma_FeSpleen" value="1" constant="false"/>
-      <parameter id="sigma_FeLiver" name="sigma_FeLiver" value="1" constant="false"/>
-      <parameter id="sigma_FeGut" name="sigma_FeGut" value="1" constant="false"/>
-      <parameter id="sigma_FeRest" name="sigma_FeRest" value="1" constant="false"/>
-      <parameter id="sigma_FeBM" name="sigma_FeBM" value="1" constant="false"/>
-
-      <parameter id="noiseParameter1_FeOut" name="noiseParameter1_FeOut" value="0" constant="true"/>
-      <parameter id="noiseParameter1_FePlasma" name="noiseParameter1_FePlasma" value="0" constant="true"/>
-      <parameter id="noiseParameter1_FeRBC" name="noiseParameter1_FeRBC" value="0" constant="true"/>
-      <parameter id="noiseParameter1_FeSpleen" name="noiseParameter1_FeSpleen" value="0" constant="true"/>
-      <parameter id="noiseParameter1_FeLiver" name="noiseParameter1_FeLiver" value="0" constant="true"/>
-      <parameter id="noiseParameter1_FeGut" name="noiseParameter1_FeGut" value="0" constant="true"/>
-      <parameter id="noiseParameter1_FeRest" name="noiseParameter1_FeRest" value="0" constant="true"/>
-      <parameter id="noiseParameter1_FeBM" name="noiseParameter1_FeBM" value="0" constant="true"/>
-
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="Compartment_6">
@@ -3560,87 +3531,6 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
-      <assignmentRule variable="observable_FeOut">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> POutside </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_FePlasma">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> PPlasma </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_FeRBC">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> PRBC </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_FeSpleen">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> PSpleen </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_FeLiver">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> PLiver </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_FeGut">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> PDuo </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_FeRest">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> PRest </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="observable_FeBM">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> PBM </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_FeOut">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_FeOut </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_FePlasma">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_FePlasma </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_FeRBC">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_FeRBC </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_FeSpleen">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_FeSpleen </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_FeLiver">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_FeLiver </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_FeGut">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_FeGut </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_FeRest">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_FeRest </ci>
-          </math>
-      </assignmentRule>
-      <assignmentRule variable="sigma_FeBM">
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-              <ci> noiseParameter1_FeBM </ci>
-          </math>
-      </assignmentRule>
-
       <assignmentRule variable="Total_Fe_concentration">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -3711,7 +3601,7 @@
             </apply>
             <apply>
               <times/>
-              <cn> 6.0221417899999992e+23 </cn>
+              <cn type="e-notation"> 6.02214179 <sep/> 23 </cn>
               <apply>
                 <plus/>
                 <ci> Duodenum </ci>
@@ -4219,7 +4109,7 @@
             <apply>
               <times/>
               <ci> Plasma </ci>
-              <cn> 6.0221417899999992e+23 </cn>
+              <cn type="e-notation"> 6.02214179 <sep/> 23 </cn>
             </apply>
           </apply>
         </math>
@@ -5685,7 +5575,7 @@
               <ci> Total_Fe </ci>
               <cn> 55.845 </cn>
             </apply>
-            <cn> 6.0221417899999992e+23 </cn>
+            <cn type="e-notation"> 6.02214179 <sep/> 23 </cn>
           </apply>
         </math>
       </assignmentRule>
@@ -5696,7 +5586,7 @@
             <ci> Total_Tf </ci>
             <apply>
               <times/>
-              <cn> 6.0221417899999992e+23 </cn>
+              <cn type="e-notation"> 6.02214179 <sep/> 23 </cn>
               <ci> Plasma </ci>
             </apply>
           </apply>
@@ -5719,7 +5609,7 @@
             <apply>
               <times/>
               <ci> Plasma </ci>
-              <cn> 6.0221417899999992e+23 </cn>
+              <cn type="e-notation"> 6.02214179 <sep/> 23 </cn>
             </apply>
           </apply>
         </math>
@@ -8557,7 +8447,7 @@
                 <ci> Injected </ci>
                 <apply>
                   <times/>
-                  <cn> 6.0221417899999992e+23 </cn>
+                  <cn type="e-notation"> 6.02214179 <sep/> 23 </cn>
                   <ci> Plasma </ci>
                 </apply>
               </apply>
