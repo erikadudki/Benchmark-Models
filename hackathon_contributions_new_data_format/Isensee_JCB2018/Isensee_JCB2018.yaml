@@ -5,6 +5,8 @@ problems:
   - experimentalCondition_Isensee_JCB2018.tsv
   measurement_files:
   - measurementData_Isensee_JCB2018.tsv
+  observable_files:
+  - observables_Isensee_JCB2018.tsv
   sbml_files:
   - model_Isensee_JCB2018.xml
   visualization_files:
