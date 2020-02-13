@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Swameye_PNAS2003" name="pnas_jak_stat">
     <notes>
@@ -58,21 +59,34 @@
     </listOfSpecies>
     <listOfParameters>
       <parameter id="init_STAT" value="1" constant="true"/>
+      <parameter id="observableParameter1_pSTAT_au" value="0.239603111363454" constant="true"/>
+      <parameter id="observableParameter1_tSTAT_au" value="0.271963870495627" constant="true"/>
       <parameter id="p1" value="3.55509924498906" constant="true"/>
       <parameter id="p2" value="999.999999999924" constant="true"/>
       <parameter id="p3" value="0.123856828572163" constant="true"/>
       <parameter id="p4" value="0.970722975681992" constant="true"/>
+      <parameter id="observableParameter2_pSTAT_au" value="1.09943059496066" constant="true"/>
+      <parameter id="observableParameter2_tSTAT_au" value="0.667441159007288" constant="true"/>
+      <parameter id="noiseParameter1_pEpoR_au" value="0.06811711547696" constant="true"/>
+      <parameter id="noiseParameter1_pSTAT_au" value="0.0463489238916528" constant="true"/>
+      <parameter id="noiseParameter1_tSTAT_au" value="0.0532308709297778" constant="true"/>
       <parameter id="sp1" value="0.00187136580901039" constant="true"/>
       <parameter id="sp2" value="0.555297319939545" constant="true"/>
       <parameter id="sp3" value="0.849980750793706" constant="true"/>
       <parameter id="sp4" value="0.372167318709466" constant="true"/>
       <parameter id="sp5" value="3.45193112898415e-05" constant="true"/>
+      <parameter id="observable_tSTAT_au" value="0" constant="false"/>
+      <parameter id="observable_pSTAT_au" value="0" constant="false"/>
+      <parameter id="observable_pEpoR_au" value="0" constant="false"/>
       <parameter id="pEpoR" value="0.00187136580901039" constant="false"/>
       <parameter id="spline_t_0" value="0" constant="false"/>
       <parameter id="A" value="0" constant="false"/>
       <parameter id="B" value="0" constant="false"/>
       <parameter id="C" value="0" constant="false"/>
       <parameter id="D" value="0" constant="false"/>
+      <parameter id="sigma_tSTAT_au" value="1" constant="false"/>
+      <parameter id="sigma_pSTAT_au" value="1" constant="false"/>
+      <parameter id="sigma_pEpoR_au" value="1" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="STAT">
@@ -82,6 +96,21 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+        <assignmentRule variable="sigma_pSTAT_au">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <ci> noiseParameter1_pSTAT_au </ci>
+            </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_tSTAT_au">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <ci> noiseParameter1_tSTAT_au </ci>
+            </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_pEpoR_au">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <ci> noiseParameter1_pEpoR_au </ci>
+            </math>
+        </assignmentRule>
       <assignmentRule variable="pEpoR">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -126,6 +155,62 @@
               <ci> D </ci>
             </apply>
           </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_tSTAT_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> observableParameter1_tSTAT_au </ci>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> observableParameter2_tSTAT_au </ci>
+                <apply>
+                  <plus/>
+                  <ci> STAT </ci>
+                  <ci> pSTAT </ci>
+                  <apply>
+                    <times/>
+                    <cn type="integer"> 2 </cn>
+                    <ci> pSTAT_pSTAT </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <ci> init_STAT </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_pSTAT_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> observableParameter1_pSTAT_au </ci>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> observableParameter2_pSTAT_au </ci>
+                <apply>
+                  <plus/>
+                  <ci> pSTAT </ci>
+                  <apply>
+                    <times/>
+                    <cn type="integer"> 2 </cn>
+                    <ci> pSTAT_pSTAT </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <ci> init_STAT </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_pEpoR_au">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> pEpoR </ci>
         </math>
       </assignmentRule>
     </listOfRules>

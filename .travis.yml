@@ -1,7 +1,11 @@
 language: python
-python: '3.6'
-os: linux
-dist: xenial
+python:
+  - "3.6"
+ 
+os:
+  - linux
+dist:
+  - xenial
 
 install:
   - pip3 install --upgrade setuptools wheel pkgconfig
@@ -12,6 +16,6 @@ script:
  - cd hackathon_contributions_new_data_format
  - ./checkBenchmarkModels.py
 
+
 # cache dependencies
 cache: pip
-

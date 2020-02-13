@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Hass_PONE2017" name="model_Reelin_FINAL">
     <notes>
@@ -66,7 +67,37 @@
       <parameter id="SFK_inhibition_ratio" value="0.470718626534915" constant="true"/>
       <parameter id="init_ApoER2_Dab1" value="1" constant="true"/>
       <parameter id="init_ApoER2_Dab1SFK" value="8.75097549361293e-05" constant="true"/>
+      <parameter id="observableParameter2_Dab1" value="1e-08" constant="true"/>
+      <parameter id="observableParameter2_pAkt" value="1.0765276217424" constant="true"/>
+      <parameter id="observableParameter2_pDab1" value="0.139887002952305" constant="true"/>
+      <parameter id="observableParameter2_pSFK" value="1.67969987743754" constant="true"/>
+      <parameter id="observableParameter2_tApoER2" value="2.14289703948776" constant="true"/>
+      <parameter id="observableParameter2_tSFK" value="0.285702110374197" constant="true"/>
       <parameter id="perc_mes" value="0.0519099251370762" constant="true"/>
+      <parameter id="observableParameter1_Dab1" value="3.75639316079464" constant="true"/>
+      <parameter id="observableParameter1_pAkt" value="247.542988800985" constant="true"/>
+      <parameter id="observableParameter1_pDab1" value="331.276654144682" constant="true"/>
+      <parameter id="observableParameter1_pSFK" value="935.434627604922" constant="true"/>
+      <parameter id="observableParameter1_tApoER2" value="0.943343362014992" constant="true"/>
+      <parameter id="observableParameter1_tSFK" value="399.010787302916" constant="true"/>
+      <parameter id="observable_Dab1" value="0" constant="false"/>
+      <parameter id="observable_pDab1" value="0" constant="false"/>
+      <parameter id="observable_pAkt" value="0" constant="false"/>
+      <parameter id="observable_pSFK" value="0" constant="false"/>
+      <parameter id="observable_tSFK" value="0" constant="false"/>
+      <parameter id="observable_tApoER2" value="0" constant="false"/>
+      <parameter id="noiseParameter1_Dab1" value="0" constant="false"/>
+      <parameter id="noiseParameter1_pDab1" value="0" constant="false"/>
+      <parameter id="noiseParameter1_pAkt" value="0" constant="false"/>
+      <parameter id="noiseParameter1_pSFK" value="0" constant="false"/>
+      <parameter id="noiseParameter1_tSFK" value="0" constant="false"/>
+      <parameter id="noiseParameter1_tApoER2" value="0" constant="false"/>
+      <parameter id="sigma_Dab1" value="0" constant="false"/>
+      <parameter id="sigma_pDab1" value="0" constant="false"/>
+      <parameter id="sigma_pAkt" value="0" constant="false"/>
+      <parameter id="sigma_pSFK" value="0" constant="false"/>
+      <parameter id="sigma_tSFK" value="0" constant="false"/>
+      <parameter id="sigma_tApoER2" value="0" constant="false"/>
       <parameter id="Reelin_step" value="0" constant="false"/>
       <parameter id="Reelin_input" value="0" constant="false"/>
       <parameter id="Inh" value="0" constant="false"/>
@@ -118,6 +149,36 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="sigma_Dab1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_Dab1 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pDab1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pDab1 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pAkt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pAkt </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_pSFK">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_pSFK </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_tSFK">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_tSFK </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_tApoER2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> noiseParameter1_tApoER2 </ci>
+        </math>
+      </assignmentRule>
       <assignmentRule variable="Reelin_step">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
@@ -147,6 +208,130 @@
               </apply>
             </apply>
           </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_Dab1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <ci> observableParameter2_Dab1 </ci>
+              <apply>
+                <times/>
+                <ci> observableParameter1_Dab1 </ci>
+                <apply>
+                  <plus/>
+                  <ci> ApoER2_Dab1 </ci>
+                  <ci> ApoER2_Dab1SFK </ci>
+                  <ci> ApoER2_re_Dab1 </ci>
+                  <ci> ApoER2_Dab1SFKInh </ci>
+                  <ci> ApoER2_re_Dab1SFK </ci>
+                  <ci> ApoER2_re_Dab1SFKInh </ci>
+                  <ci> ApoER2_Dab1_released </ci>
+                  <ci> pApoER2_re_Dab1 </ci>
+                </apply>
+              </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_pDab1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <ci> observableParameter2_pDab1 </ci>
+              <apply>
+                <times/>
+                <ci> observableParameter1_pDab1 </ci>
+                <apply>
+                  <plus/>
+                  <ci> ApoER2_Dab1SFK </ci>
+                  <ci> ApoER2_re_Dab1SFK </ci>
+                  <ci> pApoER2_re_Dab1 </ci>
+                </apply>
+              </apply>
+            </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_pAkt">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <ci> observableParameter2_pAkt </ci>
+              <apply>
+                <times/>
+                <ci> observableParameter1_pAkt </ci>
+                <apply>
+                  <plus/>
+                  <ci> ApoER2_Dab1SFK </ci>
+                  <ci> ApoER2_re_Dab1SFK </ci>
+                  <ci> pApoER2_re_Dab1 </ci>
+                </apply>
+              </apply>
+            </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_pSFK">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <ci> observableParameter2_pSFK </ci>
+              <apply>
+                <times/>
+                <ci> observableParameter1_pSFK </ci>
+                <apply>
+                  <plus/>
+                  <ci> ApoER2_Dab1SFK </ci>
+                  <ci> ApoER2_re_Dab1SFK </ci>
+                  <apply>
+                    <times/>
+                    <ci> ApoER2_re_Dab1SFKInh </ci>
+                    <ci> perc_mes </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_tSFK">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <ci> observableParameter2_tSFK </ci>
+              <apply>
+                <times/>
+                <ci> observableParameter1_tSFK </ci>
+                <apply>
+                  <plus/>
+                  <ci> ApoER2_Dab1SFK </ci>
+                  <ci> ApoER2_Dab1SFKInh </ci>
+                  <ci> ApoER2_re_Dab1SFK </ci>
+                  <ci> ApoER2_re_Dab1SFKInh </ci>
+                  <ci> SFK </ci>
+                </apply>
+              </apply>
+            </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_tApoER2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <ci> observableParameter2_tApoER2 </ci>
+              <apply>
+                <times/>
+                <ci> observableParameter1_tApoER2 </ci>
+                <apply>
+                  <plus/>
+                  <ci> ApoER2_Dab1 </ci>
+                  <ci> ApoER2_Dab1SFK </ci>
+                  <ci> ApoER2_re_Dab1 </ci>
+                  <ci> ApoER2_Dab1SFKInh </ci>
+                  <ci> ApoER2_re_Dab1SFK </ci>
+                  <ci> ApoER2_re_Dab1SFKInh </ci>
+                  <ci> ApoER2_Dab1_released </ci>
+                  <ci> pApoER2_re_Dab1 </ci>
+                </apply>
+              </apply>
+            </apply>
         </math>
       </assignmentRule>
     </listOfRules>

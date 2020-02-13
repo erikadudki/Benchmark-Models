@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Korkut_eLIFE2015" name="Korkut_eLIFE2015">
     <notes>
@@ -33,29 +34,29 @@
         </rdf:Description>
       </rdf:RDF>
     </annotation>
-    <listOfUnitDefinitions>
-      <unitDefinition id="time" name="time">
-        <listOfUnits>
-          <unit kind="second" exponent="1" scale="0" multiplier="60"/>
-        </listOfUnits>
-      </unitDefinition>
-    </listOfUnitDefinitions>
-    <listOfCompartments>
-      <compartment id="DefaultCompartment" spatialDimensions="3" size="1" constant="true"/>
-    </listOfCompartments>
-    <listOfSpecies>
-      <species id="x1" name="x1" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="x2" name="x2" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="x3" name="x3" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="x4" name="x4" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="x5" name="x5" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="x6" name="x6" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="x7" name="x7" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="x8" name="x8" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="x9" name="x9" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="x10" name="x10" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-    </listOfSpecies>
-    <listOfParameters>
+  <listOfUnitDefinitions>
+    <unitDefinition id="time" name="time">
+      <listOfUnits>
+        <unit kind="second" exponent="1" scale="0" multiplier="60"/>
+      </listOfUnits>
+    </unitDefinition>
+  </listOfUnitDefinitions>
+  <listOfCompartments>
+    <compartment id="DefaultCompartment" spatialDimensions="3" size="1" constant="true"/>
+  </listOfCompartments>
+  <listOfSpecies>
+    <species id="x1" name="x1" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    <species id="x2" name="x2" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    <species id="x3" name="x3" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    <species id="x4" name="x4" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    <species id="x5" name="x5" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    <species id="x6" name="x6" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    <species id="x7" name="x7" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    <species id="x8" name="x8" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    <species id="x9" name="x9" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    <species id="x10" name="x10" compartment="DefaultCompartment" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+  </listOfSpecies>
+  <listOfParameters>
       <parameter id="w1_2" value="0" constant="true"/>
       <parameter id="w1_3" value="0" constant="true"/>
       <parameter id="w1_4" value="0" constant="true"/>
@@ -146,98 +147,230 @@
       <parameter id="w10_7" value="0" constant="true"/>
       <parameter id="w10_8" value="0" constant="true"/>
       <parameter id="w10_9" value="0" constant="true"/>
+      <parameter id="observable_x1" value="0" constant="false"/>
+      <parameter id="sigma_x1" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x1" value="0" constant="true"/>
       <parameter id="eps1" value="0" constant="true"/>
       <parameter id="alpha1" value="0" constant="true"/>
       <parameter id="u1" value="0" constant="true"/>
+      <parameter id="observable_x2" value="0" constant="false"/>
+      <parameter id="sigma_x2" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x2" value="0" constant="true"/>
       <parameter id="eps2" value="0" constant="true"/>
       <parameter id="alpha2" value="0" constant="true"/>
       <parameter id="u2" value="0" constant="true"/>
+      <parameter id="observable_x3" value="0" constant="false"/>
+      <parameter id="sigma_x3" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x3" value="0" constant="true"/>
       <parameter id="eps3" value="0" constant="true"/>
       <parameter id="alpha3" value="0" constant="true"/>
       <parameter id="u3" value="0" constant="true"/>
+      <parameter id="observable_x4" value="0" constant="false"/>
+      <parameter id="sigma_x4" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x4" value="0" constant="true"/>
       <parameter id="eps4" value="0" constant="true"/>
       <parameter id="alpha4" value="0" constant="true"/>
       <parameter id="u4" value="0" constant="true"/>
+      <parameter id="observable_x5" value="0" constant="false"/>
+      <parameter id="sigma_x5" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x5" value="0" constant="true"/>
       <parameter id="eps5" value="0" constant="true"/>
       <parameter id="alpha5" value="0" constant="true"/>
       <parameter id="u5" value="0" constant="true"/>
+      <parameter id="observable_x6" value="0" constant="false"/>
+      <parameter id="sigma_x6" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x6" value="0" constant="true"/>
       <parameter id="eps6" value="0" constant="true"/>
       <parameter id="alpha6" value="0" constant="true"/>
       <parameter id="u6" value="0" constant="true"/>
+      <parameter id="observable_x7" value="0" constant="false"/>
+      <parameter id="sigma_x7" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x7" value="0" constant="true"/>
       <parameter id="eps7" value="0" constant="true"/>
       <parameter id="alpha7" value="0" constant="true"/>
       <parameter id="u7" value="0" constant="true"/>
+      <parameter id="observable_x8" value="0" constant="false"/>
+      <parameter id="sigma_x8" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x8" value="0" constant="true"/>
       <parameter id="eps8" value="0" constant="true"/>
       <parameter id="alpha8" value="0" constant="true"/>
       <parameter id="u8" value="0" constant="true"/>
+      <parameter id="observable_x9" value="0" constant="false"/>
+      <parameter id="sigma_x9" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x9" value="0" constant="true"/>
       <parameter id="eps9" value="0" constant="true"/>
       <parameter id="alpha9" value="0" constant="true"/>
       <parameter id="u9" value="0" constant="true"/>
+      <parameter id="observable_x10" value="0" constant="false"/>
+      <parameter id="sigma_x10" value="0" constant="false"/>
+      <parameter id="noiseParameter1_x10" value="0" constant="true"/>
       <parameter id="eps10" value="0" constant="true"/>
       <parameter id="alpha10" value="0" constant="true"/>
       <parameter id="u10" value="0" constant="true"/>
-    </listOfParameters>
-    <listOfInitialAssignments>
-      <initialAssignment symbol="x1">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="x2">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="x3">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="x4">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="x5">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="x6">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="x7">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="x8">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="x9">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-      <initialAssignment symbol="x10">
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <cn type="integer"> 1 </cn>
-        </math>
-      </initialAssignment>
-    </listOfInitialAssignments>
-    <listOfReactions>
+</listOfParameters>
+<listOfInitialAssignments>
+ <initialAssignment symbol="x1" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+ <initialAssignment symbol="x2" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+ <initialAssignment symbol="x3" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+ <initialAssignment symbol="x4" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+ <initialAssignment symbol="x5" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+ <initialAssignment symbol="x6" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+ <initialAssignment symbol="x7" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+ <initialAssignment symbol="x8" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+ <initialAssignment symbol="x9" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+ <initialAssignment symbol="x10" >
+  <math xmlns="http://www.w3.org/1998/Math/MathML" >
+   <cn type="integer" > 1 </cn >
+  </math>
+ </initialAssignment>
+</listOfInitialAssignments>
+<listOfRules>
+   <assignmentRule variable="sigma_x1"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x1 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x1"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x1 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="sigma_x2"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x2 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x2"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x2 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="sigma_x3"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x3 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x3"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x3 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="sigma_x4"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x4 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x4"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x4 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="sigma_x5"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x5 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x5"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x5 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="sigma_x6"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x6 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x6"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x6 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="sigma_x7"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x7 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x7"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x7 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="sigma_x8"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x8 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x8"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x8 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="sigma_x9"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x9 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x9"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x9 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="sigma_x10"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> noiseParameter1_x10 </ci>
+   </math>
+ </assignmentRule>
+   <assignmentRule variable="observable_x10"> 
+   <math xmlns="http://www.w3.org/1998/Math/MathML">
+     <ci> x10 </ci>
+   </math>
+ </assignmentRule>
+</listOfRules>
+<listOfReactions>
       <reaction id="degradation1" name="degradation1" reversible="false">
         <listOfReactants>
           <speciesReference species="x1"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha1 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha1 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis1" name="synthesis1" reversible="false">
@@ -245,85 +378,85 @@
           <speciesReference species="x1"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x2"/>
-          <modifierSpeciesReference species="x3"/>
-          <modifierSpeciesReference species="x4"/>
-          <modifierSpeciesReference species="x5"/>
-          <modifierSpeciesReference species="x6"/>
-          <modifierSpeciesReference species="x7"/>
-          <modifierSpeciesReference species="x8"/>
-          <modifierSpeciesReference species="x9"/>
-          <modifierSpeciesReference species="x10"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps1 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x2"/>
+           <modifierSpeciesReference species="x3"/>
+           <modifierSpeciesReference species="x4"/>
+           <modifierSpeciesReference species="x5"/>
+           <modifierSpeciesReference species="x6"/>
+           <modifierSpeciesReference species="x7"/>
+           <modifierSpeciesReference species="x8"/>
+           <modifierSpeciesReference species="x9"/>
+           <modifierSpeciesReference species="x10"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps1</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w1_2 </ci>
-                    <ci> x2 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w1_2</ci>
+                       <ci>x2</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w1_3 </ci>
-                    <ci> x3 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w1_3</ci>
+                       <ci>x3</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w1_4 </ci>
-                    <ci> x4 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w1_4</ci>
+                       <ci>x4</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w1_5 </ci>
-                    <ci> x5 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w1_5</ci>
+                       <ci>x5</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w1_6 </ci>
-                    <ci> x6 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w1_6</ci>
+                       <ci>x6</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w1_7 </ci>
-                    <ci> x7 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w1_7</ci>
+                       <ci>x7</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w1_8 </ci>
-                    <ci> x8 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w1_8</ci>
+                       <ci>x8</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w1_9 </ci>
-                    <ci> x9 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w1_9</ci>
+                       <ci>x9</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w1_10 </ci>
-                    <ci> x10 </ci>
-                  </apply>
-                  <ci> u1 </ci>
+                       <ci>w1_10</ci>
+                       <ci>x10</ci>
+                   </apply>
+                       <ci>u1</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="degradation2" name="degradation2" reversible="false">
         <listOfReactants>
           <speciesReference species="x2"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha2 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha2 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis2" name="synthesis2" reversible="false">
@@ -331,85 +464,85 @@
           <speciesReference species="x2"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x1"/>
-          <modifierSpeciesReference species="x3"/>
-          <modifierSpeciesReference species="x4"/>
-          <modifierSpeciesReference species="x5"/>
-          <modifierSpeciesReference species="x6"/>
-          <modifierSpeciesReference species="x7"/>
-          <modifierSpeciesReference species="x8"/>
-          <modifierSpeciesReference species="x9"/>
-          <modifierSpeciesReference species="x10"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps2 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x1"/>
+           <modifierSpeciesReference species="x3"/>
+           <modifierSpeciesReference species="x4"/>
+           <modifierSpeciesReference species="x5"/>
+           <modifierSpeciesReference species="x6"/>
+           <modifierSpeciesReference species="x7"/>
+           <modifierSpeciesReference species="x8"/>
+           <modifierSpeciesReference species="x9"/>
+           <modifierSpeciesReference species="x10"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps2</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w2_1 </ci>
-                    <ci> x1 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w2_1</ci>
+                       <ci>x1</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w2_3 </ci>
-                    <ci> x3 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w2_3</ci>
+                       <ci>x3</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w2_4 </ci>
-                    <ci> x4 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w2_4</ci>
+                       <ci>x4</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w2_5 </ci>
-                    <ci> x5 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w2_5</ci>
+                       <ci>x5</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w2_6 </ci>
-                    <ci> x6 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w2_6</ci>
+                       <ci>x6</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w2_7 </ci>
-                    <ci> x7 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w2_7</ci>
+                       <ci>x7</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w2_8 </ci>
-                    <ci> x8 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w2_8</ci>
+                       <ci>x8</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w2_9 </ci>
-                    <ci> x9 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w2_9</ci>
+                       <ci>x9</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w2_10 </ci>
-                    <ci> x10 </ci>
-                  </apply>
-                  <ci> u2 </ci>
+                       <ci>w2_10</ci>
+                       <ci>x10</ci>
+                   </apply>
+                       <ci>u2</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="degradation3" name="degradation3" reversible="false">
         <listOfReactants>
           <speciesReference species="x3"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha3 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha3 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis3" name="synthesis3" reversible="false">
@@ -417,85 +550,85 @@
           <speciesReference species="x3"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x1"/>
-          <modifierSpeciesReference species="x2"/>
-          <modifierSpeciesReference species="x4"/>
-          <modifierSpeciesReference species="x5"/>
-          <modifierSpeciesReference species="x6"/>
-          <modifierSpeciesReference species="x7"/>
-          <modifierSpeciesReference species="x8"/>
-          <modifierSpeciesReference species="x9"/>
-          <modifierSpeciesReference species="x10"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps3 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x1"/>
+           <modifierSpeciesReference species="x2"/>
+           <modifierSpeciesReference species="x4"/>
+           <modifierSpeciesReference species="x5"/>
+           <modifierSpeciesReference species="x6"/>
+           <modifierSpeciesReference species="x7"/>
+           <modifierSpeciesReference species="x8"/>
+           <modifierSpeciesReference species="x9"/>
+           <modifierSpeciesReference species="x10"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps3</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w3_1 </ci>
-                    <ci> x1 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w3_1</ci>
+                       <ci>x1</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w3_2 </ci>
-                    <ci> x2 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w3_2</ci>
+                       <ci>x2</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w3_4 </ci>
-                    <ci> x4 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w3_4</ci>
+                       <ci>x4</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w3_5 </ci>
-                    <ci> x5 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w3_5</ci>
+                       <ci>x5</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w3_6 </ci>
-                    <ci> x6 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w3_6</ci>
+                       <ci>x6</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w3_7 </ci>
-                    <ci> x7 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w3_7</ci>
+                       <ci>x7</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w3_8 </ci>
-                    <ci> x8 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w3_8</ci>
+                       <ci>x8</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w3_9 </ci>
-                    <ci> x9 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w3_9</ci>
+                       <ci>x9</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w3_10 </ci>
-                    <ci> x10 </ci>
-                  </apply>
-                  <ci> u3 </ci>
+                       <ci>w3_10</ci>
+                       <ci>x10</ci>
+                   </apply>
+                       <ci>u3</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="degradation4" name="degradation4" reversible="false">
         <listOfReactants>
           <speciesReference species="x4"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha4 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha4 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis4" name="synthesis4" reversible="false">
@@ -503,85 +636,85 @@
           <speciesReference species="x4"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x1"/>
-          <modifierSpeciesReference species="x2"/>
-          <modifierSpeciesReference species="x3"/>
-          <modifierSpeciesReference species="x5"/>
-          <modifierSpeciesReference species="x6"/>
-          <modifierSpeciesReference species="x7"/>
-          <modifierSpeciesReference species="x8"/>
-          <modifierSpeciesReference species="x9"/>
-          <modifierSpeciesReference species="x10"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps4 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x1"/>
+           <modifierSpeciesReference species="x2"/>
+           <modifierSpeciesReference species="x3"/>
+           <modifierSpeciesReference species="x5"/>
+           <modifierSpeciesReference species="x6"/>
+           <modifierSpeciesReference species="x7"/>
+           <modifierSpeciesReference species="x8"/>
+           <modifierSpeciesReference species="x9"/>
+           <modifierSpeciesReference species="x10"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps4</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w4_1 </ci>
-                    <ci> x1 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w4_1</ci>
+                       <ci>x1</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w4_2 </ci>
-                    <ci> x2 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w4_2</ci>
+                       <ci>x2</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w4_3 </ci>
-                    <ci> x3 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w4_3</ci>
+                       <ci>x3</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w4_5 </ci>
-                    <ci> x5 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w4_5</ci>
+                       <ci>x5</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w4_6 </ci>
-                    <ci> x6 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w4_6</ci>
+                       <ci>x6</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w4_7 </ci>
-                    <ci> x7 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w4_7</ci>
+                       <ci>x7</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w4_8 </ci>
-                    <ci> x8 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w4_8</ci>
+                       <ci>x8</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w4_9 </ci>
-                    <ci> x9 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w4_9</ci>
+                       <ci>x9</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w4_10 </ci>
-                    <ci> x10 </ci>
-                  </apply>
-                  <ci> u4 </ci>
+                       <ci>w4_10</ci>
+                       <ci>x10</ci>
+                   </apply>
+                       <ci>u4</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="degradation5" name="degradation5" reversible="false">
         <listOfReactants>
           <speciesReference species="x5"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha5 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha5 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis5" name="synthesis5" reversible="false">
@@ -589,85 +722,85 @@
           <speciesReference species="x5"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x1"/>
-          <modifierSpeciesReference species="x2"/>
-          <modifierSpeciesReference species="x3"/>
-          <modifierSpeciesReference species="x4"/>
-          <modifierSpeciesReference species="x6"/>
-          <modifierSpeciesReference species="x7"/>
-          <modifierSpeciesReference species="x8"/>
-          <modifierSpeciesReference species="x9"/>
-          <modifierSpeciesReference species="x10"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps5 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x1"/>
+           <modifierSpeciesReference species="x2"/>
+           <modifierSpeciesReference species="x3"/>
+           <modifierSpeciesReference species="x4"/>
+           <modifierSpeciesReference species="x6"/>
+           <modifierSpeciesReference species="x7"/>
+           <modifierSpeciesReference species="x8"/>
+           <modifierSpeciesReference species="x9"/>
+           <modifierSpeciesReference species="x10"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps5</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w5_1 </ci>
-                    <ci> x1 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w5_1</ci>
+                       <ci>x1</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w5_2 </ci>
-                    <ci> x2 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w5_2</ci>
+                       <ci>x2</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w5_3 </ci>
-                    <ci> x3 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w5_3</ci>
+                       <ci>x3</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w5_4 </ci>
-                    <ci> x4 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w5_4</ci>
+                       <ci>x4</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w5_6 </ci>
-                    <ci> x6 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w5_6</ci>
+                       <ci>x6</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w5_7 </ci>
-                    <ci> x7 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w5_7</ci>
+                       <ci>x7</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w5_8 </ci>
-                    <ci> x8 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w5_8</ci>
+                       <ci>x8</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w5_9 </ci>
-                    <ci> x9 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w5_9</ci>
+                       <ci>x9</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w5_10 </ci>
-                    <ci> x10 </ci>
-                  </apply>
-                  <ci> u5 </ci>
+                       <ci>w5_10</ci>
+                       <ci>x10</ci>
+                   </apply>
+                       <ci>u5</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="degradation6" name="degradation6" reversible="false">
         <listOfReactants>
           <speciesReference species="x6"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha6 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha6 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis6" name="synthesis6" reversible="false">
@@ -675,85 +808,85 @@
           <speciesReference species="x6"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x1"/>
-          <modifierSpeciesReference species="x2"/>
-          <modifierSpeciesReference species="x3"/>
-          <modifierSpeciesReference species="x4"/>
-          <modifierSpeciesReference species="x5"/>
-          <modifierSpeciesReference species="x7"/>
-          <modifierSpeciesReference species="x8"/>
-          <modifierSpeciesReference species="x9"/>
-          <modifierSpeciesReference species="x10"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps6 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x1"/>
+           <modifierSpeciesReference species="x2"/>
+           <modifierSpeciesReference species="x3"/>
+           <modifierSpeciesReference species="x4"/>
+           <modifierSpeciesReference species="x5"/>
+           <modifierSpeciesReference species="x7"/>
+           <modifierSpeciesReference species="x8"/>
+           <modifierSpeciesReference species="x9"/>
+           <modifierSpeciesReference species="x10"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps6</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w6_1 </ci>
-                    <ci> x1 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w6_1</ci>
+                       <ci>x1</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w6_2 </ci>
-                    <ci> x2 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w6_2</ci>
+                       <ci>x2</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w6_3 </ci>
-                    <ci> x3 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w6_3</ci>
+                       <ci>x3</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w6_4 </ci>
-                    <ci> x4 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w6_4</ci>
+                       <ci>x4</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w6_5 </ci>
-                    <ci> x5 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w6_5</ci>
+                       <ci>x5</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w6_7 </ci>
-                    <ci> x7 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w6_7</ci>
+                       <ci>x7</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w6_8 </ci>
-                    <ci> x8 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w6_8</ci>
+                       <ci>x8</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w6_9 </ci>
-                    <ci> x9 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w6_9</ci>
+                       <ci>x9</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w6_10 </ci>
-                    <ci> x10 </ci>
-                  </apply>
-                  <ci> u6 </ci>
+                       <ci>w6_10</ci>
+                       <ci>x10</ci>
+                   </apply>
+                       <ci>u6</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="degradation7" name="degradation7" reversible="false">
         <listOfReactants>
           <speciesReference species="x7"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha7 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha7 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis7" name="synthesis7" reversible="false">
@@ -761,85 +894,85 @@
           <speciesReference species="x7"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x1"/>
-          <modifierSpeciesReference species="x2"/>
-          <modifierSpeciesReference species="x3"/>
-          <modifierSpeciesReference species="x4"/>
-          <modifierSpeciesReference species="x5"/>
-          <modifierSpeciesReference species="x6"/>
-          <modifierSpeciesReference species="x8"/>
-          <modifierSpeciesReference species="x9"/>
-          <modifierSpeciesReference species="x10"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps7 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x1"/>
+           <modifierSpeciesReference species="x2"/>
+           <modifierSpeciesReference species="x3"/>
+           <modifierSpeciesReference species="x4"/>
+           <modifierSpeciesReference species="x5"/>
+           <modifierSpeciesReference species="x6"/>
+           <modifierSpeciesReference species="x8"/>
+           <modifierSpeciesReference species="x9"/>
+           <modifierSpeciesReference species="x10"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps7</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w7_1 </ci>
-                    <ci> x1 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w7_1</ci>
+                       <ci>x1</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w7_2 </ci>
-                    <ci> x2 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w7_2</ci>
+                       <ci>x2</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w7_3 </ci>
-                    <ci> x3 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w7_3</ci>
+                       <ci>x3</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w7_4 </ci>
-                    <ci> x4 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w7_4</ci>
+                       <ci>x4</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w7_5 </ci>
-                    <ci> x5 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w7_5</ci>
+                       <ci>x5</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w7_6 </ci>
-                    <ci> x6 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w7_6</ci>
+                       <ci>x6</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w7_8 </ci>
-                    <ci> x8 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w7_8</ci>
+                       <ci>x8</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w7_9 </ci>
-                    <ci> x9 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w7_9</ci>
+                       <ci>x9</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w7_10 </ci>
-                    <ci> x10 </ci>
-                  </apply>
-                  <ci> u7 </ci>
+                       <ci>w7_10</ci>
+                       <ci>x10</ci>
+                   </apply>
+                       <ci>u7</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="degradation8" name="degradation8" reversible="false">
         <listOfReactants>
           <speciesReference species="x8"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha8 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha8 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis8" name="synthesis8" reversible="false">
@@ -847,85 +980,85 @@
           <speciesReference species="x8"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x1"/>
-          <modifierSpeciesReference species="x2"/>
-          <modifierSpeciesReference species="x3"/>
-          <modifierSpeciesReference species="x4"/>
-          <modifierSpeciesReference species="x5"/>
-          <modifierSpeciesReference species="x6"/>
-          <modifierSpeciesReference species="x7"/>
-          <modifierSpeciesReference species="x9"/>
-          <modifierSpeciesReference species="x10"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps8 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x1"/>
+           <modifierSpeciesReference species="x2"/>
+           <modifierSpeciesReference species="x3"/>
+           <modifierSpeciesReference species="x4"/>
+           <modifierSpeciesReference species="x5"/>
+           <modifierSpeciesReference species="x6"/>
+           <modifierSpeciesReference species="x7"/>
+           <modifierSpeciesReference species="x9"/>
+           <modifierSpeciesReference species="x10"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps8</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w8_1 </ci>
-                    <ci> x1 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w8_1</ci>
+                       <ci>x1</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w8_2 </ci>
-                    <ci> x2 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w8_2</ci>
+                       <ci>x2</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w8_3 </ci>
-                    <ci> x3 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w8_3</ci>
+                       <ci>x3</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w8_4 </ci>
-                    <ci> x4 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w8_4</ci>
+                       <ci>x4</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w8_5 </ci>
-                    <ci> x5 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w8_5</ci>
+                       <ci>x5</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w8_6 </ci>
-                    <ci> x6 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w8_6</ci>
+                       <ci>x6</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w8_7 </ci>
-                    <ci> x7 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w8_7</ci>
+                       <ci>x7</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w8_9 </ci>
-                    <ci> x9 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w8_9</ci>
+                       <ci>x9</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w8_10 </ci>
-                    <ci> x10 </ci>
-                  </apply>
-                  <ci> u8 </ci>
+                       <ci>w8_10</ci>
+                       <ci>x10</ci>
+                   </apply>
+                       <ci>u8</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="degradation9" name="degradation9" reversible="false">
         <listOfReactants>
           <speciesReference species="x9"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha9 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha9 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis9" name="synthesis9" reversible="false">
@@ -933,85 +1066,85 @@
           <speciesReference species="x9"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x1"/>
-          <modifierSpeciesReference species="x2"/>
-          <modifierSpeciesReference species="x3"/>
-          <modifierSpeciesReference species="x4"/>
-          <modifierSpeciesReference species="x5"/>
-          <modifierSpeciesReference species="x6"/>
-          <modifierSpeciesReference species="x7"/>
-          <modifierSpeciesReference species="x8"/>
-          <modifierSpeciesReference species="x10"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps9 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x1"/>
+           <modifierSpeciesReference species="x2"/>
+           <modifierSpeciesReference species="x3"/>
+           <modifierSpeciesReference species="x4"/>
+           <modifierSpeciesReference species="x5"/>
+           <modifierSpeciesReference species="x6"/>
+           <modifierSpeciesReference species="x7"/>
+           <modifierSpeciesReference species="x8"/>
+           <modifierSpeciesReference species="x10"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps9</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w9_1 </ci>
-                    <ci> x1 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w9_1</ci>
+                       <ci>x1</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w9_2 </ci>
-                    <ci> x2 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w9_2</ci>
+                       <ci>x2</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w9_3 </ci>
-                    <ci> x3 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w9_3</ci>
+                       <ci>x3</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w9_4 </ci>
-                    <ci> x4 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w9_4</ci>
+                       <ci>x4</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w9_5 </ci>
-                    <ci> x5 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w9_5</ci>
+                       <ci>x5</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w9_6 </ci>
-                    <ci> x6 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w9_6</ci>
+                       <ci>x6</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w9_7 </ci>
-                    <ci> x7 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w9_7</ci>
+                       <ci>x7</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w9_8 </ci>
-                    <ci> x8 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w9_8</ci>
+                       <ci>x8</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w9_10 </ci>
-                    <ci> x10 </ci>
-                  </apply>
-                  <ci> u9 </ci>
+                       <ci>w9_10</ci>
+                       <ci>x10</ci>
+                   </apply>
+                       <ci>u9</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="degradation10" name="degradation10" reversible="false">
         <listOfReactants>
           <speciesReference species="x10"/>
         </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <ci> alpha10 </ci>
-          </math>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <ci> alpha10 </ci>
+         </math>
         </kineticLaw>
       </reaction>
       <reaction id="synthesis10" name="synthesis10" reversible="false">
@@ -1019,77 +1152,77 @@
           <speciesReference species="x10"/>
         </listOfProducts>
         <listOfModifiers>
-          <modifierSpeciesReference species="x1"/>
-          <modifierSpeciesReference species="x2"/>
-          <modifierSpeciesReference species="x3"/>
-          <modifierSpeciesReference species="x4"/>
-          <modifierSpeciesReference species="x5"/>
-          <modifierSpeciesReference species="x6"/>
-          <modifierSpeciesReference species="x7"/>
-          <modifierSpeciesReference species="x8"/>
-          <modifierSpeciesReference species="x9"/>
-        </listOfModifiers>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> eps10 </ci>
-              <apply>
-                <tanh/>
-                <apply>
-                  <plus/>
-                  <apply>
+           <modifierSpeciesReference species="x1"/>
+           <modifierSpeciesReference species="x2"/>
+           <modifierSpeciesReference species="x3"/>
+           <modifierSpeciesReference species="x4"/>
+           <modifierSpeciesReference species="x5"/>
+           <modifierSpeciesReference species="x6"/>
+           <modifierSpeciesReference species="x7"/>
+           <modifierSpeciesReference species="x8"/>
+           <modifierSpeciesReference species="x9"/>
+       </listOfModifiers>
+       <kineticLaw>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+             <apply>
+             <times/>
+               <ci>eps10</ci>
+               <apply>
+                  <tanh/>
+                   <apply>
+                   <plus/>
+                   <apply>
                     <times/>
-                    <ci> w10_1 </ci>
-                    <ci> x1 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w10_1</ci>
+                       <ci>x1</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w10_2 </ci>
-                    <ci> x2 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w10_2</ci>
+                       <ci>x2</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w10_3 </ci>
-                    <ci> x3 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w10_3</ci>
+                       <ci>x3</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w10_4 </ci>
-                    <ci> x4 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w10_4</ci>
+                       <ci>x4</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w10_5 </ci>
-                    <ci> x5 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w10_5</ci>
+                       <ci>x5</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w10_6 </ci>
-                    <ci> x6 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w10_6</ci>
+                       <ci>x6</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w10_7 </ci>
-                    <ci> x7 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w10_7</ci>
+                       <ci>x7</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w10_8 </ci>
-                    <ci> x8 </ci>
-                  </apply>
-                  <apply>
+                       <ci>w10_8</ci>
+                       <ci>x8</ci>
+                   </apply>
+                   <apply>
                     <times/>
-                    <ci> w10_9 </ci>
-                    <ci> x9 </ci>
-                  </apply>
-                  <ci> u10 </ci>
+                       <ci>w10_9</ci>
+                       <ci>x9</ci>
+                   </apply>
+                       <ci>u10</ci>
+                </apply>
                 </apply>
               </apply>
-            </apply>
-          </math>
+         </math>
         </kineticLaw>
       </reaction>
-    </listOfReactions>
+   </listOfReactions>
   </model>
 </sbml>

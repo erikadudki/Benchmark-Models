@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Bruno_JExpBio2016" name="Bruno_JExpBio2016">
     <notes>
@@ -70,6 +71,24 @@
       <parameter id="kc1_multiplier" value="0.521817105884857" constant="true"/>
       <parameter id="kc2_multiplier" value="0.521817105884857" constant="true"/>
       <parameter id="kc4_multiplier" value="0.521817105884857" constant="true"/>
+      <parameter id="observable_obcar" value="1" constant="false"/>
+      <parameter id="observable_obcry" value="1" constant="false"/>
+      <parameter id="observable_obio" value="1" constant="false"/>
+      <parameter id="observable_ob10" value="1" constant="false"/>
+      <parameter id="observable_oohb10" value="1" constant="false"/>
+      <parameter id="observable_ozea" value="1" constant="false"/>
+      <parameter id="noiseParameter1_obcar" value="1" constant="false"/>
+      <parameter id="noiseParameter1_obcry" value="1" constant="false"/>
+      <parameter id="noiseParameter1_obio" value="1" constant="false"/>
+      <parameter id="noiseParameter1_ob10" value="1" constant="false"/>
+      <parameter id="noiseParameter1_oohb10" value="1" constant="false"/>
+      <parameter id="noiseParameter1_ozea" value="1" constant="false"/>
+      <parameter id="sigma_obcar" value="1" constant="false"/>
+      <parameter id="sigma_obcry" value="1" constant="false"/>
+      <parameter id="sigma_obio" value="1" constant="false"/>
+      <parameter id="sigma_ob10" value="1" constant="false"/>
+      <parameter id="sigma_oohb10" value="1" constant="false"/>
+      <parameter id="sigma_ozea" value="1" constant="false"/>
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="bcar">
@@ -98,6 +117,68 @@
         </math>
       </initialAssignment>
     </listOfInitialAssignments>
+    <listOfRules>
+      <assignmentRule variable="sigma_obcar">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_obcar </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_obcry">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_obcry </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_obio">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_obio </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_ob10">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_ob10 </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_oohb10">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_oohb10 </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_ozea">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_ozea </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_obcar">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> bcar </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_obcry">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> bcry </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_obio">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> bio </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_ob10">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> b10 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_oohb10">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> ohb10 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_ozea">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> zea </ci>
+        </math>
+      </assignmentRule>
+    </listOfRules>
     <listOfReactions>
       <reaction id="v1_ReactionName" name="ReactionName" reversible="false">
         <listOfReactants>

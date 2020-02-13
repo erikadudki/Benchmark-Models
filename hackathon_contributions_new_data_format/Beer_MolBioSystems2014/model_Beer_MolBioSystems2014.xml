@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Beer_MolBioSystems2014" name="TwoStepSynthesisWithGlu">
     <notes>
@@ -120,6 +121,12 @@
       <parameter id="tau_typeIDT5_ExpID6" value="1" constant="true"/>
       <parameter id="tau_typeIDwt_ExpID4" value="1" constant="true"/>
       <parameter id="init_Bac" value="0.0147007946993721" constant="true"/>
+      <parameter id="sigma_Bacnorm" value="0.0370578932854204" constant="false"/>
+      <parameter id="sigma_IndconcNormRange" value="0.020393702596959" constant="false"/>
+      <parameter id="noiseParameter1_Bacnorm" value="0.0370578932854204" constant="true"/>
+      <parameter id="noiseParameter1_IndconcNormRange" value="0.020393702596959" constant="true"/>
+      <parameter id="observable_Bacnorm" value="0" constant="false"/>
+      <parameter id="observable_IndconcNormRange" value="0" constant="false"/>
       <parameter id="lag" value="0" constant="false"/>
       <parameter id="switch_Bacmax_typeIDT1_ExpID1" value="1" constant="true"/>
       <parameter id="switch_Bacmax_typeIDT1_ExpID2" value="1" constant="true"/>
@@ -199,6 +206,16 @@
       </initialAssignment>
     </listOfInitialAssignments>
     <listOfRules>
+      <assignmentRule variable="sigma_Bacnorm">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_Bacnorm </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="sigma_IndconcNormRange">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> noiseParameter1_IndconcNormRange </ci>
+          </math>
+      </assignmentRule>
       <assignmentRule variable="lag">
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <piecewise>
@@ -209,104 +226,104 @@
                 <apply>
                   <minus/>
                   <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                 <apply>
+                  <plus />
                   <apply>
-                    <plus/>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT1_ExpID1 </ci>
-                      <ci> switch_tau_typeIDT1_ExpID1 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT1_ExpID2 </ci>
-                      <ci> switch_tau_typeIDT1_ExpID2 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT1_ExpID3 </ci>
-                      <ci> switch_tau_typeIDT1_ExpID3 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT1_ExpID4 </ci>
-                      <ci> switch_tau_typeIDT1_ExpID4 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT1_ExpID5 </ci>
-                      <ci> switch_tau_typeIDT1_ExpID5 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT1_ExpID6 </ci>
-                      <ci> switch_tau_typeIDT1_ExpID6 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT3_ExpID1 </ci>
-                      <ci> switch_tau_typeIDT3_ExpID1 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT3_ExpID2 </ci>
-                      <ci> switch_tau_typeIDT3_ExpID2 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT3_ExpID3 </ci>
-                      <ci> switch_tau_typeIDT3_ExpID3 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT3_ExpID4 </ci>
-                      <ci> switch_tau_typeIDT3_ExpID4 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT3_ExpID5 </ci>
-                      <ci> switch_tau_typeIDT3_ExpID5 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT3_ExpID6 </ci>
-                      <ci> switch_tau_typeIDT3_ExpID6 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT5_ExpID1 </ci>
-                      <ci> switch_tau_typeIDT5_ExpID1 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT5_ExpID2 </ci>
-                      <ci> switch_tau_typeIDT5_ExpID2 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT5_ExpID3 </ci>
-                      <ci> switch_tau_typeIDT5_ExpID3 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT5_ExpID4 </ci>
-                      <ci> switch_tau_typeIDT5_ExpID4 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT5_ExpID5 </ci>
-                      <ci> switch_tau_typeIDT5_ExpID5 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDT5_ExpID6 </ci>
-                      <ci> switch_tau_typeIDT5_ExpID6 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> tau_typeIDwt_ExpID4 </ci>
-                      <ci> switch_tau_typeIDwt_ExpID4 </ci>
-                    </apply>
+                   <times />
+                   <ci>tau_typeIDT1_ExpID1</ci>
+                   <ci>switch_tau_typeIDT1_ExpID1</ci>
                   </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT1_ExpID2</ci>
+                   <ci>switch_tau_typeIDT1_ExpID2</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT1_ExpID3</ci>
+                   <ci>switch_tau_typeIDT1_ExpID3</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT1_ExpID4</ci>
+                   <ci>switch_tau_typeIDT1_ExpID4</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT1_ExpID5</ci>
+                   <ci>switch_tau_typeIDT1_ExpID5</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT1_ExpID6</ci>
+                   <ci>switch_tau_typeIDT1_ExpID6</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT3_ExpID1</ci>
+                   <ci>switch_tau_typeIDT3_ExpID1</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT3_ExpID2</ci>
+                   <ci>switch_tau_typeIDT3_ExpID2</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT3_ExpID3</ci>
+                   <ci>switch_tau_typeIDT3_ExpID3</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT3_ExpID4</ci>
+                   <ci>switch_tau_typeIDT3_ExpID4</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT3_ExpID5</ci>
+                   <ci>switch_tau_typeIDT3_ExpID5</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT3_ExpID6</ci>
+                   <ci>switch_tau_typeIDT3_ExpID6</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT5_ExpID1</ci>
+                   <ci>switch_tau_typeIDT5_ExpID1</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT5_ExpID2</ci>
+                   <ci>switch_tau_typeIDT5_ExpID2</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT5_ExpID3</ci>
+                   <ci>switch_tau_typeIDT5_ExpID3</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT5_ExpID4</ci>
+                   <ci>switch_tau_typeIDT5_ExpID4</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT5_ExpID5</ci>
+                   <ci>switch_tau_typeIDT5_ExpID5</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDT5_ExpID6</ci>
+                   <ci>switch_tau_typeIDT5_ExpID6</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>tau_typeIDwt_ExpID4</ci>
+                   <ci>switch_tau_typeIDwt_ExpID4</ci>
+                  </apply>
+                 </apply>
                 </apply>
                 <cn type="integer"> 0 </cn>
               </apply>
@@ -315,6 +332,16 @@
               <cn type="integer"> 1 </cn>
             </otherwise>
           </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_Bacnorm">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> Bac </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_IndconcNormRange">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> Ind </ci>
         </math>
       </assignmentRule>
     </listOfRules>
@@ -338,307 +365,307 @@
                   <apply>
                     <times/>
                     <ci> Bac </ci>
-                    <apply>
-                      <plus/>
+                     <apply>
+                      <plus />
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT1_ExpID1 </ci>
-                        <ci> switch_beta_typeIDT1_ExpID1 </ci>
+                       <times />
+                       <ci>beta_typeIDT1_ExpID1</ci>
+                       <ci>switch_beta_typeIDT1_ExpID1</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT1_ExpID2 </ci>
-                        <ci> switch_beta_typeIDT1_ExpID2 </ci>
+                       <times />
+                       <ci>beta_typeIDT1_ExpID2</ci>
+                       <ci>switch_beta_typeIDT1_ExpID2</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT1_ExpID3 </ci>
-                        <ci> switch_beta_typeIDT1_ExpID3 </ci>
+                       <times />
+                       <ci>beta_typeIDT1_ExpID3</ci>
+                       <ci>switch_beta_typeIDT1_ExpID3</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT1_ExpID4 </ci>
-                        <ci> switch_beta_typeIDT1_ExpID4 </ci>
+                       <times />
+                       <ci>beta_typeIDT1_ExpID4</ci>
+                       <ci>switch_beta_typeIDT1_ExpID4</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT1_ExpID5 </ci>
-                        <ci> switch_beta_typeIDT1_ExpID5 </ci>
+                       <times />
+                       <ci>beta_typeIDT1_ExpID5</ci>
+                       <ci>switch_beta_typeIDT1_ExpID5</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT1_ExpID6 </ci>
-                        <ci> switch_beta_typeIDT1_ExpID6 </ci>
+                       <times />
+                       <ci>beta_typeIDT1_ExpID6</ci>
+                       <ci>switch_beta_typeIDT1_ExpID6</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT3_ExpID1 </ci>
-                        <ci> switch_beta_typeIDT3_ExpID1 </ci>
+                       <times />
+                       <ci>beta_typeIDT3_ExpID1</ci>
+                       <ci>switch_beta_typeIDT3_ExpID1</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT3_ExpID2 </ci>
-                        <ci> switch_beta_typeIDT3_ExpID2 </ci>
+                       <times />
+                       <ci>beta_typeIDT3_ExpID2</ci>
+                       <ci>switch_beta_typeIDT3_ExpID2</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT3_ExpID3 </ci>
-                        <ci> switch_beta_typeIDT3_ExpID3 </ci>
+                       <times />
+                       <ci>beta_typeIDT3_ExpID3</ci>
+                       <ci>switch_beta_typeIDT3_ExpID3</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT3_ExpID4 </ci>
-                        <ci> switch_beta_typeIDT3_ExpID4 </ci>
+                       <times />
+                       <ci>beta_typeIDT3_ExpID4</ci>
+                       <ci>switch_beta_typeIDT3_ExpID4</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT3_ExpID5 </ci>
-                        <ci> switch_beta_typeIDT3_ExpID5 </ci>
+                       <times />
+                       <ci>beta_typeIDT3_ExpID5</ci>
+                       <ci>switch_beta_typeIDT3_ExpID5</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT3_ExpID6 </ci>
-                        <ci> switch_beta_typeIDT3_ExpID6 </ci>
+                       <times />
+                       <ci>beta_typeIDT3_ExpID6</ci>
+                       <ci>switch_beta_typeIDT3_ExpID6</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT5_ExpID1 </ci>
-                        <ci> switch_beta_typeIDT5_ExpID1 </ci>
+                       <times />
+                       <ci>beta_typeIDT5_ExpID1</ci>
+                       <ci>switch_beta_typeIDT5_ExpID1</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT5_ExpID2 </ci>
-                        <ci> switch_beta_typeIDT5_ExpID2 </ci>
+                       <times />
+                       <ci>beta_typeIDT5_ExpID2</ci>
+                       <ci>switch_beta_typeIDT5_ExpID2</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT5_ExpID3 </ci>
-                        <ci> switch_beta_typeIDT5_ExpID3 </ci>
+                       <times />
+                       <ci>beta_typeIDT5_ExpID3</ci>
+                       <ci>switch_beta_typeIDT5_ExpID3</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT5_ExpID4 </ci>
-                        <ci> switch_beta_typeIDT5_ExpID4 </ci>
+                       <times />
+                       <ci>beta_typeIDT5_ExpID4</ci>
+                       <ci>switch_beta_typeIDT5_ExpID4</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT5_ExpID5 </ci>
-                        <ci> switch_beta_typeIDT5_ExpID5 </ci>
+                       <times />
+                       <ci>beta_typeIDT5_ExpID5</ci>
+                       <ci>switch_beta_typeIDT5_ExpID5</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDT5_ExpID6 </ci>
-                        <ci> switch_beta_typeIDT5_ExpID6 </ci>
+                       <times />
+                       <ci>beta_typeIDT5_ExpID6</ci>
+                       <ci>switch_beta_typeIDT5_ExpID6</ci>
                       </apply>
                       <apply>
-                        <times/>
-                        <ci> beta_typeIDwt_ExpID4 </ci>
-                        <ci> switch_beta_typeIDwt_ExpID4 </ci>
+                       <times />
+                       <ci>beta_typeIDwt_ExpID4</ci>
+                       <ci>switch_beta_typeIDwt_ExpID4</ci>
                       </apply>
-                    </apply>
+                     </apply>
                     <ci> lag </ci>
                     <apply>
                       <minus/>
                       <ci> Bac </ci>
+                    <apply>
+                      <plus />
                       <apply>
-                        <plus/>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT1_ExpID1 </ci>
-                          <ci> switch_Bacmax_typeIDT1_ExpID1 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT1_ExpID2 </ci>
-                          <ci> switch_Bacmax_typeIDT1_ExpID2 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT1_ExpID3 </ci>
-                          <ci> switch_Bacmax_typeIDT1_ExpID3 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT1_ExpID4 </ci>
-                          <ci> switch_Bacmax_typeIDT1_ExpID4 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT1_ExpID5 </ci>
-                          <ci> switch_Bacmax_typeIDT1_ExpID5 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT1_ExpID6 </ci>
-                          <ci> switch_Bacmax_typeIDT1_ExpID6 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT3_ExpID1 </ci>
-                          <ci> switch_Bacmax_typeIDT3_ExpID1 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT3_ExpID2 </ci>
-                          <ci> switch_Bacmax_typeIDT3_ExpID2 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT3_ExpID3 </ci>
-                          <ci> switch_Bacmax_typeIDT3_ExpID3 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT3_ExpID4 </ci>
-                          <ci> switch_Bacmax_typeIDT3_ExpID4 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT3_ExpID5 </ci>
-                          <ci> switch_Bacmax_typeIDT3_ExpID5 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT3_ExpID6 </ci>
-                          <ci> switch_Bacmax_typeIDT3_ExpID6 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT5_ExpID1 </ci>
-                          <ci> switch_Bacmax_typeIDT5_ExpID1 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT5_ExpID2 </ci>
-                          <ci> switch_Bacmax_typeIDT5_ExpID2 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT5_ExpID3 </ci>
-                          <ci> switch_Bacmax_typeIDT5_ExpID3 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT5_ExpID4 </ci>
-                          <ci> switch_Bacmax_typeIDT5_ExpID4 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT5_ExpID5 </ci>
-                          <ci> switch_Bacmax_typeIDT5_ExpID5 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDT5_ExpID6 </ci>
-                          <ci> switch_Bacmax_typeIDT5_ExpID6 </ci>
-                        </apply>
-                        <apply>
-                          <times/>
-                          <ci> Bacmax_typeIDwt_ExpID4 </ci>
-                          <ci> switch_Bacmax_typeIDwt_ExpID4 </ci>
-                        </apply>
+                       <times />
+                       <ci>Bacmax_typeIDT1_ExpID1</ci>
+                       <ci>switch_Bacmax_typeIDT1_ExpID1</ci>
                       </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT1_ExpID2</ci>
+                       <ci>switch_Bacmax_typeIDT1_ExpID2</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT1_ExpID3</ci>
+                       <ci>switch_Bacmax_typeIDT1_ExpID3</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT1_ExpID4</ci>
+                       <ci>switch_Bacmax_typeIDT1_ExpID4</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT1_ExpID5</ci>
+                       <ci>switch_Bacmax_typeIDT1_ExpID5</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT1_ExpID6</ci>
+                       <ci>switch_Bacmax_typeIDT1_ExpID6</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT3_ExpID1</ci>
+                       <ci>switch_Bacmax_typeIDT3_ExpID1</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT3_ExpID2</ci>
+                       <ci>switch_Bacmax_typeIDT3_ExpID2</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT3_ExpID3</ci>
+                       <ci>switch_Bacmax_typeIDT3_ExpID3</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT3_ExpID4</ci>
+                       <ci>switch_Bacmax_typeIDT3_ExpID4</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT3_ExpID5</ci>
+                       <ci>switch_Bacmax_typeIDT3_ExpID5</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT3_ExpID6</ci>
+                       <ci>switch_Bacmax_typeIDT3_ExpID6</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT5_ExpID1</ci>
+                       <ci>switch_Bacmax_typeIDT5_ExpID1</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT5_ExpID2</ci>
+                       <ci>switch_Bacmax_typeIDT5_ExpID2</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT5_ExpID3</ci>
+                       <ci>switch_Bacmax_typeIDT5_ExpID3</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT5_ExpID4</ci>
+                       <ci>switch_Bacmax_typeIDT5_ExpID4</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT5_ExpID5</ci>
+                       <ci>switch_Bacmax_typeIDT5_ExpID5</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDT5_ExpID6</ci>
+                       <ci>switch_Bacmax_typeIDT5_ExpID6</ci>
+                      </apply>
+                      <apply>
+                       <times />
+                       <ci>Bacmax_typeIDwt_ExpID4</ci>
+                       <ci>switch_Bacmax_typeIDwt_ExpID4</ci>
+                      </apply>
+                     </apply>
                     </apply>
                   </apply>
                 </apply>
+              <apply>
+                <plus />
                 <apply>
-                  <plus/>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT1_ExpID1 </ci>
-                    <ci> switch_Bacmax_typeIDT1_ExpID1 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT1_ExpID2 </ci>
-                    <ci> switch_Bacmax_typeIDT1_ExpID2 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT1_ExpID3 </ci>
-                    <ci> switch_Bacmax_typeIDT1_ExpID3 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT1_ExpID4 </ci>
-                    <ci> switch_Bacmax_typeIDT1_ExpID4 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT1_ExpID5 </ci>
-                    <ci> switch_Bacmax_typeIDT1_ExpID5 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT1_ExpID6 </ci>
-                    <ci> switch_Bacmax_typeIDT1_ExpID6 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT3_ExpID1 </ci>
-                    <ci> switch_Bacmax_typeIDT3_ExpID1 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT3_ExpID2 </ci>
-                    <ci> switch_Bacmax_typeIDT3_ExpID2 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT3_ExpID3 </ci>
-                    <ci> switch_Bacmax_typeIDT3_ExpID3 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT3_ExpID4 </ci>
-                    <ci> switch_Bacmax_typeIDT3_ExpID4 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT3_ExpID5 </ci>
-                    <ci> switch_Bacmax_typeIDT3_ExpID5 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT3_ExpID6 </ci>
-                    <ci> switch_Bacmax_typeIDT3_ExpID6 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT5_ExpID1 </ci>
-                    <ci> switch_Bacmax_typeIDT5_ExpID1 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT5_ExpID2 </ci>
-                    <ci> switch_Bacmax_typeIDT5_ExpID2 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT5_ExpID3 </ci>
-                    <ci> switch_Bacmax_typeIDT5_ExpID3 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT5_ExpID4 </ci>
-                    <ci> switch_Bacmax_typeIDT5_ExpID4 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT5_ExpID5 </ci>
-                    <ci> switch_Bacmax_typeIDT5_ExpID5 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDT5_ExpID6 </ci>
-                    <ci> switch_Bacmax_typeIDT5_ExpID6 </ci>
-                  </apply>
-                  <apply>
-                    <times/>
-                    <ci> Bacmax_typeIDwt_ExpID4 </ci>
-                    <ci> switch_Bacmax_typeIDwt_ExpID4 </ci>
-                  </apply>
+                 <times />
+                 <ci>Bacmax_typeIDT1_ExpID1</ci>
+                 <ci>switch_Bacmax_typeIDT1_ExpID1</ci>
                 </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT1_ExpID2</ci>
+                 <ci>switch_Bacmax_typeIDT1_ExpID2</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT1_ExpID3</ci>
+                 <ci>switch_Bacmax_typeIDT1_ExpID3</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT1_ExpID4</ci>
+                 <ci>switch_Bacmax_typeIDT1_ExpID4</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT1_ExpID5</ci>
+                 <ci>switch_Bacmax_typeIDT1_ExpID5</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT1_ExpID6</ci>
+                 <ci>switch_Bacmax_typeIDT1_ExpID6</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT3_ExpID1</ci>
+                 <ci>switch_Bacmax_typeIDT3_ExpID1</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT3_ExpID2</ci>
+                 <ci>switch_Bacmax_typeIDT3_ExpID2</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT3_ExpID3</ci>
+                 <ci>switch_Bacmax_typeIDT3_ExpID3</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT3_ExpID4</ci>
+                 <ci>switch_Bacmax_typeIDT3_ExpID4</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT3_ExpID5</ci>
+                 <ci>switch_Bacmax_typeIDT3_ExpID5</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT3_ExpID6</ci>
+                 <ci>switch_Bacmax_typeIDT3_ExpID6</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT5_ExpID1</ci>
+                 <ci>switch_Bacmax_typeIDT5_ExpID1</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT5_ExpID2</ci>
+                 <ci>switch_Bacmax_typeIDT5_ExpID2</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT5_ExpID3</ci>
+                 <ci>switch_Bacmax_typeIDT5_ExpID3</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT5_ExpID4</ci>
+                 <ci>switch_Bacmax_typeIDT5_ExpID4</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT5_ExpID5</ci>
+                 <ci>switch_Bacmax_typeIDT5_ExpID5</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDT5_ExpID6</ci>
+                 <ci>switch_Bacmax_typeIDT5_ExpID6</ci>
+                </apply>
+                <apply>
+                 <times />
+                 <ci>Bacmax_typeIDwt_ExpID4</ci>
+                 <ci>switch_Bacmax_typeIDwt_ExpID4</ci>
+                </apply>
+               </apply>
               </apply>
             </apply>
           </math>
@@ -662,29 +689,29 @@
                 <ci> Bac </ci>
               </apply>
               <ci> Glu </ci>
+             <apply>
+              <plus />
               <apply>
-                <plus/>
-                <apply>
-                  <times/>
-                  <ci> ksyn_typeIDwt </ci>
-                  <ci> switch_ksyn_typeIDwt </ci>
-                </apply>
-                <apply>
-                  <times/>
-                  <ci> ksyn_typeIDT1 </ci>
-                  <ci> switch_ksyn_typeIDT1 </ci>
-                </apply>
-                <apply>
-                  <times/>
-                  <ci> ksyn_typeIDT3 </ci>
-                  <ci> switch_ksyn_typeIDT3 </ci>
-                </apply>
-                <apply>
-                  <times/>
-                  <ci> ksyn_typeIDT5 </ci>
-                  <ci> switch_ksyn_typeIDT5 </ci>
-                </apply>
+               <times />
+               <ci>ksyn_typeIDwt</ci>
+               <ci>switch_ksyn_typeIDwt</ci>
               </apply>
+              <apply>
+               <times />
+               <ci>ksyn_typeIDT1</ci>
+               <ci>switch_ksyn_typeIDT1</ci>
+              </apply>
+              <apply>
+               <times />
+               <ci>ksyn_typeIDT3</ci>
+               <ci>switch_ksyn_typeIDT3</ci>
+              </apply>
+              <apply>
+               <times />
+               <ci>ksyn_typeIDT5</ci>
+               <ci>switch_ksyn_typeIDT5</ci>
+              </apply>
+             </apply>
             </apply>
           </math>
         </kineticLaw>
@@ -709,29 +736,29 @@
                   <times/>
                   <ci> Bac </ci>
                   <ci> Glu </ci>
+                 <apply>
+                  <plus />
                   <apply>
-                    <plus/>
-                    <apply>
-                      <times/>
-                      <ci> ksyn_typeIDwt </ci>
-                      <ci> switch_ksyn_typeIDwt </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> ksyn_typeIDT1 </ci>
-                      <ci> switch_ksyn_typeIDT1 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> ksyn_typeIDT3 </ci>
-                      <ci> switch_ksyn_typeIDT3 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> ksyn_typeIDT5 </ci>
-                      <ci> switch_ksyn_typeIDT5 </ci>
-                    </apply>
+                   <times />
+                   <ci>ksyn_typeIDwt</ci>
+                   <ci>switch_ksyn_typeIDwt</ci>
                   </apply>
+                  <apply>
+                   <times />
+                   <ci>ksyn_typeIDT1</ci>
+                   <ci>switch_ksyn_typeIDT1</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>ksyn_typeIDT3</ci>
+                   <ci>switch_ksyn_typeIDT3</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>ksyn_typeIDT5</ci>
+                   <ci>switch_ksyn_typeIDT5</ci>
+                  </apply>
+                 </apply>
                 </apply>
                 <apply>
                   <times/>
@@ -740,29 +767,29 @@
                     <ci> cGlu </ci>
                     <cn type="integer"> 2 </cn>
                   </apply>
+                 <apply>
+                  <plus />
                   <apply>
-                    <plus/>
-                    <apply>
-                      <times/>
-                      <ci> kdim_typeIDwt </ci>
-                      <ci> switch_kdim_typeIDwt </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> kdim_typeIDT1 </ci>
-                      <ci> switch_kdim_typeIDT1 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> kdim_typeIDT3 </ci>
-                      <ci> switch_kdim_typeIDT3 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> kdim_typeIDT5 </ci>
-                      <ci> switch_kdim_typeIDT5 </ci>
-                    </apply>
+                   <times />
+                   <ci>kdim_typeIDwt</ci>
+                   <ci>switch_kdim_typeIDwt</ci>
                   </apply>
+                  <apply>
+                   <times />
+                   <ci>kdim_typeIDT1</ci>
+                   <ci>switch_kdim_typeIDT1</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>kdim_typeIDT3</ci>
+                   <ci>switch_kdim_typeIDT3</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>kdim_typeIDT5</ci>
+                   <ci>switch_kdim_typeIDT5</ci>
+                  </apply>
+                 </apply>
                 </apply>
               </apply>
             </apply>
@@ -791,56 +818,56 @@
                     <ci> cGlu </ci>
                     <cn type="integer"> 2 </cn>
                   </apply>
+                 <apply>
+                  <plus />
                   <apply>
-                    <plus/>
-                    <apply>
-                      <times/>
-                      <ci> kdim_typeIDwt </ci>
-                      <ci> switch_kdim_typeIDwt </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> kdim_typeIDT1 </ci>
-                      <ci> switch_kdim_typeIDT1 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> kdim_typeIDT3 </ci>
-                      <ci> switch_kdim_typeIDT3 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> kdim_typeIDT5 </ci>
-                      <ci> switch_kdim_typeIDT5 </ci>
-                    </apply>
+                   <times />
+                   <ci>kdim_typeIDwt</ci>
+                   <ci>switch_kdim_typeIDwt</ci>
                   </apply>
+                  <apply>
+                   <times />
+                   <ci>kdim_typeIDT1</ci>
+                   <ci>switch_kdim_typeIDT1</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>kdim_typeIDT3</ci>
+                   <ci>switch_kdim_typeIDT3</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>kdim_typeIDT5</ci>
+                   <ci>switch_kdim_typeIDT5</ci>
+                  </apply>
+                 </apply>
                 </apply>
                 <apply>
                   <times/>
                   <ci> Ind </ci>
+                 <apply>
+                  <plus />
                   <apply>
-                    <plus/>
-                    <apply>
-                      <times/>
-                      <ci> kdegi_typeIDwt </ci>
-                      <ci> switch_kdegi_typeIDwt </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> kdegi_typeIDT1 </ci>
-                      <ci> switch_kdegi_typeIDT1 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> kdegi_typeIDT3 </ci>
-                      <ci> switch_kdegi_typeIDT3 </ci>
-                    </apply>
-                    <apply>
-                      <times/>
-                      <ci> kdegi_typeIDT5 </ci>
-                      <ci> switch_kdegi_typeIDT5 </ci>
-                    </apply>
+                   <times />
+                   <ci>kdegi_typeIDwt</ci>
+                   <ci>switch_kdegi_typeIDwt</ci>
                   </apply>
+                  <apply>
+                   <times />
+                   <ci>kdegi_typeIDT1</ci>
+                   <ci>switch_kdegi_typeIDT1</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>kdegi_typeIDT3</ci>
+                   <ci>switch_kdegi_typeIDT3</ci>
+                  </apply>
+                  <apply>
+                   <times />
+                   <ci>kdegi_typeIDT5</ci>
+                   <ci>switch_kdegi_typeIDT5</ci>
+                  </apply>
+                 </apply>
                 </apply>
               </apply>
             </apply>

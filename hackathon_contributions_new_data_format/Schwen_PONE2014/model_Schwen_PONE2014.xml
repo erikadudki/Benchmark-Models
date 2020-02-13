@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by COPASI version 4.25 (Build 207) on 2019-11-29 10:45 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model id="Schwen_PONE2014" name="Kreutz_IR_binding">
     <notes>
@@ -71,6 +72,33 @@
       <parameter id="kout" value="324.725838145278" constant="true"/>
       <parameter id="kout2" value="0.0529079560976487" constant="true"/>
       <parameter id="kout_frag" value="0.0100421669378689" constant="true"/>
+
+      <parameter id="observable_IR1" value="0" constant="false"/>
+      <parameter id="observableParameter1_IR1" value="12.2786980566747" constant="true"/>
+      <parameter id="observableParameter2_IR1" value="0.155664091700049" constant="true"/>
+      <parameter id="sigma_IR1" value="1" constant="false"/>
+      <parameter id="noiseParameter1_IR1" value="0.0562336856525956" constant="true"/>
+
+      <parameter id="observable_IR2" value="0" constant="false"/>
+      <parameter id="observableParameter1_IR2" value="12.2786980566747" constant="true"/>
+      <parameter id="observableParameter2_IR2" value="0.155664091700049" constant="true"/>
+      <parameter id="sigma_IR2" value="1" constant="false"/>
+      <parameter id="noiseParameter1_IR2" value="0.0562336856525956" constant="true"/>
+
+      <parameter id="observable_IRsum" value="0" constant="false"/>
+      <parameter id="observableParameter1_IRsum" value="12.2786980566747" constant="true"/>
+      <parameter id="observableParameter2_IRsum" value="0.155664091700049" constant="true"/>
+      <parameter id="sigma_IRsum" value="1" constant="false"/>
+      <parameter id="noiseParameter1_IRsum" value="0.0562336856525956" constant="true"/>
+
+      <parameter id="observable_Insulin" value="0" constant="false"/>
+      <parameter id="observableParameter1_Insulin" value="0.0250185602581455" constant="true"/>
+      <parameter id="observableParameter2_Insulin" value="0.539936091079522" constant="true"/>
+      <parameter id="observableParameter3_Insulin" value="0.999979895367988" constant="true"/>
+      <parameter id="observableParameter4_Insulin" value="99999948.2378371" constant="true"/>
+      <parameter id="sigma_Insulin" value="1" constant="false"/>
+      <parameter id="noiseParameter1_Insulin" value="0.260154380302218" constant="true"/>
+
     </listOfParameters>
     <listOfInitialAssignments>
       <initialAssignment symbol="Rec1">
@@ -93,6 +121,129 @@
         </math>
       </initialAssignment>
     </listOfInitialAssignments>
+    <listOfRules>
+        <assignmentRule variable="sigma_IR1">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> noiseParameter1_IR1 </ci>
+          </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_IR2">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> noiseParameter1_IR2 </ci>
+          </math>
+        </assignmentRule>
+        <assignmentRule variable="sigma_IRsum">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> noiseParameter1_IRsum </ci>
+          </math>
+      </assignmentRule>
+        <assignmentRule variable="sigma_Insulin">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> noiseParameter1_Insulin </ci>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_IR1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> observableParameter2_IR1 </ci>
+            <apply>
+              <plus/>
+              <ci> IR1 </ci>
+              <ci> IR1in </ci>
+              <ci> observableParameter1_IR1 </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_IR2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> observableParameter2_IR2 </ci>
+            <apply>
+              <plus/>
+              <ci> IR2 </ci>
+              <ci> IR2in </ci>
+              <ci> observableParameter1_IR2 </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_IRsum">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> observableParameter2_IRsum </ci>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <cn> 0.605 </cn>
+                <ci> IR1 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <cn> 0.395 </cn>
+                <ci> IR2 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <cn> 0.605 </cn>
+                <ci> IR1in </ci>
+              </apply>
+              <apply>
+                <times/>
+                <cn> 0.395 </cn>
+                <ci> IR2in </ci>
+              </apply>
+              <ci> observableParameter1_IRsum </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="observable_Insulin">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> observableParameter1_Insulin </ci>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> observableParameter2_Insulin </ci>
+                <apply>
+                  <plus/>
+                  <ci> Ins </ci>
+                  <apply>
+                    <times/>
+                    <ci> InsulinFragments </ci>
+                    <ci> observableParameter3_Insulin </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <plus/>
+                    <ci> Ins </ci>
+                    <apply>
+                      <times/>
+                      <ci> InsulinFragments </ci>
+                      <ci> observableParameter3_Insulin </ci>
+                    </apply>
+                  </apply>
+                  <ci> observableParameter4_Insulin </ci>
+                </apply>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
     <listOfReactions>
       <reaction id="v1_ka1" name="ka1" reversible="false">
         <listOfReactants>
